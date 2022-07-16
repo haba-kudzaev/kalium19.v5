@@ -4,13 +4,15 @@
 	"npm-scripts.showStartNotification": false,
 
 	"files.exclude": {
-		".github/"      : true,
-		".editorconfig" : true,
-		".npmignore"    : true,
-		".gitignore"    : true,
-		"CHANGELOG.*"   : true,
-		"LICENSE"       : true,
-		"package-lock.*": true
+		".github/"       : true,
+		".editorconfig"  : true,
+		".npmignore"     : true,
+		".gitignore"     : true,
+		"CHANGELOG.*"    : true,
+		"LICENSE"        : true,
+		"package-lock.*" : true,
+		"CONTRIBUTING.md": true,
+		"CODEOWNERS"     : true
 	}
 
 }
