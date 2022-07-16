@@ -1,0 +1,7 @@
+@function color-tint($color, $percentage) {
+	@return mix(
+		white,
+		$color,
+		$percentage
+	);
+}
