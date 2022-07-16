@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 @function map-deep-set($map, $keys, $value) {
 
 	$maps  : ($map,);
