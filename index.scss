@@ -1,1 +1,8 @@
 @charset "UTF-8";
+
+@forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/str-replace';  // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/color-shade';  // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/color-tint';   // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/contains';
