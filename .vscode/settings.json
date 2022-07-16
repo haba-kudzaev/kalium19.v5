@@ -4,7 +4,7 @@
 	"npm-scripts.showStartNotification": false,
 
 	"files.exclude": {
-		".github/"      : false,
+		".github/"      : true,
 		".editorconfig" : true,
 		".npmignore"    : true,
 		".gitignore"    : true,
