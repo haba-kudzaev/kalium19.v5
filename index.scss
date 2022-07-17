@@ -7,6 +7,7 @@
 
 @forward 'modules/background/clip';
 @forward 'modules/border-radius';
+@forward 'modules/border-radius/corner' hide border-corner-radius;
 
 @forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
