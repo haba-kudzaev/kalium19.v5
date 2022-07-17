@@ -3,6 +3,7 @@
 @forward 'modules/config';
 
 @forward 'modules/prefixer';
+@forward 'modules/prefixer/pack';
 
 @forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
