@@ -1,0 +1,9 @@
+@use '../prefixer' as *;
+
+@mixin background-clip($value) {
+	@include prefixer(
+		background-clip,
+		$value,
+		moz
+	);
+}

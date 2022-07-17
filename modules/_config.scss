@@ -1,3 +1,5 @@
-$prefixes: (
-	all: (webkit, khtml, moz, ms, o)
-) !default;
+$prfxs-all: webkit khtml moz ms o !default;
+$prfxs_border-radius: webkit moz !default;
+$prfxs_background-clip: moz !default;
+
+$default_border-radius: null !default;
