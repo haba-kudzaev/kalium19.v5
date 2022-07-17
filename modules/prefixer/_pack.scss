@@ -7,9 +7,11 @@
 	@each $prop, $value in $decs {
 
 		// как и в основном миксине если в параметр $prefixes-list
-		// будет передано "all", то пройдемся по списку всех префиксов в $prefixes.all
+		// будет передано "all", то пройдемся по списку всех префиксов в $prfxs-all
 		@if $prefixes-list == all {
-			-#{$prefix}-#{$prop}: #{$value};
+			@each $prefix in $prfxs-all {
+				-#{$prefix}-#{$prop}: #{$value};
+			}
 		}
 
 		// если же передано другое значение, то просто
@@ -27,5 +29,5 @@
 		}
 
 	}
-	
+
 }

@@ -5,6 +5,9 @@
 @forward 'modules/prefixer';
 @forward 'modules/prefixer/pack';
 
+@forward 'modules/background/clip';
+@forward 'modules/border-radius';
+
 @forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/str-replace';  // by Kitty Giraudel (@KittyGiraudel)
