@@ -1,4 +1,5 @@
 @use '../config' as *;
+@use '../utils/map-deep-get' as *;
 @use '../utils/contains-modifier' as *;
 @use '../utils/get-block' as *;
 @use '../utils/selector-to-string' as *;
@@ -11,18 +12,18 @@
 
 @mixin e($element) {
 	$selector: &;
-	@if contains-modifier($selector, $bem_modifier) {
-		$block: get-block($selector, $bem_modifier);
+	@if contains-modifier($selector, map-deep-get($bem, modifier)) {
+		$block: get-block($selector, map-deep-get($bem, modifier));
 		@at-root {
 			#{$selector} {
-				#{$block + $bem_element + $element} {
+				#{$block + map-deep-get($bem, element) + $element} {
 					@content;
 				}
 			}
 		}
 	} @else {
 		@at-root {
-			#{$selector + $bem_element + $element } {
+			#{$selector + map-deep-get($bem, element) + $element } {
 				@content;
 			}
 		}
@@ -31,7 +32,7 @@
 
 @mixin m($modifier) {
 	@at-root {
-		#{&}#{ $bem_modifier + $modifier } {
+		#{&}#{ map-deep-get($bem, modifier) + $modifier } {
 			@content;
 		}
 	}

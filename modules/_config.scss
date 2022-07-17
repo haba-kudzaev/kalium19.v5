@@ -4,5 +4,7 @@ $prfxs_background-clip: moz !default;
 
 $border-radius: null !default;
 
-$bem_element: "__" !default;
-$bem_modifier: "--" !default;
+$bem: (
+	element: "__",
+	modifier: "--"
+) !default;
