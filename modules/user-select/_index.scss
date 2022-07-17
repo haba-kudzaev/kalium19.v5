@@ -1,0 +1,6 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin user-select($value) {
+	@include prefixer(user-select, $value, $prfxs_user-select);
+}
