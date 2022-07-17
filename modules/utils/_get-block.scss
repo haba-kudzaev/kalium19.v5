@@ -1,0 +1,10 @@
+@use 'selector-to-string' as *;
+
+@function get-block($selector, $modifier) {
+
+	$selector     : selector-to-string($selector);
+	$modifierStart: str-index($selector, $modifier) - 1;
+
+	@return str-slice($selector, 0, $modifierStart);
+
+}
