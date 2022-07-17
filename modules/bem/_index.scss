@@ -1,0 +1,38 @@
+@use '../config' as *;
+@use '../utils/contains-modifier' as *;
+@use '../utils/get-block' as *;
+@use '../utils/selector-to-string' as *;
+
+@mixin b($block) {
+	.#{$block} {
+		@content;
+	}
+}
+
+@mixin e($element) {
+	$selector: &;
+	@if contains-modifier($selector, $bem_modifier) {
+		$block: get-block($selector, $bem_modifier);
+		@at-root {
+			#{$selector} {
+				#{$block + $bem_element + $element} {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@at-root {
+			#{$selector + $bem_element + $element } {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin m($modifier) {
+	@at-root {
+		#{&}#{ $bem_modifier + $modifier } {
+			@content;
+		}
+	}
+}

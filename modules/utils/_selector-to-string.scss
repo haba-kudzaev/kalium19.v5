@@ -1,0 +1,8 @@
+@function selector-to-string($selector) {
+
+	$selector: inspect($selector);          // cast to string
+	$selector: str-slice($selector, 2, -2); // remove brackets
+
+	@return $selector;
+
+}

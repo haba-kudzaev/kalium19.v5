@@ -1,0 +1,13 @@
+@use 'selector-to-string' as *;
+
+@function contains-modifier($selector, $modifier) {
+
+	$selector: selector-to-string($selector);
+
+	@if str-index($selector, $modifier) {
+		@return true;
+	} @else {
+		@return false;
+	}
+
+}
