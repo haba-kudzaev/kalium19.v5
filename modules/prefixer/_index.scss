@@ -1,22 +1,28 @@
 @use '../config' as *;
 @use '../utils/map-deep-get' as *;
 
-@mixin prefixer($prop, $value, $prefixesList: ()) {
+@mixin prefixer($prop, $value, $prefixes-list: (), $saveInitial: true) {
 
-	// если в параметр $prefixes будет передано "all",
+	// если в параметр $prefixes-list будет передано "all",
 	// то пройдемся по списку всех префиксов в $prefixes.all
-	@if $prefixesList == all {
+	@if $prefixes-list == all {
 		@each $prefix in map-deep-get($prefixes, all) {
 			-#{$prefix}-#{$prop}: #{$value};
 		}
 	}
 
-	// иначе пройдемся по переданному в $prefixes списку
+	// иначе пройдемся по переданному в $prefixes-list списку
 	// префиксов и сгенерируем свойство с каждым префиксом:
 	@else {
-		@each $prefix in $prefixesList {
+		@each $prefix in $prefixes-list {
 			#{'-' + $prefix + '-' + $prop}: $value;
 		}
+	}
+
+	// если параметр $saveInitial равен истине (true),
+	// то генерируем также исходное свойство без префикса:
+	@if $saveInitial {
+		#{$prop}: $value;
 	}
 
 }
