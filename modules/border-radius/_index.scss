@@ -2,7 +2,7 @@
 @use '../prefixer' as *;
 @use '../background/clip' as *;
 
-@mixin border-radius($radius: $default_border-radius, $clip: null) {
+@mixin border-radius($radius: $border-radius, $clip: null) {
 
 	// если значение параметра $clip истина (true) или "padding",
 	// то присваиваем значение "padding-box" свойству background-clip:
