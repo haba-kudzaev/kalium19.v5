@@ -1,0 +1,21 @@
+@use '../transform' as *;
+@use '../position/' as *;
+
+@mixin centering($position) {
+
+	@if $position == 'vertical' {
+		@include position(absolute, 50%);
+		@include transform(translateY(-50%));
+	}
+
+	@else if $position == 'horizontal' {
+		@include position(absolute, null, null, null, 50%);
+		@include transform(translateX(-50%));
+	}
+
+	@else if $position == 'both' {
+		@include position(absolute, 50%, null, null, 50%);
+		@include transform(translate(-50%, -50%));
+	}
+
+}
