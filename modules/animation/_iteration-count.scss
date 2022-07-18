@@ -1,10 +1,26 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin animation-iteration-count($iteration-count) {
+/// Миксин `animation-iteration-count()` также является лишь обёрткой над
+/// миксином `prefixer()`, который добавляет CSS-свойству
+/// `animation-iteration-count` браузерные префиксы (в нашем случае префиксы
+/// прописаны в переменной `$prfxs_animation-iteration-count`).
+///
+/// @name animation-iteration-count()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {int | string} $iteration-count [1] - значение свойства `$iteration-count`
+@mixin animation-iteration-count($iteration-count: 1) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation-iteration-count,
-		$iteration-count,
-		$prfxs_animation-iteration-count
+		animation-iteration-count, // 1
+		$iteration-count, // 2
+		$prfxs_animation-iteration-count // 3
 	);
+
 }
