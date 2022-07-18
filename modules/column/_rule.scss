@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-rule($params...) {
+	@include prefixer(
+		column-rule,
+		$params,
+		$prfxs_column-rule
+	);
+}
