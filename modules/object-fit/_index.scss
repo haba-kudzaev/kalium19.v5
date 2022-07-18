@@ -16,3 +16,7 @@
 @mixin object-fit-fill {
 	@include object-fit(fill);
 }
+
+@mixin object-fit-cover {
+	@include object-fit(cover);
+}
