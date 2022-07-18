@@ -9,6 +9,10 @@
 	);
 }
 
+@mixin object-fit-contain {
+	@include object-fit(contain);
+}
+
 @mixin object-fit-fill {
 	@include object-fit(fill);
 }
