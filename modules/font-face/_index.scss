@@ -1,5 +1,5 @@
 @use '../config' as *;
-@use '../utils/constains' as *;
+@use '../utils/contains' as *;
 
 @mixin font-face($font-name, $path, $weight: normal, $style: normal, $formats: $formats_font-face) {
 
