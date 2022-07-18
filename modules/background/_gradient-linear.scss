@@ -1,6 +1,15 @@
+/// @name background-gradient-linear()
+/// @group background
+/// @access public
+/// @since 4.0.0
+/// @author Matt Delac
+/// @link https://github.com/matthieua
+/// @param {color} $start-color [#3C3C3C] - цвет начала графиента
+/// @param {color} $end-color [#999999] - цвет конца градиента
+/// @param {string} $orientation [null] - направление градиента
 @mixin background-gradient-linear($start-color: #3C3C3C, $end-color: #999999, $orientation) {
 
-	/// ? Horizontal Gradient
+	// horizontal gradient
 	@if $orientation == 'horizontal' or $orientation == 'hr' {
 		background-image: -webkit-gradient(linear, left top, right top, from($start-color), to($end-color));
 		background-image: -webkit-linear-gradient(left, $start-color, $end-color);
@@ -11,7 +20,7 @@
 		filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}', gradientType='1');
 	}
 
-	/// ? Horizontal (inverse) Gradient
+	// horizontal (inverse) gradient
 	@else if $orientation == 'horizontal-inverse' or $orientation == 'hri' {
 		background-image: -webkit-gradient(linear, right top, left top, from($start-color), to($end-color));
 		background-image: -webkit-linear-gradient(right, $start-color, $end-color);
@@ -22,7 +31,7 @@
 		filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$end-color}', endColorStr='#{$start-color}', gradientType='1');
 	}
 
-	/// ? Vertical Gradient
+	// vertical gradient
 	@else {
 		background-image: -webkit-gradient(linear, left top, left bottom, from($start-color), to($end-color));
 		background-image: -webkit-linear-gradient(top, $start-color, $end-color);
@@ -34,3 +43,6 @@
 	}
 
 }
+
+/// Doka: "Функция linear-gradient используется для задания
+/// фона в виде линейного градиента."
