@@ -1,10 +1,26 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `animation-play-state()` также является лишь обёрткой над
+/// миксином `prefixer()`, который добавляет CSS-свойству `animation-play-state`
+/// браузерные префиксы (в нашем случае префиксы прописаны в
+/// переменной `$prfxs_animation-play-state`).
+///
+/// @name animation-play-state()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $state [running] - значение свойства
 @mixin animation-play-state($state: running) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation-play-state,
-		$state,
-		$prfxs_animation-play-state
+		animation-play-state, // 1
+		$state, // 2
+		$prfxs_animation-play-state // 3
 	);
+
 }
