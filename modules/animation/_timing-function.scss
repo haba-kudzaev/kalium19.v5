@@ -1,18 +1,110 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin animation-timing-function($value...) {
+/// Миксин `animation-timing-function()` также является лишь обёрткой над
+/// миксином `prefixer()`, который добавляет CSS-свойству
+/// `animation-timing-function` браузерные префиксы (в нашем случае префиксы
+/// прописаны в переменной `$prfxs_animation-timing-function`).
+///
+/// @name animation-timing-function()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $value [ease] - значение свойства `animation-timing-function`
+@mixin animation-timing-function($value: ease) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation-timing-function,
-		$value,
-		$prfxs_animation-timing-function
+		animation-timing-function, // 1
+		$value, // 2
+		$prfxs_animation-timing-function // 3
 	);
+
 }
 
-@mixin animation-timing-function-ease        { @include animation-timing-function(ease);        }
-@mixin animation-timing-function-ease-in     { @include animation-timing-function(ease-in);     }
-@mixin animation-timing-function-ease-out    { @include animation-timing-function(ease-out);    }
-@mixin animation-timing-function-ease-in-out { @include animation-timing-function(ease-in-out); }
-@mixin animation-timing-function-linear      { @include animation-timing-function(linear);      }
-@mixin animation-timing-function-step-start  { @include animation-timing-function(step-start);  }
-@mixin animation-timing-function-step-end    { @include animation-timing-function(step-end);    }
+/// Миксин `animation-timing-function-ease()` использует миксин
+/// `animation-timing-function()` и передает ему значение `ease`
+///
+/// @name animation-timing-function-ease()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-ease {
+	@include animation-timing-function(ease);
+}
+
+/// Миксин `animation-timing-function-ease-in()` использует миксин
+/// `animation-timing-function()` и передает ему значение `ease-in`
+///
+/// @name animation-timing-function-ease-in()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-ease-in  {
+	@include animation-timing-function(ease-in);
+}
+
+/// Миксин `animation-timing-function-ease-out()` использует миксин
+/// `animation-timing-function()` и передает ему значение `ease-out`
+///
+/// @name animation-timing-function-ease-out()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-ease-out {
+	@include animation-timing-function(ease-out);
+}
+
+/// Миксин `animation-timing-function-ease-in-out()` использует миксин
+/// `animation-timing-function()` и передает ему значение `ease-in-out`
+///
+/// @name animation-timing-function-ease-in-out()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-ease-in-out {
+	@include animation-timing-function(ease-in-out);
+}
+
+/// Миксин `animation-timing-function-linear()` использует миксин
+/// `animation-timing-function()` и передает ему значение `linear`
+///
+/// @name animation-timing-function-linear()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-linear {
+	@include animation-timing-function(linear);
+}
+
+/// Миксин `animation-timing-function-step-start()` использует миксин
+/// `animation-timing-function()` и передает ему значение `step-start`
+///
+/// @name animation-timing-function-step-start()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-step-start {
+	@include animation-timing-function(step-start);
+}
+
+/// Миксин `animation-timing-function-step-end()` использует миксин
+/// `animation-timing-function()` и передает ему значение `step-end`
+///
+/// @name animation-timing-function-step-end()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-timing-function
+/// @since 4.0.0
+@mixin animation-timing-function-step-end {
+	@include animation-timing-function(step-end);
+}
