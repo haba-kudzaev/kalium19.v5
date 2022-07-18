@@ -1,0 +1,51 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+@use '../prefixer/pack' as *;
+
+@mixin flex-direction($direction: row) {
+
+	@if $direction == row-reverse {
+		@include prefixer-pack(
+			(
+				box-direction: reverse,
+				box-orient: horizontal
+			),
+			$prfxs_box-direction,
+			false
+		);
+	} @else if $direction == column {
+		@include prefixer-pack(
+			(
+				box-direction: normal,
+				box-orient: vertical
+			),
+			$prfxs_box-direction,
+			false
+		);
+	} @else if $direction == column-reverse {
+		@include prefixer-pack(
+			(
+				box-direction: reverse,
+				box-orient: vertical
+			),
+			$prfxs_box-direction,
+			false
+		);
+	} @else {
+		@include prefixer-pack(
+			(
+				box-direction: normal,
+				box-orient: horizontal
+			),
+			$prfxs_box-direction,
+			false
+		);
+	}
+
+	@include prefixer(
+		flex-direction,
+		$direction,
+		$prfxs_flex-direction
+	);
+
+}
