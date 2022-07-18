@@ -1,0 +1,24 @@
+@mixin wh($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+/// @example SCSS input
+/// 	.square {
+/// 	  @include wh(50px);
+/// 	}
+///
+/// 	.rectangle {
+/// 	  @include wh(100px, 50px);
+/// 	}
+///
+/// @example: CSS output:
+/// 	.square {
+/// 	  width: 50px;
+/// 	  height: 50px;
+/// 	}
+///
+/// 	.rectangle {
+/// 	  width: 100px;
+/// 	  height: 50px;
+/// 	}

@@ -10,18 +10,15 @@
 @forward 'modules/animation/name';
 @forward 'modules/animation/play-state';
 @forward 'modules/animation/timing-function';
-
 @forward 'modules/antialias'; // by @gpessia
 @forward 'modules/backdrop-filter';
-
 @forward 'modules/background/clip';
-@forward 'modules/background/gradient'; // by Justin Brazeau
 @forward 'modules/background/gradient-linear'; // by Matt Delac (@matthieua)
 @forward 'modules/background/gradient-radial'; // by Matt Delac (@matthieua)
-@forward 'modules/background/size';
+@forward 'modules/background/gradient'; // by Justin Brazeau
 @forward 'modules/background/opacity';
 @forward 'modules/background/origin';
-
+@forward 'modules/background/size';
 @forward 'modules/bem'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/border-radius';
 @forward 'modules/border-radius/corner' hide border-corner-radius;
@@ -30,21 +27,19 @@
 @forward 'modules/center-block';
 @forward 'modules/centering';
 @forward 'modules/clearfix';
-
 @forward 'modules/column/columns';
 @forward 'modules/column/count';
 @forward 'modules/column/fill';
 @forward 'modules/column/gap';
-@forward 'modules/column/rule';
 @forward 'modules/column/rule-color';
 @forward 'modules/column/rule-style';
 @forward 'modules/column/rule-width';
+@forward 'modules/column/rule';
 @forward 'modules/column/span';
 @forward 'modules/column/width';
-
 @forward 'modules/flex';
-@forward 'modules/flex/align-items';
 @forward 'modules/flex/align-content';
+@forward 'modules/flex/align-items';
 @forward 'modules/flex/align-self';
 @forward 'modules/flex/basis';
 @forward 'modules/flex/direction';
@@ -54,7 +49,6 @@
 @forward 'modules/flex/order';
 @forward 'modules/flex/shrink';
 @forward 'modules/flex/wrap';
-
 @forward 'modules/flip'; // by Matt Delac (@matthieua)
 @forward 'modules/font-face';
 @forward 'modules/google-fonts'; // by @jakob-e
@@ -68,30 +62,26 @@
 @forward 'modules/opacity';
 @forward 'modules/placeholder' hide at-root; // by cimmanon (stackoverflow.com/users/1652962/cimmanon)
 @forward 'modules/position'; // by Kitty Giraudel (@KittyGiraudel)
-
 @forward 'modules/prefixer';
 @forward 'modules/prefixer/pack';
 @forward 'modules/push-auto';
 @forward 'modules/respond-to'; // by Kitty Giraudel (@KittyGiraudel)
-
 @forward 'modules/scroll-behavior';
 @forward 'modules/selection';
 @forward 'modules/tab-size';
 @forward 'modules/text-shorten';
-
 @forward 'modules/transform';
 @forward 'modules/transform/origin';
 @forward 'modules/transform/style';
-
 @forward 'modules/transition';
 @forward 'modules/transition/delay';
 @forward 'modules/transition/duration';
 @forward 'modules/transition/property';
 @forward 'modules/transition/timing-function';
-
 @forward 'modules/user-select';
 @forward 'modules/user-select/unselect';
 @forward 'modules/visually-hidden';
+@forward 'modules/wh';
 
 @forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
