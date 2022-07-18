@@ -31,6 +31,11 @@ $prfxs_animation-timing-function: $prfxs_animation !default;
 $prfxs_background-size          : webkit moz o !default;
 $prfxs_background-origin        : webkit moz o !default;
 $prfxs_box-shadow        : webkit moz !default;
+$prfxs_align-items: webkit !default;
+$prfxs_align-self: webkit !default;
+$prfxs_align-content: webkit !default;
+$prfxs_box-align: webkit, moz !default;
+$prfxs_flex-align: ms !default;
 
 $border-radius: null !default;
 
