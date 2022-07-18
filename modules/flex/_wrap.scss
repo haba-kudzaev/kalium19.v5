@@ -1,0 +1,18 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin flex-wrap($val: nowrap) {
+
+	@if $val == nowrap {
+		-ms-flex-wrap: none;
+	} @else {
+		-ms-flex-wrap: $val;
+	}
+
+	@include prefixer(
+		flex-wrap,
+		$val,
+		$prfxs_flex-wrap
+	);
+
+}
