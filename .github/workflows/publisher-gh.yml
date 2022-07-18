@@ -3,7 +3,7 @@ name: GitHub Packages publisher
 on:
   push:
     branches:
-      - test
+      - develop
 
 jobs:
   publish:
