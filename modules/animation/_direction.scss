@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin animation-direction($direction) {
+	@include prefixer(
+		animation-direction,
+		$direction,
+		$prfxs_animation-direction
+	);
+}
