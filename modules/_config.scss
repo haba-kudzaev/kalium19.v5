@@ -62,3 +62,10 @@ $opacity: (
 	ie5: true,
 	ie8: true
 ) !default;
+
+$keyframes: (
+	webkit: true,
+	moz: true,
+	ms: true,
+	o: true
+) !default;

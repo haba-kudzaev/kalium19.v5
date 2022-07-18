@@ -1,0 +1,34 @@
+@use '../config' as *;
+@use '../utils/map-deep-get' as *;
+
+@mixin keyframes($name) {
+
+	@if map-deep-get($keyframes, webkit) == true {
+		@-webkit-keyframes #{$name} {
+			@content
+		}
+	};
+
+	@if map-deep-get($keyframes, moz) == true {
+		@-moz-keyframes #{$name} {
+			@content
+		}
+	};
+
+	@if map-deep-get($keyframes, ms) == true {
+		@-ms-keyframes #{$name} {
+			@content
+		}
+	};
+
+	@if map-deep-get($keyframes, o) == true {
+		@-o-keyframes #{$name} {
+			@content
+		}
+	};
+
+	@keyframes #{$name} {
+		@content
+	}
+
+}
