@@ -1,0 +1,19 @@
+@mixin props-apply($decs) {
+	@each $prop, $val in $decs {
+		#{$prop}: var(--#{$val});
+	}
+}
+
+/// @example SCSS Input
+/// 	? SCSS
+/// 	.body {
+/// 		@include props-apply((
+/// 			color: clrFont,
+/// 			background: clrBackground
+/// 		))
+/// 	}
+/// @example CSS Output
+/// 	.body {
+/// 	  color: var(--clrFont);
+/// 	  background: var(--clrBackground);
+/// 	}
