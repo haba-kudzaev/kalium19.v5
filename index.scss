@@ -13,6 +13,8 @@
 @forward 'modules/backdrop-filter';
 @forward 'modules/background/clip';
 @forward 'modules/background/size';
+@forward 'modules/background/opacity';
+@forward 'modules/background/origin';
 @forward 'modules/bem'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/border-radius';
 @forward 'modules/border-radius/corner' hide border-corner-radius;
