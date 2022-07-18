@@ -33,4 +33,8 @@
 	@include animation-timing-function(step-start);
 }
 
+@mixin animation-timing-function-step-end {
+	@include animation-timing-function(step-end);
+}
+
 
