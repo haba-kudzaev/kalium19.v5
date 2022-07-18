@@ -8,3 +8,7 @@
 		$prfxs_object-fit
 	);
 }
+
+@mixin object-fit-fill {
+	@include object-fit(fill);
+}
