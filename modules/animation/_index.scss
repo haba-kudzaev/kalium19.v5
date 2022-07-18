@@ -1,10 +1,26 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `animation()` является лишь обёрткой над миксином `prefixer()`,
+/// который всего-то добавляет CSS-свойству `animation` браузерные префиксы,
+/// список которых прописан в файле _config.scss (в нашем случае префиксы
+/// прописаны в переменной `$prfxs_animation`).
+///
+/// @name animation()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string | int} $params... - список значений свойства `animation`
 @mixin animation($params...) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation,
-		$params,
-		$prfxs_animation
+		animation, // 1
+		$params, // 2
+		$prfxs_animation // 3
 	);
+
 }
