@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin transition-property($params...) {
+	@include prefixer(
+		transition-property,
+		$params,
+		$prfxs_transition
+	);
+}
