@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin columns($params...) {
+	@include prefixer(
+		columns,
+		$params,
+		$prfxs_columns
+	);
+}
