@@ -1,26 +1,73 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin animation-direction($direction) {
+/// Миксин `animation-direction()` также является лишь обёрткой над миксином `prefixer()`,
+/// который добавляет CSS-свойству `animation-direction` браузерные префиксы
+/// (в нашем случае префиксы прописаны в переменной `$prfxs_animation-direction`).
+///
+/// @name animation-direction()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $direction [normal] - значение свойства `animation-direction`
+@mixin animation-direction($direction: normal) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation-direction,
-		$direction,
-		$prfxs_animation-direction
+		animation-direction, // 1
+		$direction, // 2
+		$prfxs_animation-direction // 3
 	);
+
 }
 
+/// Миксин `animation-direction-normal()` использует миксин
+/// `animation-direction()` и передает ему значение `normal`
+///
+/// @name animation-direction-normal()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-direction
+/// @since 4.0.0
 @mixin animation-direction-normal {
 	@include animation-direction(normal);
 }
 
+/// Миксин `animation-direction-alternate()` использует миксин
+/// `animation-direction()` и передает ему значение `alternate`
+///
+/// @name animation-direction-alternate()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-direction
+/// @since 4.0.0
 @mixin animation-direction-alternate {
 	@include animation-direction(alternate);
 }
 
+/// Миксин `animation-direction-reverse()` использует миксин
+/// `animation-direction()` и передает ему значение `reverse`
+///
+/// @name animation-direction-reverse()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-direction
+/// @since 4.0.0
 @mixin animation-direction-reverse {
 	@include animation-direction(reverse);
 }
 
+/// Миксин `animation-direction-alternate-reverse()` использует миксин
+/// `animation-direction()` и передает ему значение `alternate-reverse`
+///
+/// @name animation-direction-alternate-reverse()
+/// @group animation()
+/// @access public
+/// @require {mixin} animation-direction
+/// @since 4.0.0
 @mixin animation-direction-alternate-reverse {
 	@include animation-direction(alternate-reverse);
 }
