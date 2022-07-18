@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin backdrop-filter($params...) {
+	@include prefixer(
+		backdrop-filter,
+		$params,
+		$prfxs_box-sizing
+	);
+}
