@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-rule-color($color) {
+	@include prefixer(
+		column-rule-color,
+		$color,
+		$prfxs_column-rule-color
+	);
+}
