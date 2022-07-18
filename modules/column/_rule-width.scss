@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-rule-width($width) {
+	@include prefixer(
+		column-rule-width,
+		$width,
+		$prfxs_column-rule-width
+	);
+}
