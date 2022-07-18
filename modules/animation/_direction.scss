@@ -16,3 +16,7 @@
 @mixin animation-direction-alternate {
 	@include animation-direction(alternate);
 }
+
+@mixin animation-direction-reverse {
+	@include animation-direction(reverse);
+}
