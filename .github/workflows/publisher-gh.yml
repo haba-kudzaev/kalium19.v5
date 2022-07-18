@@ -1,0 +1,23 @@
+name: GitHub Packages publisher
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Используется Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - name: Настройка регистрации
+        run: npm config set registry https://npm.pkg.github.com
+      - name: Аутентификация в GitHub Packages
+        run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
+      - name: Публикация пакета
+        run: npm publish
