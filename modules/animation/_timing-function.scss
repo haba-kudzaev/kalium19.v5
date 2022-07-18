@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin animation-timing-function($value...) {
+	@include prefixer(
+		animation-timing-function,
+		$value...,
+		$prfxs_animation-timing-function
+	);
+}

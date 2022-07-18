@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin animation-play-state($state: running) {
+	@include prefixer(
+		animation-play-state,
+		$state,
+		$prfxs_animation-play-state
+	);
+}

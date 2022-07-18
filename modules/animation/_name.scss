@@ -1,7 +1,7 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin animation-name-name($name) {
+@mixin animation-name($name) {
 	@include prefixer(
 		animation-name,
 		$name,
