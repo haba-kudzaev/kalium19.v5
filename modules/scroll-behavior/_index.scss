@@ -1,0 +1,5 @@
+@mixin scroll-behavior($value: smooth) {
+	@media (prefers-reduced-motion: no-preference) {
+		scroll-behavior: $value;
+	}
+}
