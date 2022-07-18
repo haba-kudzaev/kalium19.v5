@@ -8,3 +8,7 @@
 		$prfxs_animation-timing-function
 	);
 }
+
+@mixin animation-timing-function-ease {
+	@include animation-timing-function(ease);
+}
