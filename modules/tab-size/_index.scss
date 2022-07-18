@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin tab-size($size) {
+	@include prefixer(
+		tab-size,
+		$size,
+		$prfxs_tab-size
+	);
+}
