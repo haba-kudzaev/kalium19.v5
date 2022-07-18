@@ -9,32 +9,10 @@
 	);
 }
 
-@mixin animation-timing-function-ease {
-	@include animation-timing-function(ease);
-}
-
-@mixin animation-timing-function-ease-in {
-	@include animation-timing-function(ease-in);
-}
-
-@mixin animation-timing-function-ease-out {
-	@include animation-timing-function(ease-out);
-}
-
-@mixin animation-timing-function-ease-in-out {
-	@include animation-timing-function(ease-in-out);
-}
-
-@mixin animation-timing-function-linear {
-	@include animation-timing-function(linear);
-}
-
-@mixin animation-timing-function-step-start {
-	@include animation-timing-function(step-start);
-}
-
-@mixin animation-timing-function-step-end {
-	@include animation-timing-function(step-end);
-}
-
-
+@mixin animation-timing-function-ease        { @include animation-timing-function(ease);        }
+@mixin animation-timing-function-ease-in     { @include animation-timing-function(ease-in);     }
+@mixin animation-timing-function-ease-out    { @include animation-timing-function(ease-out);    }
+@mixin animation-timing-function-ease-in-out { @include animation-timing-function(ease-in-out); }
+@mixin animation-timing-function-linear      { @include animation-timing-function(linear);      }
+@mixin animation-timing-function-step-start  { @include animation-timing-function(step-start);  }
+@mixin animation-timing-function-step-end    { @include animation-timing-function(step-end);    }
