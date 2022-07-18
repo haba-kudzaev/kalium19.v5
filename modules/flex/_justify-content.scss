@@ -1,0 +1,49 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+@use 'flex-pack' as *;
+
+@mixin justify-content($val: flex-start) {
+
+	@if $val == flex-start {
+		@include flex-pack(start);
+		@include prefixer(
+			box-pack,
+			start,
+			$prfxs_box-pack,
+			false
+		);
+	} @else if $val == flex-end {
+		@include flex-pack(end);
+		@include prefixer(
+			box-pack,
+			end,
+			$prfxs_box-pack,
+			false
+		);
+	} @else if $val == space-between {
+		@include flex-pack(justify);
+		@include prefixer(
+			box-pack,
+			justify,
+			$prfxs_box-pack,
+			false
+		);
+	} @else if $val == space-around {
+		@include flex-pack(distribute);
+	} @else {
+		@include flex-pack($val);
+		@include prefixer(
+			box-pack,
+			$val,
+			$prfxs_box-pack,
+			false
+		);
+	}
+
+	@include prefixer(
+		justify-content,
+		$val,
+		$prfxs_justify-content
+	);
+
+}
