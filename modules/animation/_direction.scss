@@ -12,3 +12,7 @@
 @mixin animation-direction-normal {
 	@include animation-direction(normal);
 }
+
+@mixin animation-direction-alternate {
+	@include animation-direction(alternate);
+}
