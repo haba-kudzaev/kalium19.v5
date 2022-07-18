@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin animation-delay($delay) {
+	@include prefixer(
+		animation-delay,
+		$delay,
+		$prfxs_animation-delay
+	);
+}
