@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-fill($type: auto) {
+	@include prefixer(
+		column-fill,
+		$type,
+		$prfxs_column-fill
+	);
+}
