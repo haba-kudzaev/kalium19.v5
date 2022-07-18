@@ -80,7 +80,7 @@ animation-direction($direction)
 > [Подробнее на WebRef →](https://webref.ru/css/animation-duration)
 
 ## Синтаксис миксина
-- `$delay` - время длительности
+- `$duration` - время длительности
 ```scss
 animation-duration($duration)
 ```
@@ -193,7 +193,7 @@ animation-timing-function($values...)
 - **`ease`** - анимация начинается медленно, затем ускоряется и к концу движения опять замедляется.
 
   ![](https://webref.ru/assets/images/css/css_timing-function-ease.png)
-  
+
   > Аналогично `cubic-bezier(0.25,0.1,0.25,1)`.
 
 - **`ease-in`** - анимация медленно начинается, к концу ускоряется.
