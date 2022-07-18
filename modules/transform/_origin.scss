@@ -1,10 +1,10 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin transform-origin($params...) {
+@mixin transform-origin($x, $y, $z) {
 	@include prefixer(
 		transform-origin,
-		$params,
+		$x $y $z,
 		$prfxs_transform
 	);
 }
