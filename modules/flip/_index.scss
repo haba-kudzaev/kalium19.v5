@@ -1,0 +1,10 @@
+@use '../transform' as *;
+
+@mixin flip($scaleX: -1) {
+
+	@include transform(scaleX($scaleX));
+
+	filter    : FlipH;
+	-ms-filter: "FlipH";
+
+}

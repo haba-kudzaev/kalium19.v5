@@ -55,6 +55,7 @@
 @forward 'modules/flex/shrink';
 @forward 'modules/flex/wrap';
 
+@forward 'modules/flip'; // by Matt Delac (@matthieua)
 @forward 'modules/object-fit';
 @forward 'modules/opacity';
 @forward 'modules/position'; // by Kitty Giraudel (@KittyGiraudel)
@@ -89,22 +90,22 @@
 @forward 'modules/utils/get-block'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/utils/selector-to-string'; // by Marcmintel (@marcmintel from Medium)
 
-@forward 'modules/colors/amber';
-@forward 'modules/colors/blue-grey';
-@forward 'modules/colors/blue';
-@forward 'modules/colors/brown';
-@forward 'modules/colors/cyan';
-@forward 'modules/colors/deep-orange';
-@forward 'modules/colors/deep-purple';
-@forward 'modules/colors/green';
-@forward 'modules/colors/grey';
-@forward 'modules/colors/indigo';
-@forward 'modules/colors/light-blue';
-@forward 'modules/colors/light-green';
-@forward 'modules/colors/lime';
-@forward 'modules/colors/orange';
-@forward 'modules/colors/pink';
-@forward 'modules/colors/purple';
-@forward 'modules/colors/red';
-@forward 'modules/colors/teal';
-@forward 'modules/colors/yellow';
+@forward 'modules/colors/amber'; // by @google
+@forward 'modules/colors/blue-grey'; // by @google (material.io/)
+@forward 'modules/colors/blue'; // by @google (material.io/)
+@forward 'modules/colors/brown'; // by @google (material.io/)
+@forward 'modules/colors/cyan'; // by @google (material.io/)
+@forward 'modules/colors/deep-orange'; // by @google (material.io/)
+@forward 'modules/colors/deep-purple'; // by @google (material.io/)
+@forward 'modules/colors/green'; // by @google (material.io/)
+@forward 'modules/colors/grey'; // by @google (material.io/)
+@forward 'modules/colors/indigo'; // by @google (material.io/)
+@forward 'modules/colors/light-blue'; // by @google (material.io/)
+@forward 'modules/colors/light-green'; // by @google (material.io/)
+@forward 'modules/colors/lime'; // by @google (material.io/)
+@forward 'modules/colors/orange'; // by @google (material.io/)
+@forward 'modules/colors/pink'; // by @google (material.io/)
+@forward 'modules/colors/purple'; // by @google (material.io/)
+@forward 'modules/colors/red'; // by @google (material.io/)
+@forward 'modules/colors/teal'; // by @google (material.io/)
+@forward 'modules/colors/yellow'; // by @google (material.io/)
