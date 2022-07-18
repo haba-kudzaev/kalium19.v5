@@ -29,4 +29,8 @@
 	@include animation-timing-function(linear);
 }
 
+@mixin animation-timing-function-step-start {
+	@include animation-timing-function(step-start);
+}
+
 
