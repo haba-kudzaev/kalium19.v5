@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-count($num) {
+	@include prefixer(
+		column-count,
+		$num,
+		$prfxs_column-count
+	);
+}
