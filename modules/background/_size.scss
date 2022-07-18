@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin background-size($value...) {
+	@include prefixer(
+		background-size,
+		$value...,
+		$prfxs_background-size
+	);
+}
