@@ -1,0 +1,25 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+@use '../utils/map-deep-get' as *;
+
+@mixin opacity($val) {
+
+	$val-ie: $val * 100;
+
+	@include prefixer(
+		opacity,
+		$val,
+		$prfxs_opacity
+	);
+
+	@if map-deep-get($opacity, ie5) == true {
+		/* for IE 5-7 */
+		filter: alpha(opacity=$val-ie);
+	}
+
+	@if map-deep-get($opacity, ie8) == true {
+		/* for IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$val-ie})";
+	}
+
+}
