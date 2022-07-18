@@ -8,3 +8,7 @@
 		$prfxs_animation-direction
 	);
 }
+
+@mixin animation-direction-normal {
+	@include animation-direction(normal);
+}
