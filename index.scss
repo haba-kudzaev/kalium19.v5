@@ -72,6 +72,7 @@
 @forward 'modules/prefixer';
 @forward 'modules/prefixer/pack';
 @forward 'modules/push-auto';
+@forward 'modules/respond-to'; // by Kitty Giraudel (@KittyGiraudel)
 
 @forward 'modules/scroll-behavior';
 @forward 'modules/tab-size';

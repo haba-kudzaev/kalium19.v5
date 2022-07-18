@@ -1,0 +1,16 @@
+@use '../config' as *;
+
+@mixin respond-to($breakpoint) {
+
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+
+	// вывод ошибки при передаче неизвестного брекпоинта
+	@else {
+		@error '⛔ Брейкпоинт "#{$breakpoint}" не найден. Все текущие доступные брейкпоинты: #{map-keys($breakpoints)}.';
+	}
+
+}
