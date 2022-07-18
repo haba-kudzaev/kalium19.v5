@@ -25,4 +25,8 @@
 	@include animation-timing-function(ease-in-out);
 }
 
+@mixin animation-timing-function-linear {
+	@include animation-timing-function(linear);
+}
+
 
