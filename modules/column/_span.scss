@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin column-span($value) {
+	@include prefixer(
+		column-span,
+		$value,
+		$prfxs_column-span
+	);
+}
