@@ -5,3 +5,5 @@
 	bottom  : $bottom;
 	left    : $left;
 }
+
+@mixin position-absolute($args...) { @include position(absolute, $args...); }
