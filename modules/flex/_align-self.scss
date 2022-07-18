@@ -1,0 +1,12 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin align-self($val: auto) {
+
+	@if      $val == flex-start { -ms-flex-item-align: start; }
+	@else if $val == flex-end   { -ms-flex-item-align: end; }
+	@else                       { -ms-flex-item-align: $val; }
+
+	@include prefixer(align-self, $val, $prefixes_align-self);
+
+}

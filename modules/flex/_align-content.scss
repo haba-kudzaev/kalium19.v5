@@ -1,0 +1,11 @@
+@mixin align-content($val: stretch) {
+
+	-webkit-align-content: $val;
+
+	@if      $val == flex-start { -ms-flex-line-pack: start; }
+	@else if $val == flex-end   { -ms-flex-line-pack: end;   }
+	@else                       { -ms-flex-line-pack: $val;  }
+
+	align-content: $val;
+
+}
