@@ -1,0 +1,63 @@
+@use '../config' as *;
+@use '../utils/constains' as *;
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal, $formats: $formats_font-face) {
+
+	@font-face {
+
+		font: {
+			family: quote($font-name);
+			weight: $weight;
+			style: $style;
+		}
+
+		@if (contains($formats, eot)) {
+			/* EOT font type */
+			src: url($path+".eot")
+		}
+
+		@if (contains($formats, 'eot?#iefix')) {
+			/* EOT font type (Embedded OpenType) */
+			src: url($path+".eot?#iefix") format("embedded-opentype");
+		}
+
+		@if (contains($formats, woff)) {
+			/* Woff font */
+			src: url($path+".woff") format("woff");
+		}
+
+		@if (contains($formats, woff2)) {
+			/* Woff2 font */
+			src: url($path+".woff2") format("woff2");
+		}
+
+		@if (contains($formats, ttf)) {
+			/* TrueType font */
+			src: url($path+".ttf") format("truetype");
+		}
+
+		@if (contains($formats, otf)) {
+			/* OpenType Font */
+			src: url($path+".otf") format("opentype");
+		}
+
+		@if (contains($formats, svg)) {
+			/* SVG-font type */
+			src: url($path+".svg##{$font-name}") format("svg");
+		}
+
+	}
+
+}
+
+/// @example SCSS
+/// 	@include font-face(Roboto, "./fonts/Roboto", normal, normal, woff2 woff ttf);
+/// @example CSS
+/// 	@font-face {
+/// 	  font-family: "Roboto";
+/// 	  font-weight: normal;
+/// 	  font-style: normal;
+/// 	  src: url("./assets/Roboto.woff") format("woff");
+/// 	  src: url("./assets/Roboto.woff2") format("woff2");
+/// 	  src: url("./assets/Roboto.ttf") format("truetype");
+/// 	}
