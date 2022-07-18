@@ -1,6 +1,16 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `backdrop-filter()` также является лишь обёрткой над
+/// миксином `prefixer()`, который добавляет CSS-свойству
+/// `backdrop-filter` браузерные префиксы (в нашем случае префиксы
+/// прописаны в переменной `$prfxs_backdrop-filter`).
+///
+/// @name backdrop-filter()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params... - значение свойства `backdrop-filter`
 @mixin backdrop-filter($params...) {
 	@include prefixer(
 		backdrop-filter,
@@ -8,3 +18,8 @@
 		$prfxs_backdrop-filter
 	);
 }
+
+/// Doka: "Свойство `backdrop-filter` позволяет применить фильтры типа размытия,
+/// изменения контраста или обесцвечивания к фоновому изображению,
+/// находящемуся за элементом. Для видимого эффекта сам элемент должен быть
+/// полностью или частично прозрачным."
