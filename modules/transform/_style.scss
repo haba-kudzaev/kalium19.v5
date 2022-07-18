@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin transform-style($params...) {
+	@include prefixer(
+		transform-style,
+		$params,
+		$prfxs_transform-style
+	);
+}
