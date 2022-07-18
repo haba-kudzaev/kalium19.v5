@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin object-fit($type) {
+	@include prefixer(
+		object-fit,
+		$type,
+		$prfxs_object-fit
+	);
+}
