@@ -1,0 +1,8 @@
+@mixin background-gradient-radial($start-color: #FFFFFF, $startPos: 0%, $end-color: #000000, $endPos:100%) {
+	background: -moz-radial-gradient(center, ellipse cover, $start-color $startPos, $end-color $endPos);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$start-color), color-stop($endPos,$end-color));
+	background: -webkit-radial-gradient(center, ellipse cover, $start-color $startPos,$end-color $endPos);
+	background: -o-radial-gradient(center, ellipse cover, $start-color $startPos,$end-color $endPos);
+	background: -ms-radial-gradient(center, ellipse cover, $start-color $startPos,$end-color $endPos);
+	background: radial-gradient(ellipse at center, $start-color $startPos,$end-color $endPos);
+}
