@@ -1,3 +1,13 @@
+/// @name background-gradient-radial()
+/// @group background
+/// @access public
+/// @since 4.0.0
+/// @author Matt Delac
+/// @link https://github.com/matthieua
+/// @param {color} $start-color [#3C3C3C] - начальный цвет
+/// @param {percentage} $startPos [0%] - начальная позиция
+/// @param {color} $end-color [#999999] - конечный цвет
+/// @param {percentage} $endPos [100%] - конечная позиция
 @mixin background-gradient-radial($start-color: #FFFFFF, $startPos: 0%, $end-color: #000000, $endPos:100%) {
 	background: -moz-radial-gradient(center, ellipse cover, $start-color $startPos, $end-color $endPos);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$start-color), color-stop($endPos,$end-color));
@@ -6,3 +16,6 @@
 	background: -ms-radial-gradient(center, ellipse cover, $start-color $startPos,$end-color $endPos);
 	background: radial-gradient(ellipse at center, $start-color $startPos,$end-color $endPos);
 }
+
+/// Doka: "Функция `radial-gradient` используется для задания
+/// фона в виде радиального (кругового, эллиптического) градиента."
