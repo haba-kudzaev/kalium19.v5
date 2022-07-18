@@ -1,10 +1,25 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `animation-name()` также является лишь обёрткой над миксином
+/// `prefixer()`, который добавляет CSS-свойству `animation-name` браузерные
+/// префиксы (в нашем случае префиксы прописаны в переменной `$prfxs_animation-name`).
+///
+/// @name animation-name()
+/// @group animation()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $name - значение свойства `animation-name`
 @mixin animation-name($name) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		animation-name,
-		$name,
-		$prfxs_animation-name
+		animation-name, // 1
+		$name, // 2
+		$prfxs_animation-name // 3
 	);
+
 }
