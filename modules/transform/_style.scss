@@ -12,3 +12,7 @@
 @mixin transform-style-flat {
 	@include transform-style(flat);
 }
+
+@mixin transform-style-3d {
+	@include transform-style(preserve-3d);
+}
