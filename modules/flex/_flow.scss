@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin flex-flow($vals: (row nowrap)) {
+	@include prefixer(
+		flex-flow,
+		$vals,
+		$prfxs_flex-flow
+	);
+}
