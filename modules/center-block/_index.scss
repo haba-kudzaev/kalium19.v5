@@ -1,0 +1,6 @@
+@use '../push-auto' as *;
+
+@mixin center-block {
+	@include push-auto();
+	display: block;
+}
