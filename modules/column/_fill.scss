@@ -8,3 +8,8 @@
 		$prfxs_column-fill
 	);
 }
+
+@mixin column-fill-balance {
+	@include column-fill(balance)
+}
+
