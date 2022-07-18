@@ -1,0 +1,21 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin order($int: 0) {
+
+	@include prefixer(
+		box-ordinal-group,
+		$int + 1,
+		$prfxs_box-ordinal-group,
+		false
+	);
+
+	@include prefixer(
+		order,
+		$int,
+		$prfxs_order
+	);
+
+	-ms-flex-order: $int;
+
+}
