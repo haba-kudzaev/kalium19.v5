@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin box-sizing($model: border-box) {
+	@include prefixer(
+		box-sizing,
+		$model,
+		$prfxs_box-sizing
+	);
+}
