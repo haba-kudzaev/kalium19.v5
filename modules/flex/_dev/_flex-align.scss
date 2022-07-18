@@ -1,0 +1,6 @@
+@use '../../config' as *;
+@use '../../prefixer/' as *;
+
+@mixin flex-align($val) {
+	@include prefixer(flex-align, $val, $prefixes_flex-align, false);
+}

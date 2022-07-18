@@ -1,0 +1,20 @@
+@use '../config' as *;
+@use '../prefixer/' as *;
+@use '_dev/flex-align' as *;
+
+@mixin align-items($val: stretch) {
+
+	@if $val == flex-start {
+		@include prefixer(box-align, start, $prefixes_box-align, false);
+		@include flex-align(start);
+	} @else if $val == flex-end {
+		@include prefixer(box-align, end, $prefixes_box-align, false);
+		@include flex-align(end);
+	} @else {
+		@include prefixer(box-align, $val, $prefixes_box-align, false);
+		@include flex-align($val);
+	}
+
+	@include prefixer(align-items, $val, $prefixes_align-items);
+
+}
