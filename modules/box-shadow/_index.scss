@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin box-shadow($params...) {
+	@include prefixer(
+		box-shadow,
+		$params,
+		$prfxs_box-shadow
+	);
+}
