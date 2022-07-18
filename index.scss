@@ -12,8 +12,9 @@
 @forward 'modules/animation/timing-function';
 @forward 'modules/backdrop-filter';
 @forward 'modules/background/clip';
-@forward 'modules/background/gradient-linear';
-@forward 'modules/background/gradient-radial';
+@forward 'modules/background/gradient'; // by Justin Brazeau
+@forward 'modules/background/gradient-linear'; // by Matt Delac (@matthieua)
+@forward 'modules/background/gradient-radial'; // by Matt Delac (@matthieua)
 @forward 'modules/background/size';
 @forward 'modules/background/opacity';
 @forward 'modules/background/origin';
