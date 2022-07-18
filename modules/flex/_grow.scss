@@ -1,0 +1,21 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin flex-grow($int: 1) {
+
+	@include prefixer(
+		box-flex,
+		$int,
+		$prfxs_box-flex,
+		false
+	);
+
+	@include prefixer(
+		flex-grow,
+		$int,
+		$prfxs_flex-grow
+	);
+
+	-ms-flex: $int;
+
+}

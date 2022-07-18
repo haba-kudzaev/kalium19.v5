@@ -2,5 +2,5 @@
 @use '../../prefixer/' as *;
 
 @mixin flex-align($val) {
-	@include prefixer(flex-align, $val, $prefixes_flex-align, false);
+	@include prefixer(flex-align, $val, $prfxs_flex-align, false);
 }
