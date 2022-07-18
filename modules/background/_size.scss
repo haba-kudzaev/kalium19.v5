@@ -4,7 +4,7 @@
 @mixin background-size($value...) {
 	@include prefixer(
 		background-size,
-		$value...,
+		$value,
 		$prfxs_background-size
 	);
 }

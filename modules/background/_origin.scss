@@ -1,0 +1,10 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+@mixin background-origin($value...) {
+	@include prefixer(
+		background-origin,
+		$value,
+		$prfxs_background-origin
+	);
+}

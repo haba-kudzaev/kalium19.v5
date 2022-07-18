@@ -4,7 +4,7 @@
 @mixin animation-timing-function($value...) {
 	@include prefixer(
 		animation-timing-function,
-		$value...,
+		$value,
 		$prfxs_animation-timing-function
 	);
 }
