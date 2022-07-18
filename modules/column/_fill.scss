@@ -13,3 +13,6 @@
 	@include column-fill(balance)
 }
 
+@mixin column-fill-balance-all {
+	@include column-fill(balance-all)
+}
