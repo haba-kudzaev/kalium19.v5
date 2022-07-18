@@ -5,6 +5,6 @@
 	@include prefixer(
 		backdrop-filter,
 		$params,
-		$prfxs_box-sizing
+		$prfxs_backdrop-filter
 	);
 }
