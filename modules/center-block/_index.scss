@@ -1,5 +1,8 @@
 @use '../push-auto' as *;
 
+/// @name center-block
+/// @access public
+/// @since 4.0.0
 @mixin center-block {
 	@include push-auto();
 	display: block;
