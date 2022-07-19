@@ -1,10 +1,24 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `box-shadow()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_box-shadow`
+///
+/// @name box-shadow
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params - значение свойства `box-shadow`
 @mixin box-shadow($params...) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		box-shadow,
-		$params,
-		$prfxs_box-shadow
+		box-shadow, // 1
+		$params, // 2
+		$prfxs_box-shadow // 3
 	);
+
 }
