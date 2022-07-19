@@ -1,4 +1,4 @@
-<img title="Логотип проекта" src=".github/logo.png" alt="Logo" width="150px" align="right" /> Kalium19 [![Список изменений](https://img.shields.io/github/package-json/version/rx1310/kalium19/main?label=%20)](CHANGELOG.md)
+<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo.png?raw=true" alt="Logo" width="150px" align="right" /> Kalium19 [![Список изменений](https://img.shields.io/github/package-json/version/rx1310/kalium19/main?label=%20)](CHANGELOG.md)
 ======
 :package: Набор утилит, миксинов, расширений на языке препроцессора [SASS](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
