@@ -1,6 +1,12 @@
 @use '../transform' as *;
 @use '../position/' as *;
 
+/// @name centering
+/// @access public
+/// @require {mixin} transform
+/// @require {mixin} position
+/// @since 4.0.0
+/// @param {string} $position
 @mixin centering($position) {
 
 	@if $position == 'vertical' {
