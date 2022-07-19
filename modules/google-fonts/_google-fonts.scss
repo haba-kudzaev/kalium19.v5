@@ -1,15 +1,13 @@
-/// ! ВНИМАНИЕ: Разработчик не поддерживает данный миксин.
-/// ! Касательно поддержки обращайтесь к автору миксина.
+// ! ВНИМАНИЕ: Разработчик не поддерживает данный миксин.
+// ! Касательно поддержки обращайтесь к автору миксина.
 
-/// ? Note!
-/// ? The Latin subset is always included if available and need not be specified.
-/// ? Please note that if a client browser supports unicode-range the subset parameter
-/// ? is ignored; the browser will select from the subsets supported by the font to
-/// ? get what it needs to render the text.
-/// ? Source: https://developers.google.com/fonts/docs/getting_started
+// ? Note!
+// ? The Latin subset is always included if available and need not be specified.
+// ? Please note that if a client browser supports unicode-range the subset parameter
+// ? is ignored; the browser will select from the subsets supported by the font to
+// ? get what it needs to render the text.
+// ? Source: https://developers.google.com/fonts/docs/getting_started
 
-/// * Переменные
-/// @access public
 $google-font-subsets: (
 	'arabic'      : false,
 	'bengali'     : false,
@@ -29,7 +27,6 @@ $google-font-subsets: (
 	'vietnamese'  : false
 ) !default;
 
-/// * Миксин GoogleFont v2
 /// @name google-font
 /// @author jakob-e
 /// @link https://github.com/jakob-e
@@ -42,15 +39,14 @@ $google-font-subsets: (
 
 	@warn '🔶 Миксин "google-fonts" не поддерживается разработчиком Kalium19!';
 
-	/// @param {url} $URL base url
 	$URL: '//fonts.googleapis.com/css?family=';
 
-	/// create global variables
+	// create global variables
 	@if not variable-exists(__gf__combine)       { $__gf__combine: false !global; }
 	@if not variable-exists(__gf__map)           { $__gf__map: () !global; }
 	@if not variable-exists(google-font-subsets) { $google-font-subsets: () !global; }
 
-	/// append italic to weights
+	// append italic to weights
 	@if index($styles, italic) and not str-index($weights + '' ,i){
 
 		$wgt: if(index($styles, normal), $weights, ());
@@ -63,7 +59,7 @@ $google-font-subsets: (
 
 	}
 
-	/// reduce and encode text
+	// reduce and encode text
 	@if $text {
 
 		$list: __gf__list-unique(__gf__str-explode($text));
@@ -80,7 +76,7 @@ $google-font-subsets: (
 
 	}
 
-	/// subsets from config
+	// subsets from config
 	$subset: '';
 
 	@each $set, $enabled in $google-font-subsets {
@@ -93,51 +89,51 @@ $google-font-subsets: (
 
 	@if $name {
 
-		/// replace name whitespaces
+		// replace name whitespaces
 		$name: if(type-of($name) == string, unquote($name), $name);
 		$name: __gf__str-replace(inspect($name),' ','+');
 
 		@if $__gf__combine and not $text {
 
-			/// add weights to combine map
+			// add weights to combine map
 			$wgt: map-get($__gf__map, $name) or ();
 			$wgt: __gf__list-unique(join($wgt, $weights, comma));
 			$__gf__map: map-merge($__gf__map, ($name: $wgt)) !global;
 
 		} @else {
 
-			/// create query
+			// create query
 			$query: '';
 			@each $weight in $weights { $query: $query + if($query != '', ',', '') + $weight; }
 			$query: __gf__str-replace($query, ' ');
 			$query: $name + if(str-length($query) > 0 and $query != '400',  ':'+ $query, '');
 
-			/// create single immport
+			// create single immport
 			@at-root { @import url($URL + $query + if($text, $text, '') + $subset); }
 
 		}
 
 	} @else {
 
-		/// set combine flag
+		// set combine flag
 		$__gf__combine: true  !global;
 
-		/// nested includes
+		// nested includes
 		@content;
 
-		/// convert combine map to query (remove weights if just 400)
+		// convert combine map to query (remove weights if just 400)
 		$query:'';
 		@each $font, $weights in $__gf__map {
 			$query: $query + if($query != '', '|', '') + $font + if(length($weights) == 1 and (nth($weights, 1) == '400'), '', ':' + join((), $weights, comma));
 		}
 
-		/// remove query whitespaces
+		// remove query whitespaces
 		$query: __gf__str-replace($query, ' ');
 
-		/// create combined immport
+		// create combined immport
 		@at-root { @import url($URL + $query + $subset); }
 
-		/// reset combine flag
+		// reset combine flag
 		$__gf__combine: false !global;
 
 	}
@@ -182,7 +178,7 @@ $google-font-subsets: (
 }
 
 /// @example SCSS input:
-/// 	// @include google-font($name, [$weight, $style, $text]);
+/// 	@include google-font($name, [$weight, $style, $text]);
 ///
 /// 	@include google-font(Lato, 300);
 /// 	@include google-font(Open Sans, 400, italic);

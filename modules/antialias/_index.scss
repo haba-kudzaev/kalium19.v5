@@ -2,7 +2,7 @@
 /// разные механизмы сглаживания шрифта. Браузерные варианты свойства
 /// `font-smooth` позволяют управлять сглаживанием шрифта, пока только в macOS.
 ///
-/// @name antialias()
+/// @name antialias
 /// @author gpessia
 /// @link https://github.com/gpessia
 /// @since 4.0.0
@@ -13,7 +13,7 @@
 	font-smoothing: antialiased; // 1
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; // 2
-	
+
 }
 
 /// Doka: "Важно ещё раз акцентировать внимание,

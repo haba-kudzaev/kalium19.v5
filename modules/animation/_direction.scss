@@ -5,7 +5,7 @@
 /// который добавляет CSS-свойству `animation-direction` браузерные префиксы
 /// (в нашем случае префиксы прописаны в переменной `$prfxs_animation-direction`).
 ///
-/// @name animation-direction()
+/// @name animation-direction
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
@@ -27,7 +27,7 @@
 /// Миксин `animation-direction-normal()` использует миксин
 /// `animation-direction()` и передает ему значение `normal`
 ///
-/// @name animation-direction-normal()
+/// @name animation-direction-normal
 /// @group animation()
 /// @access public
 /// @require {mixin} animation-direction
@@ -39,7 +39,7 @@
 /// Миксин `animation-direction-alternate()` использует миксин
 /// `animation-direction()` и передает ему значение `alternate`
 ///
-/// @name animation-direction-alternate()
+/// @name animation-direction-alternate
 /// @group animation()
 /// @access public
 /// @require {mixin} animation-direction
@@ -51,7 +51,7 @@
 /// Миксин `animation-direction-reverse()` использует миксин
 /// `animation-direction()` и передает ему значение `reverse`
 ///
-/// @name animation-direction-reverse()
+/// @name animation-direction-reverse
 /// @group animation()
 /// @access public
 /// @require {mixin} animation-direction
@@ -63,7 +63,7 @@
 /// Миксин `animation-direction-alternate-reverse()` использует миксин
 /// `animation-direction()` и передает ему значение `alternate-reverse`
 ///
-/// @name animation-direction-alternate-reverse()
+/// @name animation-direction-alternate-reverse
 /// @group animation()
 /// @access public
 /// @require {mixin} animation-direction
