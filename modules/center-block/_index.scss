@@ -2,6 +2,7 @@
 
 /// @name center-block
 /// @access public
+/// @require {mixin} push-auto
 /// @since 4.0.0
 @mixin center-block {
 	@include push-auto();
