@@ -1,0 +1,194 @@
+## v4.0.0-prerelease
+- [`83827c3`](https://github.com/rx1310/kalium19/commit/83827c35df78354b34001c05de35089c63ab0f55) [@rx1310](https://github.com/rx1310): релиз v4.0.0 (Pre-Release)
+- [`ae8a118`](https://github.com/rx1310/kalium19/commit/ae8a11851d8e9456d28e2dd7f994edde85ad230c) [@rx1310](https://github.com/rx1310): небольшие правки в README.md
+- [`dfeffb0`](https://github.com/rx1310/kalium19/commit/dfeffb0671cdd84d7f6f3426e609400a22306ecd) [@rx1310](https://github.com/rx1310): добавляет файл README.md
+- [`e82be65`](https://github.com/rx1310/kalium19/commit/e82be65fb141d6ea568a46b116be30959b4d7377) [@rx1310](https://github.com/rx1310): удаляет файл .npmrc
+- [`fbf0fa4`](https://github.com/rx1310/kalium19/commit/fbf0fa43808a97807f29b0e1509c1ae53b89fea7) [@rx1310](https://github.com/rx1310): обновляет ссылки
+- [`77bad00`](https://github.com/rx1310/kalium19/commit/77bad00dd0f05baaa248dbb05af98600bc3936a9) [@rx1310](https://github.com/rx1310): доработки экшенов
+- [`6e2e9b0`](https://github.com/rx1310/kalium19/commit/6e2e9b05aeacf389b3976cfa443ba16cb4134d9a) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`f1d8080`](https://github.com/rx1310/kalium19/commit/f1d8080b29d2d751c7ba3bac0a62a39294a1d2fa) [@rx1310](https://github.com/rx1310): добавляет @github Action для публикации на GitHub Packages
+- [`92791a1`](https://github.com/rx1310/kalium19/commit/92791a1eb0ba0c27dcc5c1f5ffa4e59004671e94) [@rx1310](https://github.com/rx1310): добавляет @github Action для публикации на npm
+- [`a05e847`](https://github.com/rx1310/kalium19/commit/a05e847845a183a47cae886369a3b5fd62559393) [@rx1310](https://github.com/rx1310): меняет репозиторий для публикации проекта на @github
+- [`211a0dc`](https://github.com/rx1310/kalium19/commit/211a0dc24093446f317120ad71f810e37d2af427) [@rx1310](https://github.com/rx1310): небольшие правки (x3)
+- [`db3e16c`](https://github.com/rx1310/kalium19/commit/db3e16cc6c5e37bf503cd59293913ff9710e85c8) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`dd003be`](https://github.com/rx1310/kalium19/commit/dd003be5fd666dbbfa15fc3e44908619bc73819a) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`114d267`](https://github.com/rx1310/kalium19/commit/114d2672552a0f81cb8904ef6f18151c223a0930) [@rx1310](https://github.com/rx1310): добавляет Action для публикации в npm
+- [`b5bc1aa`](https://github.com/rx1310/kalium19/commit/b5bc1aa52b46dda336ccc0fa1741e1408bd1e11b) [@rx1310](https://github.com/rx1310): добавляет файл .npmrc
+- [`21dbdb7`](https://github.com/rx1310/kalium19/commit/21dbdb7f99cb907dcc0bdd67a2017c573ba27ca1) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду BEM
+- [`abd3fca`](https://github.com/rx1310/kalium19/commit/abd3fca67a2e98cfacfad8dba2ccdf59f27275ec) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-size()`
+- [`69af196`](https://github.com/rx1310/kalium19/commit/69af196cbf76aa1bb760d3c4d53a4defd1c4ff1d) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`39ed7d5`](https://github.com/rx1310/kalium19/commit/39ed7d59ebbd44c7715d2eb023f7a94811353f16) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-origin()`
+- [`97a27b4`](https://github.com/rx1310/kalium19/commit/97a27b46135bf6f7d00594426c9ee6b9214cd3fd) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-opacity()`
+- [`10b1ba4`](https://github.com/rx1310/kalium19/commit/10b1ba4657ff560ccc631dd87a7d88b2f338d5e3) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-gradient()`
+- [`6cfe76b`](https://github.com/rx1310/kalium19/commit/6cfe76b5a95045aef8b1810ebaa8635c37190ea7) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-gradient-radial()`
+- [`14c2bc5`](https://github.com/rx1310/kalium19/commit/14c2bc51d69193b7b6f9babcdce8661a2f05cc99) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-gradient-linear()`
+- [`5a3191d`](https://github.com/rx1310/kalium19/commit/5a3191d5c9203b8ab048c0b86e77f91c52ef72cd) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `background-clip()`
+- [`ed987d1`](https://github.com/rx1310/kalium19/commit/ed987d1967639c7562205abefb91feced09e47c5) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `backdrop-filter()`
+- [`2d2c467`](https://github.com/rx1310/kalium19/commit/2d2c467b062531b9c2c556027ec0b8374fce5338) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `antialias()`
+- [`a54ace0`](https://github.com/rx1310/kalium19/commit/a54ace005806c2bfaa1a4fdf2b2dc0ea9e70a112) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-delay()`
+- [`97237ad`](https://github.com/rx1310/kalium19/commit/97237ad4cf87ed96022e2beca44b0fade566ebf4) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-direction()`
+- [`8ad6a7d`](https://github.com/rx1310/kalium19/commit/8ad6a7d539c722281980db913a228d5d16770546) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-duration()`
+- [`f8c4433`](https://github.com/rx1310/kalium19/commit/f8c443364fa13d1ef75a835b45e2d8809fe93a5f) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation()`
+- [`05cf11a`](https://github.com/rx1310/kalium19/commit/05cf11a68318b018eed5179bdf507a5200802df8) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-iteration-count()`
+- [`873f435`](https://github.com/rx1310/kalium19/commit/873f4350adaf05becf3086456ff5fd015e131ee4) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-name()`
+- [`394086b`](https://github.com/rx1310/kalium19/commit/394086bf55909c94dbf3b8ff0f4a745e65d95c44) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-play-state()`
+- [`84d1421`](https://github.com/rx1310/kalium19/commit/84d1421b381308a28c0d55014fa7812113fb714e) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `animation-timing-function()`
+- [`1c70c9f`](https://github.com/rx1310/kalium19/commit/1c70c9ffd29afc7f93acafd1a09a28ce2cb9399c) [@rx1310](https://github.com/rx1310): добавляет настройки расширению Better Comments в VS Code
+- [`cf68bc9`](https://github.com/rx1310/kalium19/commit/cf68bc981962a7d8ceec40a5f0f88b2eeb38515f) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`c76049a`](https://github.com/rx1310/kalium19/commit/c76049a509d49e63905ad6a6825c93d2855f30b8) [@rx1310](https://github.com/rx1310): добавляет доку по `animation()`
+- [`6887ae3`](https://github.com/rx1310/kalium19/commit/6887ae3478555d04daea14f551bc3aaa778284df) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`b4ad9da`](https://github.com/rx1310/kalium19/commit/b4ad9dae3941ccec97a42501433e5de0d79dba4b) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`1ea7b05`](https://github.com/rx1310/kalium19/commit/1ea7b05b482ba91cc018e1e6dab79efdda39fb52) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`be0d211`](https://github.com/rx1310/kalium19/commit/be0d2115e39243f8b5d3d188e70dae08c3df0348) [@rx1310](https://github.com/rx1310): переносит палитру цветов из основного модуля в *extra*
+- [`6b84ded`](https://github.com/rx1310/kalium19/commit/6b84ded2fff538e8bebc3f1baf21cbfa6ef5c9d9) [@rx1310](https://github.com/rx1310): добавляет миксины `props()` и `props-apply()`
+- [`676df8c`](https://github.com/rx1310/kalium19/commit/676df8c5f131164f59ce9f605487fb601b6e55bb) [@rx1310](https://github.com/rx1310): добавляет миксин `wh()`
+- [`ecfe52e`](https://github.com/rx1310/kalium19/commit/ecfe52ee6088f55560e7841844ec052ae30da6cb) [@rx1310](https://github.com/rx1310): добавляет миксин `visually-hidden()`
+- [`d96a953`](https://github.com/rx1310/kalium19/commit/d96a95336becc6f6118e8a142064fc0c5a5b9ee1) [@rx1310](https://github.com/rx1310): добавляет миксин `text-shorten()`
+- [`d4204eb`](https://github.com/rx1310/kalium19/commit/d4204eb89932d954034772314dda37f6d17174b9) [@rx1310](https://github.com/rx1310): добавляет миксин `selection()` от @gpessial
+- [`11ef5f1`](https://github.com/rx1310/kalium19/commit/11ef5f1a6e3384cc250f4f049713d633f27dbcbb) [@rx1310](https://github.com/rx1310): добавляет миксин `respond-to()` от @KittyGiraudel
+- [`6da855e`](https://github.com/rx1310/kalium19/commit/6da855e288f5a3659da7347704c402073a0fc0c0) [@rx1310](https://github.com/rx1310): добавляет миксин `placeholder()` от cimmanon
+- [`38cb2cf`](https://github.com/rx1310/kalium19/commit/38cb2cfc95593fec433791722ec5ce89818acd42) [@rx1310](https://github.com/rx1310): добавляет миксин `mquery-r()` от @gillesbertaux
+- [`a9be98d`](https://github.com/rx1310/kalium19/commit/a9be98dc1ab86a56da31ffff5f22a7a6c4e4f695) [@rx1310](https://github.com/rx1310): добавляет миксин `mquery()` от @gillesbertaux
+- [`dccd1d0`](https://github.com/rx1310/kalium19/commit/dccd1d02bb42b8c75c4db3f3d1d5ff9a2a83a143) [@rx1310](https://github.com/rx1310): добавляет миксин `keyframes()`
+- [`b9696f4`](https://github.com/rx1310/kalium19/commit/b9696f41e7dfcb58f4fb02b8af1c2e8c0e3f1fcd) [@rx1310](https://github.com/rx1310): добавляет миксин `image-2x()` от Nathan da Silva
+- [`08a0c1b`](https://github.com/rx1310/kalium19/commit/08a0c1b7192a8d024bac57529f1ab4642df7df44) [@rx1310](https://github.com/rx1310): добавляет миксин `hide-text()`
+- [`df8d6da`](https://github.com/rx1310/kalium19/commit/df8d6da78c4912c8d5904138e920448591296c83) [@rx1310](https://github.com/rx1310): добавляет миксин `hardware()` от @gpessia
+- [`8dba52e`](https://github.com/rx1310/kalium19/commit/8dba52e50ea061a90b8cc2ac11a67c1d7d622852) [@rx1310](https://github.com/rx1310): добавляет миксин `google-fonts()` от @jakob-e
+- [`fb8048c`](https://github.com/rx1310/kalium19/commit/fb8048c5e225af9f20d5ea6c6f28974b60264e49) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`f0ba50d`](https://github.com/rx1310/kalium19/commit/f0ba50dbcb3972b07124d0b05801f9309554e57f) [@rx1310](https://github.com/rx1310): добавляет миксин `font-face()`
+- [`b824e81`](https://github.com/rx1310/kalium19/commit/b824e8147a0d16980afb4f61b3dfd832f12ff2a2) [@rx1310](https://github.com/rx1310): добавляет миксин `flip()` от @matthieua
+- [`5577f52`](https://github.com/rx1310/kalium19/commit/5577f52fbf3029b63cf11245320ef909bf8eebfa) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`6f8c09a`](https://github.com/rx1310/kalium19/commit/6f8c09a51d1ec3b656b0abebdcf03ead8d870d83) [@rx1310](https://github.com/rx1310): добавляет доку к палитре цветов от @google
+- [`c9240de`](https://github.com/rx1310/kalium19/commit/c9240deccab530733253550b7e430f6fa5b9be67) [@rx1310](https://github.com/rx1310): добавляет палитру Yellow от @google
+- [`e3e7b0b`](https://github.com/rx1310/kalium19/commit/e3e7b0b4cbebdcd89fe1be54c57a1e3b129760a3) [@rx1310](https://github.com/rx1310): добавляет палитру Teal от @google
+- [`8d03ec5`](https://github.com/rx1310/kalium19/commit/8d03ec5bfc90ac3446ac58ed3b70738b4481c8fa) [@rx1310](https://github.com/rx1310): добавляет палитру Red от @google
+- [`8cc40ed`](https://github.com/rx1310/kalium19/commit/8cc40ed11c6605bbfaa78a8f8bf6f76f5a04995a) [@rx1310](https://github.com/rx1310): добавляет палитру Purple от @google
+- [`684b607`](https://github.com/rx1310/kalium19/commit/684b6070fea3f2a20354fa090d155485314864b6) [@rx1310](https://github.com/rx1310): добавляет палитру Pink от @google
+- [`2dc53e5`](https://github.com/rx1310/kalium19/commit/2dc53e576129f756b1a50b66e86c4e7cd86284e1) [@rx1310](https://github.com/rx1310): добавляет палитру Orange от @google
+- [`79d3e8c`](https://github.com/rx1310/kalium19/commit/79d3e8c42659d04ff4d3a5388d7538cbb7f4dd21) [@rx1310](https://github.com/rx1310): добавляет палитру Lime от @google
+- [`52f8a7e`](https://github.com/rx1310/kalium19/commit/52f8a7eb9cc8314001d2f142cd8317fe6928469f) [@rx1310](https://github.com/rx1310): добавляет палитру Light Green от @google
+- [`7792664`](https://github.com/rx1310/kalium19/commit/7792664ecc11f96e18253eaca9963d270856ea81) [@rx1310](https://github.com/rx1310): добавляет палитру Light Blue от @google
+- [`211f552`](https://github.com/rx1310/kalium19/commit/211f5528c3b6c09df0c018bf13ba1a70a8aac9d1) [@rx1310](https://github.com/rx1310): добавляет палитру Indigo от @google
+- [`d71a82b`](https://github.com/rx1310/kalium19/commit/d71a82b0954d9f52d5e7d42d9eed2ed74c016482) [@rx1310](https://github.com/rx1310): добавляет палитру Grey от @google
+- [`fe595c4`](https://github.com/rx1310/kalium19/commit/fe595c41147ca4ae46d93cf57e5405a1853cf5bb) [@rx1310](https://github.com/rx1310): добавляет палитру Green от @google
+- [`4c91fa4`](https://github.com/rx1310/kalium19/commit/4c91fa4e04a83286e6434b13b3cda3bd50f33953) [@rx1310](https://github.com/rx1310): добавляет палитру Deep Purple от @google
+- [`0faadd9`](https://github.com/rx1310/kalium19/commit/0faadd94c8d9cf4d8dc471310c68d98a7c45a1bb) [@rx1310](https://github.com/rx1310): добавляет палитру Deep Orange от @google
+- [`571a849`](https://github.com/rx1310/kalium19/commit/571a8495f94d3b93f4934e970902bca1529d0403) [@rx1310](https://github.com/rx1310): добавляет палитру Cyan от @google
+- [`ccaa43b`](https://github.com/rx1310/kalium19/commit/ccaa43b87d8bbf9b8cff30ccd2799ae78307bec1) [@rx1310](https://github.com/rx1310): добавляет палитру Brown от @google
+- [`9081914`](https://github.com/rx1310/kalium19/commit/9081914049607e80d4d71758acee99e625ef5c08) [@rx1310](https://github.com/rx1310): добавляет палитру Blue от @google
+- [`b189356`](https://github.com/rx1310/kalium19/commit/b1893569e9aef4651c4f42bfdd19ec876e0cf287) [@rx1310](https://github.com/rx1310): добавляет палитру Blue Grey от @google
+- [`f550293`](https://github.com/rx1310/kalium19/commit/f5502931656bffcb80e190621ee69f5990d2928e) [@rx1310](https://github.com/rx1310): добавляет палитру Amber от @google
+- [`0648e76`](https://github.com/rx1310/kalium19/commit/0648e7634568a89d5d6d0ec432a8a42b6101490c) [@rx1310](https://github.com/rx1310): добавляет миксин `clearfix()`
+- [`04b33cf`](https://github.com/rx1310/kalium19/commit/04b33cf6f2c3e7532e01da951d2bbcff001b8815) [@rx1310](https://github.com/rx1310): добавляет миксин `centering()`
+- [`8e0ed4c`](https://github.com/rx1310/kalium19/commit/8e0ed4c23a65d4e852c663fc069c704214e0d8ad) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`26ceeac`](https://github.com/rx1310/kalium19/commit/26ceeac6d77e2f3309f727a9e26ff6e6f8f6345a) [@rx1310](https://github.com/rx1310): добавляет миксин `position-fixed()` от @KittyGiraudel
+- [`83fe875`](https://github.com/rx1310/kalium19/commit/83fe875939f2e63de021b3105e35090d823213ac) [@rx1310](https://github.com/rx1310): добавляет миксин `position-relative()` от @KittyGiraudel
+- [`3b4692f`](https://github.com/rx1310/kalium19/commit/3b4692f322a32373d8afa2122e756fb8eb59cfc9) [@rx1310](https://github.com/rx1310): добавляет миксин `position-absolute()` от @KittyGiraudel
+- [`b3946e1`](https://github.com/rx1310/kalium19/commit/b3946e1ba7df7378a078151f49980ecd7e14ad04) [@rx1310](https://github.com/rx1310): добавляет миксин `position()` от @KittyGiraudel
+- [`37662f4`](https://github.com/rx1310/kalium19/commit/37662f4b659ac762b179def435cbb1cde6ac24cd) [@rx1310](https://github.com/rx1310): добавляет миксин `center-block()`
+- [`9dff38e`](https://github.com/rx1310/kalium19/commit/9dff38ef8c4682cf79ce13b397570f2c659dab7c) [@rx1310](https://github.com/rx1310): добавляет миксин `push-auto()`
+- [`f216e66`](https://github.com/rx1310/kalium19/commit/f216e66b77eb3062a9b6f1c03b1f70d206b7d335) [@rx1310](https://github.com/rx1310): добавляет миксин `antialias()`  от @gpessia
+- [`942ebe4`](https://github.com/rx1310/kalium19/commit/942ebe46599e7c3f9cc85cf13a70c8f4e23e2b46) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-wrap()`  #5
+- [`1a44b25`](https://github.com/rx1310/kalium19/commit/1a44b255452f3ed3535fde552ea3ebea949eba12) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-shrink()`  #5
+- [`37b68e1`](https://github.com/rx1310/kalium19/commit/37b68e1452376975e1b5957fc95947eacc3c4db7) [@rx1310](https://github.com/rx1310): добавляет миксин `order()`  #5
+- [`4971e9e`](https://github.com/rx1310/kalium19/commit/4971e9e3d9edffe95878f142806c0c815158df61) [@rx1310](https://github.com/rx1310): добавляет миксин `justify-content()`  #5
+- [`656a028`](https://github.com/rx1310/kalium19/commit/656a028bd708f9c5ddd4a8a9e76ec0bd66c0fe1e) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-grow()`  #5
+- [`66d3c53`](https://github.com/rx1310/kalium19/commit/66d3c5318b32d5a735cda95faa25ec2b19072894) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-flow()`  #5
+- [`dfb705f`](https://github.com/rx1310/kalium19/commit/dfb705fca8b0ef3f309b95ea9c86ddfa5ddb141b) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-direction()`  #5
+- [`f3dd304`](https://github.com/rx1310/kalium19/commit/f3dd3047269705107ab4ecd2463e8e0a7561b040) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`e31a96c`](https://github.com/rx1310/kalium19/commit/e31a96c58d06c0e01ee539e68b936b400ce825e9) [@rx1310](https://github.com/rx1310): добавляет миксин `flex-basis()`  #5
+- [`2fc77cc`](https://github.com/rx1310/kalium19/commit/2fc77cc08806d55b20e83acdc11e999c5c4f38b6) [@rx1310](https://github.com/rx1310): добавляет миксин `align-self()`  #5
+- [`d5a520b`](https://github.com/rx1310/kalium19/commit/d5a520bc0997bb46251247ac66564ce83a994fdd) [@rx1310](https://github.com/rx1310): добавляет миксин `align-content()`  #5
+- [`d0df70b`](https://github.com/rx1310/kalium19/commit/d0df70b133979034e22a41c58be494f8b939e932) [@rx1310](https://github.com/rx1310): добавляет миксин `align-items()`  #5
+- [`e2b3202`](https://github.com/rx1310/kalium19/commit/e2b3202075eafb04f58ea291627cdfdb6836e6ae) [@rx1310](https://github.com/rx1310): добавляет миксин `flex()`  #5
+- [`9b24258`](https://github.com/rx1310/kalium19/commit/9b24258719edd3259d3be6102db4f219e5d2d5a5) [@rx1310](https://github.com/rx1310): добавляет миксин `box-shadow()`  #6
+- [`3e6ae9f`](https://github.com/rx1310/kalium19/commit/3e6ae9f710598e6729ad489b7f7f2a602e6ad444) [@rx1310](https://github.com/rx1310): добавляет миксин `background-gradient()` от Justin Brazeau  #7
+- [`cca0d06`](https://github.com/rx1310/kalium19/commit/cca0d0667578345a101610c01f21604e62176c5e) [@rx1310](https://github.com/rx1310): добавляет миксин `background-gradient-linear()` от @matthieua  #7
+- [`824e396`](https://github.com/rx1310/kalium19/commit/824e396b07000ee95028d315283a28781d384bf3) [@rx1310](https://github.com/rx1310): добавляет миксин `background-gradient-radial()` от @matthieua  #7
+- [`e688240`](https://github.com/rx1310/kalium19/commit/e68824085b98142f449c8e8af945e5eb0a6b0adf) [@rx1310](https://github.com/rx1310): дорабатывает миксин `background-size()`
+- [`0f2df83`](https://github.com/rx1310/kalium19/commit/0f2df8302f928c13f95204b271b83cbb6bdb49df) [@rx1310](https://github.com/rx1310): добавляет миксин `background-opacity()` #7
+- [`40cd909`](https://github.com/rx1310/kalium19/commit/40cd909607292f3bc9e81cabb06e3eca3315895f) [@rx1310](https://github.com/rx1310): добавляет миксин `background-origin()` #7
+- [`4f7f0b5`](https://github.com/rx1310/kalium19/commit/4f7f0b5bc9326da3ac473096eb0c5e4449e6cf21) [@rx1310](https://github.com/rx1310): добавляет миксин `background-size()` #7
+- [`fe93f34`](https://github.com/rx1310/kalium19/commit/fe93f3406c08eb8b1fc09c0b34aa9b3716ab6dee) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`122c044`](https://github.com/rx1310/kalium19/commit/122c044040893b1418c86bf5d787055b0c15479f) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-step-end()` #8
+- [`93b5b8b`](https://github.com/rx1310/kalium19/commit/93b5b8b3b41f16a87223f3caa8dbc91b4444d875) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-step-start()` #8
+- [`c94443f`](https://github.com/rx1310/kalium19/commit/c94443fdf1b5fd515f079f4071560400ee08418f) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-linear()` #8
+- [`d548265`](https://github.com/rx1310/kalium19/commit/d5482659617d5d43435c89013ba3a99d5849bc8c) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-ease-in-out()` #8
+- [`2ff0714`](https://github.com/rx1310/kalium19/commit/2ff071460f39d930963039cd5354a7275d7768b5) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-ease-out()` #8
+- [`e5835e5`](https://github.com/rx1310/kalium19/commit/e5835e51aa563814bcd099d17204837ec03931af) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-ease-in()` #8
+- [`69996e4`](https://github.com/rx1310/kalium19/commit/69996e45d01682abd0d2adffd65bc3535e9ea7af) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function-ease()` #8
+- [`922be6d`](https://github.com/rx1310/kalium19/commit/922be6dba36daeb4005d40114847d132bece7d10) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-timing-function()` #8
+- [`683e8d6`](https://github.com/rx1310/kalium19/commit/683e8d6e63e996925360b3a7d49987317dd113c8) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-name()` #8
+- [`8e2343c`](https://github.com/rx1310/kalium19/commit/8e2343cf97fe47b3bc7819824a528557bcd3a19b) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-iteration-count()` #8
+- [`52de470`](https://github.com/rx1310/kalium19/commit/52de470d568f63458825cdd15bf630bf2c2c226c) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-duration()` #8
+- [`5440496`](https://github.com/rx1310/kalium19/commit/5440496b113ec3621b68b17f862f3258b6251e73) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-direction-alternate-reverse()` #8
+- [`8546e96`](https://github.com/rx1310/kalium19/commit/8546e96e3611fb08240536a6cf248194e6ac1e83) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-direction-reverse()` #8
+- [`f16f449`](https://github.com/rx1310/kalium19/commit/f16f44947c6a8f2995d329515dcf4afe394a55b6) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-direction-alternate()` #8
+- [`c67f5ee`](https://github.com/rx1310/kalium19/commit/c67f5eed2b48470871bcf07d2e2633c69afadea0) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-direction-normal()` #8
+- [`e1befd6`](https://github.com/rx1310/kalium19/commit/e1befd60c521a46690c2974dce032f9b14998e9d) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-direction()` #8
+- [`78bd203`](https://github.com/rx1310/kalium19/commit/78bd203e228bf4f9e58d8e6ea687b9ff94bc43e6) [@rx1310](https://github.com/rx1310): добавляет миксин `animation-delay()` #8
+- [`f3fdafd`](https://github.com/rx1310/kalium19/commit/f3fdafdff31a7054d96eb7426d65a946b80ebfbb) [@rx1310](https://github.com/rx1310): добавляет миксин `animation()` #8
+- [`0408cba`](https://github.com/rx1310/kalium19/commit/0408cbab5fbab2fcde985b837302a0a320385fb4) [@rx1310](https://github.com/rx1310): Небольшие правки
+- [`49b448f`](https://github.com/rx1310/kalium19/commit/49b448fdd2b7d05fbffabe927ca48829c2b2b344) [@rx1310](https://github.com/rx1310): добавляет миксин `backdrop-filter()` #9
+- [`a5ced08`](https://github.com/rx1310/kalium19/commit/a5ced0813aa8f16800bbe7f9bf894fd18f1e4b06) [@rx1310](https://github.com/rx1310): добавляет миксин `box-sizing()` #10
+- [`80592be`](https://github.com/rx1310/kalium19/commit/80592be44da7ba370a1342263a8162c16e3e187e) [@rx1310](https://github.com/rx1310): добавляет миксин `columns()` #11
+- [`9cba92f`](https://github.com/rx1310/kalium19/commit/9cba92f1fc833a777c7b5f09087f884eab2f9408) [@rx1310](https://github.com/rx1310): добавляет миксин `column-width()` #11
+- [`be0b354`](https://github.com/rx1310/kalium19/commit/be0b3545d1a4684710d37ddc91093c7828b0c2d7) [@rx1310](https://github.com/rx1310): добавляет миксин `column-span()` #11
+- [`4d7a64c`](https://github.com/rx1310/kalium19/commit/4d7a64c15e25f76838576fb5eb2583b5eeaae0bb) [@rx1310](https://github.com/rx1310): добавляет миксин `column-rule-width()` #11
+- [`8f1273c`](https://github.com/rx1310/kalium19/commit/8f1273c9511eb1cf2f79f55f649dc12a6e637f5c) [@rx1310](https://github.com/rx1310): добавляет миксин `column-rule-style()` #11
+- [`1c0c0f6`](https://github.com/rx1310/kalium19/commit/1c0c0f61973cc44c7289c752079e26d899ef5c7c) [@rx1310](https://github.com/rx1310): добавляет миксин `column-rule-color()` #11
+- [`ddfb223`](https://github.com/rx1310/kalium19/commit/ddfb2237968b5510a770ea362c04bc9ea57a101a) [@rx1310](https://github.com/rx1310): добавляет миксин `column-rule()` #11
+- [`8c1fa99`](https://github.com/rx1310/kalium19/commit/8c1fa9906a877f78f9c2d618873fde1ad72e53f5) [@rx1310](https://github.com/rx1310): добавляет миксин `column-gap()` #11
+- [`a1f357e`](https://github.com/rx1310/kalium19/commit/a1f357e2af798b660eaf6ceff7ebe05e91513750) [@rx1310](https://github.com/rx1310): добавляет миксин `column-fill-balance-all()` #11
+- [`5eafbb4`](https://github.com/rx1310/kalium19/commit/5eafbb46e7e44343b0d1ba0eef3ae67b752a549c) [@rx1310](https://github.com/rx1310): добавляет миксин `column-fill-balance()` #11
+- [`282dc2d`](https://github.com/rx1310/kalium19/commit/282dc2d5e67e84c4c0b6c99dcb81e05ad559fea2) [@rx1310](https://github.com/rx1310): добавляет миксин `column-fill()` #11
+- [`1a0130f`](https://github.com/rx1310/kalium19/commit/1a0130fdc7a520bc9479f8bba72fbb98035df508) [@rx1310](https://github.com/rx1310): добавляет миксин `column-count()` #11
+- [`a0ba3af`](https://github.com/rx1310/kalium19/commit/a0ba3afdbc5115efeb9713f0fa5e008db69f3536) [@rx1310](https://github.com/rx1310): добавляет миксин `object-fit-cover()`
+- [`e0c54b4`](https://github.com/rx1310/kalium19/commit/e0c54b45fedf13bc9a8f23351937255da1bbfde3) [@rx1310](https://github.com/rx1310): добавляет миксин `object-fit-contain()`
+- [`a80f0cb`](https://github.com/rx1310/kalium19/commit/a80f0cba12d0d76225a08845c5e7e69222a13cfe) [@rx1310](https://github.com/rx1310): добавляет миксин `object-fit-fill()`
+- [`13b38ab`](https://github.com/rx1310/kalium19/commit/13b38ab07000c7985848e7d9c67b108293621bbf) [@rx1310](https://github.com/rx1310): добавляет миксин `object-fit()` #12
+- [`e9ecea8`](https://github.com/rx1310/kalium19/commit/e9ecea84e6391b873ab40366483fd88ed639eaf8) [@rx1310](https://github.com/rx1310): добавляет миксин `opacity()` #13
+- [`407b888`](https://github.com/rx1310/kalium19/commit/407b888ffb60e97139eec7a301a2423dd64aef80) [@rx1310](https://github.com/rx1310): добавляет миксин `scroll-behavior()` #14
+- [`b1b00ca`](https://github.com/rx1310/kalium19/commit/b1b00ca8f71c15662926c9e865847ad2d4160b92) [@rx1310](https://github.com/rx1310): дорабатывает миксин `transform-origin()`
+- [`6cc3d48`](https://github.com/rx1310/kalium19/commit/6cc3d48d3ab53b060aeabb72a36e01eef0ef457c) [@rx1310](https://github.com/rx1310): добавляет миксин `transform-style-3d()`
+- [`8a8ac17`](https://github.com/rx1310/kalium19/commit/8a8ac1795e190520e63d07ac90cf18c4b2be339a) [@rx1310](https://github.com/rx1310): добавляет миксин `transform-style-flat()`
+- [`6bb498e`](https://github.com/rx1310/kalium19/commit/6bb498ef7c20a2b49276828457703dbd06ae635e) [@rx1310](https://github.com/rx1310): добавляет миксин `tab-size()` #15
+- [`1355f01`](https://github.com/rx1310/kalium19/commit/1355f019036d773bb4838671c652481ceb3f15d5) [@rx1310](https://github.com/rx1310): добавляет миксин `transform-style()` #16
+- [`590d489`](https://github.com/rx1310/kalium19/commit/590d48933672783647ad4572511c1a46a7949a3e) [@rx1310](https://github.com/rx1310): добавляет миксин `transform-origin()` #16
+- [`24b869d`](https://github.com/rx1310/kalium19/commit/24b869dd75a25f0d786c58c7029fff915b079ee1) [@rx1310](https://github.com/rx1310): добавляет миксин `transform()` #16
+- [`7eb8b66`](https://github.com/rx1310/kalium19/commit/7eb8b66ef7ba5daa9a1987dd403c4761684431e9) [@rx1310](https://github.com/rx1310): добавляет миксин `transition-timing-function()` #17
+- [`7f017ed`](https://github.com/rx1310/kalium19/commit/7f017ed3e8eedd1f997f5c6d7d233542e058d6b2) [@rx1310](https://github.com/rx1310): добавляет миксин `transition-property()` #17
+- [`c32f7a4`](https://github.com/rx1310/kalium19/commit/c32f7a4e2f4d70fdd9d120a372e2133c99624d90) [@rx1310](https://github.com/rx1310): добавляет миксин `transition-duration()` #17
+- [`0c466e9`](https://github.com/rx1310/kalium19/commit/0c466e9f3fc17a9fb82276be3e51610acfab84a6) [@rx1310](https://github.com/rx1310): добавляет миксин `transition-delay()` #17
+- [`c0c3817`](https://github.com/rx1310/kalium19/commit/c0c3817f9d3b3e1590d67ddcc9ba51c8bacb3d2c) [@rx1310](https://github.com/rx1310): добавляет миксин `transition()` #17
+- [`f262dc9`](https://github.com/rx1310/kalium19/commit/f262dc9f15907087dcce413bfe7ecfe7ac46231e) [@rx1310](https://github.com/rx1310): добавляет миксин `user-select()` и `unselect()` #18
+- [`8eb44f5`](https://github.com/rx1310/kalium19/commit/8eb44f523d36a3b917d488f5356c78d4b5543ffe) [@rx1310](https://github.com/rx1310): небольшие правки #19
+- [`a812778`](https://github.com/rx1310/kalium19/commit/a812778cb9c800df7c82d62d90ffcbb2bc825737) [@rx1310](https://github.com/rx1310): добавляет миксины BEM от Marcmintel
+- [`f5896d3`](https://github.com/rx1310/kalium19/commit/f5896d3cfafdbe72ae48f3e649004af3240da330) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`1598d1d`](https://github.com/rx1310/kalium19/commit/1598d1d93f63317f06fe6c70ff65827bfc7387e0) [@rx1310](https://github.com/rx1310): добавляет все миксины `border-radius()` из v3 #2
+- [`163019b`](https://github.com/rx1310/kalium19/commit/163019b2dd40f3f38f5e1f23cf05e276e51a14ff) [@rx1310](https://github.com/rx1310): добавляет миксин `border-radius()` #2
+- [`68be84d`](https://github.com/rx1310/kalium19/commit/68be84daf0466e264fec2d0edd82c0409edf6de0) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`cb00661`](https://github.com/rx1310/kalium19/commit/cb00661f3ce1da1fbeb67b1f13c3ca09e8c63670) [@rx1310](https://github.com/rx1310): добавляет параметр `$saveInitial()` в миксины `prefixer-*`
+- [`e6dd2c0`](https://github.com/rx1310/kalium19/commit/e6dd2c05f610265201bde0643820b55cdde00964) [@rx1310](https://github.com/rx1310): добавляет миксин `prefixer-pack()` #1
+- [`406e5bb`](https://github.com/rx1310/kalium19/commit/406e5bb195d4ffb8a9b0964d3ef2a6dfa928ff28) [@rx1310](https://github.com/rx1310): добавляет миксин `prefixes()`
+- [`7e86144`](https://github.com/rx1310/kalium19/commit/7e861446155a844a4edca960f0dc18b03f9fa1cf) [@rx1310](https://github.com/rx1310): добавляет в экспорт утилиты из посл. 7 коммитов
+- [`12edbb8`](https://github.com/rx1310/kalium19/commit/12edbb8f38ca4b7774042ff1c74e3303145f9bb7) [@rx1310](https://github.com/rx1310): добавляет модуль `sass:map` в `map-deep-set()`
+- [`bc6252f`](https://github.com/rx1310/kalium19/commit/bc6252f26aa202ea216f7275a070c0e3e05a6cea) [@rx1310](https://github.com/rx1310): добавляет утилиту `contains()`
+- [`6625b8f`](https://github.com/rx1310/kalium19/commit/6625b8f029c8fbfcebe33ad995fccdc15766dd9c) [@rx1310](https://github.com/rx1310): добавляет утилиту `str-replace()` от @KittyGiraudel
+- [`cb54ee9`](https://github.com/rx1310/kalium19/commit/cb54ee941c2a05d2bde087a111a135501cbdbbaf) [@rx1310](https://github.com/rx1310): добавляет утилиту `map-deep-set()` от @KittyGiraudel
+- [`13f3a69`](https://github.com/rx1310/kalium19/commit/13f3a69722c5117abb7c70b7dc8545ff17f15e2d) [@rx1310](https://github.com/rx1310): добавляет утилиту `map-deep-get()` от @KittyGiraudel
+- [`9ac082c`](https://github.com/rx1310/kalium19/commit/9ac082c001ff92f3a12732ae160f718c1903741c) [@rx1310](https://github.com/rx1310): добавляет утилиту `color-tint()` от @KittyGiraudel
+- [`024c2aa`](https://github.com/rx1310/kalium19/commit/024c2aa225be85f5aaa0732fda2432f5acc592e3) [@rx1310](https://github.com/rx1310): добавляет утилиту `color-shade()` от @KittyGiraudel
+- [`3acdf25`](https://github.com/rx1310/kalium19/commit/3acdf252f6fe0389eeca870c670905db265ffff9) [@rx1310](https://github.com/rx1310): добавляет основной SASS-файл - index.scss
+- [`d651b68`](https://github.com/rx1310/kalium19/commit/d651b68ab648db839442c121bb20201a12f1173d) [@rx1310](https://github.com/rx1310): дорабатывает конфиг редактора VS Code
+- [`190ffb9`](https://github.com/rx1310/kalium19/commit/190ffb9a597e9227069a35aebc354b8a776be9fa) [@rx1310](https://github.com/rx1310): добавляет файл CONTRIBUTING.md
+- [`ecc308d`](https://github.com/rx1310/kalium19/commit/ecc308daf4f6d6f59dd5a5cbd42c9b5d1d96a45f) [@rx1310](https://github.com/rx1310): добавляет файл CODEOWNERS
+- [`434d3b8`](https://github.com/rx1310/kalium19/commit/434d3b867b758bfba06646c3c9a979897cb8a11a) [@rx1310](https://github.com/rx1310): добавляет конфиг для @editorconfig
+- [`c6a9044`](https://github.com/rx1310/kalium19/commit/c6a90449746a0f02dfd83e7e59d2e9a74a0cdc1e) [@rx1310](https://github.com/rx1310): добавляет файлы конфигов для редактора VS Code
+- [`d17b51e`](https://github.com/rx1310/kalium19/commit/d17b51edc6d78ab2510cdf3486688fe0fb82267f) [@rx1310](https://github.com/rx1310): добавляет файл package-lock.json
+- [`3b277b9`](https://github.com/rx1310/kalium19/commit/3b277b92372daddd0702288a9712e54d2f363588) [@rx1310](https://github.com/rx1310): добавляет файлы игнора для @git и @npm
+- [`406801f`](https://github.com/rx1310/kalium19/commit/406801f511dc37f7846f77817de537e10ee1dec8) [@rx1310](https://github.com/rx1310): добавляет файл package.json
+- [`f1c6957`](https://github.com/rx1310/kalium19/commit/f1c6957e881db6c30777d54c2b0c2c210143dfa1) [@rx1310](https://github.com/rx1310): добавляет папку конфигов для @github
+- [`edcbf81`](https://github.com/rx1310/kalium19/commit/edcbf817f5fcc7765565cfc79dfd941a216fc700) [@rx1310](https://github.com/rx1310): добавляет файл CHANGELOG.md
+- [`7dde8eb`](https://github.com/rx1310/kalium19/commit/7dde8eb6557b073b809dad2c19f9a570e2c896a0) [@rx1310](https://github.com/rx1310): добавляет файл лицензии
+- [`9e7043b`](https://github.com/rx1310/kalium19/commit/9e7043b2d9e58d81f5c7f650dbbd47bc3717792b) [@rx1310](https://github.com/rx1310): hello, world!

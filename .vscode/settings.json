@@ -8,7 +8,7 @@
 		".editorconfig"  : true,
 		".npmignore"     : true,
 		".gitignore"     : true,
-		"CHANGELOG.*"    : true,
+		"CHANGELOG.*"    : false,
 		"LICENSE"        : true,
 		"package-lock.*" : true,
 		"CONTRIBUTING.md": true,
