@@ -1,12 +1,27 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `border-corner-radius()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `border-<сторона>-radius` с префиксом для движка WebKit.
+///
+/// @name border-corner-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $vr - вверхняя (top) или нижняя (bottom) сторона
+/// @param {string} $hr - левая (left) или правая (right) сторона
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-corner-radius($vr, $hr, $radius: $border-radius) {
 
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		border-#{$vr}-#{$hr}-radius,
-		$radius,
-		webkit
+		border-#{$vr}-#{$hr}-radius, // 1
+		$radius, // 2
+		webkit // 3
 	);
 
 	// отдельно для браузеров Mozilla FF
@@ -14,53 +29,113 @@
 
 }
 
+/// Миксин `border-top-left-radius()` позволяет закруглить углы
+/// элемента только сверху слева.
+///
+/// @name border-top-left-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-corner-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-left-radius($radius: $border-radius) {
-	@include border-corner-radius(
-		top,
-		left,
-		$radius
-	);
+	@include border-corner-radius(top, left, $radius);
 }
 
+/// Миксин `border-top-right-radius()` позволяет закруглить углы
+/// элемента только сверху права.
+///
+/// @name border-top-right-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-corner-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-right-radius($radius: $border-radius) {
-	@include border-corner-radius(
-		top,
-		right,
-		$radius
-	);
+	@include border-corner-radius(top, right, $radius);
 }
 
+/// Миксин `border-bottom-left-radius()` позволяет закруглить углы
+/// элемента только снизу слева.
+///
+/// @name border-bottom-left-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-corner-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-left-radius($radius: $border-radius) {
-	@include border-corner-radius(
-		bottom,
-		left,
-		$radius
-	);
+	@include border-corner-radius(bottom, left, $radius);
 }
 
+/// Миксин `border-bottom-right-radius()` позволяет закруглить углы
+/// элемента только снизу справа.
+///
+/// @name border-bottom-right-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-corner-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-right-radius($radius: $border-radius) {
-	@include border-corner-radius(
-		bottom,
-		right,
-		$radius
-	);
+	@include border-corner-radius(bottom, right, $radius);
 }
 
+/// Миксин `border-top-radius()` позволяет закруглить углы
+/// элемента только сверху справа слева.
+///
+/// @name border-top-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-top-left-radius
+/// @require {mixin} border-top-right-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-radius($radius: $border-radius) {
 	@include border-top-left-radius($radius);
 	@include border-top-right-radius($radius);
 }
 
+/// Миксин `border-bottom-radius()` позволяет закруглить углы
+/// элемента только снизу справа слева.
+///
+/// @name border-bottom-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-bottom-left-radius
+/// @require {mixin} border-bottom-right-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-radius($radius: $border-radius) {
 	@include border-bottom-left-radius($radius);
 	@include border-bottom-right-radius($radius);
 }
 
+/// Миксин `border-right-radius()` позволяет закруглить углы
+/// элемента только справа сверху и снизу.
+///
+/// @name border-right-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-top-right-radius
+/// @require {mixin} border-bottom-right-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-right-radius($radius: $border-radius) {
 	@include border-top-right-radius($radius);
 	@include border-bottom-right-radius($radius);
 }
 
+/// Миксин `border-left-radius()` позволяет закруглить углы
+/// элемента только слева сверху и снизу.
+///
+/// @name border-left-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} border-top-left-radius
+/// @require {mixin} border-bottom-left-radius
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-left-radius($radius: $border-radius) {
 	@include border-top-left-radius($radius);
 	@include border-bottom-left-radius($radius);
