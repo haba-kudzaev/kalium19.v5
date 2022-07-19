@@ -2,6 +2,18 @@
 @use '../prefixer' as *;
 @use '../background/clip' as *;
 
+/// Миксин `border-radius()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `border-radius` с префиксами, которые хранятся в переменной `$prfxs_border-radius`
+///
+/// @name border-radius()
+/// @group border-radius()
+/// @access public
+/// @require {mixin} prefixer
+/// @require {mixin} background-clip
+/// @since 4.0.0
+/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {string} $clip [null] - значение свойства `background-clip`
 @mixin border-radius($radius: $border-radius, $clip: null) {
 
 	// если значение параметра $clip истина (true) или "padding",
@@ -16,20 +28,21 @@
 			$clipValue: border-box;
 		}
 
-		// ? т.к. Firefox до версии 4 поддерживает свойство
-		// ? с префиксом и значения padding и border
+		// т.к. Firefox до версии 4 поддерживает свойство
+		// с префиксом и значения padding и border
 		@include background-clip($clipValue);
 
 	} @else if $clip != null {
-		background-clip: #{$clip}-box;
+		background-clip: $clip;
 	}
 
-	// генерируем свойство border-radius со всеми
-	// нужными префиксами:
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		border-radius,
-		$radius,
-		$prfxs_border-radius
+		border-radius, // 1
+		$radius, // 2
+		$prfxs_border-radius // 3
 	);
 
 	// оповестим разработчика о том, что его
