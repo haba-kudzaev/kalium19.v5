@@ -5,7 +5,7 @@
 /// над миксином `prefixer()`, который добавляет CSS-свойству `animation-delay`
 /// браузерные префиксы (в нашем случае префиксы прописаны в переменной
 /// `$prfxs_animation-delay`).
-/// @name animation-delay()
+/// @name animation-delay
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer

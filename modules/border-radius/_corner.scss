@@ -5,7 +5,7 @@
 /// над миксином `prefixer()`, который генерирует свойство
 /// `border-<сторона>-radius` с префиксом для движка WebKit.
 ///
-/// @name border-corner-radius()
+/// @name border-corner-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} prefixer
@@ -32,7 +32,7 @@
 /// Миксин `border-top-left-radius()` позволяет закруглить углы
 /// элемента только сверху слева.
 ///
-/// @name border-top-left-radius()
+/// @name border-top-left-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-corner-radius
@@ -45,7 +45,7 @@
 /// Миксин `border-top-right-radius()` позволяет закруглить углы
 /// элемента только сверху права.
 ///
-/// @name border-top-right-radius()
+/// @name border-top-right-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-corner-radius
@@ -58,7 +58,7 @@
 /// Миксин `border-bottom-left-radius()` позволяет закруглить углы
 /// элемента только снизу слева.
 ///
-/// @name border-bottom-left-radius()
+/// @name border-bottom-left-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-corner-radius
@@ -71,7 +71,7 @@
 /// Миксин `border-bottom-right-radius()` позволяет закруглить углы
 /// элемента только снизу справа.
 ///
-/// @name border-bottom-right-radius()
+/// @name border-bottom-right-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-corner-radius
@@ -84,7 +84,7 @@
 /// Миксин `border-top-radius()` позволяет закруглить углы
 /// элемента только сверху справа слева.
 ///
-/// @name border-top-radius()
+/// @name border-top-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-top-left-radius
@@ -99,7 +99,7 @@
 /// Миксин `border-bottom-radius()` позволяет закруглить углы
 /// элемента только снизу справа слева.
 ///
-/// @name border-bottom-radius()
+/// @name border-bottom-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-bottom-left-radius
@@ -114,7 +114,7 @@
 /// Миксин `border-right-radius()` позволяет закруглить углы
 /// элемента только справа сверху и снизу.
 ///
-/// @name border-right-radius()
+/// @name border-right-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-top-right-radius
@@ -129,7 +129,7 @@
 /// Миксин `border-left-radius()` позволяет закруглить углы
 /// элемента только слева сверху и снизу.
 ///
-/// @name border-left-radius()
+/// @name border-left-radius
 /// @group border-radius()
 /// @access public
 /// @require {mixin} border-top-left-radius

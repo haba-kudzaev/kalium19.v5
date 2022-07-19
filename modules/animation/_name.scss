@@ -5,7 +5,7 @@
 /// `prefixer()`, который добавляет CSS-свойству `animation-name` браузерные
 /// префиксы (в нашем случае префиксы прописаны в переменной `$prfxs_animation-name`).
 ///
-/// @name animation-name()
+/// @name animation-name
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer

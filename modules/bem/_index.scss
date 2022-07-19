@@ -4,7 +4,7 @@
 @use '../utils/get-block' as *;
 @use '../utils/selector-to-string' as *;
 
-/// @name b()
+/// @name b
 /// @group BEM
 /// @access public
 /// @since 4.0.0
@@ -17,7 +17,7 @@
 	}
 }
 
-/// @name e()
+/// @name e
 /// @group BEM
 /// @access public
 /// @require {function} map-deep-get
@@ -47,7 +47,7 @@
 	}
 }
 
-/// @name m()
+/// @name m
 /// @group BEM
 /// @access public
 /// @require {function} map-deep-get
