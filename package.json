@@ -13,7 +13,8 @@
 		"sass:compile-min": "sass --no-source-map . --style compressed",
 		"editorconfig": "editorconfig-checker",
 		"npm:publish": "npm publish --access=public --tag release",
-		"git:log": "git log --oneline --decorate --pretty=format:'- [`%h`](https://github.com/rx1310/kalium19/commit/%H) [@%an](https://github.com/%an): %s' | tee CHANGELOG.log",
+		"git:log-last-tag": "git log \"$(git describe --tags --abbrev=0)..HEAD\" --oneline --decorate --pretty=format:'- [`%h`](https://github.com/rx1310/kalium19/commit/%H) [@%an](https://github.com/%an): %s' | tee CHANGELOG.log",
+		"git:log-full": "git log --oneline --decorate --pretty=format:'- [`%h`](https://github.com/rx1310/kalium19/commit/%H) [@%an](https://github.com/%an): %s' | tee CHANGELOG.log",
 		"sassdoc": "sassdoc modules/ --dest docs/"
 	},
 	"repository": {
