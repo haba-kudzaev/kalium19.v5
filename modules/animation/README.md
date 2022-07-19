@@ -1,5 +1,5 @@
 # `animation()`
-Миксин `animation()` является лишь обёрткой над миксином `prefixer()`, который всего-то добавляет CSS-свойству `animation` браузерные префиксы, список которых прописан в файле [modules/_config.scss](https://github.com/91muilak/kalium19/blob/develop/modules/_config.scss) (в нашем случае префиксы прописаны в переменной `$prfxs_animation`).
+Миксин `animation()` является лишь обёрткой над миксином `prefixer()`, который всего-то добавляет CSS-свойству `animation` браузерные префиксы, список которых прописан в файле [modules/_config.scss](https://github.com/rx1310/kalium19/blob/develop/modules/_config.scss) (в нашем случае префиксы прописаны в переменной `$prfxs_animation`).
 
 > CSS-свойство `animation` это короткая запись для `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode` и `animation-play-state`
 >
