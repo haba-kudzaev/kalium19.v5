@@ -12,7 +12,8 @@
 		"sass:compile": "sass --no-source-map .",
 		"sass:compile-min": "sass --no-source-map . --style compressed",
 		"editorconfig": "editorconfig-checker",
-		"npm:publish": "npm publish --access=public",
+		"npm:publish-beta": "npm publish --access=public --tag beta",
+		"npm:publish": "npm publish --access=public --tag release",
 		"git:log": "git log --oneline --decorate --pretty=format:'- [@%an](https://github.com/%an): %s' | tee CHANGELOG.log",
 		"sassdoc": "sassdoc modules/ --theme neat --dest docs/"
 	},
