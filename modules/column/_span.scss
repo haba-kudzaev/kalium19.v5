@@ -1,10 +1,25 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `column-span()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-span`
+///
+/// @name column-span
+/// @access public
+/// @group column
+/// @require prefixer
+/// @since 4.0.0
+/// @param $value - значение свойства `column-span`
 @mixin column-span($value) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		column-span,
-		$value,
-		$prfxs_column-span
+		column-span, // 1
+		$value, // 2
+		$prfxs_column-span // 3
 	);
+
 }
