@@ -1,10 +1,21 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// @name flex-basis
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {string} $val [auto] - значение свойства `flex-basis`
 @mixin flex-basis($val: auto) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		flex-basis,
-		$val,
-		$prfxs_flex-basis
+		flex-basis, // 1
+		$val, // 2
+		$prfxs_flex-basis // 3
 	);
+
 }
