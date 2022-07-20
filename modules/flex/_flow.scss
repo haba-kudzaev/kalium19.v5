@@ -1,10 +1,21 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// @name flex-flow
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {string} $vals [row nowrap] - значение свойства `flex-flow`
 @mixin flex-flow($vals: (row nowrap)) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		flex-flow,
-		$vals,
-		$prfxs_flex-flow
+		flex-flow, // 1
+		$vals, // 2
+		$prfxs_flex-flow // 3
 	);
+
 }
