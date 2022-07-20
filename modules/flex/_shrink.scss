@@ -6,7 +6,7 @@
 /// @group flex
 /// @require prefixer
 /// @since 4.0.0
-/// @param {int} $value - значение свойства `flex-shrink`
+/// @param {int} $value [0] - значение свойства `flex-shrink`
 @mixin flex-shrink($value: 0) {
 
 	@include prefixer(
