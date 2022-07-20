@@ -1,3 +1,5 @@
+@use '../prefixer' as *;
+
 /// @name flex
 /// @access public
 /// @group flex
@@ -6,16 +8,16 @@
 /// @param {string} $type [null] - значение свойства `flex`
 @mixin flex($type: null) {
 	@if $type == inline {
-		display: -webkit-inline-box;
-		display: -moz-inline-box;
-		display: -webkit-inline-flex;
-		display: -ms-inline-flexbox;
+
 		display: inline-flex;
+		@include prefixer(display, inline-box, webkit moz, false, true);
+		@include prefixer(display, inline-flex, webkit, true, true);
+
 	} @else {
-		display: -webkit-box;
-		display: -moz-box;
+
 		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
+		@include prefixer(display, box, webkit moz, false, true);
+		@include prefixer(display, flex, webkit, true, true);
+
 	}
 }
