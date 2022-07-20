@@ -1,17 +1,23 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin flex-wrap($val: nowrap) {
+/// @name flex-wrap
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {string} $valueue [nowrap] - значение свойства `flex-wrap`
+@mixin flex-wrap($value: nowrap) {
 
-	@if $val == nowrap {
+	@if $value == nowrap {
 		-ms-flex-wrap: none;
 	} @else {
-		-ms-flex-wrap: $val;
+		-ms-flex-wrap: $value;
 	}
 
 	@include prefixer(
 		flex-wrap,
-		$val,
+		$value,
 		$prfxs_flex-wrap
 	);
 
