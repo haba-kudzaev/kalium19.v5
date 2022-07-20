@@ -8,7 +8,7 @@
 /// @require prefixer
 /// @require flex-align
 /// @since 4.0.0
-/// @param {string} $val - значение свойства `align-items`
+/// @param {string} $val [stretch] - значение свойства `align-items`
 @mixin align-items($val: stretch) {
 
 	@if $val == flex-start {
