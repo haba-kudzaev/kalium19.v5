@@ -2,6 +2,13 @@
 @use '../prefixer' as *;
 @use '../prefixer/pack' as *;
 
+/// @name flex-direction
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @require prefixer-pack
+/// @since 4.0.0
+/// @param {string} $direction [row] - значение свойства `flex-direction`
 @mixin flex-direction($direction: row) {
 
 	@if $direction == row-reverse {
