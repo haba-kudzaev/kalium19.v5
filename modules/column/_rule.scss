@@ -1,10 +1,25 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `column-rule()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-rule`
+///
+/// @name column-rule
+/// @access public
+/// @group column
+/// @require prefixer
+/// @since 4.0.0
+/// @param $params... - значение свойства `column-rule`
 @mixin column-rule($params...) {
+
+	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+	// ? [2] передаем префиксеру значение свойства
+	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
-		column-rule,
-		$params,
-		$prfxs_column-rule
+		column-rule, // 1
+		$params, // 2
+		$prfxs_column-rule // 3
 	);
+
 }
