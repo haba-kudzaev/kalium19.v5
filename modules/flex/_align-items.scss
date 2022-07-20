@@ -2,6 +2,13 @@
 @use '../prefixer/' as *;
 @use '_dev/flex-align' as *;
 
+/// @name align-items
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @require flex-align
+/// @since 4.0.0
+/// @param {string} $val - значение свойства `align-items`
 @mixin align-items($val: stretch) {
 
 	@if $val == flex-start {
