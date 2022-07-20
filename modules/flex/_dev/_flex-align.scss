@@ -1,6 +1,12 @@
 @use '../../config' as *;
 @use '../../prefixer/' as *;
 
-@mixin flex-align($val) {
-	@include prefixer(flex-align, $val, $prfxs_flex-align, false);
+/// @name flex-align
+/// @access private
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param $valueue - значение свойства `flex-align`
+@mixin flex-align($value) {
+	@include prefixer(flex-align, $value, $prfxs_flex-align, false);
 }
