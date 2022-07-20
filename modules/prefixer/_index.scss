@@ -1,20 +1,32 @@
 @use '../config' as *;
 
-@mixin prefixer($prop, $value, $prefixes-list: (), $saveInitial: true) {
+@mixin prefixer($prop, $value, $prefixes-list: (), $saveInitial: true, $prefixProps: false) {
 
 	// если в параметр $prefixes-list будет передано "all",
 	// то пройдемся по списку всех префиксов в $prfxs-all
 	@if $prefixes-list == all {
-		@each $prefix in $prfxs-all {
-			-#{$prefix}-#{$prop}: #{$value};
+		@if $prefixProps == true {
+			@each $prefix in $prfxs-all {
+				#{$prop}: -#{$prefix}-#{$value};
+			}
+		} @else {
+			@each $prefix in $prfxs-all {
+				-#{$prefix}-#{$prop}: #{$value};
+			}
 		}
 	}
 
 	// иначе пройдемся по переданному в $prefixes-list списку
 	// префиксов и сгенерируем свойство с каждым префиксом:
 	@else {
-		@each $prefix in $prefixes-list {
-			#{'-' + $prefix + '-' + $prop}: $value;
+		@if $prefixProps == true {
+			@each $prefix in $prefixes-list {
+				#{$prop}: -#{$prefix}-#{$value};
+			}
+		} @else {
+			@each $prefix in $prefixes-list {
+				-#{$prefix}-#{$prop}: #{$value};
+			}
 		}
 	}
 
