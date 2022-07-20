@@ -1,5 +1,12 @@
 @use '../transform' as *;
 
+/// @name flip
+/// @author Matt Delac
+/// @link https://github.com/matthieua
+/// @access public
+/// @require transform
+/// @since 4.0.0
+/// @param {int} $scaleX [-1]
 @mixin flip($scaleX: -1) {
 
 	@include transform(scaleX($scaleX));
