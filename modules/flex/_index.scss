@@ -1,3 +1,9 @@
+/// @name flex
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {string} $type [null] - значение свойства `flex`
 @mixin flex($type: null) {
 	@if $type == inline {
 		display: -webkit-inline-box;
