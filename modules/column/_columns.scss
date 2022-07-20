@@ -9,6 +9,7 @@
 /// @access public
 /// @require prefixer
 /// @since 4.0.0
+/// @param $params... - значение свойства `columns`
 @mixin columns($params...) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
@@ -19,6 +20,7 @@
 		$params, // 2
 		$prfxs_columns // 3
 	);
+
 }
 
 /// WebRef: "Универсальное свойство, которое позволяет одновременно
