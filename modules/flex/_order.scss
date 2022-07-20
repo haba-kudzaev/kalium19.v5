@@ -1,21 +1,27 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin order($int: 0) {
+/// @name order
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {int} $value - значение свойства `order`
+@mixin order($value: 0) {
 
 	@include prefixer(
 		box-ordinal-group,
-		$int + 1,
+		$value + 1,
 		$prfxs_box-ordinal-group,
 		false
 	);
 
 	@include prefixer(
 		order,
-		$int,
+		$value,
 		$prfxs_order
 	);
 
-	-ms-flex-order: $int;
+	-ms-flex-order: $value;
 
 }
