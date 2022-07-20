@@ -1,14 +1,20 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
-@mixin flex-shrink($int: 0) {
+/// @name flex-shrink
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @since 4.0.0
+/// @param {int} $value - значение свойства `flex-shrink`
+@mixin flex-shrink($value: 0) {
 
 	@include prefixer(
 		flex-shrink,
-		$int,
+		$value,
 		$prfxs_flex-shrink
 	);
 
-	-ms-flex: $int;
+	-ms-flex: $value;
 
 }
