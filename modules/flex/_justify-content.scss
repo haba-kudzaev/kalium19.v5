@@ -2,6 +2,13 @@
 @use '../prefixer' as *;
 @use 'flex-pack' as *;
 
+/// @name justify-content
+/// @access public
+/// @group flex
+/// @require prefixer
+/// @require flex-pack
+/// @since 4.0.0
+/// @param {string} $val [flex-start] - значение свойства `justify-content`
 @mixin justify-content($val: flex-start) {
 
 	@if $val == flex-start {
