@@ -1,3 +1,9 @@
+/// @name selector-to-string
+/// @group BEM
+/// @access public
+/// @since 4.0.0
+/// @author Marcmintel
+/// @link https://medium.com/@marcmintel
 @function selector-to-string($selector) {
 
 	$selector: inspect($selector);          // cast to string
