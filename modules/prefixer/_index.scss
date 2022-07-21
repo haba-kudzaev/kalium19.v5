@@ -1,5 +1,15 @@
 @use '../config' as *;
 
+/// @name prefixer
+/// @access public
+/// @since 4.0.0
+/// @example scss - Пример использования
+/// 	@include prefixer(border-radius, 12px, webkit moz);
+/// @param {string} $prop - свойство
+/// @param {string} $value - значение
+/// @param {list} $prefixes-list [()] - список префиксов
+/// @param {boolean} $saveInitial [true] - сохранение свойства без префикса
+/// @param {boolean} $prefixProps [false] - добавлять префиксы к значениям, вместо свойств
 @mixin prefixer($prop, $value, $prefixes-list: (), $saveInitial: true, $prefixProps: false) {
 
 	// если в параметр $prefixes-list будет передано "all",
