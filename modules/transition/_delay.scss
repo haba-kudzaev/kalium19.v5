@@ -1,6 +1,15 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transition-delay()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transition-delay` с префиксами, которые хранятся в переменной `$prfxs_transition`
+///
+/// @name transition-delay
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params - значение свойства `transition-delay`
 @mixin transition-delay($params...) {
 	@include prefixer(
 		transition-delay,
