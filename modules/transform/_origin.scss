@@ -1,6 +1,17 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transform-origin()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transform-origin` с префиксами, которые хранятся в переменной `$prfxs_transform`
+///
+/// @name transform-origin
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {int} $x
+/// @param {int} $y
+/// @param {int} $z
 @mixin transform-origin($x, $y, $z) {
 	@include prefixer(
 		transform-origin,
