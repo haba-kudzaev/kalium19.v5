@@ -1,6 +1,26 @@
 @use '../config' as *;
 @use '../utils/contains' as *;
 
+/// @name font-face
+/// @access public
+/// @require {function} contains
+/// @since 4.0.0
+/// @example SCSS
+/// 	@include font-face(Roboto, "./fonts/Roboto", normal, normal, woff2 woff ttf);
+/// @example CSS
+/// 	@font-face {
+/// 	  font-family: "Roboto";
+/// 	  font-weight: normal;
+/// 	  font-style: normal;
+/// 	  src: url("./assets/Roboto.woff") format("woff");
+/// 	  src: url("./assets/Roboto.woff2") format("woff2");
+/// 	  src: url("./assets/Roboto.ttf") format("truetype");
+/// 	}
+/// @param {string} $font-name - название шрифта (без расширения)
+/// @param {string} $path - путь до папки со шрифтами
+/// @param {string} $weight [normal] - насыщенность шрифта (значение указывается в виде чисел от 100 до 900 с шагом 100 или с помощью заданных ключевых слов)
+/// @param {string} $style [normal] - начертание шрифта (обычное, курсивное или наклонное)
+/// @param {string} $formats [$formats_font-face] - список расширений файлов шрифтов
 @mixin font-face($font-name, $path, $weight: normal, $style: normal, $formats: $formats_font-face) {
 
 	@font-face {
@@ -49,15 +69,3 @@
 	}
 
 }
-
-/// @example SCSS
-/// 	@include font-face(Roboto, "./fonts/Roboto", normal, normal, woff2 woff ttf);
-/// @example CSS
-/// 	@font-face {
-/// 	  font-family: "Roboto";
-/// 	  font-weight: normal;
-/// 	  font-style: normal;
-/// 	  src: url("./assets/Roboto.woff") format("woff");
-/// 	  src: url("./assets/Roboto.woff2") format("woff2");
-/// 	  src: url("./assets/Roboto.ttf") format("truetype");
-/// 	}
