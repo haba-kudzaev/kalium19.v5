@@ -1,4 +1,7 @@
-@mixin visually-hidden() {
+/// @name visually-hidden
+/// @access public
+/// @since 4.0.0
+@mixin visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
