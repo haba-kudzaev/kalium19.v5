@@ -1,3 +1,11 @@
+/// @name image-2x
+/// @author Nathan da Silva
+/// @link https://silvawebdesigns.com/
+/// @access public
+/// @since 4.0.0
+/// @param {path} $image
+/// @param {size} $width
+/// @param {size} $height
 @mixin image-2x($image, $width, $height) {
 
 	@media
