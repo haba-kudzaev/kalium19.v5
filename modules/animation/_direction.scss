@@ -9,6 +9,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_animation-direction
 /// @since 4.0.0
 /// @param {string} $direction [normal] - значение свойства `animation-direction`
 @mixin animation-direction($direction: normal) {

@@ -3,7 +3,7 @@
 /// @name align-content
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
 /// @since 4.0.0
 /// @param {string} $val - значение свойства `align-content`
 @mixin align-content($val: stretch) {

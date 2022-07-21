@@ -4,7 +4,8 @@
 /// @name flex-flow
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_flex-flow
 /// @since 4.0.0
 /// @param {string} $vals [row nowrap] - значение свойства `flex-flow`
 @mixin flex-flow($vals: (row nowrap)) {

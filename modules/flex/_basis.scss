@@ -4,7 +4,8 @@
 /// @name flex-basis
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_flex-basis
 /// @since 4.0.0
 /// @param {string} $val [auto] - значение свойства `flex-basis`
 @mixin flex-basis($val: auto) {

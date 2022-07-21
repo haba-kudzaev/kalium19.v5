@@ -8,6 +8,7 @@
 /// @name transform-style
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_transform-style
 /// @since 4.0.0
 /// @param {string} $style [flat] - значение свойства `transform-style`
 @mixin transform-style($style: flat) {

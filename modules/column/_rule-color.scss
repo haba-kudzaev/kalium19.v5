@@ -8,7 +8,8 @@
 /// @name column-rule-color
 /// @access public
 /// @group column
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_column-rule-color
 /// @since 4.0.0
 /// @param {color} $color. - значение свойства `column-rule-color`
 @mixin column-rule-color($color) {

@@ -4,7 +4,7 @@
 /// @name flex-align
 /// @access private
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
 /// @since 4.0.0
 /// @param $valueue - значение свойства `flex-align`
 @mixin flex-align($value) {

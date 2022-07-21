@@ -3,7 +3,7 @@
 /// @name flex
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
 /// @since 4.0.0
 /// @param {string} $type [null] - значение свойства `flex`
 @mixin flex($type: null) {
