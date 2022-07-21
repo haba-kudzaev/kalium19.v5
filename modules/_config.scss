@@ -49,21 +49,32 @@ $prfxs_transition               : webkit moz o !default;
 $prfxs_user-select              : webkit moz ms !default;
 $prfxs-all                      : webkit khtml moz ms o !default;
 
+/// @access public
+/// @see border-radius
 $border-radius: null !default;
 
+/// @access public
+/// @see font-face
 $formats_font-face: 'eot?#iefix' eot woff woff2 ttf otf svg !default;
 
-
+/// @access public
+/// @see b
+/// @see e
+/// @see m
 $bem: (
 	element: "__",
 	modifier: "--"
 ) !default;
 
+/// @access public
+/// @see opacity
 $opacity: (
 	ie5: true,
 	ie8: true
 ) !default;
 
+/// @access public
+/// @see keyframes
 $keyframes: (
 	webkit: true,
 	moz: true,
@@ -71,6 +82,8 @@ $keyframes: (
 	o: true
 ) !default;
 
+/// @access public
+/// @see respond-to
 $breakpoints: (
 	xs: (min-width: 0),
 	sm: (min-width: 576px),
