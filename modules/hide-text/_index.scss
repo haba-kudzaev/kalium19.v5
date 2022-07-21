@@ -1,4 +1,7 @@
-@mixin hide-text() {
+/// @name hide-text
+/// @access public
+/// @since 4.0.0
+@mixin hide-text {
 	overflow: hidden;
 	padding: 0;
 	text-indent: 101%;
