@@ -10,6 +10,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_animation-play-state
 /// @since 4.0.0
 /// @param {string} $state [running] - значение свойства
 @mixin animation-play-state($state: running) {

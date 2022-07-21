@@ -5,8 +5,10 @@
 /// @name justify-content
 /// @access public
 /// @group flex
-/// @require prefixer
-/// @require flex-pack
+/// @require {mixin} prefixer
+/// @require {mixin} flex-pack
+/// @require {variable} $prfxs_box-pack
+/// @require {variable} $prfxs_justify-content
 /// @since 4.0.0
 /// @param {string} $val [flex-start] - значение свойства `justify-content`
 @mixin justify-content($val: flex-start) {

@@ -5,6 +5,7 @@
 /// @group background
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_background-origin
 /// @since 4.0.0
 /// @param {string} $value [padding-box] - значение свойства `background-origin`
 @mixin background-origin($value: padding-box) {

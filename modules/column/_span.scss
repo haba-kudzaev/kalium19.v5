@@ -8,7 +8,8 @@
 /// @name column-span
 /// @access public
 /// @group column
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_column-span
 /// @since 4.0.0
 /// @param $value - значение свойства `column-span`
 @mixin column-span($value) {

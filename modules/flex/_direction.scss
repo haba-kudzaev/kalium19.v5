@@ -5,8 +5,10 @@
 /// @name flex-direction
 /// @access public
 /// @group flex
-/// @require prefixer
-/// @require prefixer-pack
+/// @require {mixin} prefixer
+/// @require {mixin} prefixer-pack
+/// @require {variable} $prfxs_box-direction
+/// @require {variable} $prfxs_flex-direction
 /// @since 4.0.0
 /// @param {string} $direction [row] - значение свойства `flex-direction`
 @mixin flex-direction($direction: row) {

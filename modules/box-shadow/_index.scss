@@ -8,6 +8,7 @@
 /// @name box-shadow
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_box-shadow
 /// @since 4.0.0
 /// @param {string} $params - значение свойства `box-shadow`
 @mixin box-shadow($params...) {

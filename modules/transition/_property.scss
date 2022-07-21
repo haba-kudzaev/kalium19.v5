@@ -8,6 +8,7 @@
 /// @name transition-property
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_transition
 /// @since 4.0.0
 /// @param {string} $params - значение свойства `transition-property`
 @mixin transition-property($params...) {

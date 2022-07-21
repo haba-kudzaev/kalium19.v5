@@ -8,7 +8,8 @@
 /// @name column-rule
 /// @access public
 /// @group column
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_column-rule
 /// @since 4.0.0
 /// @param $params... - значение свойства `column-rule`
 @mixin column-rule($params...) {

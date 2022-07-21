@@ -4,7 +4,9 @@
 /// @name order
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_box-ordinal-group
+/// @require {variable} $prfxs_order
 /// @since 4.0.0
 /// @param {int} $value - значение свойства `order`
 @mixin order($value: 0) {

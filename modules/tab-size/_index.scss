@@ -4,6 +4,7 @@
 /// @name hardware
 /// @access public
 /// @require {mixin} prefixer
+/// @require {variable} $prfxs_tab-size
 /// @since 4.0.0
 /// @param {int} $size
 @mixin tab-size($size) {

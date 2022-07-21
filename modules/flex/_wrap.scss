@@ -4,7 +4,8 @@
 /// @name flex-wrap
 /// @access public
 /// @group flex
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_flex-wrap
 /// @since 4.0.0
 /// @param {string} $valueue [nowrap] - значение свойства `flex-wrap`
 @mixin flex-wrap($value: nowrap) {

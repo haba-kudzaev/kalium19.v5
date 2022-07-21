@@ -8,7 +8,8 @@
 /// @name column-rule-style
 /// @access public
 /// @group column
-/// @require prefixer
+/// @require {mixin} prefixer
+/// @require {variable} $prfxs_column-rule-style
 /// @since 4.0.0
 /// @param $style - значение свойства `column-rule-style`
 @mixin column-rule-style($style) {
@@ -21,5 +22,5 @@
 		$style, // 2
 		$prfxs_column-rule-style // 3
 	);
-	
+
 }

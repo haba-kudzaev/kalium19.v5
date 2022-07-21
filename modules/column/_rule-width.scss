@@ -8,7 +8,8 @@
 /// @name column-rule-width
 /// @access public
 /// @group column
-/// @require prefixer
+/// @require {mixin} prefixer
+///@require {variable} $prfxs_column-rule-width
 /// @since 4.0.0
 /// @param $width - значение свойства `column-rule-width`
 @mixin column-rule-width($width) {
