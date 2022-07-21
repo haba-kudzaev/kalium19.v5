@@ -1,3 +1,16 @@
+/// @name str-replace
+/// @author Kitty Giraudel
+/// @link https://github.com/KittyGiraudel
+/// @access public
+/// @example
+/// 	.selector {
+/// 	  $string: 'Lorem ipsum';
+/// 	  content: str-replace($string, 'm', 'W');
+/// 	}
+/// @param {string} $string - initial string
+/// @param {string} $search - substring to replace
+/// @param {string} $replace [''] - new value
+/// @return {string} updated string
 @function str-replace($string, $search, $replace: '') {
 
 	$index: str-index($string, $search);
@@ -10,8 +23,3 @@
 
 }
 
-/// @example
-/// 	.selector {
-/// 	  $string: 'Lorem ipsum';
-/// 	  content: str-replace($string, 'm', 'W');
-/// 	}
