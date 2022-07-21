@@ -1,8 +1,6 @@
-@mixin wh($width, $height: $width) {
-	width: $width;
-	height: $height;
-}
-
+/// @name visually-hidden
+/// @access public
+/// @since 4.0.0
 /// @example SCSS input
 /// 	.square {
 /// 	  @include wh(50px);
@@ -12,7 +10,7 @@
 /// 	  @include wh(100px, 50px);
 /// 	}
 ///
-/// @example: CSS output:
+/// @example CSS output:
 /// 	.square {
 /// 	  width: 50px;
 /// 	  height: 50px;
@@ -22,3 +20,10 @@
 /// 	  width: 100px;
 /// 	  height: 50px;
 /// 	}
+/// @param {int} $width - ширина
+/// @param {int} $height [$width] - высота
+@mixin wh($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
