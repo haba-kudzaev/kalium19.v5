@@ -1,5 +1,11 @@
 @use 'selector-to-string' as *;
 
+/// @name get-block
+/// @group BEM
+/// @access public
+/// @since 4.0.0
+/// @author Marcmintel
+/// @link https://medium.com/@marcmintel
 @function get-block($selector, $modifier) {
 
 	$selector     : selector-to-string($selector);
