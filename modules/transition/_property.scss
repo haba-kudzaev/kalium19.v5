@@ -1,6 +1,15 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transition-property()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transition-property` с префиксами, которые хранятся в переменной `$prfxs_transition`
+///
+/// @name transition-property
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params - значение свойства `transition-property`
 @mixin transition-property($params...) {
 	@include prefixer(
 		transition-property,
