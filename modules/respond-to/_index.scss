@@ -1,5 +1,11 @@
 @use '../config' as *;
 
+/// @name respond-to
+/// @author Kitty Giraudel
+/// @link https://github.com/KittyGiraudel
+/// @access public
+/// @since 4.0.0
+/// @param {string | int} $breakpoint
 @mixin respond-to($breakpoint) {
 
 	@if map-has-key($breakpoints, $breakpoint) {
