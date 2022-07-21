@@ -1,6 +1,11 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// @name object-fit
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $type
 @mixin object-fit($type) {
 	@include prefixer(
 		object-fit,
@@ -9,14 +14,26 @@
 	);
 }
 
+/// @name object-fit-contain
+/// @access public
+/// @require {mixin} object-fit
+/// @since 4.0.0
 @mixin object-fit-contain {
 	@include object-fit(contain);
 }
 
+/// @name object-fit-fill
+/// @access public
+/// @require {mixin} object-fit
+/// @since 4.0.0
 @mixin object-fit-fill {
 	@include object-fit(fill);
 }
 
+/// @name object-fit-cover
+/// @access public
+/// @require {mixin} object-fit
+/// @since 4.0.0
 @mixin object-fit-cover {
 	@include object-fit(cover);
 }
