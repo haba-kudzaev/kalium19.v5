@@ -1,9 +1,20 @@
+/// @name at-root
+/// @author cimmanon
+/// @link https://stackoverflow.com/users/1652962/cimmanon
+/// @access private
+/// @since 4.0.0
+/// @param $selector
 @mixin at-root($selector) {
 	@at-root #{if(not &, $selector, selector-append(&, $selector))} {
 		@content;
 	}
 }
 
+/// @name placeholder
+/// @author cimmanon
+/// @link https://stackoverflow.com/users/1652962/cimmanon
+/// @access public
+/// @since 4.0.0
 @mixin placeholder {
 	@include at-root('::-webkit-input-placeholder') { @content; }
 	@include at-root(':-moz-placeholder')           { @content; }
