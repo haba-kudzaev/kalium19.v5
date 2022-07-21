@@ -1,6 +1,11 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// @name user-select
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $value - значение свойства `user-select`
 @mixin user-select($value) {
 	@include prefixer(
 		user-select,
