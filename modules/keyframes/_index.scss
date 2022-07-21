@@ -1,6 +1,13 @@
 @use '../config' as *;
 @use '../utils/map-deep-get' as *;
 
+/// @name keyframes
+/// @access public
+/// @require {function} map-deep-get
+/// @since 4.0.0
+/// @example SCSS
+/// 	@include keyframes(frameName) { ... }
+/// @param {string} $name
 @mixin keyframes($name) {
 
 	@if map-deep-get($keyframes, webkit) == true {
