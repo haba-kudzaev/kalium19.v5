@@ -1,3 +1,11 @@
+/// @name position
+/// @access public
+/// @since 4.0.0
+/// @param {string} $position - значение свойства `posotion`
+/// @param {int} $top [null]
+/// @param {int} $right [null]
+/// @param {int} $bottom [null]
+/// @param {int} $left [null]
 @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
 	position: $position;
 	top     : $top;
@@ -6,6 +14,29 @@
 	left    : $left;
 }
 
-@mixin position-absolute($args...) { @include position(absolute, $args); }
-@mixin position-relative($args...) { @include position(relative, $args); }
-@mixin position-fixed($args...)    { @include position(fixed, $args); }
+/// @name position-absolute
+/// @access public
+/// @since 4.0.0
+/// @require {mixin} position
+/// @param {int | string} $args...
+@mixin position-absolute($args...) {
+	@include position(absolute, $args);
+}
+
+/// @name position-relative
+/// @access public
+/// @since 4.0.0
+/// @require {mixin} position
+/// @param {int | string} $args...
+@mixin position-relative($args...) {
+	@include position(relative, $args);
+}
+
+/// @name position-fixed
+/// @access public
+/// @since 4.0.0
+/// @require {mixin} position
+/// @param {int | string} $args...
+@mixin position-fixed($args...) {
+	@include position(fixed, $args);
+}
