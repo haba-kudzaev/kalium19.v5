@@ -1,3 +1,84 @@
+## v4.1.0-release
+> Это обновление функционально ничего нового не несёт, а всего-то добавляет небольшую документацию к коду, которую sassdoc конвертирует в [сайт](https://rx1310.github.io/kalium19). Однако, обновлять ычк же советую, т.к. во время написания доки я находил и поправлял незначительные ошибки.
+- [`003ed09`](https://github.com/rx1310/kalium19/commit/003ed0920fd4203192f0923b10e0aeddfe9b3a3d) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`089fe5f`](https://github.com/rx1310/kalium19/commit/089fe5fc31f833ca09f40c1a5c5db2b705571a1d) [@rx1310](https://github.com/rx1310): добавляет к комментариям строку `@require {variable}`
+- [`d776d87`](https://github.com/rx1310/kalium19/commit/d776d875085fbe62274c5ee36f2bbff4b3c84842) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `str-replace()`
+- [`73f9a68`](https://github.com/rx1310/kalium19/commit/73f9a688ca0fbc8fb297103f206df723e99e984c) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `selector-to-string()`
+- [`7384f8b`](https://github.com/rx1310/kalium19/commit/7384f8b8bc4228639c3afbccff3de4baaf943200) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `map-deep-set()`
+- [`818a4d5`](https://github.com/rx1310/kalium19/commit/818a4d5a66217eef2a207a465c06f52dd8481ab4) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `map-deep-get()`
+- [`d8cffbd`](https://github.com/rx1310/kalium19/commit/d8cffbd41ee9c582120b8697bfdb51e1ede07960) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `get-block()`
+- [`0afb3b4`](https://github.com/rx1310/kalium19/commit/0afb3b44c11ca10c6dc942352d929df6af315721) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `color-tint()`
+- [`0ff79f1`](https://github.com/rx1310/kalium19/commit/0ff79f199f20c9b7f54cdc32ed144300ea007caa) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `color-shade()`
+- [`e32e811`](https://github.com/rx1310/kalium19/commit/e32e811df1cbee2565bfaccb52a3d66618fcbd76) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `wh()`
+- [`e8661b4`](https://github.com/rx1310/kalium19/commit/e8661b4112cdc2a9d80ce2d71621921c90c549a1) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `visually-hidden()`
+- [`12ca21f`](https://github.com/rx1310/kalium19/commit/12ca21f60f3a23c5e9e7a6a856d3d55cba807de9) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `unselect()`
+- [`6f65bc9`](https://github.com/rx1310/kalium19/commit/6f65bc9ae9450ff5b81cf2362a53f36708122295) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `user-select()`
+- [`9d5809a`](https://github.com/rx1310/kalium19/commit/9d5809ae3288c7f8216df76c612c1aa407fdbf17) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transition-timing-function()`
+- [`8d18e9d`](https://github.com/rx1310/kalium19/commit/8d18e9d7320fd7bb56c718de9357c71623bb8766) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transition-property()`
+- [`8e43d42`](https://github.com/rx1310/kalium19/commit/8e43d42e08fe534048e57ad1114ce275ec645b1c) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transition()`
+- [`c2dcd06`](https://github.com/rx1310/kalium19/commit/c2dcd06302549f36694a98030eff690bc20bf0b6) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transition-duration()`
+- [`3c196ed`](https://github.com/rx1310/kalium19/commit/3c196ede14694e4eec4336ddf0324c5a0a4d2c8d) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transition-delay()`
+- [`fe0862c`](https://github.com/rx1310/kalium19/commit/fe0862cd851da0bd7a0c5fc9d16c29d5603394dd) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transform-style()`
+- [`2a190a7`](https://github.com/rx1310/kalium19/commit/2a190a7dad5e003b7bdf2b75eeb21d94f6e13c71) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transform-origin()`
+- [`8365fe2`](https://github.com/rx1310/kalium19/commit/8365fe226ed5016a8864d129104ab30aad24b575) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `transform()`
+- [`482f453`](https://github.com/rx1310/kalium19/commit/482f453a4033d8b4f8ce0dc0ea1f795de3e6b4a6) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `text-shorten()`
+- [`8c91bab`](https://github.com/rx1310/kalium19/commit/8c91bab20de8fc05b5031288428e4145d26fc532) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `tab-size()`
+- [`d6424d8`](https://github.com/rx1310/kalium19/commit/d6424d80d598bb4005c22ea1c19bcd059be2c33b) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `selection()`
+- [`0ecd545`](https://github.com/rx1310/kalium19/commit/0ecd545f2f6dc059f4c8c77fe7805e249b06b8ea) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `selection()`
+- [`79c83ea`](https://github.com/rx1310/kalium19/commit/79c83eae60206230ef770ea32a49085363b731d5) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `respond-to()`
+- [`f470dfe`](https://github.com/rx1310/kalium19/commit/f470dfe124341f5e974d6b3308c37cebb6b63cd4) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `push-auto()`
+- [`445b0cf`](https://github.com/rx1310/kalium19/commit/445b0cfdac5d0a6941d9ea058d6198b2a71e98cc) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `prefixer-pack()`
+- [`016e506`](https://github.com/rx1310/kalium19/commit/016e506e4ef6051a6e314273109015f8e6640b8a) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `prefixer()`
+- [`c6fc686`](https://github.com/rx1310/kalium19/commit/c6fc686a7439746fd482a808d2aec5c2444c9fb6) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `position()`
+- [`ffaa25f`](https://github.com/rx1310/kalium19/commit/ffaa25fa0a2e1c622b702e3fc881e3ceb0c91099) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `placeholder()`
+- [`f2b7c58`](https://github.com/rx1310/kalium19/commit/f2b7c583b2fdd8f0520c3bf15eb6b0cb9810ec17) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `opacity()`
+- [`2a18890`](https://github.com/rx1310/kalium19/commit/2a188906c2e538fd0adc3e0c48ad8318ba7aa5ab) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `object-fit()`
+- [`ee30d96`](https://github.com/rx1310/kalium19/commit/ee30d962f46cab7e2956a7f2edfd0be96d8d7fae) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `mquery-r()`
+- [`b3e7e51`](https://github.com/rx1310/kalium19/commit/b3e7e51784a79a3bbb64b2a409130e8d569d4ea5) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `mquery()`
+- [`abb1181`](https://github.com/rx1310/kalium19/commit/abb1181f716fe4a903a0683096027f618887e4db) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `keyframes()`
+- [`043af99`](https://github.com/rx1310/kalium19/commit/043af99ccf217c05884bb56c4708fe0b6dd733c5) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `image-2x()`
+- [`5a64079`](https://github.com/rx1310/kalium19/commit/5a64079bfbd8a0ee15c77ca62bd18a88e12ff740) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `hide-text()`
+- [`ee7bf1f`](https://github.com/rx1310/kalium19/commit/ee7bf1f148508efc0671160159526ac96f50b65b) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `hardware()`
+- [`db2e4bf`](https://github.com/rx1310/kalium19/commit/db2e4bfe9fbd351e09f911bc04485fcc519ba3b5) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `font-face()`
+- [`2c241d5`](https://github.com/rx1310/kalium19/commit/2c241d50d567e8a4e46b71d4729aefa06d84369c) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flip()`
+- [`2112039`](https://github.com/rx1310/kalium19/commit/2112039491cb8f6f33b877af29f635a6dde0f7af) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-align()`
+- [`950b68e`](https://github.com/rx1310/kalium19/commit/950b68eb462df8725ff2f4be3a243d007f045768) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-wrap()`
+- [`ddca21e`](https://github.com/rx1310/kalium19/commit/ddca21ecbae97bd24f28c414e7b040cfcf824066) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-shrink()`
+- [`c7235d3`](https://github.com/rx1310/kalium19/commit/c7235d3994b2cc617fb662830df8f9d343783792) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `order()`
+- [`10d657c`](https://github.com/rx1310/kalium19/commit/10d657c508c9e423fc4ccf6773d02f635cc22b6d) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `justify-content()`
+- [`c8b9e4e`](https://github.com/rx1310/kalium19/commit/c8b9e4e574cf14967eba73c11be95fbffc7486af) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`d906b13`](https://github.com/rx1310/kalium19/commit/d906b13d55ee292efe0e55f2b2a313f01da32643) [@rx1310](https://github.com/rx1310): добавляет возможность добавлять префиксы к свойствам в `prefixer()`
+- [`48515d8`](https://github.com/rx1310/kalium19/commit/48515d824a4419587eb7b7936f4232eb1fdf8542) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex()`
+- [`4a46187`](https://github.com/rx1310/kalium19/commit/4a461871905cdadc3704bfe7867a784da4f50441) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-grow()`
+- [`859fb61`](https://github.com/rx1310/kalium19/commit/859fb614185df676ac819edbdaf8b91c272562c7) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-flow()`
+- [`6e62328`](https://github.com/rx1310/kalium19/commit/6e62328e47052e1de64251b70940e9118cec8037) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-pack()`
+- [`8df719a`](https://github.com/rx1310/kalium19/commit/8df719a4bdab6e30ddc9a08bb52dfcfb34a2a43f) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-direction()`
+- [`81c52db`](https://github.com/rx1310/kalium19/commit/81c52db78d6761cb74e8975e2cd1f9f9a4e4cd8c) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `flex-basis()`
+- [`f8560bc`](https://github.com/rx1310/kalium19/commit/f8560bc0f63abd8790181b3bc262a81862c74387) [@rx1310](https://github.com/rx1310): добавляет значение по умолчанию `align-items()` в комментарий
+- [`a715d23`](https://github.com/rx1310/kalium19/commit/a715d2335d32771e9b8a2a75f539e01e56126cb1) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `align-self()`
+- [`4990e7a`](https://github.com/rx1310/kalium19/commit/4990e7aee36da7d86bb3407d9a4371db7241c88e) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `align-items()`
+- [`56cee3e`](https://github.com/rx1310/kalium19/commit/56cee3eeace01f184c29fc10ed0c45a26613a9e6) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `align-content()`
+- [`e24e526`](https://github.com/rx1310/kalium19/commit/e24e526ae2dc239a042a5168ed38b041d882de73) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-width()`
+- [`ad4b1bf`](https://github.com/rx1310/kalium19/commit/ad4b1bf9c69d73eeca1da2a04e898babc7a3fdaf) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-span()`
+- [`a885759`](https://github.com/rx1310/kalium19/commit/a88575945a52b0c02d257e3632b41bdda1500e4d) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-rule()`
+- [`c92a52f`](https://github.com/rx1310/kalium19/commit/c92a52f1cd1109cc9d1943d92667091fc3afcd85) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-rule-width()`
+- [`96a5667`](https://github.com/rx1310/kalium19/commit/96a5667e5f3b610d49a32e359f48e4fb68a25ea8) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-rule-style()`
+- [`33775de`](https://github.com/rx1310/kalium19/commit/33775de82587513c62f0ebbd465203ac9ff0c35f) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-rule-color()`
+- [`49f8519`](https://github.com/rx1310/kalium19/commit/49f8519eff822530c30726cf7d7bf298b327fff9) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-gap()`
+- [`2a2b770`](https://github.com/rx1310/kalium19/commit/2a2b7709f7908761e081cb9bcf3bcfaaaee07e96) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-fill()`
+- [`baf8092`](https://github.com/rx1310/kalium19/commit/baf8092236ceb04b83f08281c708155c913b0e27) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `column-count()`
+- [`6d5b3a8`](https://github.com/rx1310/kalium19/commit/6d5b3a8c89c9d95bf577d8cfc2dd794698980bce) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `columns()`
+- [`4c8e8e1`](https://github.com/rx1310/kalium19/commit/4c8e8e1968a4a2eefda59eda10df79bd40a2a588) [@rx1310](https://github.com/rx1310): добавляет инфу о `clearfix()`
+- [`c8ea071`](https://github.com/rx1310/kalium19/commit/c8ea071cb10295503cdd1720cb03484844341895) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `clearfix`
+- [`f0ca754`](https://github.com/rx1310/kalium19/commit/f0ca7543e41046d062f03c1c4e1f831b81c005bc) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `centering`
+- [`890ae27`](https://github.com/rx1310/kalium19/commit/890ae2759e4c584747ee991219e740bc4daab342) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `center-block`
+- [`90520e2`](https://github.com/rx1310/kalium19/commit/90520e24faefdc1be0a66df3f0454f3c67b37c5d) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `box-sizing`
+- [`0ff3bc9`](https://github.com/rx1310/kalium19/commit/0ff3bc9ae08a47d8b3113376a66204f9fd43661f) [@rx1310](https://github.com/rx1310): добавляет npm-команду `git:log-last-tag` для вывода изменений с последнего тега
+- [`f4451fd`](https://github.com/rx1310/kalium19/commit/f4451fd41cede6c37d91d197725ee87d65ed15a2) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `box-shadow`
+- [`6839623`](https://github.com/rx1310/kalium19/commit/6839623901a0b9aa02718242b8a9dc463342aa35) [@rx1310](https://github.com/rx1310): доработки для @sassdoc
+- [`5e8720c`](https://github.com/rx1310/kalium19/commit/5e8720c23ff772e78b94891124ba5f44615ec2b9) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `border-radius`
+- [`2d9d192`](https://github.com/rx1310/kalium19/commit/2d9d19233a3316813bb7c6f12fd76b50a8870e00) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `border-<corner>-radius`
+
 ## v4.0.0-prerelease
 - [`83827c3`](https://github.com/rx1310/kalium19/commit/83827c35df78354b34001c05de35089c63ab0f55) [@rx1310](https://github.com/rx1310): релиз v4.0.0 (Pre-Release)
 - [`ae8a118`](https://github.com/rx1310/kalium19/commit/ae8a11851d8e9456d28e2dd7f994edde85ad230c) [@rx1310](https://github.com/rx1310): небольшие правки в README.md
