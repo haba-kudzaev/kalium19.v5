@@ -1,3 +1,16 @@
+/// Помощник по медиа-запросам для объявления медиа-запросов по соотношению пикселей устройства.
+/// @name  mquery
+/// @author Gilles Bertaux
+/// @link https://github.com/gillesbertaux/andy
+/// @access public
+/// @since 4.0.0
+/// @example scss - Usage
+///   .foo {
+///     @include mquery-r(2) {
+///       width: 100%;
+///     }
+///   }
+/// @param {number} $ratio [false] - минимальное соотношение пикселей устройства
 @mixin mquery-r($ratio) {
 	@media
 		only screen and (-webkit-min-device-pixel-ratio: $ratio),

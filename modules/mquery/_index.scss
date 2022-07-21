@@ -11,7 +11,7 @@
 ///     }
 ///   }
 /// @param {length} $width - `max-width`
-/// @param {number | boonean} $ratio [false] - минимальное соотношение пикселей устройства
+/// @param {number | boolean} $ratio [false] - минимальное соотношение пикселей устройства
 @mixin mquery($width, $ratio: false) {
 	@if $ratio {
 		@media
