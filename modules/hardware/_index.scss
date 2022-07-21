@@ -1,3 +1,10 @@
+/// @name hardware
+/// @author gpessia
+/// @link https://github.com/gpessia
+/// @access public
+/// @since 4.0.0
+/// @param {boolean} $backface [true]
+/// @param {int} $perspective [1000]
 @mixin hardware($backface: true, $perspective: 1000) {
 	@if $backface {
 		backface-visibility: hidden;
