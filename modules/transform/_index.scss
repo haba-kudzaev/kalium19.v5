@@ -1,6 +1,15 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transform()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transform` с префиксами, которые хранятся в переменной `$prfxs_transform`
+///
+/// @name transform
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params - значение свойства `transform`
 @mixin transform($params...) {
 	@include prefixer(
 		transform,
