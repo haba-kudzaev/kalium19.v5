@@ -1,6 +1,15 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transition-timing-function()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transition-timing-function` с префиксами, которые хранятся в переменной `$prfxs_transition`
+///
+/// @name transition-timing-function
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $params - значение свойства `transition-timing-function`
 @mixin transition-timing-function($params...) {
 	@include prefixer(
 		transition-timing-function,
