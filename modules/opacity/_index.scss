@@ -2,24 +2,30 @@
 @use '../prefixer' as *;
 @use '../utils/map-deep-get' as *;
 
-@mixin opacity($val) {
+/// @name opacity
+/// @access public
+/// @require {mixin} prefixer
+/// @require {function} map-deep-get
+/// @since 4.0.0
+/// @param {string} $value - значение свойства `opacity`
+@mixin opacity($value) {
 
-	$val-ie: $val * 100;
+	$value-ie: $value * 100;
 
 	@include prefixer(
 		opacity,
-		$val,
+		$value,
 		$prfxs_opacity
 	);
 
 	@if map-deep-get($opacity, ie5) == true {
 		/* for IE 5-7 */
-		filter: alpha(opacity=$val-ie);
+		filter: alpha(opacity=$value-ie);
 	}
 
 	@if map-deep-get($opacity, ie8) == true {
 		/* for IE 8 */
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$val-ie})";
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value-ie})";
 	}
 
 }
