@@ -1,3 +1,7 @@
+/// @name scroll-behavior
+/// @access public
+/// @since 4.0.0
+/// @param {string} $value [smooth]
 @mixin scroll-behavior($value: smooth) {
 	@media (prefers-reduced-motion: no-preference) {
 		scroll-behavior: $value;
