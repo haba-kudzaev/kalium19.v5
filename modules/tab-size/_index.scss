@@ -1,6 +1,11 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// @name hardware
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {int} $size
 @mixin tab-size($size) {
 	@include prefixer(
 		tab-size,
