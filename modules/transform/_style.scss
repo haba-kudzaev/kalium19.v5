@@ -1,6 +1,15 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 
+/// Миксин `transform-style()` является лишь оберткой
+/// над миксином `prefixer()`, который генерирует свойство
+/// `transform-style` с префиксами, которые хранятся в переменной `$prfxs_transform-style`
+///
+/// @name transform-style
+/// @access public
+/// @require {mixin} prefixer
+/// @since 4.0.0
+/// @param {string} $style [flat] - значение свойства `transform-style`
 @mixin transform-style($style: flat) {
 	@include prefixer(
 		transform-style,
@@ -9,10 +18,18 @@
 	);
 }
 
+/// @name transform-style-flat
+/// @access public
+/// @require {mixin} transform-style
+/// @since 4.0.0
 @mixin transform-style-flat {
 	@include transform-style(flat);
 }
 
+/// @name transform-style-3d
+/// @access public
+/// @require {mixin} transform-style
+/// @since 4.0.0
 @mixin transform-style-3d {
 	@include transform-style(preserve-3d);
 }
