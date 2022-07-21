@@ -1,3 +1,17 @@
+/// Помощник медиа-запросов для объявления медиа-запросов по ширине и, необязательно, по соотношению.
+/// @name  mquery
+/// @author Gilles Bertaux
+/// @link https://github.com/gillesbertaux/andy
+/// @access public
+/// @since 4.0.0
+/// @example scss - Usage
+///   .foo {
+///     @include mquery(350px, 2) {
+///       width: 100%;
+///     }
+///   }
+/// @param {length} $width - `max-width`
+/// @param {number | boonean} $ratio [false] - минимальное соотношение пикселей устройства
 @mixin mquery($width, $ratio: false) {
 	@if $ratio {
 		@media
@@ -12,10 +26,3 @@
 		}
 	}
 }
-
-/// @example scss - Usage
-///   .foo {
-///     @include mquery(350px, 2) {
-///       width: 100%;
-///     }
-///   }
