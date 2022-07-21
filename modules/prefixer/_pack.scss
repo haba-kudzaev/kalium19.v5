@@ -1,6 +1,20 @@
 @use '../config' as *;
 @use '../utils/map-deep-get' as *;
 
+/// @name prefixer-pack
+/// @access public
+/// @since 4.0.0
+/// @require {function} map-deep-get
+/// @example scss
+/// 	.block {
+/// 		@include prefixer-pack((
+/// 			border-radius: 12px,
+/// 			box-shadow: none
+/// 		), webkit moz);
+/// 	}
+/// @param {string} $decs - пара свойство:значение
+/// @param {list} $prefixes-list [()] - список префиксов
+/// @param {boolean} $saveInitial [true] - сохранение свойства без префикса
 @mixin prefixer-pack($decs, $prefixes-list: (), $saveInitial: true) {
 
 	// циклично проходим по всем свойствам списка $decs
