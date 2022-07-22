@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@forward 'package' show check;
+
 @forward 'modules/config';
 
 @forward 'modules/animation';

@@ -1,0 +1,58 @@
+$package: (
+
+	name: "@rx1310/kalium19",
+	title: "Kalium19",
+	description: "📦 Набор утилит, миксинов, расширений на языке препроцессора @sass для помощи в ускорении, упрощении и улучщения процесса написания CSS-стилей.",
+
+	version: (
+		major: 4,
+		minor: 1,
+		patch: 0
+	),
+
+	repository: (
+		type: "git",
+		url: "git+https://github.com/rx1310/kalium19.git"
+	),
+
+	author: (
+		name: "Haba Kudzaev (rx1310)",
+		email: "rx1310@inbox.ru",
+		url: "https://rx1310.github.io"
+	),
+
+	license: "MIT",
+	bugs: "https://github.com/rx1310/kalium19/issues",
+	homepage: "https://github.com/rx1310/kalium19#readme",
+
+);
+
+@function getPackageVersion() {
+
+	$major: map-get($package, version, major);
+	$minor: map-get($package, version, minor);
+	$patch: map-get($package, version, patch);
+
+	@return $major + '.' + $minor + '.' + $patch;
+
+}
+
+@mixin check() {
+
+	$package-title: map-get($package, title);
+	$package-name: map-get($package, name);
+	$package-author: map-get($package, author, name);
+	$package-license: map-get($package, license);
+	$package-homepage: map-get($package, homepage);
+
+	/*
+	 * @name    : #{$package-name} (title: #{$package-title})
+	 * @version : #{getPackageVersion()}
+	 * @license : #{$package-license}
+	 * @author  : #{$package-author}
+	 * @homepage: #{$package-homepage}
+	 */
+
+	@debug 'Installed #{$package-title} v#{getPackageVersion()}'
+
+}
