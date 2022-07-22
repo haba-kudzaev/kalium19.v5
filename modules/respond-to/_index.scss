@@ -4,7 +4,7 @@
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
 /// @access public
-/// @require {variable} $breakpoints
+/// @see {variable} $breakpoints
 /// @since 4.0.0
 /// @param {string | int} $breakpoint
 @mixin respond-to($breakpoint) {

@@ -6,7 +6,7 @@
 /// @access public
 /// @require {mixin} prefixer
 /// @require {function} map-deep-get
-/// @require {variable} $opacity
+/// @see {variable} $opacity
 /// @since 4.0.0
 /// @param {string} $value - значение свойства `opacity`
 @mixin opacity($value) {

@@ -83,7 +83,7 @@ $keyframes: (
 ) !default;
 
 /// @access public
-/// @see respond-to
+/// @see {mixin} respond-to
 $breakpoints: (
 	xs: (min-width: 0),
 	sm: (min-width: 576px),

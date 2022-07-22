@@ -4,7 +4,7 @@
 /// @name font-face
 /// @access public
 /// @require {function} contains
-/// @require {variable} $formats_font-face
+/// @see {variable} $formats_font-face
 /// @since 4.0.0
 /// @example SCSS
 /// 	@include font-face(Roboto, "./fonts/Roboto", normal, normal, woff2 woff ttf);

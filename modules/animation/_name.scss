@@ -9,7 +9,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_animation-name
+/// @see {variable} $prfxs_animation-name
 /// @since 4.0.0
 /// @param {string} $name - значение свойства `animation-name`
 @mixin animation-name($name) {

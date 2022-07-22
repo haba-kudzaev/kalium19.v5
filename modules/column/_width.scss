@@ -9,7 +9,7 @@
 /// @access public
 /// @group column
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_column-width
+/// @see {variable} $prfxs_column-width
 /// @since 4.0.0
 /// @param $width - значение свойства `column-width`
 @mixin column-width($width) {

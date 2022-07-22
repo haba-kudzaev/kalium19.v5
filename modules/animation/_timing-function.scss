@@ -10,7 +10,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_animation-timing-function
+/// @see {variable} $prfxs_animation-timing-function
 /// @since 4.0.0
 /// @param {string} $value [ease] - значение свойства `animation-timing-function`
 @mixin animation-timing-function($value: ease) {

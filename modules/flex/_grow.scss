@@ -5,8 +5,8 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_box-flex
-/// @require {variable} $prfxs_flex-grow
+/// @see {variable} $prfxs_box-flex
+/// @see {variable} $prfxs_flex-grow
 /// @since 4.0.0
 /// @param {int} $value - значение свойства `flex-grow`
 @mixin flex-grow($value: 1) {

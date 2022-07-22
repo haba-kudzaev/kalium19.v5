@@ -6,8 +6,8 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_box-align
-/// @require {variable} $prfxs_align-items
+/// @see {variable} $prfxs_box-align
+/// @see {variable} $prfxs_align-items
 /// @require flex-align
 /// @since 4.0.0
 /// @param {string} $val [stretch] - значение свойства `align-items`

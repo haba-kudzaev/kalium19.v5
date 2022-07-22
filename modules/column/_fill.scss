@@ -12,7 +12,7 @@
 /// @since 4.0.0
 /// @see {mixin} column-fill-balance
 /// @see {mixin} column-fill-balance-all
-/// @require {variable} $prfxs_column-fill
+/// @see {variable} $prfxs_column-fill
 /// @param {string} $type [auto] - значение свойства `column-fill`
 @mixin column-fill($type: auto) {
 
