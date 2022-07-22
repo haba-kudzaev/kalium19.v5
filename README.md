@@ -1,52 +1,91 @@
-<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo.png?raw=true" alt="Logo" width="150px" align="right" /> Kalium19 [![Список изменений](https://img.shields.io/github/package-json/version/rx1310/kalium19/main?label=%20)](CHANGELOG.md)
+<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo.png?raw=true" alt="Logo" width="80px" align="right" /> Kalium19
 ======
 :package: Набор утилит, миксинов, расширений на языке препроцессора [SASS](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
-![Последний коммит](https://img.shields.io/github/last-commit/rx1310/kalium19)
-![Количество коммитов в год](https://img.shields.io/github/commit-activity/y/rx1310/kalium19)
-![Количество ЯП](https://img.shields.io/github/languages/count/rx1310/kalium19?color=fff)
-![Топ ЯП](https://img.shields.io/github/languages/top/rx1310/kalium19?color=C76494)
-![Версия SASS](https://img.shields.io/github/package-json/dependency-version/rx1310/kalium19/dev/sass/main?color=CC6699)
-![Размер репозитория](https://img.shields.io/github/repo-size/rx1310/kalium19?color=ffb600)
-![Размер кода](https://img.shields.io/github/languages/code-size/rx1310/kalium19)
-[![Количество открытых issue](https://img.shields.io/github/issues-raw/rx1310/kalium19)
-![Количество закрытых issues](https://img.shields.io/github/issues-closed-raw/rx1310/kalium19?color=354a6d)](https://github.com/rx1310/kalium19/issues)
-[![Количество открытых PR](https://img.shields.io/github/issues-pr-raw/rx1310/kalium19?label=open%20PR%27s)
-![Количество закрытых PR](https://img.shields.io/github/issues-pr-closed-raw/rx1310/kalium19?label=closed%20PR%27s)](https://github.com/rx1310/kalium19/pulls)
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=91muilak.kalium19)
-![Лицензия](https://img.shields.io/github/license/rx1310/kalium19)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/npm%20publisher?label=npm%20publisher&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/GitHub%20Packages%20publisher?label=github%20package%20publisher&style=flat-square)
 
-## 📥 Начало работы
-Для установки Kalium19 в проект будет хорошо использовать пакетный менеджер от NodeJS - [npm](https://nodejs.org/en/download/).
+![GitHub](https://img.shields.io/github/license/rx1310/kalium19?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/rx1310/kalium19?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/rx1310/kalium19?style=flat-square)
+![npm](https://img.shields.io/npm/v/@rx1310/kalium19?label=npm%3A%20version&style=flat-square)
+![npms.io (popularity)](https://img.shields.io/npms-io/popularity-score/@rx1310/kalium19?label=npm%3A%20popularity&style=flat-square)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@rx1310/kalium19?label=npm%3A%20dependencies&style=flat-square)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@rx1310/kalium19?label=npm%3A%20minified%20size&style=flat-square)
+![npm](https://img.shields.io/npm/dm/@rx1310/kalium19?label=npm%3A%20downloads&style=flat-square)
+![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/@rx1310/kalium19/sass?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/rx1310/kalium19?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/rx1310/kalium19?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/rx1310/kalium19?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rx1310/kalium19?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/rx1310/kalium19?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/rx1310/kalium19?style=flat-square)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/rx1310/kalium19?style=flat-square)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/rx1310/kalium19?style=flat-square)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/rx1310/kalium19?style=flat-square)
+![GitHub milestones](https://img.shields.io/github/milestones/all/rx1310/kalium19?style=flat-square)
 
-### Установка через npm
-Откройте терминал в папке проекта и выполните команду
-```bash
-npm install @rx1310/kalium19
-```
+## Установка и использование
+Для начала необходимо иметь установленный пакетный менеджер (напр.: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) или любой другой совместимый). Я буду показывать на примере npm.
 
-После в основном SASS/SCSS-файле стилей в начале пропишите импорт модуля через директиву `@use`:
-```scss
-@use 'node_modules/@rx1310/kalium19' as k19;
-```
-- `node_modules/` - это папка, куда скачались файлы Kalium19
-- `k19` - это название пространства имен (можно указать `*`)
+Порядок действий:
 
-### Клонирование репозитория
+1. откройте терминал (командную строку) в папке проекта:
+
+    ```bash
+    cd my-project
+    ```
+
+2. введите команду для установки npm-пакета [`@rx1310/kalium19`](https://npmjs.com/package/@rx1310/kalium19) (также есть на [GitHub Packages](https://github.com/rx1310/kalium19/packages/1547304)) в проект:
+
+    ```bash
+    npm install @rx1310/kalium19
+    ```
+
+3. дождитесь установки всех пакетов и зависимостей в проект
+4. в основной SASS-файл стилей пропишите импорт модуля `kalium19`:
+
+    ```scss
+    @use 'node_modules/@rx1310/kalium19' as *;
+    ```
+
+    > `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в SASS](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
+
+5. для проверки правильного импорта можно вставить `@debug $kalium19;` в файл стилей после импорта:
+
+    ```scss
+    @use 'node_modules/@rx1310/kalium19' as *;
+
+    @debug $kalium19;
+    ```
+    и в консоли получить след. сообщение:
+
+    ```log
+    index.scss:3 Debug: kalium19
+    ```
+
+6. готово!
+
+### А если не используется пакетный менеджер?
+В таком случае можно просто склонировать репозиторий проекта в папку проекта, используя [Git](https://git-scm.com/downloads):
+
 ```bash
 git clone https://github.com/rx1310/kalium19
 ```
 
-#### Клонирование в качестве субмодуля
-Также можно склонировать проект в качестве [Git Submodule](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8) с GitHub используя команду:
+> Импорт Kalium19 производится также, как и в пункте 4 в варианте с пакетным менеджером.
+
+Также можно склонировать Kalium19 в качестве субмодуля Git:
+
 ```bash
 git submodule add https://github.com/rx1310/kalium19
 ```
 
-> Для клонирования проекта необходимо иметь установленный [git](https://git-scm.com/downloads). Если он установлен, то просто выполните команду `git clone` в терминале.
+### А если не установлена утилита Git?
+Это, конечно же, странно, но возможно. В таком случае можно просто скачать архив [репозитория с GitHub](https://github.com/rx1310/kalium19/releases):
 
-### Загрузка архива репозитория
-Если у Вас нет желания работать с npm, то Вы можете со [страницы репозитория](https://github.com/rx1310/kalium19) скачать архив репозитория.
+1. выберите версию
+2. на странице релиза версии внизу выберите ссылку [Source code (zip)](https://github.com/rx1310/kalium19/releases) и скачайте архив нужной версии проекта.
 
 > Если у Вас установлен [curl](https://curl.se/) или [Wget](https://www.gnu.org/software/wget/), то можете воспользоваться командой в терминале:
 > ```bash
@@ -56,30 +95,7 @@ git submodule add https://github.com/rx1310/kalium19
 > # wget
 > wget --no-check-certificate --content-disposition https://github.com/rx1310/kalium19/archive/refs/heads/main.zip
 > ```
-
-## 👨‍💻 Разработка
-Чтобы самому начать разработку Kalium19 локально необходимо:
-
-1. [Склонировать](https://github.com/rx1310/kalium19/edit/main/README.md#%D0%BA%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F) репозиторий на Ваш компьютер,
-2. Открыть папку проекта в терминале,
-
-    ```bash
-    cd kalium19
-    ```
-3. Установить все зависимости проекта,
-
-    ```bash
-    npm install
-    ```
-
-4. **Готово!**
-
-### Сборка
-В файле [package.json](package.json) уже прописаны скрипты для компиляции для тестирования.
-
-> На самом деле сам по себе Kalium19 в стили ничего не добавляет. Поэтому, если Вы скомпилируете [index.scss](index.scss), то в CSS ничего не будет.
-
-Для разработки я использую команду `npm run sass:watch`, которая компилирует SASS сразу при изменениях. Эта команда собирает только один файл — **test.scss** (его нет в репо т.к. он в исключении [.gitignore](.gitignore)).
+> Данные команды скачать архив версии с ветки [`main`](https://github.com/rx1310/kalium19/tree/main).
 
 ## Лицензия
 Проект [Kalium19](https://github.com/rx1310/kalium19) распространяется совершенно бесплатно и находится под защитой лицензии [MIT](LICENSE).
