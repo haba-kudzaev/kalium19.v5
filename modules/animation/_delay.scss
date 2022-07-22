@@ -9,7 +9,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_animation-delay
+/// @see {variable} $prfxs_animation-delay
 /// @since 4.0.0
 /// @param {string | int} $delay [0s] - значение свойства `animation-delay`
 @mixin animation-delay($delay: 0s) {

@@ -9,7 +9,7 @@
 /// @access public
 /// @group column
 /// @require {mixin} prefixer
-/// @require {variable} $prfxs_column-rule-style
+/// @see {variable} $prfxs_column-rule-style
 /// @since 4.0.0
 /// @param $style - значение свойства `column-rule-style`
 @mixin column-rule-style($style) {

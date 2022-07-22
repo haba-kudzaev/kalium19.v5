@@ -95,7 +95,7 @@ git submodule add https://github.com/rx1310/kalium19
 > # wget
 > wget --no-check-certificate --content-disposition https://github.com/rx1310/kalium19/archive/refs/heads/main.zip
 > ```
-> Данные команды скачать архив версии с ветки [`main`](https://github.com/rx1310/kalium19/tree/main).
+> Данные команды скачают архив версии с ветки [`main`](https://github.com/rx1310/kalium19/tree/main).
 
 ## Лицензия
 Проект [Kalium19](https://github.com/rx1310/kalium19) распространяется совершенно бесплатно и находится под защитой лицензии [MIT](LICENSE).
