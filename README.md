@@ -51,17 +51,29 @@
 
     > `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в SASS](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
 
-5. для проверки правильного импорта можно вставить `@debug $kalium19;` в файл стилей после импорта:
+5. для проверки правильного импорта можно вставить `@include check;` в файл стилей после импорта:
 
     ```scss
     @use 'node_modules/@rx1310/kalium19' as *;
 
-    @debug $kalium19;
+    @include check;
     ```
     и в консоли получить след. сообщение:
 
     ```log
-    index.scss:3 Debug: kalium19
+    index.scss:3 Debug: Installed Kalium19 v4.1.0
+    ```
+
+    а в итоговом CSS-файле должно быть что-то похожее:
+
+    ```css
+    /*
+      * @name    : @rx1310/kalium19 (title: Kalium19)
+      * @version : 4.1.0
+      * @license : MIT
+      * @author  : Haba Kudzaev (rx1310)
+      * @homepage: https://github.com/rx1310/kalium19#readme
+    */
     ```
 
 6. готово!
