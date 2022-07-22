@@ -1,3 +1,11 @@
+## v4.1.1
+- [`394646d`](https://github.com/rx1310/kalium19/commit/394646d50114da7d315b651065850d40c4de557d) [@rx1310](https://github.com/rx1310): удаляет карту `$shadows`
+- [`7d4a03a`](https://github.com/rx1310/kalium19/commit/7d4a03af2537cc64fd97bc2a15d3f1f356ab1e84) [@rx1310](https://github.com/rx1310): добавляет миксин `check()`
+- [`d667ac8`](https://github.com/rx1310/kalium19/commit/d667ac8d7df7887a98b4037fad8ae33267afba63) [@rx1310](https://github.com/rx1310): небольшие правки
+- [`581268d`](https://github.com/rx1310/kalium19/commit/581268dc17697b346d635c921d56047c92cc789e) [@rx1310](https://github.com/rx1310): обновляет файл README.md
+- [`878c4f0`](https://github.com/rx1310/kalium19/commit/878c4f0e1bfabd4373b1462eab145aec743934bd) [@rx1310](https://github.com/rx1310): удаляет пакет `sassdoc`
+- [`d6363c5`](https://github.com/rx1310/kalium19/commit/d6363c5dafe839930d21978606a1c431d353e993) [@rx1310](https://github.com/rx1310): добавляет в shadows.scss еще теней
+
 ## v4.1.0-release
 > Это обновление функционально ничего нового не несёт, а всего-то добавляет небольшую документацию к коду. Однако, обновлять всё же советую, т.к. во время написания доки я находил и поправлял незначительные ошибки.
 - [`003ed09`](https://github.com/rx1310/kalium19/commit/003ed0920fd4203192f0923b10e0aeddfe9b3a3d) [@rx1310](https://github.com/rx1310): небольшие правки
