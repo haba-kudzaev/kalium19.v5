@@ -18,25 +18,34 @@
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
-/// @param {int | string} $args...
-@mixin position-absolute($args...) {
-	@include position(absolute, $args);
+/// @param {int} $top [null]
+/// @param {int} $right [null]
+/// @param {int} $bottom [null]
+/// @param {int} $left [null]
+@mixin position-absolute($top: null, $right: null, $bottom: null, $left: null) {
+	@include position(absolute, $top: $top, $right: $right, $bottom: $bottom, $left: $left);
 }
 
 /// @name position-relative
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
-/// @param {int | string} $args...
-@mixin position-relative($args...) {
-	@include position(relative, $args);
+/// @param {int} $top [null]
+/// @param {int} $right [null]
+/// @param {int} $bottom [null]
+/// @param {int} $left [null]
+@mixin position-relative($top: null, $right: null, $bottom: null, $left: null) {
+	@include position(relative, $top: $top, $right: $right, $bottom: $bottom, $left: $left);
 }
 
 /// @name position-fixed
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
-/// @param {int | string} $args...
-@mixin position-fixed($args...) {
-	@include position(fixed, $args);
+/// @param {int} $top [null]
+/// @param {int} $right [null]
+/// @param {int} $bottom [null]
+/// @param {int} $left [null]
+@mixin position-fixed($top: null, $right: null, $bottom: null, $left: null) {
+	@include position(fixed, $top: $top, $right: $right, $bottom: $bottom, $left: $left);
 }

@@ -2,8 +2,8 @@
 ======
 :package: Набор утилит, миксинов, расширений на языке препроцессора [SASS](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/npm%20publisher?label=npm%20publisher&style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/GitHub%20Packages%20publisher?label=github%20package%20publisher&style=flat-square)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/npm%20publisher?label=npm%20publisher&style=flat-square)](https://npmjs.com/package/@rx1310/kalium19)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/GitHub%20Packages%20publisher?label=github%20package%20publisher&style=flat-square)](https://github.com/rx1310/kalium19/packages/1547304)
 
 ![GitHub](https://img.shields.io/github/license/rx1310/kalium19?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/rx1310/kalium19?style=flat-square)
@@ -108,6 +108,9 @@ git submodule add https://github.com/rx1310/kalium19
 > wget --no-check-certificate --content-disposition https://github.com/rx1310/kalium19/archive/refs/heads/main.zip
 > ```
 > Данные команды скачают архив версии с ветки [`main`](https://github.com/rx1310/kalium19/tree/main).
+
+## Документация
+На данный момент документация формируется средствами утилиты [sassdoc](http://sassdoc.com/) и доступна по [этой ссылке](https://rx1310.github.io/kalium19).
 
 ## Лицензия
 Проект [Kalium19](https://github.com/rx1310/kalium19) распространяется совершенно бесплатно и находится под защитой лицензии [MIT](LICENSE).
