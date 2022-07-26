@@ -1,3 +1,7 @@
+## v4.1.2
+- [`0058a61`](https://github.com/rx1310/kalium19/commit/0058a613684a60b9670f39e0aa83ee6c46f25ce8) [@rx1310](https://github.com/rx1310): исправляет работу миксинов `position-*`
+- [`ad704ad`](https://github.com/rx1310/kalium19/commit/ad704ad465c1fb0459f82280e819d7aab4532e39) [@rx1310](https://github.com/rx1310): обновляет README.md
+
 ## v4.1.1
 - [`394646d`](https://github.com/rx1310/kalium19/commit/394646d50114da7d315b651065850d40c4de557d) [@rx1310](https://github.com/rx1310): удаляет карту `$shadows`
 - [`7d4a03a`](https://github.com/rx1310/kalium19/commit/7d4a03af2537cc64fd97bc2a15d3f1f356ab1e84) [@rx1310](https://github.com/rx1310): добавляет миксин `check()`
