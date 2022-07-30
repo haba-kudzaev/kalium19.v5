@@ -1,4 +1,7 @@
+@use '../prefixer' as *;
+
 /// @name position
+/// @group position
 /// @access public
 /// @since 4.0.0
 /// @param {string} $position - значение свойства `posotion`
@@ -15,6 +18,7 @@
 }
 
 /// @name position-absolute
+/// @group position
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
@@ -27,6 +31,7 @@
 }
 
 /// @name position-relative
+/// @group position
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
@@ -39,6 +44,7 @@
 }
 
 /// @name position-fixed
+/// @group position
 /// @access public
 /// @since 4.0.0
 /// @require {mixin} position
@@ -48,4 +54,16 @@
 /// @param {int} $left [null]
 @mixin position-fixed($top: null, $right: null, $bottom: null, $left: null) {
 	@include position(fixed, $top: $top, $right: $right, $bottom: $bottom, $left: $left);
+}
+
+/// @name position-sticky
+/// @group position
+/// @access public
+/// @since 4.1.3
+/// @require {mixin} prefixer
+/// @param {string} $side [top] - сторона, к которой "лепится" элемент
+/// @param {int} $sideOffset [0] - отступ от стороны
+@mixin position-sticky($side: "top", $sideOffset: 0) {
+	@include prefixer(position, sticky, webkit, true, true);
+	#{$side}: $sideOffset;
 }
