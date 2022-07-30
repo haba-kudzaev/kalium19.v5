@@ -4,9 +4,20 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @since 4.0.0
-/// @param {string} $type [null] - значение свойства `flex`
-@mixin flex($type: null) {
+/// @since 4.1.3
+/// @param {args} $values
+@mixin flex($values) {
+	@include k19.prefixer(flex, $values, webkit ms);
+	@include k19.prefixer(box-flex, $values, webkit moz, false);
+}
+
+/// @name flexbox
+/// @access public
+/// @group flex
+/// @require {mixin} prefixer
+/// @since 4.1.3
+/// @param {string} $type [null]
+@mixin flexbox($type: null) {
 	@if $type == inline {
 
 		display: inline-flex;
