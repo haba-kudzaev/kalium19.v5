@@ -1,3 +1,7 @@
+## v4.1.3
+- [`418d7d0`](https://github.com/rx1310/kalium19/commit/418d7d0fe03d9e976fcf8380f38ca4dffd81f12f) [@rx1310](https://github.com/rx1310): добавляет миксин `position-sticky()`
+- [`e0e8f7e`](https://github.com/rx1310/kalium19/commit/e0e8f7eb7bc50977b7967cdf546738de3b74dc7a) [@rx1310](https://github.com/rx1310): добавляет миксин `flex()`
+
 ## v4.1.2
 - [`0058a61`](https://github.com/rx1310/kalium19/commit/0058a613684a60b9670f39e0aa83ee6c46f25ce8) [@rx1310](https://github.com/rx1310): исправляет работу миксинов `position-*`
 - [`ad704ad`](https://github.com/rx1310/kalium19/commit/ad704ad465c1fb0459f82280e819d7aab4532e39) [@rx1310](https://github.com/rx1310): обновляет README.md
