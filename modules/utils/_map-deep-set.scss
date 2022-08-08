@@ -1,6 +1,8 @@
 @use 'sass:map';
 
 /// Deep set function to set a value in nested maps
+/// ---
+/// @since 4.0.0
 /// @name map-deep-set
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
