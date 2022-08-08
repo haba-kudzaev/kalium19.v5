@@ -1,0 +1,12 @@
+/// @since 4.2.0
+/// @name convert-to-em
+/// @author Halil İbrahim Çakıroğlu
+/// @link https://github.com/selfishprimate/gerillass
+/// @access public
+/// @return {String}
+/// @group boolean
+@function convert-to-em($value) {
+  $base-value: 16px;
+  $rem-value: math.div($value, $base-value);
+  @return $rem-value + unquote("em");
+}
