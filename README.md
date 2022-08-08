@@ -68,12 +68,11 @@
 
     ```css
     /*
-      * @name    : @rx1310/kalium19 (title: Kalium19)
-      * @version : 4.1.0
-      * @license : MIT
-      * @author  : Haba Kudzaev (rx1310)
-      * @homepage: https://github.com/rx1310/kalium19#readme
-    */
+     * @name    : @rx1310/kalium19 (title: Kalium19)
+     * @license : MIT
+     * @author  : Haba Kudzaev (rx1310) <rx1310@inbox.ru>
+     * @homepage: https://github.com/rx1310/kalium19
+     */
     ```
 
 6. готово!
