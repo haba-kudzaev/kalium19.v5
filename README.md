@@ -24,6 +24,10 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/rx1310/kalium19?style=flat-square)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/rx1310/kalium19?style=flat-square)
 ![GitHub milestones](https://img.shields.io/github/milestones/all/rx1310/kalium19?style=flat-square)
+[![Поддержка Dart Sass](https://img.shields.io/badge/Dart%20Sass%20-1.23.0%2B-cc6699?style=flat-square)](https://shields.io/)
+[![Поддержка LibSass](https://img.shields.io/badge/LibSass-⤬-red?style=flat-square)](https://shields.io/)
+[![Поддержка ruby-sass](https://img.shields.io/badge/Ruby%20Sass%20-⤬-red?style=flat-square)](https://shields.io/)
+[![Поддержка node-sass](https://img.shields.io/badge/node--sass%20-⤬-red?style=flat-square)](https://shields.io/)
 
 ## Установка и использование
 Для начала необходимо иметь установленный пакетный менеджер (напр.: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) или любой другой совместимый). Я буду показывать на примере npm.
