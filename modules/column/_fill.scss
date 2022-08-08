@@ -12,8 +12,8 @@
 /// @since 4.0.0
 /// @see {mixin} column-fill-balance
 /// @see {mixin} column-fill-balance-all
-/// @see {variable} $prfxs_column-fill
-/// @param {string} $type [auto] - значение свойства `column-fill`
+/// @see {Variable} $prfxs_column-fill
+/// @param {String} $type [auto] - значение свойства `column-fill`
 @mixin column-fill($type: auto) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

@@ -4,11 +4,11 @@
 /// @name keyframes
 /// @access public
 /// @require {function} map-deep-get
-/// @see {variable} $keyframes
+/// @see {Variable} $keyframes
 /// @since 4.0.0
 /// @example SCSS
 /// 	@include keyframes(frameName) { ... }
-/// @param {string} $name
+/// @param {String} $name
 @mixin keyframes($name) {
 
 	@if map-deep-get($keyframes, webkit) == true {

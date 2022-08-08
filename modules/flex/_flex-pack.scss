@@ -2,7 +2,7 @@
 /// @access public
 /// @group flex
 /// @since 4.0.0
-/// @param {string} $value - значение свойства `flex-pack`
+/// @param {String} $value - значение свойства `flex-pack`
 @mixin flex-pack($value) {
 	-ms-flex-pack: $value;
 }

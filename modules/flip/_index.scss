@@ -6,7 +6,7 @@
 /// @access public
 /// @require transform
 /// @since 4.0.0
-/// @param {int} $scaleX [-1]
+/// @param {Number} $scaleX [-1]
 @mixin flip($scaleX: -1) {
 
 	@include transform(scaleX($scaleX));

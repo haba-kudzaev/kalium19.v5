@@ -12,9 +12,9 @@
 /// 			box-shadow: none
 /// 		), webkit moz);
 /// 	}
-/// @param {string} $decs - пара свойство:значение
-/// @param {list} $prefixes-list [()] - список префиксов
-/// @param {boolean} $saveInitial [true] - сохранение свойства без префикса
+/// @param {String} $decs - пара свойство:значение
+/// @param {List} $prefixes-list [()] - список префиксов
+/// @param {Boolean} $saveInitial [true] - сохранение свойства без префикса
 @mixin prefixer-pack($decs, $prefixes-list: (), $saveInitial: true) {
 
 	// циклично проходим по всем свойствам списка $decs

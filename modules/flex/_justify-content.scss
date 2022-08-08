@@ -7,10 +7,10 @@
 /// @group flex
 /// @require {mixin} prefixer
 /// @require {mixin} flex-pack
-/// @see {variable} $prfxs_box-pack
-/// @see {variable} $prfxs_justify-content
+/// @see {Variable} $prfxs_box-pack
+/// @see {Variable} $prfxs_justify-content
 /// @since 4.0.0
-/// @param {string} $val [flex-start] - значение свойства `justify-content`
+/// @param {String} $val [flex-start] - значение свойства `justify-content`
 @mixin justify-content($val: flex-start) {
 
 	@if $val == flex-start {

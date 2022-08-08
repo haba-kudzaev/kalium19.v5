@@ -8,9 +8,9 @@
 /// @name transition-duration
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_transition
+/// @see {Variable} $prfxs_transition
 /// @since 4.0.0
-/// @param {string} $params - значение свойства `transition-duration`
+/// @param {String} $params - значение свойства `transition-duration`
 @mixin transition-duration($params...) {
 	@include prefixer(
 		transition-duration,

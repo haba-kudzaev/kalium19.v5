@@ -4,9 +4,9 @@
 /// @name user-select
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_user-select
+/// @see {Variable} $prfxs_user-select
 /// @since 4.0.0
-/// @param {string} $value - значение свойства `user-select`
+/// @param {String} $value - значение свойства `user-select`
 @mixin user-select($value) {
 	@include prefixer(
 		user-select,

@@ -6,7 +6,7 @@
 /// @require {mixin} transform
 /// @require {mixin} position
 /// @since 4.0.0
-/// @param {string} $position
+/// @param {String} $position
 @mixin centering($position) {
 
 	@if $position == 'vertical' {

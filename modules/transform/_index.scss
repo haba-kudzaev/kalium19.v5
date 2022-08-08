@@ -8,9 +8,9 @@
 /// @name transform
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_transform
+/// @see {Variable} $prfxs_transform
 /// @since 4.0.0
-/// @param {string} $params - значение свойства `transform`
+/// @param {String} $params - значение свойства `transform`
 @mixin transform($params...) {
 	@include prefixer(
 		transform,

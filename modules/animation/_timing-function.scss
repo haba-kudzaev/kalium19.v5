@@ -10,9 +10,9 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation-timing-function
+/// @see {Variable} $prfxs_animation-timing-function
 /// @since 4.0.0
-/// @param {string} $value [ease] - значение свойства `animation-timing-function`
+/// @param {String} $value [ease] - значение свойства `animation-timing-function`
 @mixin animation-timing-function($value: ease) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

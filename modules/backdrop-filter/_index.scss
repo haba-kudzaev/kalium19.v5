@@ -9,9 +9,9 @@
 /// @name backdrop-filter
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_backdrop-filter
+/// @see {Variable} $prfxs_backdrop-filter
 /// @since 4.0.0
-/// @param {string} $params... - значение свойства `backdrop-filter`
+/// @param {String} $params... - значение свойства `backdrop-filter`
 @mixin backdrop-filter($params...) {
 	@include prefixer(
 		backdrop-filter,

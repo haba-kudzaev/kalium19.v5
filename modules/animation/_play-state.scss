@@ -10,9 +10,9 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation-play-state
+/// @see {Variable} $prfxs_animation-play-state
 /// @since 4.0.0
-/// @param {string} $state [running] - значение свойства
+/// @param {String} $state [running] - значение свойства
 @mixin animation-play-state($state: running) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

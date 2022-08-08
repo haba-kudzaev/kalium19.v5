@@ -9,7 +9,7 @@
 /// @access public
 /// @group column
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_column-span
+/// @see {Variable} $prfxs_column-span
 /// @since 4.0.0
 /// @param $value - значение свойства `column-span`
 @mixin column-span($value) {

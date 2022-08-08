@@ -6,11 +6,11 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_box-align
-/// @see {variable} $prfxs_align-items
+/// @see {Variable} $prfxs_box-align
+/// @see {Variable} $prfxs_align-items
 /// @require flex-align
 /// @since 4.0.0
-/// @param {string} $val [stretch] - значение свойства `align-items`
+/// @param {String} $val [stretch] - значение свойства `align-items`
 @mixin align-items($val: stretch) {
 
 	@if $val == flex-start {

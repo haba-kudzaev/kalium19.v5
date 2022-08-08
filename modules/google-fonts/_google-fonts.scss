@@ -31,10 +31,10 @@ $google-font-subsets: (
 /// @author jakob-e
 /// @link https://github.com/jakob-e
 /// @link https://codepen.io/jakob-e/pen/LVVXjO
-/// @arg {string} $name font name / string (unquoted will work too)
-/// @arg {string} $text limit request to these characters (quoted string) / string (don\'t forget to unescape)
-/// @arg {list} $weight [400]  font weight 100 - 900 / list or numeric value (100 200 300 400 ...)
-/// @arg {list} $style [normal] font style normal/italic/oblique / list or string (normal and or italic)
+/// @arg {String} $name font name / string (unquoted will work too)
+/// @arg {String} $text limit request to these characters (quoted string) / string (don\'t forget to unescape)
+/// @arg {List} $weight [400]  font weight 100 - 900 / list or numeric value (100 200 300 400 ...)
+/// @arg {List} $style [normal] font style normal/italic/oblique / list or string (normal and or italic)
 @mixin google-font($name: null, $weights: 400, $styles: normal, $text: null) {
 
 	@warn '🔶 Миксин "google-fonts" не поддерживается разработчиком Kalium19!';

@@ -10,7 +10,7 @@
 /// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
-/// @param {string} $block - название блока
+/// @param {String} $block - название блока
 @mixin b($block) {
 	.#{$block} {
 		@content;
@@ -26,7 +26,7 @@
 /// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
-/// @param {string} $element - название элемента
+/// @param {String} $element - название элемента
 @mixin e($element) {
 	$selector: &;
 	@if contains-modifier($selector, map-deep-get($bem, modifier)) {
@@ -54,7 +54,7 @@
 /// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
-/// @param {string} $modifier - название модификатора
+/// @param {String} $modifier - название модификатора
 @mixin m($modifier) {
 	@at-root {
 		#{&}#{ map-deep-get($bem, modifier) + $modifier } {

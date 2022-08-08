@@ -5,10 +5,10 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_box-ordinal-group
-/// @see {variable} $prfxs_order
+/// @see {Variable} $prfxs_box-ordinal-group
+/// @see {Variable} $prfxs_order
 /// @since 4.0.0
-/// @param {int} $value - значение свойства `order`
+/// @param {Number} $value - значение свойства `order`
 @mixin order($value: 0) {
 
 	@include prefixer(

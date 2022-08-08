@@ -6,9 +6,9 @@
 /// @access public
 /// @require {mixin} prefixer
 /// @require {function} map-deep-get
-/// @see {variable} $opacity
+/// @see {Variable} $opacity
 /// @since 4.0.0
-/// @param {string} $value - значение свойства `opacity`
+/// @param {String} $value - значение свойства `opacity`
 @mixin opacity($value) {
 
 	$value-ie: $value * 100;

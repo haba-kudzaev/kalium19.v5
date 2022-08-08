@@ -1,5 +1,10 @@
 @use 'selector-to-string' as *;
 
+/// @name contains-modifier
+/// @access public
+/// @since 4.0.0
+/// @author Marcmintel
+/// @link https://medium.com/@marcmintel
 @function contains-modifier($selector, $modifier) {
 
 	$selector: selector-to-string($selector);

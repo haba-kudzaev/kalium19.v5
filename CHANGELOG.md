@@ -17,7 +17,7 @@
 ## v4.1.0-release
 > Это обновление функционально ничего нового не несёт, а всего-то добавляет небольшую документацию к коду. Однако, обновлять всё же советую, т.к. во время написания доки я находил и поправлял незначительные ошибки.
 - [`003ed09`](https://github.com/rx1310/kalium19/commit/003ed0920fd4203192f0923b10e0aeddfe9b3a3d) [@rx1310](https://github.com/rx1310): небольшие правки
-- [`089fe5f`](https://github.com/rx1310/kalium19/commit/089fe5fc31f833ca09f40c1a5c5db2b705571a1d) [@rx1310](https://github.com/rx1310): добавляет к комментариям строку `@see {variable}`
+- [`089fe5f`](https://github.com/rx1310/kalium19/commit/089fe5fc31f833ca09f40c1a5c5db2b705571a1d) [@rx1310](https://github.com/rx1310): добавляет к комментариям строку `@see {Variable}`
 - [`d776d87`](https://github.com/rx1310/kalium19/commit/d776d875085fbe62274c5ee36f2bbff4b3c84842) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `str-replace()`
 - [`73f9a68`](https://github.com/rx1310/kalium19/commit/73f9a688ca0fbc8fb297103f206df723e99e984c) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `selector-to-string()`
 - [`7384f8b`](https://github.com/rx1310/kalium19/commit/7384f8b8bc4228639c3afbccff3de4baaf943200) [@rx1310](https://github.com/rx1310): добавляет комментарии к коду `map-deep-set()`

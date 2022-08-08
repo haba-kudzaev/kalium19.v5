@@ -9,7 +9,7 @@
 /// @access public
 /// @group column
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_column-gap
+/// @see {Variable} $prfxs_column-gap
 /// @since 4.0.0
 /// @param {string | int} $value - значение свойства `column-gap`
 @mixin column-gap($value) {

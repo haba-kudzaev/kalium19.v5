@@ -6,7 +6,7 @@
 /// @link https://github.com/matthieua
 /// @param {color} $start-color [#3C3C3C] - цвет начала графиента
 /// @param {color} $end-color [#999999] - цвет конца градиента
-/// @param {string} $orientation [null] - направление градиента
+/// @param {String} $orientation [null] - направление градиента
 @mixin background-gradient-linear($start-color: #3C3C3C, $end-color: #999999, $orientation) {
 
 	// horizontal gradient

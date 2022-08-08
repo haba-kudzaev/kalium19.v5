@@ -4,9 +4,9 @@
 /// @name box-sizing
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_box-sizing
+/// @see {Variable} $prfxs_box-sizing
 /// @since 4.0.0
-/// @param {string} $model - значение свойства `box-sizing`
+/// @param {String} $model - значение свойства `box-sizing`
 @mixin box-sizing($model: border-box) {
 	@include prefixer(
 		box-sizing,

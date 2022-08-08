@@ -4,8 +4,8 @@
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
 /// @access public
-/// @param {map} $map
-/// @param {list} $keys - key chain
+/// @param {Map} $map
+/// @param {List} $keys - key chain
 /// @return {*} desired value
 @function map-deep-get($map, $keys...) {
 	@each $key in $keys {

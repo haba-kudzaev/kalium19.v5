@@ -5,10 +5,10 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_box-flex
-/// @see {variable} $prfxs_flex-grow
+/// @see {Variable} $prfxs_box-flex
+/// @see {Variable} $prfxs_flex-grow
 /// @since 4.0.0
-/// @param {int} $value - значение свойства `flex-grow`
+/// @param {Number} $value - значение свойства `flex-grow`
 @mixin flex-grow($value: 1) {
 
 

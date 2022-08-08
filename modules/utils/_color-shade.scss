@@ -1,10 +1,11 @@
 /// @name color-shade
+/// @since 4.0.0
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
 /// @access public
-/// @return {color}
-/// @param {color} $color - color to shade
-/// @param {int} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
 @function color-shade($color, $percentage) {
 	@return mix(
 		black,

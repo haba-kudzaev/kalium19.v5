@@ -5,9 +5,9 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_flex-shrink
+/// @see {Variable} $prfxs_flex-shrink
 /// @since 4.0.0
-/// @param {int} $value [0] - значение свойства `flex-shrink`
+/// @param {Number} $value [0] - значение свойства `flex-shrink`
 @mixin flex-shrink($value: 0) {
 
 	@include prefixer(
