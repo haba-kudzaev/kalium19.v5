@@ -1,0 +1,16 @@
+/// Get the first element of `$list`.
+/// ---
+/// @name string-replace
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group list
+/// @parameter {List} $list
+/// @return {*}
+/// @example scss
+///   @debug list-first((1, 2, 3));
+/// @example Result
+///   list-first.scss:16 Debug: 1
+@function list-first($list) {
+	@return nth($list, 1);
+}
