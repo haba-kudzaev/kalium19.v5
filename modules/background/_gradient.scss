@@ -1,10 +1,20 @@
 /// @deprecated
 /// @name background-gradient
+/// @since 4.0.0
 /// @group mixin.background
 /// @access public
-/// @since 4.0.0
 /// @author Justin Brazeau
 /// @link https://toptal.com/resume/justin-brazeau
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-gradient(red, blue, vr);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  background: red;
+/// 	  background: -webkit-linear-gradient(top, red, blue);
+/// 	  background: linear-gradient(to bottom, red, blue);
+/// 	}
 /// @param {Color} $start-color [#3C3C3C] - цвет начала графиента
 /// @param {Color} $end-color [#999999] - цвет конца градиента
 /// @param {String} $orientation [null] - направление
@@ -25,5 +35,5 @@
 
 }
 
-/// Doka: "Функция `linear-gradient` используется для задания
-/// фона в виде линейного градиента."
+// ? Doka: "Функция `linear-gradient` используется для задания
+// ? фона в виде линейного градиента."
