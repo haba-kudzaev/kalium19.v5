@@ -1,0 +1,49 @@
+@use 'string-replace' as *;
+
+/// Encode URL-unsafe characters in `$string`.
+/// ---
+/// @name string-replace
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @parameter {String} $string
+/// @return {String}
+/// @example scss
+///   @debug url-encode('#foo@bar');
+/// @example Result
+///   url-encode.scss:47 Debug: %23foo%40bar
+@function url-encode($string) {
+
+	$map: (
+		// URL reserved characters
+		'!': '%21',
+		'#': '%23',
+		'$': '%24',
+		'&': '%26',
+		'\'': '%27',
+		'(': '%28',
+		')': '%29',
+		'*': '%2A',
+		'+': '%2B',
+		',': '%2C',
+		'/': '%2F',
+		':': '%3A',
+		';': '%3B',
+		'=': '%3D',
+		'?': '%3F',
+		'@': '%40',
+		'[': '%5B',
+		']': '%5D',
+		// In case the result is wrapped in double-quotes
+		'"': '%22'
+	);
+
+	$ret: $string;
+
+	@each $search, $replacement in $map {
+		$ret: string-replace($ret, $search, $replacement);
+	}
+
+	@return $ret;
+
+}
