@@ -7,13 +7,24 @@
 /// `$prfxs_animation-delay`).
 /// ---
 /// @name animation-delay
-/// @group mixin.animation
 /// @since 4.0.0
+/// @group mixin.animation
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @require {Mixin} prefixer
+///	@example scss Пример использования в Sass
+/// 	.body {
+/// 		@include animation-delay(.3s);
+/// 	}
+/// @example css Результат в CSS
+/// 	.body {
+/// 	  -webkit-animation-delay: 0.3s;
+/// 	  -moz-animation-delay: 0.3s;
+/// 	  -o-animation-delay: 0.3s;
+/// 	  animation-delay: 0.3s;
+/// 	}
 /// @see {Variable} $prfxs_animation-delay
+/// @require {Mixin} prefixer
 /// @param {String | Number} $delay [0s] - значение свойства `animation-delay`
 @mixin animation-delay($delay: 0s) {
 

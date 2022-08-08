@@ -1,8 +1,19 @@
-/// Карта системных шрифтов.
-/// @example scss
-///   body {
-///   	font-family: $system-fonts;
-///   }
+/// Список из основных системных шрифтов sans-serif.
+/// ---
+/// @name $system-fonts
+/// @since 4.2.0
+/// @group variables
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// 	body {
+/// 		font-family: $system-fonts;
+/// 	}
+/// @example css Результат в CSS
+///		body {
+/// 		font-family: "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji";
+/// 	}
 /// @type List
 $system-fonts:
 	'system-ui',
@@ -15,11 +26,22 @@ $system-fonts:
 	'Apple Color Emoji',
 	'Segoe UI Emoji' !default;
 
-/// Карта системных моно. шрифтов.
-/// @example scss
-///   body {
-///   	font-family: $system-fonts-mono;
-///   }
+/// Список из основных системных шрифтов monospace.
+/// ---
+/// @name $system-fonts-mono
+/// @since 4.2.0
+/// @group variables
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// 	body {
+/// 		font-family: $system-fonts-mono;
+/// 	}
+/// @example css Результат в CSS
+///		body {
+/// 		font-family: "ui-monospace", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
+/// 	}
 /// @type List
 $system-fonts-mono:
 	'ui-monospace',

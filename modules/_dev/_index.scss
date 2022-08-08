@@ -1,0 +1,12 @@
+/// Миксин для разработчиков Kalium19, который отображает
+/// сообщение с ошибкой о том, что свойство не приминает
+/// такое значение.
+/// ---
+/// @name error-invalid-value
+/// @since 4.2.0
+/// @group mixin.dev
+/// @access private
+/// @param {} a [] -
+@mixin error-invalid-value($prop, $value) {
+	@error "Свойство «#{$prop}» не может принять значение «#{$value}»!"
+}

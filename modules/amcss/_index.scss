@@ -1,16 +1,20 @@
 @use '../config' as *;
 
+/// Немного про AMCSS:
+/// Название подхода означает «Модули атрибутов для CSS» (Attribute Modules for CSS).
+/// Это достаточно необычный подход, упоминания которого,
+/// тем не менее, все чаще встречаются в блогах гуру разработки.
+/// Этот миксин позволяет писать стили с учетом методологии намного проще.
+/// ---
 /// @name am
 /// @since 4.2.0
+/// @group mixin
 /// @access public
 /// @author AMCSS
 /// @link http://sassmeister.com/gist/2709da070d6aac25a9f5
 /// @link https://github.com/W3cplus/SassMagic/blob/master/src/mixins/_amcss.scss Исходный код
-/// @param {String} $module
-/// @param {String | Number} $trait [null]
-/// @param {String | Number} $prefix [$am-prefix]
-/// @content
-/// @example scss Пример кода на SCSS
+/// @link https://habr.com/ru/post/256109/ Краткое описание методологии AMCSS на Хабре
+///	@example scss Пример использования в Sass
 ///   @include am(module) {
 ///       color: red;
 ///   }
@@ -22,9 +26,7 @@
 ///   @include am(module, large) {
 ///     font-size: 2em;
 ///   }
-///
-///	@output
-/// ```css
+/// @example css Результат в CSS
 ///   [am-module] {
 ///     color: red;
 ///   }
@@ -36,16 +38,19 @@
 ///   [am-module~="large"] {
 ///     font-size: 2em;
 ///   }
-/// ```
+/// @require {Variable} $am-prefix
+/// @param {String} $module - название модуля
+/// @param {String | Number} $trait [null] - значение модуля
+/// @param {String} prefix [$am-prefix] - префикс для атрибута
 @mixin am($module, $trait: null, $prefix: $am-prefix) {
-  @if $trait != null {
-    [#{$prefix}#{$module}~="#{$trait}"]{
-      @content;
-    }
-  }
-  @else {
-    [#{$prefix}#{$module}]{
-      @content;
-    }
-  }
+	@if $trait != null {
+		[#{$prefix}#{$module}~="#{$trait}"]{
+			@content;
+		}
+	}
+	@else {
+		[#{$prefix}#{$module}]{
+			@content;
+		}
+	}
 }
