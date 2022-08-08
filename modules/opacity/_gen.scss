@@ -1,0 +1,42 @@
+@use 'index' as *;
+
+/// Миксин генерирует CSS-классы со свойством `opacity`.
+/// @name get-opacity
+/// @group mixin
+/// @access public
+/// @require {mixin} opacity
+/// @since 4.1.4
+/// @example scss - Пример кода на SASS
+///		@include gen-opacity(0, 2, 'opacity-');
+/// @example css - Результат
+/// 	.opacity-0 {
+/// 	  -moz-opacity: 0;
+/// 	  -khtml-opacity: 0;
+/// 	  opacity: 0;
+/// 	  filter: alpha(opacity=0);
+/// 	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+/// 	}
+/// 	.opacity-1 {
+/// 	  -moz-opacity: 1;
+/// 	  -khtml-opacity: 1;
+/// 	  opacity: 1;
+/// 	  filter: alpha(opacity=100);
+/// 	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+/// 	}
+/// 	.opacity-2 {
+/// 	  -moz-opacity: 2;
+/// 	  -khtml-opacity: 2;
+/// 	  opacity: 2;
+/// 	  filter: alpha(opacity=200);
+/// 	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=200)";
+/// 	}
+/// @param {int} $start [0] - начало цикла (генерация свойства `opacity` начнется с этого значения)
+/// @param {int} $end [100] - конец цикла (генерация свойства `opacity` завершится с этого значения)
+/// @param {string | int} $class ['o-'] - стандартный префикс класса, к которому добавляется значение `opacity`
+@mixin get-opacity($start: 0, $end: 100, $class: 'opacity-') {
+	@for $opacity from $start through $end {
+		.#{$class}#{$opacity} {
+			@include opacity($opacity);
+		}
+	}
+}
