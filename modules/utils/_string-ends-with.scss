@@ -1,0 +1,19 @@
+/// Check if `$string` ends with the given `$substring`.
+/// ---
+/// @name string-ends-with
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group string
+/// @parameter {String} $string - String to check
+/// @parameter {String} $substring - Substring to search for at the end of `$string`
+/// @return {Boolean}
+/// @example scss
+///   @debug string-ends-with('foo bar', $substring: 'bar');
+/// @example
+///   string-ends-with.scss:20 Debug: true
+@function string-ends-with($string, $substring) {
+	// This crashes libsass…
+	// @return str-slice($string, str-length($substring) * -1) == $substring;
+	@return str-slice($string, (str-length($string) - str-length($substring) + 1)) == $substring;
+}
