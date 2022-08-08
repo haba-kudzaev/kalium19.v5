@@ -1,6 +1,9 @@
 /// A lightweight Sass function that determines whether a number is integer or not.
+/// ---
+/// @since 4.2.0
 /// @name is-int
 /// @author Zsolt Pentz
+/// @access public
 /// @link https://github.com/pentzzsolt/sass-recursive-map-merge Исходный код
 /// @example scss
 /// 	@if is-int(42) {
