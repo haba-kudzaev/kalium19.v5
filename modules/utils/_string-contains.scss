@@ -8,7 +8,7 @@
 /// @parameter {String} $string - String to check
 /// @parameter {String} $substring - Substring to search for in `$string`
 /// @return {Boolean}
-/// @example Sass
+/// @example scss
 ///   @debug string-contains('foo bar baz', $substring: 'bar');
 /// @example Console
 ///   string-contains.scss:19 Debug: true
