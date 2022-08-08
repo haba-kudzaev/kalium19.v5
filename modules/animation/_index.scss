@@ -5,13 +5,17 @@
 /// который всего-то добавляет CSS-свойству `animation` браузерные префиксы,
 /// список которых прописан в файле _config.scss (в нашем случае префиксы
 /// прописаны в переменной `$prfxs_animation`).
-///
+/// ---
 /// @name animation
+/// @since 4.0.0
 /// @group mixin.animation
 /// @access public
-/// @require {Mixin} prefixer
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// @example css Результат в CSS
 /// @see {Variable} $prfxs_animation
-/// @since 4.0.0
+/// @require {Mixin} prefixer
 /// @param {String | Number} $params... - список значений свойства `animation`
 @mixin animation($params...) {
 
