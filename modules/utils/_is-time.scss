@@ -1,0 +1,20 @@
+/// @name is-time
+/// @since 4.2.0
+/// @group functions
+/// @access public
+/// @author Halil İbrahim Çakıroğlu
+/// @link https://github.com/selfishprimate/gerillass/blob/master/scss/utilities/_is-time.scss
+///	@example scss Пример использования в Sass
+/// 	@debug isTime(5s);
+/// @example Результат в консоли
+/// 	Debug: isTime(5s)
+/// @param {String | Number} $value - параметр, который необходимо проверить
+@function is-time($value) {
+  @for $i from 1 through length($value) {
+    @if (type-of($value) == "number" and index("ms" "s" "h", unit($value)) != null) or $value == 0 {
+      @return true;
+    } @else {
+      @error "'#{$value}' не является верной формой заполнения параметра времени. Значения времени должны быть указаны либо в секундах (s), либо в миллисекундах (ms). Попробуйте использовать одну из следующих форм: «1s», «0,2s» или «3ms».";
+    }
+  }
+}
