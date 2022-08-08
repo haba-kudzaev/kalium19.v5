@@ -1,0 +1,15 @@
+@use '../utils/set-initial' as *;
+
+/// @since 4.2.0
+/// @name set-initial
+/// @author takamoso
+/// @link https://github.com/takamoso
+/// @example scss
+/// 	@include initial(align-content, animation);
+@mixin initial($properties...) {
+  @each $property in $properties {
+    #{$property}: set-initial($property);
+  }
+}
+
+
