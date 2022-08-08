@@ -1,0 +1,17 @@
+/// Invert a number.
+/// ---
+/// @name number-invert
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group number
+/// @parameter {Number} $number - Number to invert
+/// @return {Number}
+/// @example
+///   @debug number-invert(5);
+/// @example Console
+/// 	_number-invert.scss:17 Debug: -5
+@function number-invert($number) {
+	@return $number * -1;
+}
+
