@@ -10,8 +10,8 @@
 /// @group colums
 /// @require {Mixin} prefixer
 /// @since 4.0.0
-/// @see {mixin} column-fill-balance
-/// @see {mixin} column-fill-balance-all
+/// @see {Mixin} column-fill-balance
+/// @see {Mixin} column-fill-balance-all
 /// @see {Variable} $prfxs_column-fill
 /// @param {String} $type [auto] - значение свойства `column-fill`
 @mixin column-fill($type: auto) {
