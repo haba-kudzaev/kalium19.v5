@@ -1,24 +1,48 @@
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: padding-box border-box content-box text;
 
 /// Миксин `background-clip()` также является лишь обёрткой над
 /// миксином `prefixer()`, который добавляет CSS-свойству
 /// `background-clip` браузерные префиксы.
-///
-/// @name animation-timing-function
-/// @access public
-/// @require {Mixin} prefixer
+/// ---
+/// @name background-clip
 /// @since 4.0.0
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-clip(text);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -moz-background-clip: text;
+/// 	  background-clip: text;
+/// 	}
+/// @require {Mixin} prefixer
 /// @param {String} $value [border-box] - значение свойства `background-clip`
 @mixin background-clip($value: border-box) {
 
-	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
-	// ? [2] передаем префиксеру значение свойства
-	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
-	@include prefixer(
-		background-clip, // 1
-		$value, // 2
-		moz // 3
-	);
+	@if is-valid($value, $_variants) {
+
+		// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+		// ? [2] передаем префиксеру значение свойства
+		// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
+		@include prefixer(
+			background-clip, // 1
+			$value, // 2
+			moz // 3
+		);
+
+	} @else {
+		@include error-invalid-value(background-clip, $value);
+	}
 
 }
 
@@ -27,5 +51,5 @@
 // * `content-box` - фон отображается только внутри контента
 // * `text` - фон отображается только внутри текста
 
-/// Doka: "Свойство `background-clip` определяет, в каких областях будет
-/// находиться фоновая картинка и фоновый цвет блока."
+// ? Doka: "Свойство `background-clip` определяет, в каких областях будет
+// ? находиться фоновая картинка и фоновый цвет блока."

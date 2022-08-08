@@ -1,0 +1,30 @@
+{
+	"is-valid": {
+		"scope": "scss",
+		"prefix": "is-valid-import",
+		"body": [
+			"@use '$1_dev' as *;",
+			"@use '$1utils/is-valid' as *;"
+		]
+	},
+	"variants": {
+		"scope": "scss",
+		"prefix": "variants",
+		"body": [
+			"/// @access private",
+			"/// @type List",
+			"\\$_variants: $1;"
+		]
+	},
+	"is-valid-if": {
+		"scope": "scss",
+		"prefix": "is-valid-if",
+		"body": [
+			"@if is-valid($2, \\$_variants) {",
+			"$1",
+			"} @else {",
+			"\t@include error-invalid-value($3, $2);",
+			"}"
+		]
+	}
+}
