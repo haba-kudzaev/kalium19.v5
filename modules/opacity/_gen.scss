@@ -7,7 +7,7 @@
 /// @require {Mixin} opacity
 /// @since 4.1.4
 /// @example scss - Пример кода на Sass
-///		@include gen-opacity(0, 2, 'opacity-');
+/// 	@include gen-opacity(0, 2, 'opacity-');
 /// @example css - Результат
 /// 	.opacity-0 {
 /// 	  -moz-opacity: 0;
