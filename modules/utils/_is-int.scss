@@ -1,0 +1,15 @@
+/// A lightweight Sass function that determines whether a number is integer or not.
+/// @name is-int
+/// @author Zsolt Pentz
+/// @link https://github.com/pentzzsolt/sass-recursive-map-merge Исходный код
+/// @example scss
+/// 	@if is-int(42) {
+/// 		color: orange;
+/// 	}
+@function is-int($value) {
+	@if type-of($value) != number {
+		@warn '`#{$value}` is not a valid number!';
+		@return null;
+	}
+	@return round($value) == $value;
+}
