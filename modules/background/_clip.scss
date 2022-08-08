@@ -6,7 +6,7 @@
 ///
 /// @name animation-timing-function
 /// @access public
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @since 4.0.0
 /// @param {String} $value [border-box] - значение свойства `background-clip`
 @mixin background-clip($value: border-box) {

@@ -3,8 +3,8 @@
 
 /// @name centering
 /// @access public
-/// @require {mixin} transform
-/// @require {mixin} position
+/// @require {Mixin} transform
+/// @require {Mixin} position
 /// @since 4.0.0
 /// @param {String} $position
 @mixin centering($position) {

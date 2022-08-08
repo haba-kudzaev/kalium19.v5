@@ -8,7 +8,7 @@
 /// @name animation-direction
 /// @group animation()
 /// @access public
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-direction
 /// @since 4.0.0
 /// @param {String} $direction [normal] - значение свойства `animation-direction`
@@ -31,7 +31,7 @@
 /// @name animation-direction-normal
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-direction
+/// @require {Mixin} animation-direction
 /// @since 4.0.0
 @mixin animation-direction-normal {
 	@include animation-direction(normal);
@@ -43,7 +43,7 @@
 /// @name animation-direction-alternate
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-direction
+/// @require {Mixin} animation-direction
 /// @since 4.0.0
 @mixin animation-direction-alternate {
 	@include animation-direction(alternate);
@@ -55,7 +55,7 @@
 /// @name animation-direction-reverse
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-direction
+/// @require {Mixin} animation-direction
 /// @since 4.0.0
 @mixin animation-direction-reverse {
 	@include animation-direction(reverse);
@@ -67,7 +67,7 @@
 /// @name animation-direction-alternate-reverse
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-direction
+/// @require {Mixin} animation-direction
 /// @since 4.0.0
 @mixin animation-direction-alternate-reverse {
 	@include animation-direction(alternate-reverse);

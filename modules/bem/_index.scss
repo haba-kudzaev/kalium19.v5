@@ -20,9 +20,9 @@
 /// @name e
 /// @group BEM
 /// @access public
-/// @require {function} map-deep-get
-/// @require {function} contains-modifier
-/// @require {function} get-block
+/// @require {Function} map-deep-get
+/// @require {Function} contains-modifier
+/// @require {Function} get-block
 /// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
@@ -50,7 +50,7 @@
 /// @name m
 /// @group BEM
 /// @access public
-/// @require {function} map-deep-get
+/// @require {Function} map-deep-get
 /// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel

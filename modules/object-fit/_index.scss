@@ -3,7 +3,7 @@
 
 /// @name object-fit
 /// @access public
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @since 4.0.0
 /// @param {String} $type
 @mixin object-fit($type) {
@@ -16,7 +16,7 @@
 
 /// @name object-fit-contain
 /// @access public
-/// @require {mixin} object-fit
+/// @require {Mixin} object-fit
 /// @since 4.0.0
 @mixin object-fit-contain {
 	@include object-fit(contain);
@@ -24,7 +24,7 @@
 
 /// @name object-fit-fill
 /// @access public
-/// @require {mixin} object-fit
+/// @require {Mixin} object-fit
 /// @since 4.0.0
 @mixin object-fit-fill {
 	@include object-fit(fill);
@@ -32,7 +32,7 @@
 
 /// @name object-fit-cover
 /// @access public
-/// @require {mixin} object-fit
+/// @require {Mixin} object-fit
 /// @since 4.0.0
 @mixin object-fit-cover {
 	@include object-fit(cover);
