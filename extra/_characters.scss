@@ -1,0 +1,213 @@
+
+/// space
+/// @type String
+$char-space: "\0020";
+
+/// non-breaking space
+/// @type String
+$char-nbsp: "\00a0";
+
+/// quotation mark
+/// @type String
+$char-quot: "\0022";
+
+/// left single curly quote
+/// @type String
+$char-lsquo: "\2018";
+
+/// right single curly quote
+/// @type String
+$char-rsquo: "\2019";
+
+/// left double curly quote
+/// @type String
+$char-ldquo: "\201C";
+
+/// right double curly quote
+/// @type String
+$char-rdquo: "\201D";
+
+/// left single angle quote (guillemet)
+/// @type String
+$char-lsaquo: "\2039";
+
+/// right single angle quote (guillemet)
+/// @type String
+$char-rsaquo: "\203A";
+
+/// left double angle quote (guillemet)
+/// @type String
+$char-laquo: "\00ab";
+
+/// right double angle quote (guillemet)
+/// @type String
+$char-raquo: "\00bb";
+
+/// em dash (mutton)
+/// @type String
+$char-mdash: "\2014";
+
+/// en dash (nut)
+/// @type String
+$char-ndash: "\2013";
+
+/// hyphen
+/// @type String
+$char-hyphen: "\2010";
+
+/// ampersand
+/// @type String
+$char-amp: "\0026";
+
+/// greater than
+/// @type String
+$char-gt: "\003e";
+
+/// less than
+/// @type String
+$char-lt: "\003c";
+
+/// times
+/// @type String
+$char-times: "\00D7";
+
+/// big times
+/// @type String
+$char-bigtimes: "\2715";
+
+/// checkmark
+/// @type String
+$char-checkmark: "\2713";
+
+/// section sign (double S, hurricane, sectional symbol, the legal doughnut, signum sectionis)
+/// @type String
+$char-sect: "\00a7";
+
+/// paragraph symbol (pilcrow)
+/// @type String
+$char-para: "\00b6";
+
+/// middot (interpunct, interpoint)
+/// @type String
+$char-middot: "\00b7";
+
+/// o-slash (slashed o)
+/// @type String
+$char-oslash: "\00f8";
+
+/// bullet
+/// @type String
+$char-bull: "\2022";
+
+/// white bullet
+/// @type String
+$char-whibull: "\25E6";
+
+/// horizontal ellipsis
+/// @type String
+$char-hellip: "\2026";
+
+/// vertical ellipsis
+/// @type String
+$char-vellip: "\22EE";
+
+/// midline horizontal ellipsis
+/// @type String
+$char-midhellip: "\22EF";
+
+
+/// up-pointing triangle
+/// @type String
+$char-utri: "\25b2";
+
+/// down-pointing triangle
+/// @type String
+$char-dtri: "\25bc";
+
+/// left-pointing triangle
+/// @type String
+$char-ltri: "\25c0";
+
+/// right-pointing triangle
+/// @type String
+$char-rtri: "\25b6";
+
+/// up-pointing small triangle
+/// @type String
+$char-ustri: "\25b4";
+
+/// down-pointing small triangle
+/// @type String
+$char-dstri: "\25be";
+
+/// left-pointing small triangle
+/// @type String
+$char-lstri: "\25c2";
+
+/// right-pointing small triangle
+/// @type String
+$char-rstri: "\25b8";
+
+/// diamond
+/// @type String
+$char-diamond: "\25c6";
+
+/// fisheye
+/// @type String
+$char-fisheye: "\25c9";
+
+/// bullseye
+/// @type String
+$char-bullseye: "\25ce";
+
+/// circle
+/// @type String
+$char-circle: "\25cf";
+
+/// white circle
+/// @type String
+$char-whitecircle: "\25cb";
+
+/// square
+/// @type String
+$char-square: "\25a0";
+
+/// white square
+/// @type String
+$char-whitesquare: "\25a1";
+
+/// small square
+/// @type String
+$char-ssquare: "\25aa";
+
+/// small white square
+/// @type String
+$char-swhitesquare: "\25ab";
+
+/// general currency
+/// @type String
+$char-currency: "\00a4";
+
+/// cent
+/// @type String
+$char-cent: "\00a2";
+
+/// dollar
+/// @type String
+$char-dollar: "\0024";
+
+/// pound
+/// @type String
+$char-pound: "\00a3";
+
+/// euro
+/// @type String
+$char-euro: "\20ac";
+
+/// yen
+/// @type String
+$char-yen: "\00a5";
+
+/// rupee
+/// @type String
+$char-rupee: "\20B9";
