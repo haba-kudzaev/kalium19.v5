@@ -7,8 +7,8 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_background-size
 /// @since 4.0.0
-/// @param {percentage} $width [100%] - ширина
-/// @param {percentage} $height [$width] - высота
+/// @param {Percentage} $width [100%] - ширина
+/// @param {Percentage} $height [$width] - высота
 @mixin background-size($width: 100%, $height: $width) {
 
 	@if type-of($width) == 'number' and $height != null {

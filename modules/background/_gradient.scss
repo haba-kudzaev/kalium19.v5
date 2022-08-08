@@ -5,8 +5,8 @@
 /// @since 4.0.0
 /// @author Justin Brazeau
 /// @link https://toptal.com/resume/justin-brazeau
-/// @param {color} $start-color [#3C3C3C] - цвет начала графиента
-/// @param {color} $end-color [#999999] - цвет конца градиента
+/// @param {Color} $start-color [#3C3C3C] - цвет начала графиента
+/// @param {Color} $end-color [#999999] - цвет конца градиента
 /// @param {String} $orientation [null] - направление
 @mixin background-gradient($start-color, $end-color, $orientation) {
 
