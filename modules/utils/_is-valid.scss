@@ -1,0 +1,18 @@
+/// Проверка наличия в списке передаваемого параметра.
+/// ---
+/// @name is-valid
+/// @since 4.2.0
+/// @group functions
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
+///	@example scss Пример использования в Sass
+/// 	$vars: red orange blue;
+/// 	@debug is-valid(red, $vars)
+/// @example Результат в Консоли
+/// 	test.scss:24 Debug: true
+/// @param {String} $value - параметр, наличие которого надо проверить
+/// @param {String} $variants - возможные варианты параметров
+@function is-valid($value, $variants) {
+  @return not not index($variants, $value);
+}
