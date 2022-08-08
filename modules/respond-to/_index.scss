@@ -6,7 +6,7 @@
 /// @access public
 /// @see {Variable} $breakpoints
 /// @since 4.0.0
-/// @param {string | int} $breakpoint
+/// @param {String | Number} $breakpoint
 @mixin respond-to($breakpoint) {
 
 	@if map-has-key($breakpoints, $breakpoint) {

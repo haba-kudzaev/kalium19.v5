@@ -12,7 +12,7 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation
 /// @since 4.0.0
-/// @param {string | int} $params... - список значений свойства `animation`
+/// @param {String | Number} $params... - список значений свойства `animation`
 @mixin animation($params...) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
