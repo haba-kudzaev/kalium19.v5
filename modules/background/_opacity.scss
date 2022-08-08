@@ -1,7 +1,18 @@
 /// @name background-opacity
+/// @since 4.0.0
 /// @group mixin.background
 /// @access public
-/// @since 4.0.0
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-opacity(red, .4);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  background: red;
+/// 	  background: rgba(255, 0, 0, 0.4);
+/// 	}
 /// @param {Color} $color [#000]
 /// @param {Number} $opacity [0.85]
 @mixin background-opacity($color: #000, $opacity: 0.85) {
