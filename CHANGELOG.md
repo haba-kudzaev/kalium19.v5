@@ -276,7 +276,7 @@
 - [`13f3a69`](https://github.com/rx1310/kalium19/commit/13f3a69722c5117abb7c70b7dc8545ff17f15e2d) [@rx1310](https://github.com/rx1310): добавляет утилиту `map-deep-get()` от @KittyGiraudel
 - [`9ac082c`](https://github.com/rx1310/kalium19/commit/9ac082c001ff92f3a12732ae160f718c1903741c) [@rx1310](https://github.com/rx1310): добавляет утилиту `color-tint()` от @KittyGiraudel
 - [`024c2aa`](https://github.com/rx1310/kalium19/commit/024c2aa225be85f5aaa0732fda2432f5acc592e3) [@rx1310](https://github.com/rx1310): добавляет утилиту `color-shade()` от @KittyGiraudel
-- [`3acdf25`](https://github.com/rx1310/kalium19/commit/3acdf252f6fe0389eeca870c670905db265ffff9) [@rx1310](https://github.com/rx1310): добавляет основной SASS-файл - index.scss
+- [`3acdf25`](https://github.com/rx1310/kalium19/commit/3acdf252f6fe0389eeca870c670905db265ffff9) [@rx1310](https://github.com/rx1310): добавляет основной Sass-файл - index.scss
 - [`d651b68`](https://github.com/rx1310/kalium19/commit/d651b68ab648db839442c121bb20201a12f1173d) [@rx1310](https://github.com/rx1310): дорабатывает конфиг редактора VS Code
 - [`190ffb9`](https://github.com/rx1310/kalium19/commit/190ffb9a597e9227069a35aebc354b8a776be9fa) [@rx1310](https://github.com/rx1310): добавляет файл CONTRIBUTING.md
 - [`ecc308d`](https://github.com/rx1310/kalium19/commit/ecc308daf4f6d6f59dd5a5cbd42c9b5d1d96a45f) [@rx1310](https://github.com/rx1310): добавляет файл CODEOWNERS

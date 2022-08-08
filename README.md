@@ -1,6 +1,6 @@
 <img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo.png?raw=true" alt="Logo" width="80px" align="right" /> Kalium19
 ======
-:package: Набор утилит, миксинов, расширений на языке препроцессора [SASS](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
+:package: Набор утилит, миксинов, расширений на языке препроцессора [Sass](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/npm%20publisher?label=npm%20publisher&style=flat-square)](https://npmjs.com/package/@rx1310/kalium19)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx1310/kalium19/GitHub%20Packages%20publisher?label=github%20package%20publisher&style=flat-square)](https://github.com/rx1310/kalium19/packages/1547304)
@@ -43,13 +43,13 @@
     ```
 
 3. дождитесь установки всех пакетов и зависимостей в проект
-4. в основной SASS-файл стилей пропишите импорт модуля `kalium19`:
+4. в основной Sass-файл стилей пропишите импорт модуля `kalium19`:
 
     ```scss
     @use 'node_modules/@rx1310/kalium19' as *;
     ```
 
-    > `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в SASS](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
+    > `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в Sass](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
 
 5. для проверки правильного импорта можно вставить `@include check;` в файл стилей после импорта:
 

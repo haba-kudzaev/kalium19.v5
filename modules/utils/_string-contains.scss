@@ -1,0 +1,18 @@
+/// Check if `$string` contains the given `$substring`.
+/// ---
+/// @name string-contains
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group string
+/// @parameter {String} $string - String to check
+/// @parameter {String} $substring - Substring to search for in `$string`
+/// @return {Boolean}
+/// @example Sass
+///   @debug string-contains('foo bar baz', $substring: 'bar');
+/// @example Console
+///   string-contains.scss:19 Debug: true
+@function string-contains($string, $substring) {
+	@return str-index($string, $substring) != null;
+}
+
