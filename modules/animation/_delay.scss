@@ -5,12 +5,15 @@
 /// над миксином `prefixer()`, который добавляет CSS-свойству `animation-delay`
 /// браузерные префиксы (в нашем случае префиксы прописаны в переменной
 /// `$prfxs_animation-delay`).
+/// ---
 /// @name animation-delay
-/// @group animation()
+/// @group mixin.animation
+/// @since 4.0.0
 /// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-delay
-/// @since 4.0.0
 /// @param {String | Number} $delay [0s] - значение свойства `animation-delay`
 @mixin animation-delay($delay: 0s) {
 

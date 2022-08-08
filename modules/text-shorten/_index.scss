@@ -1,6 +1,8 @@
 /// @name text-shorten
-/// @access public
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
 /// @param {Number} $numLines [1]
 @mixin text-shorten($numLines: 1) {
 

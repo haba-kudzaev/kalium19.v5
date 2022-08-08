@@ -7,7 +7,7 @@
 /// прописаны в переменной `$prfxs_animation-timing-function`).
 ///
 /// @name animation-timing-function
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-timing-function
@@ -30,7 +30,7 @@
 /// `animation-timing-function()` и передает ему значение `ease`
 ///
 /// @name animation-timing-function-ease
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -42,7 +42,7 @@
 /// `animation-timing-function()` и передает ему значение `ease-in`
 ///
 /// @name animation-timing-function-ease-in
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -54,7 +54,7 @@
 /// `animation-timing-function()` и передает ему значение `ease-out`
 ///
 /// @name animation-timing-function-ease-out
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -66,7 +66,7 @@
 /// `animation-timing-function()` и передает ему значение `ease-in-out`
 ///
 /// @name animation-timing-function-ease-in-out
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -78,7 +78,7 @@
 /// `animation-timing-function()` и передает ему значение `linear`
 ///
 /// @name animation-timing-function-linear
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -90,7 +90,7 @@
 /// `animation-timing-function()` и передает ему значение `step-start`
 ///
 /// @name animation-timing-function-step-start
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
@@ -102,7 +102,7 @@
 /// `animation-timing-function()` и передает ему значение `step-end`
 ///
 /// @name animation-timing-function-step-end
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-timing-function
 /// @since 4.0.0
