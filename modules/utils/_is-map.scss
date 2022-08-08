@@ -1,0 +1,8 @@
+/// @name is-map
+/// @author takamoso
+/// @link https://github.com/takamoso
+/// @access public
+/// @since 4.2.0
+@function is-map($var) {
+  @return type-of($var) == map;
+}
