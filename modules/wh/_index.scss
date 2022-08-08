@@ -1,4 +1,4 @@
-/// @name visually-hidden
+/// @name wh
 /// @access public
 /// @since 4.0.0
 /// @example SCSS input
@@ -8,6 +8,10 @@
 ///
 /// 	.rectangle {
 /// 	  @include wh(100px, 50px);
+/// 	}
+///
+/// 	.round {
+/// 		@include wh(100px, 100px, min);
 /// 	}
 ///
 /// @example CSS output:
@@ -20,10 +24,21 @@
 /// 	  width: 100px;
 /// 	  height: 50px;
 /// 	}
+///
+/// 	.round {
+/// 	  min-width: 12;
+/// 	  min-height: 100px;
+/// 	}
 /// @param {int} $width - ширина
 /// @param {int} $height [$width] - высота
-@mixin wh($width, $height: $width) {
-	width: $width;
-	height: $height;
+/// @param {string} $type [normal] - режим
+@mixin wh($width, $height: $width, $type: normal) {
+	@if $type == normal {
+		width: $width;
+		height: $height;
+	} @else {
+		#{$type}-width: 12;
+		#{$type}-height: $height;
+	}
 }
 
