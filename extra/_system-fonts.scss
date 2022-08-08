@@ -6,12 +6,12 @@
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19
-///	@example scss Пример использования в Sass
+/// @example scss Пример использования в Sass
 /// 	body {
 /// 		font-family: $system-fonts;
 /// 	}
 /// @example css Результат в CSS
-///		body {
+/// 	body {
 /// 		font-family: "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji";
 /// 	}
 /// @type List
@@ -34,12 +34,12 @@ $system-fonts:
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19
-///	@example scss Пример использования в Sass
+/// @example scss Пример использования в Sass
 /// 	body {
 /// 		font-family: $system-fonts-mono;
 /// 	}
 /// @example css Результат в CSS
-///		body {
+/// 	body {
 /// 		font-family: "ui-monospace", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace";
 /// 	}
 /// @type List
