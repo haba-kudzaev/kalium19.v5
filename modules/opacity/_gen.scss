@@ -32,7 +32,7 @@
 /// 	}
 /// @param {Number} $start [0] - начало цикла (генерация свойства `opacity` начнется с этого значения)
 /// @param {Number} $end [100] - конец цикла (генерация свойства `opacity` завершится с этого значения)
-/// @param {string | int} $class ['o-'] - стандартный префикс класса, к которому добавляется значение `opacity`
+/// @param {String | Number} $class ['o-'] - стандартный префикс класса, к которому добавляется значение `opacity`
 @mixin get-opacity($start: 0, $end: 100, $class: 'opacity-') {
 	@for $opacity from $start through $end {
 		.#{$class}#{$opacity} {

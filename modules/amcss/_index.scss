@@ -1,0 +1,51 @@
+@use '../config' as *;
+
+/// @name am
+/// @since 4.2.0
+/// @access public
+/// @author AMCSS
+/// @link http://sassmeister.com/gist/2709da070d6aac25a9f5
+/// @link https://github.com/W3cplus/SassMagic/blob/master/src/mixins/_amcss.scss Исходный код
+/// @param {String} $module
+/// @param {String | Number} $trait [null]
+/// @param {String | Number} $prefix [$am-prefix]
+/// @content
+/// @example scss Пример кода на SCSS
+///   @include am(module) {
+///       color: red;
+///   }
+///
+///   @include am(module, blue) {
+///     color: blue;
+///   }
+///
+///   @include am(module, large) {
+///     font-size: 2em;
+///   }
+///
+///	@output
+/// ```css
+///   [am-module] {
+///     color: red;
+///   }
+///
+///   [am-module~="blue"] {
+///     color: blue;
+///   }
+///
+///   [am-module~="large"] {
+///     font-size: 2em;
+///   }
+/// ```
+@mixin am($module, $trait: null, $prefix: $am-prefix) {
+  @if $trait != null {
+    [#{$prefix}#{$module}~="#{$trait}"]{
+      @content;
+    }
+  }
+  @else {
+    [#{$prefix}#{$module}]{
+      @content;
+    }
+  }
+}

@@ -92,3 +92,7 @@ $breakpoints: (
 	xl: (min-width: 1200px),
 	xxl: (min-width: 1400px)
 ) !default;
+
+/// @access public
+/// @see {Mixin} am
+$am-prefix: 'am-';

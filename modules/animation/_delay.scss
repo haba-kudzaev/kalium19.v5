@@ -11,7 +11,7 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-delay
 /// @since 4.0.0
-/// @param {string | int} $delay [0s] - значение свойства `animation-delay`
+/// @param {String | Number} $delay [0s] - значение свойства `animation-delay`
 @mixin animation-delay($delay: 0s) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

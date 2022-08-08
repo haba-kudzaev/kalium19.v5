@@ -11,7 +11,7 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_column-gap
 /// @since 4.0.0
-/// @param {string | int} $value - значение свойства `column-gap`
+/// @param {String | Number} $value - значение свойства `column-gap`
 @mixin column-gap($value) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
