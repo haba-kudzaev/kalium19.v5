@@ -15,7 +15,16 @@
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
 ///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include animation-iteration-count(1);
+/// 	}
 /// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-animation-iteration-count: 1;
+/// 	  -moz-animation-iteration-count: 1;
+/// 	  -o-animation-iteration-count: 1;
+/// 	  animation-iteration-count: 1;
+/// 	}
 /// @see {Variable} $prfxs_animation-iteration-count
 /// @require {Mixin} prefixer
 /// @param {int | string} $iteration-count [1] - значение свойства `$iteration-count`
