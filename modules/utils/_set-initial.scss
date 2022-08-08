@@ -1,6 +1,8 @@
 /// @since 4.2.0
+/// @name set-initial
 /// @author takamoso
 /// @link https://github.com/takamoso
+/// @see {Mixin} initial
 @function set-initial($property) {
 
   $initials: (
