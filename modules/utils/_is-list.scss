@@ -1,0 +1,8 @@
+/// @since 4.2.0
+/// @name is-list
+/// @author takamoso
+/// @link https://github.com/takamoso
+/// @access public
+@function is-list($var) {
+  @return type-of($var) == list or type-of($var) == arglist;
+}
