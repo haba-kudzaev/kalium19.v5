@@ -1,0 +1,16 @@
+/// Strip the unit from a number.
+/// ---
+/// @name strip-unit
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group number
+/// @parameter {Number} $number
+/// @return {Number}
+/// @example
+///   @debug strip-unit(5px);
+/// @example Console
+/// 	index.scss:3 Debug: 5
+@function strip-unit($number) {
+	@return $number / ($number * 0 + 1);
+}
