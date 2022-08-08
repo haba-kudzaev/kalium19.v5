@@ -1,27 +1,52 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../utils/is-valid' as *;
+@use '../_dev' as *;
+
+/// @access private
+/// @type List
+$_variants: running paused;
 
 /// Миксин `animation-play-state()` также является лишь обёрткой над
 /// миксином `prefixer()`, который добавляет CSS-свойству `animation-play-state`
 /// браузерные префиксы (в нашем случае префиксы прописаны в
 /// переменной `$prfxs_animation-play-state`).
-///
+/// ---
 /// @name animation-play-state
+/// @since 4.0.0
 /// @group mixin.animation
 /// @access public
-/// @require {Mixin} prefixer
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include animation-play-state(paused);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-animation-play-state: paused;
+/// 	  -moz-animation-play-state: paused;
+/// 	  -o-animation-play-state: paused;
+/// 	  animation-play-state: paused;
+/// 	}
 /// @see {Variable} $prfxs_animation-play-state
-/// @since 4.0.0
+/// @require {Mixin} prefixer
 /// @param {String} $state [running] - значение свойства
 @mixin animation-play-state($state: running) {
 
-	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
-	// ? [2] передаем префиксеру значение свойства
-	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
-	@include prefixer(
-		animation-play-state, // 1
-		$state, // 2
-		$prfxs_animation-play-state // 3
-	);
+	@if is-valid($state, $_variants) {
+
+		// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+		// ? [2] передаем префиксеру значение свойства
+		// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
+		@include prefixer(
+			animation-play-state, // 1
+			$state, // 2
+			$prfxs_animation-play-state // 3
+		);
+
+	} @else {
+		@include error-invalid-value(animation-play-state, $state);
+	}
 
 }
