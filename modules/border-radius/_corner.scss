@@ -9,10 +9,10 @@
 /// @group border-radius()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $border-radius
+/// @see {Variable} $border-radius
 /// @since 4.0.0
-/// @param {string} $vr - вверхняя (top) или нижняя (bottom) сторона
-/// @param {string} $hr - левая (left) или правая (right) сторона
+/// @param {String} $vr - вверхняя (top) или нижняя (bottom) сторона
+/// @param {String} $hr - левая (left) или правая (right) сторона
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-corner-radius($vr, $hr, $radius: $border-radius) {
 

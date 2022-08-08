@@ -10,7 +10,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation
+/// @see {Variable} $prfxs_animation
 /// @since 4.0.0
 /// @param {string | int} $params... - список значений свойства `animation`
 @mixin animation($params...) {

@@ -5,9 +5,9 @@
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
 /// @access public
-/// @return {map}
-/// @arg {map} $map
-/// @arg {list} $keys - key chaine
+/// @return {Map}
+/// @arg {Map} $map
+/// @arg {List} $keys - key chaine
 /// @arg {*} $value - value to assign
 @function map-deep-set($map, $keys, $value) {
 

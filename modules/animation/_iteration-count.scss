@@ -10,7 +10,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation-iteration-count
+/// @see {Variable} $prfxs_animation-iteration-count
 /// @since 4.0.0
 /// @param {int | string} $iteration-count [1] - значение свойства `$iteration-count`
 @mixin animation-iteration-count($iteration-count: 1) {

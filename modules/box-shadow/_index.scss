@@ -8,9 +8,9 @@
 /// @name box-shadow
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_box-shadow
+/// @see {Variable} $prfxs_box-shadow
 /// @since 4.0.0
-/// @param {string} $params - значение свойства `box-shadow`
+/// @param {String} $params - значение свойства `box-shadow`
 @mixin box-shadow($params...) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

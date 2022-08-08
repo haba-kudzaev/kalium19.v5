@@ -5,9 +5,9 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_flex-flow
+/// @see {Variable} $prfxs_flex-flow
 /// @since 4.0.0
-/// @param {string} $vals [row nowrap] - значение свойства `flex-flow`
+/// @param {String} $vals [row nowrap] - значение свойства `flex-flow`
 @mixin flex-flow($vals: (row nowrap)) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

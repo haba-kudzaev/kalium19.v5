@@ -3,7 +3,7 @@
 /// @access public
 /// @since 4.0.0
 /// @param {color} $color [#000]
-/// @param {int} $opacity [0.85]
+/// @param {Number} $opacity [0.85]
 @mixin background-opacity($color: #000, $opacity: 0.85) {
 	background: $color;
 	background: rgba($color, $opacity);

@@ -8,9 +8,9 @@
 /// @name transition-delay
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_transition
+/// @see {Variable} $prfxs_transition
 /// @since 4.0.0
-/// @param {string} $params - значение свойства `transition-delay`
+/// @param {String} $params - значение свойства `transition-delay`
 @mixin transition-delay($params...) {
 	@include prefixer(
 		transition-delay,

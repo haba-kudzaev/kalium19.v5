@@ -16,7 +16,7 @@
 /// @group flex
 /// @require {mixin} prefixer
 /// @since 4.1.3
-/// @param {string} $type [null]
+/// @param {String} $type [null]
 @mixin flexbox($type: null) {
 	@if $type == inline {
 

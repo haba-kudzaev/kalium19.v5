@@ -1,16 +1,17 @@
 /// @name str-replace
+/// @since 4.0.0
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
 /// @access public
 /// @example scss
 /// 	.selector {
-/// 	  $string: 'Lorem ipsum';
+/// 		$string: 'Lorem ipsum';
 /// 	  content: str-replace($string, 'm', 'W');
 /// 	}
-/// @param {string} $string - initial string
-/// @param {string} $search - substring to replace
-/// @param {string} $replace [''] - new value
-/// @return {string} updated string
+/// @param {String} $string - initial string
+/// @param {String} $search - substring to replace
+/// @param {String} $replace [''] - new value
+/// @return {String} updated string
 @function str-replace($string, $search, $replace: '') {
 
 	$index: str-index($string, $search);

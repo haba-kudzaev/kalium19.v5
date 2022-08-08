@@ -7,10 +7,10 @@
 /// @group flex
 /// @require {mixin} prefixer
 /// @require {mixin} prefixer-pack
-/// @see {variable} $prfxs_box-direction
-/// @see {variable} $prfxs_flex-direction
+/// @see {Variable} $prfxs_box-direction
+/// @see {Variable} $prfxs_flex-direction
 /// @since 4.0.0
-/// @param {string} $direction [row] - значение свойства `flex-direction`
+/// @param {String} $direction [row] - значение свойства `flex-direction`
 @mixin flex-direction($direction: row) {
 
 	@if $direction == row-reverse {

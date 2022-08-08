@@ -29,9 +29,9 @@
 /// 	  min-width: 12;
 /// 	  min-height: 100px;
 /// 	}
-/// @param {int} $width - ширина
-/// @param {int} $height [$width] - высота
-/// @param {string} $type [normal] - режим
+/// @param {Number} $width - ширина
+/// @param {Number} $height [$width] - высота
+/// @param {String} $type [normal] - режим
 @mixin wh($width, $height: $width, $type: normal) {
 	@if $type == normal {
 		width: $width;

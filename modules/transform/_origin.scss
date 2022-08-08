@@ -8,11 +8,11 @@
 /// @name transform-origin
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_transform
+/// @see {Variable} $prfxs_transform
 /// @since 4.0.0
-/// @param {int} $x
-/// @param {int} $y
-/// @param {int} $z
+/// @param {Number} $x
+/// @param {Number} $y
+/// @param {Number} $z
 @mixin transform-origin($x, $y, $z) {
 	@include prefixer(
 		transform-origin,

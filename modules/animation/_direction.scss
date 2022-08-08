@@ -9,9 +9,9 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation-direction
+/// @see {Variable} $prfxs_animation-direction
 /// @since 4.0.0
-/// @param {string} $direction [normal] - значение свойства `animation-direction`
+/// @param {String} $direction [normal] - значение свойства `animation-direction`
 @mixin animation-direction($direction: normal) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

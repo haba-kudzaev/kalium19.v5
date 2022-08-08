@@ -6,7 +6,7 @@
 /// @group flex
 /// @require {mixin} prefixer
 /// @since 4.0.0
-/// @param {string} $val [auto] - значение свойства `align-self`
+/// @param {String} $val [auto] - значение свойства `align-self`
 @mixin align-self($val: auto) {
 
 	@if      $val == flex-start { -ms-flex-item-align: start; }

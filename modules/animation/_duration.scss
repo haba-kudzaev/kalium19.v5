@@ -10,7 +10,7 @@
 /// @group animation()
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_animation-duration
+/// @see {Variable} $prfxs_animation-duration
 /// @since 4.0.0
 /// @param {int | string} $duration [0s] - значение свойства `animation-duration`
 @mixin animation-duration($duration: 0s) {

@@ -5,9 +5,9 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_flex-basis
+/// @see {Variable} $prfxs_flex-basis
 /// @since 4.0.0
-/// @param {string} $val [auto] - значение свойства `flex-basis`
+/// @param {String} $val [auto] - значение свойства `flex-basis`
 @mixin flex-basis($val: auto) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы

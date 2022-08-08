@@ -9,7 +9,7 @@
 /// @access public
 /// @group column
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_columns
+/// @see {Variable} $prfxs_columns
 /// @since 4.0.0
 /// @param $params... - значение свойства `columns`
 @mixin columns($params...) {

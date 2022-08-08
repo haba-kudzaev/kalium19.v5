@@ -5,9 +5,9 @@
 /// @access public
 /// @group flex
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_flex-wrap
+/// @see {Variable} $prfxs_flex-wrap
 /// @since 4.0.0
-/// @param {string} $valueue [nowrap] - значение свойства `flex-wrap`
+/// @param {String} $valueue [nowrap] - значение свойства `flex-wrap`
 @mixin flex-wrap($value: nowrap) {
 
 	@if $value == nowrap {

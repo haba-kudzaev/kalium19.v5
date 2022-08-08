@@ -5,9 +5,9 @@
 /// @group background
 /// @access public
 /// @require {mixin} prefixer
-/// @see {variable} $prfxs_background-origin
+/// @see {Variable} $prfxs_background-origin
 /// @since 4.0.0
-/// @param {string} $value [padding-box] - значение свойства `background-origin`
+/// @param {String} $value [padding-box] - значение свойства `background-origin`
 @mixin background-origin($value: padding-box) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
