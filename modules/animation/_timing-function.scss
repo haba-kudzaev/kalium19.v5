@@ -9,7 +9,7 @@
 /// @name animation-timing-function
 /// @group animation()
 /// @access public
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-timing-function
 /// @since 4.0.0
 /// @param {String} $value [ease] - значение свойства `animation-timing-function`
@@ -32,7 +32,7 @@
 /// @name animation-timing-function-ease
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-ease {
 	@include animation-timing-function(ease);
@@ -44,7 +44,7 @@
 /// @name animation-timing-function-ease-in
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-ease-in  {
 	@include animation-timing-function(ease-in);
@@ -56,7 +56,7 @@
 /// @name animation-timing-function-ease-out
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-ease-out {
 	@include animation-timing-function(ease-out);
@@ -68,7 +68,7 @@
 /// @name animation-timing-function-ease-in-out
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-ease-in-out {
 	@include animation-timing-function(ease-in-out);
@@ -80,7 +80,7 @@
 /// @name animation-timing-function-linear
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-linear {
 	@include animation-timing-function(linear);
@@ -92,7 +92,7 @@
 /// @name animation-timing-function-step-start
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-step-start {
 	@include animation-timing-function(step-start);
@@ -104,7 +104,7 @@
 /// @name animation-timing-function-step-end
 /// @group animation()
 /// @access public
-/// @require {mixin} animation-timing-function
+/// @require {Mixin} animation-timing-function
 /// @since 4.0.0
 @mixin animation-timing-function-step-end {
 	@include animation-timing-function(step-end);

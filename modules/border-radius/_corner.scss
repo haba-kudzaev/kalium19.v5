@@ -8,7 +8,7 @@
 /// @name border-corner-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @see {Variable} $border-radius
 /// @since 4.0.0
 /// @param {String} $vr - вверхняя (top) или нижняя (bottom) сторона
@@ -36,7 +36,7 @@
 /// @name border-top-left-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-corner-radius
+/// @require {Mixin} border-corner-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-left-radius($radius: $border-radius) {
@@ -49,7 +49,7 @@
 /// @name border-top-right-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-corner-radius
+/// @require {Mixin} border-corner-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-right-radius($radius: $border-radius) {
@@ -62,7 +62,7 @@
 /// @name border-bottom-left-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-corner-radius
+/// @require {Mixin} border-corner-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-left-radius($radius: $border-radius) {
@@ -75,7 +75,7 @@
 /// @name border-bottom-right-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-corner-radius
+/// @require {Mixin} border-corner-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-right-radius($radius: $border-radius) {
@@ -88,8 +88,8 @@
 /// @name border-top-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-top-left-radius
-/// @require {mixin} border-top-right-radius
+/// @require {Mixin} border-top-left-radius
+/// @require {Mixin} border-top-right-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-top-radius($radius: $border-radius) {
@@ -103,8 +103,8 @@
 /// @name border-bottom-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-bottom-left-radius
-/// @require {mixin} border-bottom-right-radius
+/// @require {Mixin} border-bottom-left-radius
+/// @require {Mixin} border-bottom-right-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-radius($radius: $border-radius) {
@@ -118,8 +118,8 @@
 /// @name border-right-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-top-right-radius
-/// @require {mixin} border-bottom-right-radius
+/// @require {Mixin} border-top-right-radius
+/// @require {Mixin} border-bottom-right-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-right-radius($radius: $border-radius) {
@@ -133,8 +133,8 @@
 /// @name border-left-radius
 /// @group border-radius()
 /// @access public
-/// @require {mixin} border-top-left-radius
-/// @require {mixin} border-bottom-left-radius
+/// @require {Mixin} border-top-left-radius
+/// @require {Mixin} border-bottom-left-radius
 /// @since 4.0.0
 /// @param {int | string} $radius [$border-radius] - радиус скругления
 @mixin border-left-radius($radius: $border-radius) {

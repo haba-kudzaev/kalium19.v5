@@ -4,7 +4,7 @@
 /// @name align-self
 /// @access public
 /// @group flex
-/// @require {mixin} prefixer
+/// @require {Mixin} prefixer
 /// @since 4.0.0
 /// @param {String} $val [auto] - значение свойства `align-self`
 @mixin align-self($val: auto) {

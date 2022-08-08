@@ -2,7 +2,7 @@
 
 /// @name unselect
 /// @access public
-/// @require {mixin} user-select
+/// @require {Mixin} user-select
 /// @since 4.0.0
 @mixin unselect {
 	@include user-select(none);
