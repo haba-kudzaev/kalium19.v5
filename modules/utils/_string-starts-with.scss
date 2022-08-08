@@ -1,0 +1,17 @@
+/// Check if `$string` starts with the given `$substring`.
+/// ---
+/// @name string-starts-with
+/// @author Sindre Sorhus
+/// @link https://github.com/sindresorhus
+/// @access public
+/// @group string
+/// @parameter {String} $string - String to check
+/// @parameter {String} $substring - Substring to search for at the start of `$string`
+/// @return {Boolean}
+/// @example scss
+///   @debug string-starts-with('foo bar', $substring: 'foo');
+/// @example
+///   _string-starts-with.scss:15 Debug: true
+@function string-starts-with($string, $substring) {
+	@return str-index($string, $substring) == 1;
+}
