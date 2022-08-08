@@ -15,29 +15,29 @@
 /// @link https://github.com/W3cplus/SassMagic/blob/master/src/mixins/_amcss.scss Исходный код
 /// @link https://habr.com/ru/post/256109/ Краткое описание методологии AMCSS на Хабре
 ///	@example scss Пример использования в Sass
-///   @include am(module) {
-///       color: red;
-///   }
+/// 	@include am(module) {
+/// 		color: red;
+/// 	}
 ///
-///   @include am(module, blue) {
-///     color: blue;
-///   }
+/// 	@include am(module, blue) {
+/// 		color: blue;
+/// 	}
 ///
-///   @include am(module, large) {
-///     font-size: 2em;
-///   }
+/// 	@include am(module, large) {
+/// 		font-size: 2em;
+/// 	}
 /// @example css Результат в CSS
-///   [am-module] {
-///     color: red;
-///   }
+/// 	[am-module] {
+/// 		color: red;
+/// 	}
 ///
-///   [am-module~="blue"] {
-///     color: blue;
-///   }
+/// 	[am-module~="blue"] {
+/// 		color: blue;
+/// 	}
 ///
-///   [am-module~="large"] {
-///     font-size: 2em;
-///   }
+/// 	[am-module~="large"] {
+/// 		font-size: 2em;
+/// 	}
 /// @require {Variable} $am-prefix
 /// @param {String} $module - название модуля
 /// @param {String | Number} $trait [null] - значение модуля
