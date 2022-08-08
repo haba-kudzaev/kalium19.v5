@@ -1,13 +1,26 @@
 /// @name background-gradient-radial
+/// @since 4.0.0
 /// @group mixin.background
 /// @access public
-/// @since 4.0.0
 /// @author Matt Delac
 /// @link https://github.com/matthieua
-/// @param {color} $start-color [#3C3C3C] - начальный цвет
-/// @param {percentage} $startPos [0%] - начальная позиция
-/// @param {color} $end-color [#999999] - конечный цвет
-/// @param {percentage} $endPos [100%] - конечная позиция
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-gradient-radial(red, 10%, blue, 52%);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  background: -moz-radial-gradient(center, ellipse cover, red 10%, blue 52%);
+/// 	  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, red), color-stop(52%, blue));
+/// 	  background: -webkit-radial-gradient(center, ellipse cover, red 10%, blue 52%);
+/// 	  background: -o-radial-gradient(center, ellipse cover, red 10%, blue 52%);
+/// 	  background: -ms-radial-gradient(center, ellipse cover, red 10%, blue 52%);
+/// 	  background: radial-gradient(ellipse at center, red 10%, blue 52%);
+/// 	}
+/// @param {Color} $start-color [#3C3C3C] - начальный цвет
+/// @param {Percentage} $startPos [0%] - начальная позиция
+/// @param {Color} $end-color [#999999] - конечный цвет
+/// @param {Percentage} $endPos [100%] - конечная позиция
 @mixin background-gradient-radial($start-color: #FFFFFF, $startPos: 0%, $end-color: #000000, $endPos:100%) {
 	background: -moz-radial-gradient(center, ellipse cover, $start-color $startPos, $end-color $endPos);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$start-color), color-stop($endPos,$end-color));
@@ -17,5 +30,5 @@
 	background: radial-gradient(ellipse at center, $start-color $startPos,$end-color $endPos);
 }
 
-/// Doka: "Функция `radial-gradient` используется для задания
-/// фона в виде радиального (кругового, эллиптического) градиента."
+// ? Doka: "Функция `radial-gradient` используется для задания
+// ? фона в виде радиального (кругового, эллиптического) градиента."
