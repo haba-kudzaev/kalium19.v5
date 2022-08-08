@@ -1,0 +1,8 @@
+/// @since 4.2.0
+/// @name is-string
+/// @author takamoso
+/// @link https://github.com/takamoso
+/// @access public
+@function is-string($var) {
+  @return type-of($var) == string;
+}
