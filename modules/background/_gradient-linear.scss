@@ -1,11 +1,27 @@
+/// Описание
+/// ---
 /// @name background-gradient-linear
+/// @since 4.0.0
 /// @group mixin.background
 /// @access public
-/// @since 4.0.0
 /// @author Matt Delac
 /// @link https://github.com/matthieua
-/// @param {color} $start-color [#3C3C3C] - цвет начала графиента
-/// @param {color} $end-color [#999999] - цвет конца градиента
+///	@example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-gradient-linear(red, blue, hr);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+/// 	  background-image: -webkit-linear-gradient(left, red, blue);
+/// 	  background-image: -moz-linear-gradient(left, red, blue);
+/// 	  background-image: -ms-linear-gradient(left, red, blue);
+/// 	  background-image: -o-linear-gradient(left, red, blue);
+/// 	  background-image: linear-gradient(left, red, blue);
+/// 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="red", endColorStr="blue", gradientType="1");
+/// 	}
+/// @param {Color} $start-color [#3C3C3C] - цвет начала графиента
+/// @param {Color} $end-color [#999999] - цвет конца градиента
 /// @param {String} $orientation [null] - направление градиента
 @mixin background-gradient-linear($start-color: #3C3C3C, $end-color: #999999, $orientation) {
 
@@ -17,7 +33,7 @@
 		background-image:     -ms-linear-gradient(left, $start-color, $end-color);
 		background-image:      -o-linear-gradient(left, $start-color, $end-color);
 		background-image:         linear-gradient(left, $start-color, $end-color);
-		filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}', gradientType='1');
+		filter          : progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}', gradientType='1');
 	}
 
 	// horizontal (inverse) gradient
@@ -28,7 +44,7 @@
 		background-image:     -ms-linear-gradient(right, $start-color, $end-color);
 		background-image:      -o-linear-gradient(right, $start-color, $end-color);
 		background-image:         linear-gradient(right, $start-color, $end-color);
-		filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$end-color}', endColorStr='#{$start-color}', gradientType='1');
+		filter          : progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$end-color}', endColorStr='#{$start-color}', gradientType='1');
 	}
 
 	// vertical gradient
@@ -39,10 +55,10 @@
 		background-image:     -ms-linear-gradient(top, $start-color, $end-color);
 		background-image:      -o-linear-gradient(top, $start-color, $end-color);
 		background-image:         linear-gradient(top, $start-color, $end-color);
-		filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}');
+		filter          : progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start-color}', endColorStr='#{$end-color}');
 	}
 
 }
 
-/// Doka: "Функция `linear-gradient` используется для задания
-/// фона в виде линейного градиента."
+// ? Doka: "Функция `linear-gradient` используется для задания
+// ? фона в виде линейного градиента."
