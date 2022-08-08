@@ -11,7 +11,7 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_column-rule-color
 /// @since 4.0.0
-/// @param {color} $color. - значение свойства `column-rule-color`
+/// @param {Color} $color. - значение свойства `column-rule-color`
 @mixin column-rule-color($color) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
