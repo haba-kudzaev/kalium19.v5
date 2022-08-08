@@ -1,7 +1,7 @@
 /// @name wh
 /// @access public
 /// @since 4.0.0
-/// @example SCSS input
+/// @example scss input
 /// 	.square {
 /// 	  @include wh(50px);
 /// 	}
@@ -14,7 +14,7 @@
 /// 		@include wh(100px, 100px, min);
 /// 	}
 ///
-/// @example CSS output:
+/// @example css output:
 /// 	.square {
 /// 	  width: 50px;
 /// 	  height: 50px;

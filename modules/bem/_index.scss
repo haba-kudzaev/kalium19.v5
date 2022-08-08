@@ -5,7 +5,7 @@
 @use '../utils/selector-to-string' as *;
 
 /// @name b
-/// @group BEM
+/// @group mixin.bem
 /// @access public
 /// @since 4.0.0
 /// @author Marcmintel
@@ -18,7 +18,7 @@
 }
 
 /// @name e
-/// @group BEM
+/// @group mixin.bem
 /// @access public
 /// @require {Function} map-deep-get
 /// @require {Function} contains-modifier
@@ -48,7 +48,7 @@
 }
 
 /// @name m
-/// @group BEM
+/// @group mixin.bem
 /// @access public
 /// @require {Function} map-deep-get
 /// @since 4.0.0

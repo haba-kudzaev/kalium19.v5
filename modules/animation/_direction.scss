@@ -4,13 +4,15 @@
 /// Миксин `animation-direction()` также является лишь обёрткой над миксином `prefixer()`,
 /// который добавляет CSS-свойству `animation-direction` браузерные префиксы
 /// (в нашем случае префиксы прописаны в переменной `$prfxs_animation-direction`).
-///
+/// ---
 /// @name animation-direction
-/// @group animation()
+/// @group mixin.animation
+/// @since 4.0.0
 /// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-direction
-/// @since 4.0.0
 /// @param {String} $direction [normal] - значение свойства `animation-direction`
 @mixin animation-direction($direction: normal) {
 
@@ -29,7 +31,7 @@
 /// `animation-direction()` и передает ему значение `normal`
 ///
 /// @name animation-direction-normal
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-direction
 /// @since 4.0.0
@@ -41,7 +43,7 @@
 /// `animation-direction()` и передает ему значение `alternate`
 ///
 /// @name animation-direction-alternate
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-direction
 /// @since 4.0.0
@@ -53,7 +55,7 @@
 /// `animation-direction()` и передает ему значение `reverse`
 ///
 /// @name animation-direction-reverse
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-direction
 /// @since 4.0.0
@@ -65,7 +67,7 @@
 /// `animation-direction()` и передает ему значение `alternate-reverse`
 ///
 /// @name animation-direction-alternate-reverse
-/// @group animation()
+/// @group mixin.animation
 /// @access public
 /// @require {Mixin} animation-direction
 /// @since 4.0.0

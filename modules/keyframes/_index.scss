@@ -6,7 +6,7 @@
 /// @require {Function} map-deep-get
 /// @see {Variable} $keyframes
 /// @since 4.0.0
-/// @example SCSS
+/// @example scss
 /// 	@include keyframes(frameName) { ... }
 /// @param {String} $name
 @mixin keyframes($name) {

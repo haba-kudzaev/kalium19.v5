@@ -5,13 +5,15 @@
 /// миксином `prefixer()`, который добавляет CSS-свойству `animation-duration`
 /// браузерные префиксы (в нашем случае префиксы прописаны в
 /// переменной `$prfxs_animation-duration`).
-///
+/// ---
 /// @name animation-duration
-/// @group animation()
+/// @group mixin.animation
+/// @since 4.0.0
 /// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-duration
-/// @since 4.0.0
 /// @param {int | string} $duration [0s] - значение свойства `animation-duration`
 @mixin animation-duration($duration: 0s) {
 

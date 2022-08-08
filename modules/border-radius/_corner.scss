@@ -6,7 +6,7 @@
 /// `border-<сторона>-radius` с префиксом для движка WebKit.
 ///
 /// @name border-corner-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} prefixer
 /// @see {Variable} $border-radius
@@ -34,7 +34,7 @@
 /// элемента только сверху слева.
 ///
 /// @name border-top-left-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-corner-radius
 /// @since 4.0.0
@@ -47,7 +47,7 @@
 /// элемента только сверху права.
 ///
 /// @name border-top-right-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-corner-radius
 /// @since 4.0.0
@@ -60,7 +60,7 @@
 /// элемента только снизу слева.
 ///
 /// @name border-bottom-left-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-corner-radius
 /// @since 4.0.0
@@ -73,7 +73,7 @@
 /// элемента только снизу справа.
 ///
 /// @name border-bottom-right-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-corner-radius
 /// @since 4.0.0
@@ -86,7 +86,7 @@
 /// элемента только сверху справа слева.
 ///
 /// @name border-top-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-top-left-radius
 /// @require {Mixin} border-top-right-radius
@@ -101,7 +101,7 @@
 /// элемента только снизу справа слева.
 ///
 /// @name border-bottom-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-bottom-left-radius
 /// @require {Mixin} border-bottom-right-radius
@@ -116,7 +116,7 @@
 /// элемента только справа сверху и снизу.
 ///
 /// @name border-right-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-top-right-radius
 /// @require {Mixin} border-bottom-right-radius
@@ -131,7 +131,7 @@
 /// элемента только слева сверху и снизу.
 ///
 /// @name border-left-radius
-/// @group border-radius()
+/// @group mixin.border-radius
 /// @access public
 /// @require {Mixin} border-top-left-radius
 /// @require {Mixin} border-bottom-left-radius

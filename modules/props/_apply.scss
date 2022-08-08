@@ -1,10 +1,9 @@
-@mixin props-apply($decs) {
-	@each $prop, $val in $decs {
-		#{$prop}: var(--#{$val});
-	}
-}
-
-/// @example SCSS Input
+/// @name props-apply
+/// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19 Исходный код
+/// @example scss Input
 /// 	? SCSS
 /// 	.body {
 /// 		@include props-apply((
@@ -12,8 +11,14 @@
 /// 			background: clrBackground
 /// 		))
 /// 	}
-/// @example CSS Output
+/// @example css Output
 /// 	.body {
 /// 	  color: var(--clrFont);
 /// 	  background: var(--clrBackground);
 /// 	}
+/// @param {String} $desc
+@mixin props-apply($decs) {
+	@each $prop, $val in $decs {
+		#{$prop}: var(--#{$val});
+	}
+}
