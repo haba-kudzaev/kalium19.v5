@@ -1,46 +1,74 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: auto balance balance-all;
 
 /// Миксин `column-fill()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-fill`
-///
-/// @name columns
-/// @access public
-/// @group colums
-/// @require {Mixin} prefixer
+/// ---
+/// @name column-fill
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include column-fill(balance-all);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-column-fill: balance-all;
+/// 	  -moz-column-fill: balance-all;
+/// 	  column-fill: balance-all;
+/// 	}
 /// @see {Mixin} column-fill-balance
 /// @see {Mixin} column-fill-balance-all
 /// @see {Variable} $prfxs_column-fill
+/// @require {Mixin} prefixer
 /// @param {String} $type [auto] - значение свойства `column-fill`
 @mixin column-fill($type: auto) {
 
-	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
-	// ? [2] передаем префиксеру значение свойства
-	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
-	@include prefixer(
-		column-fill, // 1
-		$type, // 2
-		$prfxs_column-fill // 3
-	);
+	@if is-valid($type, $_variants) {
+		// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+		// ? [2] передаем префиксеру значение свойства
+		// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
+		@include prefixer(
+			column-fill, // 1
+			$type, // 2
+			$prfxs_column-fill // 3
+		);
+	} @else {
+		@include error-invalid-value($_variants, column-fill, $type);
+	}
 
 }
 
-/// WebRef: "Определяет, как содержимое должно распределяться внутри колонок."
+// ? WebRef: "Определяет, как содержимое должно распределяться внутри колонок."
 
 /// @name column-fill-balance
-/// @access public
-/// @require column-fill
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} column-fill
 @mixin column-fill-balance {
 	@include column-fill(balance)
 }
 
 /// @name column-fill-balance-all
-/// @access public
-/// @require column-fill
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} column-fill
 @mixin column-fill-balance-all {
 	@include column-fill(balance-all)
 }

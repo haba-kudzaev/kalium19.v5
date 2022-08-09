@@ -53,6 +53,4 @@ $_variants: '<number> или "auto"';
 		@include error-invalid-value($_variants, column-count, $value);
 	}
 
-
-
 }
