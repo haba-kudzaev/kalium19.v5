@@ -48,7 +48,7 @@
 			$prfxs_animation-iteration-count
 		);
 	} @else {
-		@include error-invalid-value(animation-iteration-count, $iteration-count);
+		@include error-invalid-value($_variants, animation-iteration-count, $iteration-count);
 	}
 
 

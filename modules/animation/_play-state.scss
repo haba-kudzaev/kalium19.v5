@@ -46,7 +46,7 @@ $_variants: running paused;
 		);
 
 	} @else {
-		@include error-invalid-value(animation-play-state, $state);
+		@include error-invalid-value($_variants, animation-play-state, $state);
 	}
 
 }
