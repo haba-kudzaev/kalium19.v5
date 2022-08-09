@@ -4,12 +4,25 @@
 /// Миксин `box-shadow()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_box-shadow`
-///
+/// ---
 /// @name box-shadow
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_box-shadow
 /// @since 4.0.0
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include box-shadow(rgba(149, 157, 165, 0.2) 0px 8px 24px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+/// 	  -moz-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+/// 	  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+/// 	}
+/// @see {Variable} $prfxs_box-shadow
+/// @require {Mixin} prefixer
 /// @param {String} $params - значение свойства `box-shadow`
 @mixin box-shadow($params...) {
 
