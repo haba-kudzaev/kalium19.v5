@@ -2,11 +2,24 @@
 @use '../prefixer' as *;
 
 /// @name background-size
+/// @since 4.0.0
 /// @group mixin.background
 /// @access public
-/// @require {Mixin} prefixer
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass
+/// 	.block {
+/// 		@include background-size(55%);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-background-size: 55% 55%;
+/// 	  -moz-background-size: 55% 55%;
+/// 	  -o-background-size: 55% 55%;
+/// 	  background-size: 55% 55%;
+/// 	}
 /// @see {Variable} $prfxs_background-size
-/// @since 4.0.0
+/// @require {Mixin} prefixer
 /// @param {Percentage} $width [100%] - ширина
 /// @param {Percentage} $height [$width] - высота
 @mixin background-size($width: 100%, $height: $width) {
