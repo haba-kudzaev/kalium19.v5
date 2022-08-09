@@ -1,27 +1,56 @@
 @use '../transform' as *;
 @use '../position/' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: vertical horizontal both;
 
 /// @name centering
+/// @since 4.0.0
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include centering(both);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  position: absolute;
+/// 	  top: 50%;
+/// 	  left: 50%;
+/// 	  -webkit-transform: translate(-50%, -50%);
+/// 	  -moz-transform: translate(-50%, -50%);
+/// 	  -ms-transform: translate(-50%, -50%);
+/// 	  -o-transform: translate(-50%, -50%);
+/// 	  transform: translate(-50%, -50%);
+/// 	}
 /// @require {Mixin} transform
 /// @require {Mixin} position
-/// @since 4.0.0
 /// @param {String} $position
 @mixin centering($position) {
 
-	@if $position == 'vertical' {
-		@include position(absolute, 50%);
-		@include transform(translateY(-50%));
-	}
+	@if is-valid($position, $_variants) {
 
-	@else if $position == 'horizontal' {
-		@include position(absolute, null, null, null, 50%);
-		@include transform(translateX(-50%));
-	}
+		@if $position == 'vertical' {
+			@include position(absolute, 50%);
+			@include transform(translateY(-50%));
+		}
 
-	@else if $position == 'both' {
-		@include position(absolute, 50%, null, null, 50%);
-		@include transform(translate(-50%, -50%));
+		@else if $position == 'horizontal' {
+			@include position(absolute, null, null, null, 50%);
+			@include transform(translateX(-50%));
+		}
+
+		@else if $position == 'both' {
+			@include position(absolute, 50%, null, null, 50%);
+			@include transform(translate(-50%, -50%));
+		}
+		
+	} @else {
+		@include error-invalid-value(centering, $position);
 	}
 
 }
