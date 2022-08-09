@@ -1,9 +1,22 @@
 @use '../push-auto' as *;
 
 /// @name center-block
-/// @access public
-/// @require {Mixin} push-auto
 /// @since 4.0.0
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include center-block();
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  margin-left: auto;
+/// 	  margin-right: auto;
+/// 	  display: block;
+/// 	}
+/// @require {Mixin} push-auto
 @mixin center-block {
 	@include push-auto();
 	display: block;
