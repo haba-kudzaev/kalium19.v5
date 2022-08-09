@@ -4,13 +4,25 @@
 /// Миксин `column-gap()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-gap`
-///
+/// ---
 /// @name column-gap
-/// @access public
-/// @group mixin.column
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_column-gap
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include column-gap(2em);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-column-gap: 2em;
+/// 	  -moz-column-gap: 2em;
+/// 	  column-gap: 2em;
+/// 	}
+/// @see {Variable} $prfxs_column-gap
+/// @require {Mixin} prefixer
 /// @param {String | Number} $value - значение свойства `column-gap`
 @mixin column-gap($value) {
 
