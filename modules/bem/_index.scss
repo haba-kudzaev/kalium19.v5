@@ -5,11 +5,19 @@
 @use '../utils/selector-to-string' as *;
 
 /// @name b
+/// @since 4.0.0
 /// @group mixin.bem
 /// @access public
-/// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
+/// @example scss Пример использования в Sass
+/// 	@include b(block) {
+/// 		color: red;
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  color: red;
+/// 	}
 /// @param {String} $block - название блока
 @mixin b($block) {
 	.#{$block} {
@@ -18,14 +26,32 @@
 }
 
 /// @name e
+/// @since 4.0.0
 /// @group mixin.bem
 /// @access public
+/// @author Marcmintel
+/// @link https://medium.com/@marcmintel
+/// @example scss Пример использования в Sass
+/// 	@include b(block) {
+///
+/// 		color: red;
+///
+/// 		@include e(element) {
+/// 			background-color: #fff;
+/// 		}
+///
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  color: red;
+/// 	}
+///
+/// 	.block__element {
+/// 	  background-color: #fff;
+/// 	}
 /// @require {Function} map-deep-get
 /// @require {Function} contains-modifier
 /// @require {Function} get-block
-/// @since 4.0.0
-/// @author Marcmintel
-/// @link https://medium.com/@marcmintel
 /// @param {String} $element - название элемента
 @mixin e($element) {
 	$selector: &;
@@ -48,12 +74,54 @@
 }
 
 /// @name m
+/// @since 4.
 /// @group mixin.bem
 /// @access public
-/// @require {Function} map-deep-get
-/// @since 4.0.0
 /// @author Marcmintel
 /// @link https://medium.com/@marcmintel
+/// @example scss Пример использования в Sass
+/// 	@include b(block) {
+///
+/// 		/* Block */
+///
+/// 		@include e(element) {
+///
+/// 			/* Element */
+///
+/// 			@include m(click) {
+/// 				/* Modificator */
+/// 			}
+///
+/// 		}
+///
+/// 	}
+///
+/// 	@include b(block2) {
+///
+/// 		/* Block 2 */
+///
+/// 		@include m(click) {
+/// 			/* Modificator 2 */
+/// 		}
+///
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  /* Block */
+/// 	}
+/// 	.block__element {
+/// 	  /* Element */
+/// 	}
+/// 	.block__element--click {
+/// 	  /* Modificator */
+/// 	}
+/// 	.block2 {
+/// 	  /* Block 2 */
+/// 	}
+/// 	.block2--click {
+/// 	  /* Modificator 2 */
+/// 	}
+/// @require {Function} map-deep-get
 /// @param {String} $modifier - название модификатора
 @mixin m($modifier) {
 	@at-root {
