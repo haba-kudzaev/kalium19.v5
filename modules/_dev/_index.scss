@@ -1,3 +1,5 @@
+@use '../config' as *;
+
 /// Миксин для разработчиков Kalium19, который отображает
 /// сообщение с ошибкой о том, что свойство не приминает
 /// такое значение.
@@ -6,7 +8,8 @@
 /// @since 4.2.0
 /// @group mixin.dev
 /// @access private
-/// @param {} a [] -
 @mixin error-invalid-value($variants, $prop, $value) {
-	@error "«#{$prop}» не может принять значение «#{$value}»! Возможные значения: #{$variants}."
+	@error "Kalium19 ⛔ «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}";
 }
+
+
