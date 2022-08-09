@@ -16,10 +16,9 @@
 @forward 'modules/antialias'; // by @gpessia
 @forward 'modules/backdrop-filter';
 @forward 'modules/background/clip';
-@forward 'modules/calc'; // by Roman Matusevich (@romamatusevich)
+@forward 'modules/background/gradient'; // by Justin Brazeau
 @forward 'modules/background/gradient-linear'; // by Matt Delac (@matthieua)
 @forward 'modules/background/gradient-radial'; // by Matt Delac (@matthieua)
-@forward 'modules/background/gradient'; // by Justin Brazeau
 @forward 'modules/background/opacity';
 @forward 'modules/background/origin';
 @forward 'modules/background/size';
@@ -28,6 +27,7 @@
 @forward 'modules/border-radius/corner' hide border-corner-radius;
 @forward 'modules/box-shadow';
 @forward 'modules/box-sizing';
+@forward 'modules/calc'; // by Roman Matusevich (@romamatusevich)
 @forward 'modules/center-block';
 @forward 'modules/centering';
 @forward 'modules/clearfix';
@@ -35,10 +35,10 @@
 @forward 'modules/column/count';
 @forward 'modules/column/fill';
 @forward 'modules/column/gap';
+@forward 'modules/column/rule';
 @forward 'modules/column/rule-color';
 @forward 'modules/column/rule-style';
 @forward 'modules/column/rule-width';
-@forward 'modules/column/rule';
 @forward 'modules/column/span';
 @forward 'modules/column/width';
 @forward 'modules/flex';
@@ -59,6 +59,7 @@
 @forward 'modules/hardware'; // by @gpessia
 @forward 'modules/hide-text';
 @forward 'modules/image-2x'; // by Nathan da Silva (silvawebdesigns.com)
+@forward 'modules/initial'; // by @takamoso
 @forward 'modules/keyframes';
 @forward 'modules/mquery'; // by Gilles Bertaux (@gillesbertaux, github.com/gillesbertaux/andy)
 @forward 'modules/mquery/r'; // by Gilles Bertaux (@gillesbertaux, github.com/gillesbertaux/andy)
@@ -74,10 +75,10 @@
 @forward 'modules/push-auto';
 @forward 'modules/respond-to'; // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/scroll-behavior';
+@forward 'modules/scrollbar'; // by Hugo Giraudel
 @forward 'modules/selection';
 @forward 'modules/tab-size';
 @forward 'modules/text-shorten';
-@forward 'modules/initial'; // by @takamoso
 @forward 'modules/transform';
 @forward 'modules/transform/origin';
 @forward 'modules/transform/style';
@@ -90,36 +91,35 @@
 @forward 'modules/user-select/unselect';
 @forward 'modules/visually-hidden';
 @forward 'modules/wh';
-@forward 'modules/scrollbar'; // by Hugo Giraudel
 
 @forward 'modules/utils/color-shade';  // by Kitty Giraudel (@KittyGiraudel)
 @forward 'modules/utils/color-tint';   // by Kitty Giraudel (@KittyGiraudel)
-@forward 'modules/utils/contains-modifier'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/utils/contains';
+@forward 'modules/utils/contains-modifier'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/utils/get-block'; // by Marcmintel (@marcmintel from Medium)
-@forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
-@forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
-@forward 'modules/utils/selector-to-string'; // by Marcmintel (@marcmintel from Medium)
-@forward 'modules/utils/str-replace';  // by Kitty Giraudel (@KittyGiraudel)
-@forward 'modules/utils/strip-unit';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/number-clamp';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/number-invert';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/string-contains';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/string-starts-with';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/string-ends-with';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/string-replace';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/is-bool';  // by @takamoso
+@forward 'modules/utils/is-int';  // by Zsolt Pentz (@pentzzsolt)
+@forward 'modules/utils/is-list';  // by @takamoso
+@forward 'modules/utils/is-map';  // by @takamoso
+@forward 'modules/utils/is-string';  // by @takamoso
+@forward 'modules/utils/is-time'; // by Halil İbrahim Çakıroğlu (@selfishprimate)
+@forward 'modules/utils/is-valid';  // by @takamoso
 @forward 'modules/utils/list-first';  // by Sindre Sorhus (@sindresorhus)
 @forward 'modules/utils/list-last';  // by Sindre Sorhus (@sindresorhus)
-@forward 'modules/utils/url-encode';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/map-deep-get'; // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/map-deep-set'; // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/number-clamp';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/number-invert';  // by Sindre Sorhus (@sindresorhus)
 @forward 'modules/utils/recursive-map-merge';  // by Zsolt Pentz (@pentzzsolt)
-@forward 'modules/utils/is-int';  // by Zsolt Pentz (@pentzzsolt)
+@forward 'modules/utils/selector-to-string'; // by Marcmintel (@marcmintel from Medium)
 @forward 'modules/utils/set-initial';  // by @takamoso
-@forward 'modules/utils/is-time'; // by Halil İbrahim Çakıroğlu (@selfishprimate)
-@forward 'modules/utils/is-map';  // by @takamoso
-@forward 'modules/utils/is-list';  // by @takamoso
-@forward 'modules/utils/is-bool';  // by @takamoso
-@forward 'modules/utils/is-string';  // by @takamoso
-@forward 'modules/utils/is-valid';  // by @takamoso
+@forward 'modules/utils/str-replace';  // by Kitty Giraudel (@KittyGiraudel)
+@forward 'modules/utils/string-contains';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/string-ends-with';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/string-replace';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/string-starts-with';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/strip-unit';  // by Sindre Sorhus (@sindresorhus)
+@forward 'modules/utils/url-encode';  // by Sindre Sorhus (@sindresorhus)
 
 @forward 'extra/colors/amber'; // by @google (material.io/)
 @forward 'extra/colors/blue-grey'; // by @google (material.io/)
@@ -141,5 +141,5 @@
 @forward 'extra/colors/teal'; // by @google (material.io/)
 @forward 'extra/colors/yellow'; // by @google (material.io/)
 
-@forward 'extra/system-fonts';
 @forward 'extra/characters';
+@forward 'extra/system-fonts';
