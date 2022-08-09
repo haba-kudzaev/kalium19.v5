@@ -3,8 +3,20 @@
 /// расположенный плавающие элементы например с float:left.
 /// ---
 /// @name clearfix
-/// @access public
 /// @since 4.0.0
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include clearfix();
+/// 	}
+/// @example css Результат в CSS
+/// 	.block::after {
+/// 	  content: "";
+/// 	  display: table;
+/// 	  clear: both;
+/// 	}
+/// @access public
 @mixin clearfix {
 	&::after {
 		content: '';
