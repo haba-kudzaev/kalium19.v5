@@ -5,14 +5,26 @@
 /// Миксин `border-radius()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `border-radius` с префиксами, которые хранятся в переменной `$prfxs_border-radius`
-///
+/// ---
 /// @name border-radius
+/// @since 4.
 /// @group mixin.border-radius
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-border-radius: 18px;
+/// 	  -moz-border-radius: 18px;
+/// 	  border-radius: 18px;
+/// 	}
+/// @see {Variable} $border-radius
 /// @require {Mixin} prefixer
 /// @require {Mixin} background-clip
-/// @see {Variable} $border-radius
-/// @since 4.0.0
 /// @param {String | Number} $radius [$border-radius] - радиус скругления
 /// @param {String} $clip [null] - значение свойства `background-clip`
 @mixin border-radius($radius: $border-radius, $clip: null) {
