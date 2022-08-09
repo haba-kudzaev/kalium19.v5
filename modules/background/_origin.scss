@@ -45,7 +45,7 @@ $_variants: padding-box border-box content-box;
 		);
 
 	} @else {
-		@include error-invalid-value(background-origin, $value);
+		@include error-invalid-value($_variants, background-origin, $value);
 	}
 
 }

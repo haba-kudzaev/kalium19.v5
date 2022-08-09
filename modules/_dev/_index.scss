@@ -7,6 +7,6 @@
 /// @group mixin.dev
 /// @access private
 /// @param {} a [] -
-@mixin error-invalid-value($prop, $value) {
-	@error "Свойство «#{$prop}» не может принять значение «#{$value}»!"
+@mixin error-invalid-value($variants, $prop, $value) {
+	@error "«#{$prop}» не может принять значение «#{$value}»! Возможные значения: #{$variants}."
 }

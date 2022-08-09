@@ -48,9 +48,9 @@ $_variants: vertical horizontal both;
 			@include position(absolute, 50%, null, null, 50%);
 			@include transform(translate(-50%, -50%));
 		}
-		
+
 	} @else {
-		@include error-invalid-value(centering, $position);
+		@include error-invalid-value($_variants, centering, $position);
 	}
 
 }
