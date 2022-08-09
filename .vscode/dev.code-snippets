@@ -20,10 +20,10 @@
 		"scope": "scss",
 		"prefix": "is-valid-if",
 		"body": [
-			"@if is-valid($2, \\$_variants) {",
+			"@if is-valid(\\$$2, \\$_variants) {",
 			"$1",
 			"} @else {",
-			"\t@include error-invalid-value($3, $2);",
+			"\t@include error-invalid-value($3, $$2);",
 			"}"
 		]
 	}
