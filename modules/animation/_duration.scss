@@ -26,7 +26,7 @@
 /// 	}
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_animation-duration
-/// @param {int | string} $duration [0s] - значение свойства `animation-duration`
+/// @param {String | Number} $duration [0s] - значение свойства `animation-duration`
 @mixin animation-duration($duration: 0s) {
 
 	@if is-time($duration) == true {

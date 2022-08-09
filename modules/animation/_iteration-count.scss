@@ -27,7 +27,7 @@
 /// 	}
 /// @see {Variable} $prfxs_animation-iteration-count
 /// @require {Mixin} prefixer
-/// @param {int | string} $iteration-count [1] - значение свойства `$iteration-count`
+/// @param {String | Number} $iteration-count [1] - значение свойства `$iteration-count`
 @mixin animation-iteration-count($iteration-count: 1) {
 
 	@if is-int($iteration-count) == true {
