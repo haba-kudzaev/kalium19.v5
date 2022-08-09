@@ -4,16 +4,18 @@
 /// Миксин `border-corner-radius()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `border-<сторона>-radius` с префиксом для движка WebKit.
-///
+/// ---
 /// @name border-corner-radius
-/// @group mixin.border-radius
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $border-radius
 /// @since 4.0.0
+/// @group mixin.border-radius
+/// @access private
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $border-radius
+/// @require {Mixin} prefixer
 /// @param {String} $vr - вверхняя (top) или нижняя (bottom) сторона
 /// @param {String} $hr - левая (left) или правая (right) сторона
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-corner-radius($vr, $hr, $radius: $border-radius) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
@@ -32,66 +34,128 @@
 
 /// Миксин `border-top-left-radius()` позволяет закруглить углы
 /// элемента только сверху слева.
-///
+/// ---
 /// @name border-top-left-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-top-left-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-border-top-left-radius: 18px;
+/// 	  border-top-left-radius: 18px;
+/// 	  -moz-border-radius-topleft: 18px;
+/// 	}
 /// @require {Mixin} border-corner-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-top-left-radius($radius: $border-radius) {
 	@include border-corner-radius(top, left, $radius);
 }
 
 /// Миксин `border-top-right-radius()` позволяет закруглить углы
 /// элемента только сверху права.
-///
+/// ---
 /// @name border-top-right-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-top-right-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-border-top-right-radius: 18px;
+/// 	  border-top-right-radius: 18px;
+/// 	  -moz-border-radius-topright: 18px;
+/// 	}
 /// @require {Mixin} border-corner-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-top-right-radius($radius: $border-radius) {
 	@include border-corner-radius(top, right, $radius);
 }
 
 /// Миксин `border-bottom-left-radius()` позволяет закруглить углы
 /// элемента только снизу слева.
-///
+/// ---
 /// @name border-bottom-left-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-bottom-left-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-border-bottom-left-radius: 18px;
+/// 	  border-bottom-left-radius: 18px;
+/// 	  -moz-border-radius-bottomleft: 18px;
+/// 	}
 /// @require {Mixin} border-corner-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-left-radius($radius: $border-radius) {
 	@include border-corner-radius(bottom, left, $radius);
 }
 
 /// Миксин `border-bottom-right-radius()` позволяет закруглить углы
 /// элемента только снизу справа.
-///
+/// ---
 /// @name border-bottom-right-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-bottom-right-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-border-bottom-right-radius: 18px;
+/// 	  border-bottom-right-radius: 18px;
+/// 	  -moz-border-radius-bottomright: 18px;
+/// 	}
 /// @require {Mixin} border-corner-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-right-radius($radius: $border-radius) {
 	@include border-corner-radius(bottom, right, $radius);
 }
 
 /// Миксин `border-top-radius()` позволяет закруглить углы
 /// элемента только сверху справа слева.
-///
+/// ---
 /// @name border-top-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
-/// @require {Mixin} border-top-left-radius
-/// @require {Mixin} border-top-right-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-top-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 		-webkit-border-top-left-radius: 18px;
+/// 		border-top-left-radius: 18px;
+/// 		-moz-border-radius-topleft: 18px;
+/// 		-webkit-border-top-right-radius: 18px;
+/// 		border-top-right-radius: 18px;
+/// 		-moz-border-radius-topright: 18px;
+/// 	}
+/// @require {Mixin} border-corner-radius
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-top-radius($radius: $border-radius) {
 	@include border-top-left-radius($radius);
 	@include border-top-right-radius($radius);
@@ -99,14 +163,28 @@
 
 /// Миксин `border-bottom-radius()` позволяет закруглить углы
 /// элемента только снизу справа слева.
-///
+/// ---
 /// @name border-bottom-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
-/// @require {Mixin} border-bottom-left-radius
-/// @require {Mixin} border-bottom-right-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-bottom-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 		-webkit-border-bottom-left-radius: 18px;
+/// 		border-bottom-left-radius: 18px;
+/// 		-moz-border-radius-bottomleft: 18px;
+/// 		-webkit-border-bottom-right-radius: 18px;
+/// 		border-bottom-right-radius: 18px;
+/// 		-moz-border-radius-bottomright: 18px;
+/// 	}
+/// @require {Mixin} border-corner-radius
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-bottom-radius($radius: $border-radius) {
 	@include border-bottom-left-radius($radius);
 	@include border-bottom-right-radius($radius);
@@ -114,14 +192,28 @@
 
 /// Миксин `border-right-radius()` позволяет закруглить углы
 /// элемента только справа сверху и снизу.
-///
+/// ---
 /// @name border-right-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
-/// @require {Mixin} border-top-right-radius
-/// @require {Mixin} border-bottom-right-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-right-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 		-webkit-border-top-right-radius: 18px;
+/// 		border-top-right-radius: 18px;
+/// 		-moz-border-radius-topright: 18px;
+/// 		-webkit-border-bottom-right-radius: 18px;
+/// 		border-bottom-right-radius: 18px;
+/// 		-moz-border-radius-bottomright: 18px;
+/// 	}
+/// @require {Mixin} border-corner-radius
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-right-radius($radius: $border-radius) {
 	@include border-top-right-radius($radius);
 	@include border-bottom-right-radius($radius);
@@ -129,14 +221,28 @@
 
 /// Миксин `border-left-radius()` позволяет закруглить углы
 /// элемента только слева сверху и снизу.
-///
+/// ---
 /// @name border-left-radius
+/// @since 4.0.0
 /// @group mixin.border-radius
 /// @access public
-/// @require {Mixin} border-top-left-radius
-/// @require {Mixin} border-bottom-left-radius
-/// @since 4.0.0
-/// @param {int | string} $radius [$border-radius] - радиус скругления
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include border-left-radius(18px);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 		-webkit-border-top-left-radius: 18px;
+/// 		border-top-left-radius: 18px;
+/// 		-moz-border-radius-topleft: 18px;
+/// 		-webkit-border-bottom-left-radius: 18px;
+/// 		border-bottom-left-radius: 18px;
+/// 		-moz-border-radius-bottomleft: 18px;
+/// 	}
+/// @require {Mixin} border-corner-radius
+/// @param {String | Number} $radius [$border-radius] - радиус скругления
 @mixin border-left-radius($radius: $border-radius) {
 	@include border-top-left-radius($radius);
 	@include border-bottom-left-radius($radius);
