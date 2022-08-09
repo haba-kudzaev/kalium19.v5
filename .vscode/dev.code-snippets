@@ -23,7 +23,7 @@
 			"@if is-valid(\\$$2, \\$_variants) {",
 			"$1",
 			"} @else {",
-			"\t@include error-invalid-value($_variants, $3, $$2, \\$_variants);",
+			"\t@include error-invalid-value(\\$_variants, $3, $$2);",
 			"}"
 		]
 	}
