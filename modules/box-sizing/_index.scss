@@ -1,26 +1,52 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: content-box border-box;
 
 /// @name box-sizing
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_box-sizing
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include box-sizing(content-box);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-box-sizing: content-box;
+/// 	  -moz-box-sizing: content-box;
+/// 	  -o-box-sizing: content-box;
+/// 	  box-sizing: content-box;
+/// 	}
+/// @see {Variable} $prfxs_box-sizing
+/// @require {Mixin} prefixer
 /// @param {String} $model - значение свойства `box-sizing`
 @mixin box-sizing($model: border-box) {
-	@include prefixer(
-		box-sizing,
-		$model,
-		$prfxs_box-sizing
-	);
+
+	@if is-valid($model, $_variants) {
+		@include prefixer(
+			box-sizing,
+			$model,
+			$prfxs_box-sizing
+		);
+	} @else {
+		@include error-invalid-value(box-sizing, $model);
+	}
+
+
 }
 
-/// Doka: "При помощи свойства `box-sizing` можно изменить то, как браузер будет рассчитывать
-/// размеры элемента."
-///
-/// Doka: "По умолчанию размером элемента считается размер контентной области.
-/// Если указываешь `width`, `height`, и `padding`, то браузер посчитает размер элемента
-/// как `width + padding * 2` и `height + padding * 2`."
-///
-/// Doka: "🤖 Если задать значение `border-box` для свойства `box-sizing`, то браузер изменит
-/// принцип расчёта и в `width` уже будет включён `padding`."
+// ? Doka: "При помощи свойства `box-sizing` можно изменить то, как браузер будет рассчитывать
+// ? размеры элемента."
+
+// ? Doka: "По умолчанию размером элемента считается размер контентной области.
+// ? Если указываешь `width`, `height`, и `padding`, то браузер посчитает размер элемента
+// ? как `width + padding * 2` и `height + padding * 2`."
+
+// ? Doka: "🤖 Если задать значение `border-box` для свойства `box-sizing`, то браузер изменит
+// ? принцип расчёта и в `width` уже будет включён `padding`."
