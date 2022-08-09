@@ -17,12 +17,12 @@ $_variants: normal reverse alternate alternate-reverse;
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-direction(normal);
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 	  -webkit-animation-direction: normal;
 /// 	  -moz-animation-direction: normal;
 /// 	  -o-animation-direction: normal;
@@ -56,12 +56,12 @@ $_variants: normal reverse alternate alternate-reverse;
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-direction-normal;
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 	  -webkit-animation-direction: normal;
 /// 	  -moz-animation-direction: normal;
 /// 	  -o-animation-direction: normal;
@@ -81,12 +81,12 @@ $_variants: normal reverse alternate alternate-reverse;
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-direction-alternate;
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 	  -webkit-animation-direction: alternate;
 /// 	  -moz-animation-direction: alternate;
 /// 	  -o-animation-direction: alternate;
@@ -106,12 +106,12 @@ $_variants: normal reverse alternate alternate-reverse;
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-direction-reverse;
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 	  -webkit-animation-direction: reverse;
 /// 	  -moz-animation-direction: reverse;
 /// 	  -o-animation-direction: reverse;
@@ -131,12 +131,12 @@ $_variants: normal reverse alternate alternate-reverse;
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-direction-alternate-reverse;
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 	  -webkit-animation-direction: alternate-reverse;
 /// 	  -moz-animation-direction: alternate-reverse;
 /// 	  -o-animation-direction: alternate-reverse;

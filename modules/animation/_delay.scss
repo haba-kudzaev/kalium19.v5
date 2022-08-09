@@ -12,12 +12,12 @@
 /// @access public
 /// @author Haba Kudzaev (rx1310)
 /// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Пример использования в Sass
-/// 	.body {
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
 /// 		@include animation-delay(.3s);
 /// 	}
 /// @example css Результат в CSS
-/// 	.body {
+/// 	.block {
 /// 		-webkit-animation-delay: 0.3s;
 /// 		-moz-animation-delay: 0.3s;
 /// 		-o-animation-delay: 0.3s;
