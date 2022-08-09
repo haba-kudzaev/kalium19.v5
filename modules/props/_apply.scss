@@ -5,14 +5,14 @@
 /// @link https://github.com/rx1310/kalium19 Исходный код
 /// @example scss Input
 /// 	? SCSS
-/// 	.body {
+/// 	.block {
 /// 		@include props-apply((
 /// 			color: clrFont,
 /// 			background: clrBackground
 /// 		))
 /// 	}
 /// @example css Output
-/// 	.body {
+/// 	.block {
 /// 	  color: var(--clrFont);
 /// 	  background: var(--clrBackground);
 /// 	}

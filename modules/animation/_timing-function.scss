@@ -18,7 +18,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function(step-start);
 /// 	}
@@ -58,7 +58,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-ease();
 /// 	}
@@ -83,7 +83,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-ease-in();
 /// 	}
@@ -108,7 +108,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-ease-out();
 /// 	}
@@ -133,7 +133,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-ease-in-out();
 /// 	}
@@ -158,7 +158,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-linear();
 /// 	}
@@ -183,7 +183,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-step-start();
 /// 	}
@@ -208,7 +208,7 @@ $_variants: ease ease-in ease-out ease-in-out linear step-start step-end;
 /// @access public
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
-/// @example scss Пример использования в Sass
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include animation-timing-function-step-end();
 /// 	}
