@@ -9,7 +9,7 @@
 /// @group mixin.dev
 /// @access private
 @mixin error-invalid-value($variants, $prop, $value) {
-	@error "Kalium19 ⛔ «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}";
+	@error "Kalium19 ⛔ «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
 }
 
 
