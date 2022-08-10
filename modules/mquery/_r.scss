@@ -1,16 +1,24 @@
-/// Помощник по медиа-запросам для объявления медиа-запросов по соотношению пикселей устройства.
-/// @name  mquery
+/// Помощник по медиа-запросам для объявления медиа-запросов
+/// по соотношению пикселей устройства.
+/// ---
+/// @name mquery-r
+/// @since 4.0.0
+/// @access public
 /// @author Gilles Bertaux
 /// @link https://github.com/gillesbertaux/andy
-/// @access public
-/// @since 4.0.0
-/// @example scss - Usage
-///   .foo {
-///     @include mquery-r(2) {
-///       width: 100%;
-///     }
-///   }
-/// @param {number} $ratio [false] - минимальное соотношение пикселей устройства
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include mquery-r(350px) {
+/// 			width: 100%;
+/// 		}
+/// 	}
+/// @example css Результат в CSS
+/// 	@media only screen and (-webkit-min-device-pixel-ratio: 350px), only screen and (min--moz-device-pixel-ratio: 350px), only screen and (-o-min-device-pixel-ratio: 350px), only screen and (min-device-pixel-ratio: 350px) {
+/// 	  .block {
+/// 	    width: 100%;
+/// 	  }
+/// 	}
+/// @param {Number} $ratio [false] - минимальное соотношение пикселей устройства
 @mixin mquery-r($ratio) {
 	@media
 		only screen and (-webkit-min-device-pixel-ratio: $ratio),
@@ -20,10 +28,3 @@
 		@content;
 	}
 }
-
-/// @example scss - Usage
-///   .foo {
-///     @include mquery-r(2) {
-///       width: 100%;
-///     }
-///   }
