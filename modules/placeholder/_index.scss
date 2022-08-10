@@ -1,23 +1,46 @@
-/// @name at-root
+/// @name _at-root
+/// @since 4.0.0
+/// @access private
 /// @author cimmanon
 /// @link https://stackoverflow.com/users/1652962/cimmanon
-/// @access private
-/// @since 4.0.0
 /// @param $selector
-@mixin at-root($selector) {
+@mixin _at-root($selector) {
 	@at-root #{if(not &, $selector, selector-append(&, $selector))} {
 		@content;
 	}
 }
 
 /// @name placeholder
+/// @since 4.0.0
+/// @access public
 /// @author cimmanon
 /// @link https://stackoverflow.com/users/1652962/cimmanon
-/// @access public
-/// @since 4.0.0
+/// @example scss Пример использования в Sass (SCSS)
+/// 	input {
+/// 		@include placeholder {
+/// 			color: red;
+/// 		}
+/// 	}
+/// @example css Результат в CSS
+/// 	input::-webkit-input-placeholder {
+/// 	  color: red;
+/// 	}
+///
+/// 	input:-moz-placeholder {
+/// 	  color: red;
+/// 	}
+///
+/// 	input::-moz-placeholder {
+/// 	  color: red;
+/// 	}
+///
+/// 	input:-ms-input-placeholder {
+/// 	  color: red;
+/// 	}
+/// @require {Mixin} _at-root
 @mixin placeholder {
-	@include at-root('::-webkit-input-placeholder') { @content; }
-	@include at-root(':-moz-placeholder')           { @content; }
-	@include at-root('::-moz-placeholder')          { @content; }
-	@include at-root(':-ms-input-placeholder')      { @content; }
+	@include _at-root('::-webkit-input-placeholder') { @content; }
+	@include _at-root(':-moz-placeholder')           { @content; }
+	@include _at-root('::-moz-placeholder')          { @content; }
+	@include _at-root(':-ms-input-placeholder')      { @content; }
 }
