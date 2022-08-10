@@ -1,26 +1,61 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: none hidden dotted dashed solid double groove ridge inset outset;
+
+// ? `none` - Линия не отображается и значение её толщины обнуляется.
+// ? `hidden` - Аналогично none.
+// ? `dotted` - Линия состоящая из набора точек.
+// ? `dashed` - Пунктирная линия, состоящая из серии коротких отрезков.
+// ? `solid` - Сплошная линия.
+// ? `double` - Двойная линия.
+// ? `groove` - Создаёт эффект вдавленной линии.
+// ? `ridge` - Создаёт эффект рельефной линии.
+// ? `inset` - Псевдотрёхмерная линия.
+// ? `outset` - Псевдотрёхмерная линия.
 
 /// Миксин `column-rule-style()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-rule-style`
-///
+/// ---
 /// @name column-rule-style
-/// @access public
-/// @group mixin.column
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_column-rule-style
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include column-rule-style(none);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-column-rule-style: none;
+/// 	  -moz-column-rule-style: none;
+/// 	  column-rule-style: none;
+/// 	}
+/// @see {Variable} $prfxs_column-rule-style
+/// @require {Mixin} prefixer
 /// @param $style - значение свойства `column-rule-style`
-@mixin column-rule-style($style) {
+@mixin column-rule-style($style: none) {
 
-	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
-	// ? [2] передаем префиксеру значение свойства
-	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
-	@include prefixer(
-		column-rule-style, // 1
-		$style, // 2
-		$prfxs_column-rule-style // 3
-	);
+	@if is-valid($style, $_variants) {
+
+		// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
+		// ? [2] передаем префиксеру значение свойства
+		// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
+		@include prefixer(
+			column-rule-style, // 1
+			$style, // 2
+			$prfxs_column-rule-style // 3
+		);
+
+	} @else {
+		@include error-invalid-value($_variants, column-rule-style, $style);
+	}
 
 }
