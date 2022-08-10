@@ -12,10 +12,10 @@
 /// @see {Variable} $prfxs_justify-content
 /// @require {Mixin} prefixer
 /// @require {Mixin} flex-pack
-/// @param {String} $val [flex-start] - значение свойства `justify-content`
-@mixin justify-content($val: flex-start) {
+/// @param {String} $value [flex-start] - значение свойства `justify-content`
+@mixin justify-content($value: flex-start) {
 
-	@if $val == flex-start {
+	@if $value == flex-start {
 		@include flex-pack(start);
 		@include prefixer(
 			box-pack,
@@ -23,7 +23,7 @@
 			$prfxs_box-pack,
 			false
 		);
-	} @else if $val == flex-end {
+	} @else if $value == flex-end {
 		@include flex-pack(end);
 		@include prefixer(
 			box-pack,
@@ -31,7 +31,7 @@
 			$prfxs_box-pack,
 			false
 		);
-	} @else if $val == space-between {
+	} @else if $value == space-between {
 		@include flex-pack(justify);
 		@include prefixer(
 			box-pack,
@@ -39,13 +39,13 @@
 			$prfxs_box-pack,
 			false
 		);
-	} @else if $val == space-around {
+	} @else if $value == space-around {
 		@include flex-pack(distribute);
 	} @else {
-		@include flex-pack($val);
+		@include flex-pack($value);
 		@include prefixer(
 			box-pack,
-			$val,
+			$value,
 			$prfxs_box-pack,
 			false
 		);
@@ -53,7 +53,7 @@
 
 	@include prefixer(
 		justify-content,
-		$val,
+		$value,
 		$prfxs_justify-content
 	);
 

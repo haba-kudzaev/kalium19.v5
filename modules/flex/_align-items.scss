@@ -11,20 +11,20 @@
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_box-align
 /// @see {Variable} $prfxs_align-items
-/// @param {String} $val [stretch] - значение свойства `align-items`
-@mixin align-items($val: stretch) {
+/// @param {String} $value [stretch] - значение свойства `align-items`
+@mixin align-items($value: stretch) {
 
-	@if $val == flex-start {
+	@if $value == flex-start {
 		@include prefixer(box-align, start, $prfxs_box-align, false);
 		@include flex-align(start);
-	} @else if $val == flex-end {
+	} @else if $value == flex-end {
 		@include prefixer(box-align, end, $prfxs_box-align, false);
 		@include flex-align(end);
 	} @else {
-		@include prefixer(box-align, $val, $prfxs_box-align, false);
-		@include flex-align($val);
+		@include prefixer(box-align, $value, $prfxs_box-align, false);
+		@include flex-align($value);
 	}
 
-	@include prefixer(align-items, $val, $prfxs_align-items);
+	@include prefixer(align-items, $value, $prfxs_align-items);
 
 }
