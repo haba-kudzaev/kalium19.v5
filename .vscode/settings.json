@@ -12,6 +12,7 @@
 		"LICENSE"        : true,
 		"package-lock.*" : true,
 		"CONTRIBUTING.md": true,
+		"CODE_OF_CONDUCT.md": true,
 		"CODEOWNERS"     : true
 	},
 
