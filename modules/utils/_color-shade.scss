@@ -1,8 +1,12 @@
 /// @name color-shade
 /// @since 4.0.0
+/// @access public
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
-/// @access public
+/// @example scss Пример использования в Sass (SCSS)
+/// 	@debug color-shade(#fcfcfc, 5)
+/// @example Результат в консоли
+/// 	Debug: #efefef
 /// @return {Color}
 /// @param {Color} $color - color to shade
 /// @param {Number} $percentage - percentage of `$color` in returned color
