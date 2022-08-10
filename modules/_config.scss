@@ -1,6 +1,15 @@
+/// Переменная, которая меняет режим отображения сообщений
+/// о неверных действиях (неверный параметр для миксина, например).
+/// ---
 /// @access public
 /// @see {Mixin} invalid-value-message
-$strict-mode: debug !default;
+$strict-mode: false !default;
+
+// * Режим             | Описание
+// * ================= | ========
+// * `error` (default) | Прекращает компиляцию CSS при обнаружении ошибки
+// * `warn`            | Компилирует CSS до конца, но без "проблемного" участка
+// * `false`           | Отключает сообщения о проблемах вообще
 
 $prfxs_align-content            : webkit !default;
 $prfxs_align-items              : webkit !default;
