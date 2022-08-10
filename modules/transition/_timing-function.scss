@@ -4,12 +4,15 @@
 /// Миксин `transition-timing-function()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `transition-timing-function` с префиксами, которые хранятся в переменной `$prfxs_transition`
-///
+/// ---
 /// @name transition-timing-function
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_transition
 /// @since 4.0.0
+/// @group mixin.transition
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_transition
+/// @require {Mixin} prefixer
 /// @param {String} $params - значение свойства `transition-timing-function`
 @mixin transition-timing-function($params...) {
 	@include prefixer(
