@@ -2,13 +2,13 @@
 @use '../utils/contains' as *;
 
 /// @name font-face
-/// @access public
-/// @require {Function} contains
-/// @see {Variable} $formats_font-face
 /// @since 4.0.0
-/// @example scss
+/// @group
+/// @access public
+/// @author ?
+/// @example scss Пример использования в Sass (SCSS)
 /// 	@include font-face(Roboto, "./fonts/Roboto", normal, normal, woff2 woff ttf);
-/// @example css
+/// @example css Результат в CSS
 /// 	@font-face {
 /// 	  font-family: "Roboto";
 /// 	  font-weight: normal;
@@ -17,6 +17,9 @@
 /// 	  src: url("./assets/Roboto.woff2") format("woff2");
 /// 	  src: url("./assets/Roboto.ttf") format("truetype");
 /// 	}
+/// @see {Variable} $formats_font-face
+/// @require {Mixin}
+/// @require {Function} contains
 /// @param {String} $font-name - название шрифта (без расширения)
 /// @param {String} $path - путь до папки со шрифтами
 /// @param {String} $weight [normal] - насыщенность шрифта (значение указывается в виде чисел от 100 до 900 с шагом 100 или с помощью заданных ключевых слов)
