@@ -1,16 +1,38 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-int' as *;
+
+/// @access private
+/// @type List
+$_variants: 'only <number>';
 
 /// @name tab-size
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_tab-size
 /// @since 4.0.0
+/// @access public
+/// @author
+/// @link
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include tab-size(2);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -moz-tab-size: 2;
+/// 	  -o-tab-size: 2;
+/// 	  tab-size: 2;
+/// 	}
+/// @see {Variable} $prfxs_tab-size
+/// @require {Mixin} prefixer
 /// @param {Number} $size
 @mixin tab-size($size) {
-	@include prefixer(
-		tab-size,
-		$size,
-		$prfxs_tab-size
-	);
+	@if is-int($size) == true {
+		@include prefixer(
+			tab-size,
+			$size,
+			$prfxs_tab-size
+		);
+	} @else {
+		@include error-invalid-value($_variants, tab-size, $size);
+	}
 }
