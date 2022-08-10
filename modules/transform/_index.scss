@@ -4,12 +4,27 @@
 /// Миксин `transform()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `transform` с префиксами, которые хранятся в переменной `$prfxs_transform`
-///
+/// ---
 /// @name transform
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_transform
 /// @since 4.0.0
+/// @group mixin.transform
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include transform(scale(1.5));
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-transform: scale(1.5);
+/// 	  -moz-transform: scale(1.5);
+/// 	  -ms-transform: scale(1.5);
+/// 	  -o-transform: scale(1.5);
+/// 	  transform: scale(1.5);
+/// 	}
+/// @see {Variable} $prfxs_transform
+/// @require {Mixin} prefixer
 /// @param {String} $params - значение свойства `transform`
 @mixin transform($params...) {
 	@include prefixer(
