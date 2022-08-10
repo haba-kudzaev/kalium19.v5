@@ -54,7 +54,7 @@ $_variants: 'only <number>';
 		}
 
 	} @else {
-		@include error-invalid-value($_variants, text-shorten, $num-lines);
+		@include invalid-value-message($_variants, text-shorten, $num-lines);
 	}
 
 }

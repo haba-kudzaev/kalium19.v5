@@ -35,7 +35,7 @@ $_variants: '<number> или "auto"';
 	} @else if $width == 'auto' {
 		@include _column-rule-width(auto);
 	} @else {
-		@include error-invalid-value($_variants, column-rule-width, $width);
+		@include invalid-value-message($_variants, column-rule-width, $width);
 	}
 }
 

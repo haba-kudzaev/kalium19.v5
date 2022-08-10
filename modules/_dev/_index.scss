@@ -4,61 +4,40 @@
 /// сообщение с ошибкой о том, что свойство не приминает
 /// такое значение.
 /// ---
-/// @name error-invalid-value
+/// @name invalid-value-message
 /// @since 4.2.0
 /// @group dev
 /// @access private
-@mixin error-invalid-value($variants, $prop, $value) {
-	@error "Kalium19 ⛔ «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
-}
+@mixin invalid-value-message($variants, $prop, $value) {
 
-/// Миксин для разработчиков Kalium19, который отображает
-/// сообщение с предупреждением о том, что свойство не приминает
-/// такое значение.
-/// ---
-/// @name warn-invalid-value
-/// @since 4.2.0
-/// @group dev
-/// @access private
-@mixin warn-invalid-value($variants, $prop, $value) {
+	$_message-error: "Kalium19 🟥 «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
+	$_message-warn: "🟧 «#{$prop}» не был сгенерирован, т.к. не может принимать значение «#{$value}»!";
+	$_message-valid-variants: '🟦 ┌ Допустимые значения для «#{$prop}»:';
 
-	$_message: "Kalium19 ⛔ «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
+	@if $strict-mode == 'warn' {
 
-	/* ⬜⬜ */
-	/* 🟧 Свойство «#{$prop}» не было сгенерировано, т.к. не может принимать значение «#{$value}»! */
+		@warn $_message-warn;
+		@debug $_message-warn;
+		@debug $_message-valid-variants;
 
-	@warn $_message;
-	@include show-valid-values($variants, $prop, true);
+		/* #{$_message-warn} */
+		/* #{$_message-valid-variants} */
 
-	/* 🟥 └⤬ #{$value} */
-	/* ⬜⬜ */
-}
-
-/// Миксин для разработчиков Kalium19, который генерирует в CSS
-/// комментарий со всеми возможными значениями миксина или функции.
-/// ---
-/// @name show-invalid-values
-/// @since 4.2.0
-/// @group dev
-/// @access private
-@mixin show-valid-values($variants, $mixin-name, $generate-comment: false) {
-
-	$_message: '🟦 ┌ «#{$mixin-name}» может принимать след. значения:';
-
-	@debug $_message;
-
-	@if $generate-comment {
-		/* #{$_message} */
-	}
-
-	@each $variant in $variants {
-
-		@debug '✅ └─ #{$variant}';
-
-		@if $generate-comment {
+		@each $variant in $variants {
+			@debug '✅ └─ #{$variant}';
 			/* ✅ └─ #{$variant} */
 		}
 
+		/* 🟥 └⤬ #{$value} */
+
+	} @else if $strict-mode == 'error' {
+		@error $_message-error;
+	} @else if $strict-mode == 'debug' {
+		@debug $_message-warn;
+		@debug $_message-valid-variants;
+		@each $variant in $variants {
+			@debug '✅ └─ #{$variant}';
+		}
 	}
 
 }

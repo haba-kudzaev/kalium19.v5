@@ -33,6 +33,6 @@ $_variants: 'only <number>';
 			$prfxs_tab-size
 		);
 	} @else {
-		@include error-invalid-value($_variants, tab-size, $size);
+		@include invalid-value-message($_variants, tab-size, $size);
 	}
 }

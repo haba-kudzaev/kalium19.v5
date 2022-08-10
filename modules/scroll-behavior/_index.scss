@@ -27,6 +27,6 @@ $_variants: auto smooth;
 			scroll-behavior: $value;
 		}
 	} @else {
-		@include error-invalid-value($_variants, scroll-behavior, $value);
+		@include invalid-value-message($_variants, scroll-behavior, $value);
 	}
 }
