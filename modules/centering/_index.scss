@@ -50,7 +50,7 @@ $_variants: vertical horizontal both;
 		}
 
 	} @else {
-		@include error-invalid-value($_variants, centering, $position);
+		@include invalid-value-message($_variants, centering, $position);
 	}
 
 }

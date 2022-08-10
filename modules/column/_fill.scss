@@ -44,7 +44,7 @@ $_variants: auto balance balance-all;
 			$prfxs_column-fill // 3
 		);
 	} @else {
-		@include error-invalid-value($_variants, column-fill, $type);
+		@include invalid-value-message($_variants, column-fill, $type);
 	}
 
 }

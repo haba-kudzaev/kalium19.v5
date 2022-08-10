@@ -43,7 +43,7 @@ $_variants: normal reverse alternate alternate-reverse;
 			$prfxs_animation-direction // 3
 		);
 	} @else {
-		@include error-invalid-value($_variants, 'animation-direction', $direction);
+		@include invalid-value-message($_variants, 'animation-direction', $direction);
 	}
 }
 

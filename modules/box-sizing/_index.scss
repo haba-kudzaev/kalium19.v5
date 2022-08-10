@@ -35,7 +35,7 @@ $_variants: content-box border-box;
 			$prfxs_box-sizing
 		);
 	} @else {
-		@include error-invalid-value($_variants, box-sizing, $model);
+		@include invalid-value-message($_variants, box-sizing, $model);
 	}
 
 

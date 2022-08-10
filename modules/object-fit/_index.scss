@@ -31,7 +31,7 @@ $_variants: fill contain cover none;
 			$prfxs_object-fit
 		);
 	} @else {
-		@include error-invalid-value($_variants, object-fit, $type);
+		@include invalid-value-message($_variants, object-fit, $type);
 	}
 }
 

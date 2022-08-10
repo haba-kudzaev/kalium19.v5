@@ -55,7 +55,7 @@ $_variants: none hidden dotted dashed solid double groove ridge inset outset;
 		);
 
 	} @else {
-		@include error-invalid-value($_variants, column-rule-style, $style);
+		@include invalid-value-message($_variants, column-rule-style, $style);
 	}
 
 }

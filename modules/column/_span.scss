@@ -46,7 +46,7 @@ $_variants: none all;
 		);
 
 	} @else {
-		@include error-invalid-value($_variants, column-span, $value);
+		@include invalid-value-message($_variants, column-span, $value);
 	}
 
 }

@@ -41,7 +41,7 @@ $_variants: padding-box border-box content-box text;
 		);
 
 	} @else {
-		@include error-invalid-value($_variants, background-clip, $value);
+		@include invalid-value-message($_variants, background-clip, $value);
 	}
 
 }
