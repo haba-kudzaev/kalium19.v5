@@ -1,6 +1,12 @@
 @use '../config' as *;
 @use '../prefixer' as *;
 @use '../prefixer/pack' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: row row-reverse column column-reverse;
 
 /// @name flex-direction
 /// @since 4.0.0
@@ -15,32 +21,38 @@
 /// @param {String} $direction [row] - значение свойства `flex-direction`
 @mixin flex-direction($direction: row) {
 
-	@if $direction == row-reverse {
-		@include prefixer-pack((
-			box-direction: reverse,
-			box-orient: horizontal
-		), $prfxs_box-direction, false );
-	} @else if $direction == column {
-		@include prefixer-pack((
-			box-direction: normal,
-			box-orient: vertical
-		), $prfxs_box-direction, false );
-	} @else if $direction == column-reverse {
-		@include prefixer-pack((
-			box-direction: reverse,
-			box-orient: vertical
-		), $prfxs_box-direction, false );
-	} @else {
-		@include prefixer-pack((
-			box-direction: normal,
-			box-orient: horizontal
-		), $prfxs_box-direction, false );
-	}
+	@if is-valid($direction, $_variants) {
 
-	@include prefixer(
-		flex-direction,
-		$direction,
-		$prfxs_flex-direction
-	);
+		@if $direction == row-reverse {
+			@include prefixer-pack((
+				box-direction: reverse,
+				box-orient: horizontal
+			), $prfxs_box-direction, false );
+		} @else if $direction == column {
+			@include prefixer-pack((
+				box-direction: normal,
+				box-orient: vertical
+			), $prfxs_box-direction, false );
+		} @else if $direction == column-reverse {
+			@include prefixer-pack((
+				box-direction: reverse,
+				box-orient: vertical
+			), $prfxs_box-direction, false );
+		} @else {
+			@include prefixer-pack((
+				box-direction: normal,
+				box-orient: horizontal
+			), $prfxs_box-direction, false );
+		}
+
+		@include prefixer(
+			flex-direction,
+			$direction,
+			$prfxs_flex-direction
+		);
+
+	} @else {
+		@include invalid-value-message($_variants, flex-direction, $direction);
+	}
 
 }
