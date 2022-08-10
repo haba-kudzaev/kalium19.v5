@@ -4,7 +4,7 @@
 @use '../utils/is-int' as *;
 
 /// @access private
-/// @type Variable
+/// @type String
 $_variants: '<number> или "auto"';
 
 /// Миксин `column-count()` является лишь оберткой
