@@ -1,30 +1,27 @@
 /// @name wh
-/// @access public
 /// @since 4.0.0
-/// @example scss input
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.square {
 /// 	  @include wh(50px);
 /// 	}
-///
 /// 	.rectangle {
 /// 	  @include wh(100px, 50px);
 /// 	}
-///
 /// 	.round {
 /// 		@include wh(100px, 100px, min);
 /// 	}
-///
-/// @example css output:
+/// @example css Результат в CSS
 /// 	.square {
 /// 	  width: 50px;
 /// 	  height: 50px;
 /// 	}
-///
 /// 	.rectangle {
 /// 	  width: 100px;
 /// 	  height: 50px;
 /// 	}
-///
 /// 	.round {
 /// 	  min-width: 12;
 /// 	  min-height: 100px;
