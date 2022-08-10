@@ -2,16 +2,15 @@
 /// @since 4.0.0
 /// @access public
 /// @author Haba Kudzaev (rx1310)
-/// @link https://github.com/rx1310/kalium19 Исходный код
-/// @example scss Input
-/// 	? SCSS
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
 /// 	.block {
 /// 		@include props-apply((
 /// 			color: clrFont,
 /// 			background: clrBackground
 /// 		))
 /// 	}
-/// @example css Output
+/// @example css Результат в CSS
 /// 	.block {
 /// 	  color: var(--clrFont);
 /// 	  background: var(--clrBackground);
