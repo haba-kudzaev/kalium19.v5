@@ -3,52 +3,38 @@
 @use '../prefixer/pack' as *;
 
 /// @name flex-direction
-/// @access public
+/// @since 4.0.0
 /// @group mixin.flex
-/// @require {Mixin} prefixer
-/// @require {Mixin} prefixer-pack
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
 /// @see {Variable} $prfxs_box-direction
 /// @see {Variable} $prfxs_flex-direction
-/// @since 4.0.0
+/// @require {Mixin} prefixer
+/// @require {Mixin} prefixer-pack
 /// @param {String} $direction [row] - значение свойства `flex-direction`
 @mixin flex-direction($direction: row) {
 
 	@if $direction == row-reverse {
-		@include prefixer-pack(
-			(
-				box-direction: reverse,
-				box-orient: horizontal
-			),
-			$prfxs_box-direction,
-			false
-		);
+		@include prefixer-pack((
+			box-direction: reverse,
+			box-orient: horizontal
+		), $prfxs_box-direction, false );
 	} @else if $direction == column {
-		@include prefixer-pack(
-			(
-				box-direction: normal,
-				box-orient: vertical
-			),
-			$prfxs_box-direction,
-			false
-		);
+		@include prefixer-pack((
+			box-direction: normal,
+			box-orient: vertical
+		), $prfxs_box-direction, false );
 	} @else if $direction == column-reverse {
-		@include prefixer-pack(
-			(
-				box-direction: reverse,
-				box-orient: vertical
-			),
-			$prfxs_box-direction,
-			false
-		);
+		@include prefixer-pack((
+			box-direction: reverse,
+			box-orient: vertical
+		), $prfxs_box-direction, false );
 	} @else {
-		@include prefixer-pack(
-			(
-				box-direction: normal,
-				box-orient: horizontal
-			),
-			$prfxs_box-direction,
-			false
-		);
+		@include prefixer-pack((
+			box-direction: normal,
+			box-orient: horizontal
+		), $prfxs_box-direction, false );
 	}
 
 	@include prefixer(

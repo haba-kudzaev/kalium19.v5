@@ -3,13 +3,15 @@
 @use 'flex-pack' as *;
 
 /// @name justify-content
-/// @access public
+/// @since 4.0.0
 /// @group mixin.flex
-/// @require {Mixin} prefixer
-/// @require {Mixin} flex-pack
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
 /// @see {Variable} $prfxs_box-pack
 /// @see {Variable} $prfxs_justify-content
-/// @since 4.0.0
+/// @require {Mixin} prefixer
+/// @require {Mixin} flex-pack
 /// @param {String} $val [flex-start] - значение свойства `justify-content`
 @mixin justify-content($val: flex-start) {
 

@@ -2,20 +2,22 @@
 @use '../prefixer' as *;
 
 /// @name flex-flow
-/// @access public
-/// @group mixin.flex
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_flex-flow
 /// @since 4.0.0
-/// @param {String} $vals [row nowrap] - значение свойства `flex-flow`
-@mixin flex-flow($vals: (row nowrap)) {
+/// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_flex-flow
+/// @require {Mixin} prefixer
+/// @param {String} $values [row nowrap] - значение свойства `flex-flow`
+@mixin flex-flow($values: (row nowrap)) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
 	// ? [2] передаем префиксеру значение свойства
 	// ? [3] передаем префиксеру список префиксов, которые должны быть добавлены к свойству
 	@include prefixer(
 		flex-flow, // 1
-		$vals, // 2
+		$values, // 2
 		$prfxs_flex-flow // 3
 	);
 

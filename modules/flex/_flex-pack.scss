@@ -1,7 +1,9 @@
 /// @name flex-pack
-/// @access public
-/// @group mixin.flex
 /// @since 4.0.0
+/// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
 /// @param {String} $value - значение свойства `flex-pack`
 @mixin flex-pack($value) {
 	-ms-flex-pack: $value;

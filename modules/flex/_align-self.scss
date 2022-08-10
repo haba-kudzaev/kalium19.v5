@@ -2,10 +2,12 @@
 @use '../prefixer' as *;
 
 /// @name align-self
-/// @access public
-/// @group mixin.flex
-/// @require {Mixin} prefixer
 /// @since 4.0.0
+/// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} prefixer
 /// @param {String} $val [auto] - значение свойства `align-self`
 @mixin align-self($val: auto) {
 
