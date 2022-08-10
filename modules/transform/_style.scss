@@ -1,36 +1,57 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: flat preserve-3d;
 
 /// Миксин `transform-style()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `transform-style` с префиксами, которые хранятся в переменной `$prfxs_transform-style`
-///
+/// ---
 /// @name transform-style
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_transform-style
 /// @since 4.0.0
+/// @group mixin.transform
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_transform-style
+/// @require {Mixin} prefixer
 /// @param {String} $style [flat] - значение свойства `transform-style`
 @mixin transform-style($style: flat) {
-	@include prefixer(
-		transform-style,
-		$style,
-		$prfxs_transform-style
-	);
+
+	@if is-valid($style, $_variants) {
+		@include prefixer(
+			transform-style,
+			$style,
+			$prfxs_transform-style
+		);
+	} @else {
+		@include invalid-value-message($_variants, transform-style, $style);
+	}
+
 }
 
 /// @name transform-style-flat
-/// @access public
-/// @require {Mixin} transform-style
 /// @since 4.0.0
+/// @group mixin.transform
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} transform-style
 @mixin transform-style-flat {
 	@include transform-style(flat);
 }
 
 /// @name transform-style-3d
-/// @access public
-/// @require {Mixin} transform-style
 /// @since 4.0.0
+/// @group mixin.transform
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} transform-style
 @mixin transform-style-3d {
 	@include transform-style(preserve-3d);
 }
