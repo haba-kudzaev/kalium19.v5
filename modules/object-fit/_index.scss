@@ -1,39 +1,66 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: fill contain cover none;
 
 /// @name object-fit
-/// @access public
-/// @require {Mixin} prefixer
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include object-fit(none);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -o-object-fit: none;
+/// 	  object-fit: none;
+/// 	}
+/// @require {Mixin} prefixer
 /// @param {String} $type
 @mixin object-fit($type) {
-	@include prefixer(
-		object-fit,
-		$type,
-		$prfxs_object-fit
-	);
+	@if is-valid($type, $_variants) {
+		@include prefixer(
+			object-fit,
+			$type,
+			$prfxs_object-fit
+		);
+	} @else {
+		@include error-invalid-value($_variants, object-fit, $type);
+	}
 }
 
 /// @name object-fit-contain
-/// @access public
-/// @require {Mixin} object-fit
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} object-fit
 @mixin object-fit-contain {
 	@include object-fit(contain);
 }
 
 /// @name object-fit-fill
-/// @access public
-/// @require {Mixin} object-fit
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} object-fit
 @mixin object-fit-fill {
 	@include object-fit(fill);
 }
 
 /// @name object-fit-cover
-/// @access public
-/// @require {Mixin} object-fit
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @require {Mixin} object-fit
 @mixin object-fit-cover {
 	@include object-fit(cover);
 }
