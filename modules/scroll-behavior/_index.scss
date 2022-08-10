@@ -1,9 +1,32 @@
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: auto smooth;
+
 /// @name scroll-behavior
-/// @access public
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include scroll-behavior(auto);
+/// 	}
+/// @example css Результат в CSS
+/// 	@media (prefers-reduced-motion: no-preference) {
+/// 	  .block {
+/// 	    scroll-behavior: auto;
+/// 	  }
+/// 	}
 /// @param {String} $value [smooth]
 @mixin scroll-behavior($value: smooth) {
-	@media (prefers-reduced-motion: no-preference) {
-		scroll-behavior: $value;
+	@if is-valid($value, $_variants) {
+		@media (prefers-reduced-motion: no-preference) {
+			scroll-behavior: $value;
+		}
+	} @else {
+		@include error-invalid-value($_variants, scroll-behavior, $value);
 	}
 }
