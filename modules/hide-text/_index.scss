@@ -1,6 +1,19 @@
 /// @name hide-text
-/// @access public
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include hide-text();
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  overflow: hidden;
+/// 	  padding: 0;
+/// 	  text-indent: 101%;
+/// 	  white-space: nowrap;
+/// 	}
 @mixin hide-text {
 	overflow: hidden;
 	padding: 0;
