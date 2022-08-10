@@ -1,6 +1,12 @@
 @use '../config' as *;
 @use '../prefixer/' as *;
 @use '_dev/flex-align' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: flex-start flex-end center baseline stretch;
 
 /// @name align-items
 /// @since 4.0.0
@@ -14,17 +20,23 @@
 /// @param {String} $value [stretch] - значение свойства `align-items`
 @mixin align-items($value: stretch) {
 
-	@if $value == flex-start {
-		@include prefixer(box-align, start, $prfxs_box-align, false);
-		@include flex-align(start);
-	} @else if $value == flex-end {
-		@include prefixer(box-align, end, $prfxs_box-align, false);
-		@include flex-align(end);
-	} @else {
-		@include prefixer(box-align, $value, $prfxs_box-align, false);
-		@include flex-align($value);
-	}
+	@if is-valid($value, $_variants) {
 
-	@include prefixer(align-items, $value, $prfxs_align-items);
+		@if $value == flex-start {
+			@include prefixer(box-align, start, $prfxs_box-align, false);
+			@include flex-align(start);
+		} @else if $value == flex-end {
+			@include prefixer(box-align, end, $prfxs_box-align, false);
+			@include flex-align(end);
+		} @else {
+			@include prefixer(box-align, $value, $prfxs_box-align, false);
+			@include flex-align($value);
+		}
+
+		@include prefixer(align-items, $value, $prfxs_align-items);
+
+	} @else {
+		@include invalid-value-message($_variants, align-items, $value);
+	}
 
 }
