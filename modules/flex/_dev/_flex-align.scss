@@ -6,7 +6,7 @@
 /// @group mixin.flex
 /// @require {Mixin} prefixer
 /// @since 4.0.0
-/// @param $valueue - значение свойства `flex-align`
+/// @param $value - значение свойства `flex-align`
 @mixin flex-align($value) {
 	@include prefixer(flex-align, $value, $prfxs_flex-align, false);
 }
