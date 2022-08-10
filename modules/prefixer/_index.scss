@@ -1,10 +1,24 @@
 @use '../config' as *;
 
 /// @name prefixer
-/// @access public
 /// @since 4.0.0
-/// @example scss - Пример использования
-/// 	@include prefixer(border-radius, 12px, webkit moz);
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include prefixer(
+/// 			opacity,
+/// 			.5,
+/// 			moz khtml
+/// 		);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -moz-opacity: 0.5;
+/// 	  -khtml-opacity: 0.5;
+/// 	  opacity: 0.5;
+/// 	}
 /// @param {String} $prop - свойство
 /// @param {String} $value - значение
 /// @param {List} $prefixes-list [()] - список префиксов
@@ -47,5 +61,3 @@
 	}
 
 }
-
-
