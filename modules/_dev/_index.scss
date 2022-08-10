@@ -13,3 +13,31 @@
 }
 
 
+/// Миксин для разработчиков Kalium19, который генерирует в CSS
+/// комментарий со всеми возможными значениями миксина или функции.
+/// ---
+/// @name show-invalid-values
+/// @since 4.2.0
+/// @group dev
+/// @access private
+@mixin show-valid-values($variants, $mixin-name, $generate-comment: false) {
+
+	$_message: '┌ «#{$mixin-name}» может принимать след. значения:';
+
+	@debug $_message;
+
+	@if $generate-comment {
+		/* #{$_message} */
+	}
+
+	@each $variant in $variants {
+
+		@debug '└─ #{$variant}';
+
+		@if $generate-comment {
+			/* └─ #{$variant} */
+		}
+
+	}
+
+}
