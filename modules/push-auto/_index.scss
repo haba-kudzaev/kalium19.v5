@@ -1,6 +1,17 @@
 /// @name push-auto
-/// @access public
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include push-auto();
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  margin-left: auto;
+/// 	  margin-right: auto;
+/// 	}
 @mixin push-auto {
 	margin: {
 		left: auto;
