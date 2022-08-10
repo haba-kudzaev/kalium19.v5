@@ -2,12 +2,33 @@
 @use '../utils/map-deep-get' as *;
 
 /// @name keyframes
-/// @access public
-/// @require {Function} map-deep-get
-/// @see {Variable} $keyframes
 /// @since 4.0.0
-/// @example scss
-/// 	@include keyframes(frameName) { ... }
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	@include keyframes(myAnim) {
+/// 		/* Keyframes */
+/// 	}
+/// @example css Результат в CSS
+/// 	@-webkit-keyframes myAnim {
+/// 		/* Keyframes */
+/// 	}
+/// 	@-moz-keyframes myAnim {
+/// 	  /* Keyframes */
+/// 	}
+/// 	@-ms-keyframes myAnim {
+/// 	  /* Keyframes */
+/// 	}
+/// 	@-o-keyframes myAnim {
+/// 	  /* Keyframes */
+/// 	}
+/// 	@keyframes myAnim {
+/// 	  /* Keyframes */
+/// 	}
+/// @see {Variable} $keyframes
+/// @require {Function} map-deep-get
 /// @param {String} $name
 @mixin keyframes($name) {
 
