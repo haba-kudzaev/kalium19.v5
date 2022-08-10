@@ -4,13 +4,25 @@
 /// Миксин `column-rule()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-rule`
-///
+/// ---
 /// @name column-rule
-/// @access public
-/// @group mixin.column
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_column-rule
 /// @since 4.0.0
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include column-rule(1px solid #ccc);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-column-rule: 1px solid #ccc;
+/// 	  -moz-column-rule: 1px solid #ccc;
+/// 	  column-rule: 1px solid #ccc;
+/// 	}
+/// @see {Variable} $prfxs_column-rule
+/// @require {Mixin} prefixer
 /// @param $params... - значение свойства `column-rule`
 @mixin column-rule($params...) {
 
