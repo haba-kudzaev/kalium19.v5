@@ -1,3 +1,8 @@
+/// @name props
+/// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev (rx1310)
+/// @link https://github.com/rx1310/kalium19
 @mixin props($map, $isRoot: true) {
 
 	@if $isRoot {
