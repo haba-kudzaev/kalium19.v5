@@ -10,7 +10,7 @@
 /// @access private
 @mixin invalid-value-message($variants, $prop, $value) {
 
-	$_message-error: "Kalium19 🟥 «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
+	$_message-error: "🟥 «#{$prop}» не может принять значение «#{$value}»! Допустимые значения: #{$variants}.";
 	$_message-warn: "🟧 «#{$prop}» не был сгенерирован, т.к. не может принимать значение «#{$value}»!";
 	$_message-valid-variants: '🟦 ┌ Допустимые значения для «#{$prop}»:';
 
@@ -32,12 +32,6 @@
 
 	} @else if $strict-mode == 'error' {
 		@error $_message-error;
-	} @else if $strict-mode == 'debug' {
-		@debug $_message-warn;
-		@debug $_message-valid-variants;
-		@each $variant in $variants {
-			@debug '✅ └─ #{$variant}';
-		}
 	}
 
 }
