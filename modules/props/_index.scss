@@ -7,13 +7,13 @@
 
 	@if $isRoot {
 		:root {
-			@each $key, $val in $map {
-				--#{$key}: #{$val};
+			@each $key, $value in $map {
+				--#{$key}: #{$value};
 			}
 		}
 	} @else {
-		@each $key, $val in $map {
-			--#{$key}: #{$val};
+		@each $key, $value in $map {
+			--#{$key}: #{$value};
 		}
 	}
 

@@ -17,7 +17,7 @@
 /// 	}
 /// @param {String} $desc
 @mixin props-apply($decs) {
-	@each $prop, $val in $decs {
-		#{$prop}: var(--#{$val});
+	@each $prop, $value in $decs {
+		#{$prop}: var(--#{$value});
 	}
 }

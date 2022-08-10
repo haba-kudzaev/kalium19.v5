@@ -8,13 +8,13 @@
 /// @author Haba Kudzaev
 /// @link https://github.com/rx1310/kalium19
 /// @require {Mixin} prefixer
-/// @param {String} $val [auto] - значение свойства `align-self`
-@mixin align-self($val: auto) {
+/// @param {String} $value [auto] - значение свойства `align-self`
+@mixin align-self($value: auto) {
 
-	@if      $val == flex-start { -ms-flex-item-align: start; }
-	@else if $val == flex-end   { -ms-flex-item-align: end; }
-	@else                       { -ms-flex-item-align: $val; }
+	@if      $value == flex-start { -ms-flex-item-align: start; }
+	@else if $value == flex-end   { -ms-flex-item-align: end; }
+	@else                       { -ms-flex-item-align: $value; }
 
-	@include prefixer(align-self, $val, $prfxs_align-self);
+	@include prefixer(align-self, $value, $prfxs_align-self);
 
 }
