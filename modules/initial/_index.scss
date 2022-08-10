@@ -1,11 +1,21 @@
 @use '../utils/set-initial' as *;
 
-/// @since 4.2.0
 /// @name set-initial
+/// @since 4.2.0
+/// @access public
 /// @author takamoso
 /// @link https://github.com/takamoso
-/// @example scss
-/// 	@include initial(align-content, animation);
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include initial(align-content, animation);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  align-content: normal;
+/// 	  animation: none 0s ease 0s 1 normal none running;
+/// 	}
+/// @require {Function} set-initial
+/// @param {Args} $properties... - свойства, к которым будут применены значения по умолчанию
 @mixin initial($properties...) {
   @each $property in $properties {
     #{$property}: set-initial($property);
