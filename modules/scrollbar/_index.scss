@@ -1,12 +1,32 @@
 /// Mixin to customize scrollbars
 /// Beware, this does not work in all browsers
 /// ---
+/// @name scrollbar
+/// @since 4.2.0
+/// @access public
 /// @author Hugo Giraudel
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include scrollbar(.5em, slategray);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block ::-webkit-scrollbar {
+/// 	  width: 0.5em;
+/// 	  height: 0.5em;
+/// 	}
+/// 	.block ::-webkit-scrollbar-thumb {
+/// 	  background: slategray;
+/// 	}
+/// 	.block ::-webkit-scrollbar-track {
+/// 	  background: #b8c0c8;
+/// 	}
+/// 	.block body {
+/// 	  scrollbar-face-color: slategray;
+/// 	  scrollbar-track-color: #b8c0c8;
+/// 	}
 /// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
-/// @param {Color} $foreground-color - Scrollbar's color
-/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
-/// @example scss - Scrollbar styling
-///   @include scrollbars(.5em, slategray);
+/// @param {Color} $foreground-color - scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - scrollbar's color
 @mixin scrollbar($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
 
 	// For Google Chrome
