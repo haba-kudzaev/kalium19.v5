@@ -1,5 +1,18 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: auto flex-start flex-end center baseline stretch;
+
+// * `auto` - Берёт родительское значение align-items или stretch, если нет родителя.
+// * `flex-start` - Элемент выравнивается в начале поперечной оси контейнера.
+// * `flex-end` - Элемент выравнивается в конце поперечной оси контейнера.
+// * `center` - Элемент выравнивается по центральной линии на поперечной оси.
+// * `baseline` - Элемент выравнивается по базовой линии текста.
+// * `stretch` - Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.
 
 /// @name align-self
 /// @since 4.0.0
@@ -11,10 +24,16 @@
 /// @param {String} $value [auto] - значение свойства `align-self`
 @mixin align-self($value: auto) {
 
-	@if      $value == flex-start { -ms-flex-item-align: start; }
-	@else if $value == flex-end   { -ms-flex-item-align: end; }
-	@else                       { -ms-flex-item-align: $value; }
+	@if is-valid($value, $_variants) {
 
-	@include prefixer(align-self, $value, $prfxs_align-self);
+		@if      $value == flex-start { -ms-flex-item-align: start; }
+		@else if $value == flex-end   { -ms-flex-item-align: end; }
+		@else                       { -ms-flex-item-align: $value; }
+
+		@include prefixer(align-self, $value, $prfxs_align-self);
+
+	} @else {
+		@include invalid-value-message($_variants, align-self, $value);
+	}
 
 }
