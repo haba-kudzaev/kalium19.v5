@@ -4,14 +4,26 @@
 /// Миксин `column-rule-color()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `box-shadow` с префиксами, которые хранятся в переменной `$prfxs_column-rule-color`
-///
+/// ---
 /// @name column-rule-color
-/// @access public
-/// @group mixin.column
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_column-rule-color
 /// @since 4.0.0
-/// @param {Color} $color. - значение свойства `column-rule-color`
+/// @group mixin.column
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include column-rule-color(#ccc);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-column-rule-color: #ccc;
+/// 	  -moz-column-rule-color: #ccc;
+/// 	  column-rule-color: #ccc;
+/// 	}
+/// @see {Variable} $prfxs_column-rule-color
+/// @require {Mixin} prefixer
+/// @param {Color} $color - значение свойства `column-rule-color`
 @mixin column-rule-color($color) {
 
 	// ? [1] передаем префиксеру свойство, к которому надо добавить префиксы
@@ -24,8 +36,3 @@
 	);
 
 }
-
-/// @example scss
-/// 	.block {
-/// 		@include column-rule-color(#ccc);
-/// 	}
