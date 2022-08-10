@@ -1,8 +1,9 @@
 /// @name hardware
+/// @since 4.0.0
+/// @group
+/// @access public
 /// @author gpessia
 /// @link https://github.com/gpessia
-/// @access public
-/// @since 4.0.0
 /// @param {Boolean} $backface [true]
 /// @param {Number} $perspective [1000]
 @mixin hardware($backface: true, $perspective: 1000) {
