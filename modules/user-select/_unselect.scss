@@ -1,9 +1,22 @@
 @use 'index' as *;
 
 /// @name unselect
-/// @access public
-/// @require {Mixin} user-select
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include unselect();
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-user-select: none;
+/// 	  -moz-user-select: none;
+/// 	  -ms-user-select: none;
+/// 	  user-select: none;
+/// 	}
+/// @require {Mixin} user-select
 @mixin unselect {
 	@include user-select(none);
 }
