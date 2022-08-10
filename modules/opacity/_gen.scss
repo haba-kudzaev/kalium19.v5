@@ -1,14 +1,16 @@
 @use 'index' as *;
 
 /// Миксин генерирует CSS-классы со свойством `opacity`.
+/// ---
 /// @name get-opacity
-/// @group mixin
+/// @since 4.2.0
+/// @group
 /// @access public
-/// @require {Mixin} opacity
-/// @since 4.1.4
-/// @example scss - Пример кода на Sass
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
 /// 	@include gen-opacity(0, 2, 'opacity-');
-/// @example css - Результат
+/// @example css Результат в CSS
 /// 	.opacity-0 {
 /// 	  -moz-opacity: 0;
 /// 	  -khtml-opacity: 0;
@@ -30,6 +32,7 @@
 /// 	  filter: alpha(opacity=200);
 /// 	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=200)";
 /// 	}
+/// @require {Mixin} opacity
 /// @param {Number} $start [0] - начало цикла (генерация свойства `opacity` начнется с этого значения)
 /// @param {Number} $end [100] - конец цикла (генерация свойства `opacity` завершится с этого значения)
 /// @param {String | Number} $class ['o-'] - стандартный префикс класса, к которому добавляется значение `opacity`
