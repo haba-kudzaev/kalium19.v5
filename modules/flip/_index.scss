@@ -1,11 +1,25 @@
 @use '../transform' as *;
 
 /// @name flip
+/// @since 4.0.0
+/// @access public
 /// @author Matt Delac
 /// @link https://github.com/matthieua
-/// @access public
-/// @require transform
-/// @since 4.0.0
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include flip(2);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-transform: scaleX(2);
+/// 	  -moz-transform: scaleX(2);
+/// 	  -ms-transform: scaleX(2);
+/// 	  -o-transform: scaleX(2);
+/// 	  transform: scaleX(2);
+/// 	  filter: FlipH;
+/// 	  -ms-filter: "FlipH";
+/// 	}
+/// @require {Mixin} transform
 /// @param {Number} $scaleX [-1]
 @mixin flip($scaleX: -1) {
 
