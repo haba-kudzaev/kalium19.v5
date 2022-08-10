@@ -1,16 +1,40 @@
 @use '../config' as *;
 @use '../prefixer' as *;
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: auto none text all contain;
 
 /// @name user-select
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_user-select
 /// @since 4.0.0
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include user-select(all);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-user-select: all;
+/// 	  -moz-user-select: all;
+/// 	  -ms-user-select: all;
+/// 	  user-select: all;
+/// 	}
+/// @see {Variable} $prfxs_user-select
+/// @require {Mixin} prefixer
 /// @param {String} $value - значение свойства `user-select`
 @mixin user-select($value) {
-	@include prefixer(
-		user-select,
-		$value,
-		$prfxs_user-select
-	);
+	@if is-valid($value, $_variants) {
+		@include prefixer(
+			user-select,
+			$value,
+			$prfxs_user-select
+		);
+	} @else {
+		@include invalid-value-message($_variants, user-select, $value);
+	}
 }
