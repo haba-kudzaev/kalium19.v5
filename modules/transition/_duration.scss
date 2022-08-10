@@ -4,12 +4,15 @@
 /// Миксин `transition-duration()` является лишь оберткой
 /// над миксином `prefixer()`, который генерирует свойство
 /// `transition-duration` с префиксами, которые хранятся в переменной `$prfxs_transition`
-///
+/// ---
 /// @name transition-duration
-/// @access public
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_transition
 /// @since 4.0.0
+/// @group mixin.transition
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_transition
+/// @require {Mixin} prefixer
 /// @param {String} $params - значение свойства `transition-duration`
 @mixin transition-duration($params...) {
 	@include prefixer(
