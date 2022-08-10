@@ -1,7 +1,25 @@
 /// @name selection
-/// @access public
 /// @since 4.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include selection {
+/// 			color: red;
+/// 			background-color: #fff;
+/// 		};
+/// 	}
+/// @example css Результат в CSS
+/// 	.block::-moz-selection {
+/// 	  color: red;
+/// 	  background-color: #fff;
+/// 	}
+/// 	.block::selection {
+/// 	  color: red;
+/// 	  background-color: #fff;
+/// 	}
 @mixin selection {
-	::-moz-selection { @content; }
-	::selection { @content; }
+	&::-moz-selection { @content; }
+	&::selection { @content; }
 }
