@@ -1,13 +1,6 @@
 // ! ВНИМАНИЕ: Разработчик не поддерживает данный миксин.
 // ! Касательно поддержки обращайтесь к автору миксина.
 
-// ? Note!
-// ? The Latin subset is always included if available and need not be specified.
-// ? Please note that if a client browser supports unicode-range the subset parameter
-// ? is ignored; the browser will select from the subsets supported by the font to
-// ? get what it needs to render the text.
-// ? Source: https://developers.google.com/fonts/docs/getting_started
-
 $google-font-subsets: (
 	'arabic'      : false,
 	'bengali'     : false,
@@ -27,14 +20,48 @@ $google-font-subsets: (
 	'vietnamese'  : false
 ) !default;
 
+/// **Note!**
+/// The Latin subset is always included if available and need not be specified.
+/// Please note that if a client browser supports unicode-range the subset parameter
+/// is ignored; the browser will select from the subsets supported by the font to
+/// get what it needs to render the text.
+/// Source: https://developers.google.com/fonts/docs/getting_started
+/// ---
 /// @name google-font
+/// @since 4.0.0
+/// @group
+/// @access public
 /// @author jakob-e
 /// @link https://github.com/jakob-e
 /// @link https://codepen.io/jakob-e/pen/LVVXjO
-/// @arg {String} $name font name / string (unquoted will work too)
-/// @arg {String} $text limit request to these characters (quoted string) / string (don\'t forget to unescape)
-/// @arg {List} $weight [400]  font weight 100 - 900 / list or numeric value (100 200 300 400 ...)
-/// @arg {List} $style [normal] font style normal/italic/oblique / list or string (normal and or italic)
+/// @example scss Пример использования в Sass (SCSS)
+/// 	@include google-font($name, [$weight, $style, $text]);
+/// 	@include google-font(Lato, 300);
+/// 	@include google-font(Open Sans, 400, italic);
+/// @example css Результат в CSS
+/// 	@import url("//fonts.googleapis.com/css?family=Lato:300");
+/// 	@import url("//fonts.googleapis.com/css?family=Open+Sans:400i");
+/// @example scss Пример использования в Sass (SCSS)
+/// 	// Conbine syntax:
+/// 	// By placing google-font includes inside a google-font include (without arguments)
+/// 	// nested includes will be merged into a single import
+/// 	@include google-font {   // <= combine
+/// 	    @include google-font(Material Icons);
+/// 	    @include google-font(Open Sans, 300 400 700, normal);
+/// 	    @include google-font(Open Sans, 300 400 700, italic normal);
+/// 	    @include google-font(Lato, 300 400i 700i);
+/// 	    @include google-font(Lato, 300 700, italic normal);
+/// 	    @include google-font(Slapo 27px, 400 200, $text: 'Lorem ipsum dolor sit amet');
+/// 	}
+/// @example css Результат в CSS
+/// 	/* Note! as Slapo 27px is limited to specific characters it will
+/// 		 not be merged with the other imports */
+/// 	@import url("//fonts.googleapis.com/css?family=Slapo+27px:400,200&text=Lorem%20ipsudlta");
+/// 	@import url("//fonts.googleapis.com/css?family=Material+Icons:400|Open+Sans:300,400,700,300i,400i,700i|Lato:300,400
+/// @param {String} $name - font name / string (unquoted will work too)
+/// @param {String} $text - limit request to these characters (quoted string) / string (don\'t forget to unescape)
+/// @param {List} $weight [400] -  font weight 100 - 900 / list or numeric value (100 200 300 400 ...)
+/// @param {List} $style [normal] - font style normal/italic/oblique / list or string (normal and or italic)
 @mixin google-font($name: null, $weights: 400, $styles: normal, $text: null) {
 
 	@warn '🔶 Миксин "google-fonts" не поддерживается разработчиком Kalium19!';
@@ -176,32 +203,3 @@ $google-font-subsets: (
 	@return $list;
 
 }
-
-/// @example scss input:
-/// 	@include google-font($name, [$weight, $style, $text]);
-///
-/// 	@include google-font(Lato, 300);
-/// 	@include google-font(Open Sans, 400, italic);
-///
-/// @example css output:
-/// 	@import url("//fonts.googleapis.com/css?family=Lato:300");
-/// 	@import url("//fonts.googleapis.com/css?family=Open+Sans:400i");
-///
-/// ? Conbine syntax:
-/// ? By placing google-font includes inside a google-font include (without arguments)
-/// ? nested includes will be merged into a single import
-/// @example scss input:
-/// 	@include google-font {   // <= combine
-/// 	    @include google-font(Material Icons);
-/// 	    @include google-font(Open Sans, 300 400 700, normal);
-/// 	    @include google-font(Open Sans, 300 400 700, italic normal);
-/// 	    @include google-font(Lato, 300 400i 700i);
-/// 	    @include google-font(Lato, 300 700, italic normal);
-/// 	    @include google-font(Slapo 27px, 400 200, $text: 'Lorem ipsum dolor sit amet');
-/// 	}
-///
-/// ? Note! as Slapo 27px is limited to specific characters it will
-/// ? not be merged with the other imports
-/// @example css output:
-/// 	@import url("//fonts.googleapis.com/css?family=Slapo+27px:400,200&text=Lorem%20ipsudlta");
-/// 	@import url("//fonts.googleapis.com/css?family=Material+Icons:400|Open+Sans:300,400,700,300i,400i,700i|Lato:300,400
