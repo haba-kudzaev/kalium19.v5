@@ -3,13 +3,14 @@
 @use '_dev/flex-align' as *;
 
 /// @name align-items
-/// @access public
+/// @since 4.0.0
 /// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
 /// @require {Mixin} prefixer
 /// @see {Variable} $prfxs_box-align
 /// @see {Variable} $prfxs_align-items
-/// @require flex-align
-/// @since 4.0.0
 /// @param {String} $val [stretch] - значение свойства `align-items`
 @mixin align-items($val: stretch) {
 

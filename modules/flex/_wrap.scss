@@ -2,12 +2,14 @@
 @use '../prefixer' as *;
 
 /// @name flex-wrap
-/// @access public
-/// @group mixin.flex
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_flex-wrap
 /// @since 4.0.0
-/// @param {String} $valueue [nowrap] - значение свойства `flex-wrap`
+/// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_flex-wrap
+/// @require {Mixin} prefixer
+/// @param {String} $value [nowrap] - значение свойства `flex-wrap`
 @mixin flex-wrap($value: nowrap) {
 
 	@if $value == nowrap {

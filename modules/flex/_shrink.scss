@@ -2,11 +2,13 @@
 @use '../prefixer' as *;
 
 /// @name flex-shrink
-/// @access public
-/// @group mixin.flex
-/// @require {Mixin} prefixer
-/// @see {Variable} $prfxs_flex-shrink
 /// @since 4.0.0
+/// @group mixin.flex
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @see {Variable} $prfxs_flex-shrink
+/// @require {Mixin} prefixer
 /// @param {Number} $value [0] - значение свойства `flex-shrink`
 @mixin flex-shrink($value: 0) {
 

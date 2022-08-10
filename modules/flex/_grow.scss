@@ -2,12 +2,14 @@
 @use '../prefixer' as *;
 
 /// @name flex-grow
-/// @access public
+/// @since 4.0.0
 /// @group mixin.flex
-/// @require {Mixin} prefixer
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
 /// @see {Variable} $prfxs_box-flex
 /// @see {Variable} $prfxs_flex-grow
-/// @since 4.0.0
+/// @require {Mixin} prefixer
 /// @param {Number} $value - значение свойства `flex-grow`
 @mixin flex-grow($value: 1) {
 
