@@ -1,11 +1,23 @@
 @use '../config' as *;
 
 /// @name respond-to
+/// @since 4.0.0
+/// @access public
 /// @author Kitty Giraudel
 /// @link https://github.com/KittyGiraudel
-/// @access public
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include respond-to(md) {
+/// 			/* Styles... */
+/// 		}
+/// 	}
+/// @example css Результат в CSS
+/// 	@media (min-width: 768px) {
+/// 	  .block {
+/// 	    /* Styles... */
+/// 	  }
+/// 	}
 /// @see {Variable} $breakpoints
-/// @since 4.0.0
 /// @param {String | Number} $breakpoint
 @mixin respond-to($breakpoint) {
 
