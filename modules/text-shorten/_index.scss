@@ -1,26 +1,60 @@
+@use '../_dev' as *;
+@use '../utils/is-int' as *;
+
+/// @access private
+/// @type List
+$_variants: 'only <number>';
+
 /// @name text-shorten
 /// @since 4.0.0
 /// @access public
 /// @author Haba Kudzaev (rx1310)
-/// @link https://github.com/rx1310/kalium19 Исходный код
-/// @param {Number} $numLines [1]
-@mixin text-shorten($numLines: 1) {
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include text-shorten(3);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  white-space: nowrap;
+/// 	  text-overflow: ellipsis;
+/// 	  overflow: hidden;
+/// 	}
+/// 	@supports (-webkit-line-clamp: 3) {
+/// 	  .block {
+/// 	    overflow: hidden;
+/// 	    text-overflow: ellipsis;
+/// 	    white-space: initial;
+/// 	    display: -webkit-box;
+/// 	    display: -moz-box;
+/// 	    -webkit-line-clamp: 3;
+/// 	    -webkit-box-orient: vertical;
+/// 	  }
+/// 	}
+/// @param {Number} $num-lines [1]
+@mixin text-shorten($num-lines: 1) {
 
-	white-space  : nowrap;
-	text-overflow: ellipsis;
-	overflow     : hidden;
+	@if is-int($num-lines) {
 
-	@supports (-webkit-line-clamp: $numLines) {
+		white-space  : nowrap;
+		text-overflow: ellipsis;
+		overflow     : hidden;
 
-		overflow          : hidden;
-		text-overflow     : ellipsis;
-		white-space       : initial;
-		display           : -webkit-box;
-		display           : -moz-box;
+		@supports (-webkit-line-clamp: $num-lines) {
 
-		-webkit-line-clamp: $numLines;
-		-webkit-box-orient: vertical;
+			overflow          : hidden;
+			text-overflow     : ellipsis;
+			white-space       : initial;
+			display           : -webkit-box;
+			display           : -moz-box;
 
+			-webkit-line-clamp: $num-lines;
+			-webkit-box-orient: vertical;
+
+		}
+
+	} @else {
+		@include error-invalid-value($_variants, text-shorten, $num-lines);
 	}
 
 }
