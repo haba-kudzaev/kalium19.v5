@@ -112,9 +112,6 @@ git submodule add https://github.com/rx1310/kalium19
 > ```
 > Данные команды скачают архив версии с ветки [`main`](https://github.com/rx1310/kalium19/tree/main).
 
-## Документация
-На данный момент документация формируется средствами утилиты [sassdoc](http://sassdoc.com/) и доступна по [этой ссылке](https://rx1310.github.io/kalium19).
-
 ## Лицензия
 Проект [Kalium19](https://github.com/rx1310/kalium19) распространяется совершенно бесплатно и находится под защитой лицензии [MIT](LICENSE).
 
