@@ -3,11 +3,28 @@
 @use '../utils/map-deep-get' as *;
 
 /// @name opacity
+/// @since 4.0.0
+/// @group
 /// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include opacity(.5);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -moz-opacity: 0.5;
+/// 	  -khtml-opacity: 0.5;
+/// 	  opacity: 0.5;
+/// 	  /* for IE 5-7 */
+/// 	  filter: alpha(opacity=50);
+/// 	  /* for IE 8 */
+/// 	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+/// 	}
+/// @see {Variable} $opacity
 /// @require {Mixin} prefixer
 /// @require {Function} map-deep-get
-/// @see {Variable} $opacity
-/// @since 4.0.0
 /// @param {String} $value - значение свойства `opacity`
 @mixin opacity($value) {
 
