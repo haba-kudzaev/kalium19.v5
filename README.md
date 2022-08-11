@@ -5,7 +5,7 @@
 
 # Kalium19 ![npm](https://img.shields.io/npm/v/@rx1310/kalium19?color=fbd2e0&label=%20)
 
-<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo_rounded.png" alt="Логотип проекта Kalium19 от Асхаба Кудзаева" width="90px" align="right" />
+<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/develop/.github/logo_rounded.png?raw=true" alt="Логотип проекта Kalium19 от Асхаба Кудзаева" width="90px" align="right" />
 
 :package: Большой набор миксинов, карт и функций на языке препроцессора [Sass](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
@@ -36,7 +36,7 @@
 ![License](https://img.shields.io/github/license/rx1310/kalium19?color=3da13b)
 
 ## Приступая к работе...
-Для начала необходимо удостовериться, что в вашем проекте (в котором будет использоваться Kalium19) установлен npm-зависимость [sass](https://www.npmjs.com/package/sass), т.к. Kalium19 сам ничего не компилирует, а лишь является набором готовых стилей и функций на языке препроцессора Sass.
+Для начала необходимо удостовериться, что в вашем проекте (в котором будет использоваться Kalium19) установлена npm-зависимость [sass](https://www.npmjs.com/package/sass), т.к. Kalium19 сам ничего не компилирует, а лишь является набором готовых стилей и функций на языке препроцессора Sass.
 
 > Предпологается, что с языком Sass (SCSS) вы уже знакомы и о необходимости установленного NodeJS и npm вам известно.
 
@@ -47,50 +47,50 @@
 
 1. перейдите в корень проекта через терминал (Windows-like: командную строку):
 
-		```bash
-		cd my-project
-		```
+    ```bash
+    cd my-project
+    ```
 
 2. введите команду для установки npm-пакета [`@rx1310/kalium19`](https://npmjs.com/package/@rx1310/kalium19) (также есть на [GitHub Packages](https://github.com/rx1310/kalium19/packages/1547304)) в проект:
 
-		```bash
-		npm install @rx1310/kalium19
-		```
+    ```bash
+    npm install @rx1310/kalium19
+    ```
 
 3. дождитесь установки всех пакетов и зависимостей в проект и в основной Sass-файл стилей пропишите импорт модуля `kalium19`:
 
-		```scss
-		@use 'node_modules/@rx1310/kalium19' as *;
-		```
+    ```scss
+    @use 'node_modules/@rx1310/kalium19' as *;
+    ```
 
-		`*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в Sass](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
+    `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в Sass](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
 
-		> Именно из-за использования модульной системы Sass Kalium19 лишается поддержки старых компиляторов (LibSass, например), т.к. они не поддерживают (или поддерживают плохо) работу с директивами `@use` и `@forward`.
+    > Именно из-за использования модульной системы Sass Kalium19 лишается поддержки старых компиляторов (LibSass, например), т.к. они не поддерживают (или поддерживают плохо) работу с директивами `@use` и `@forward`.
 
 
 4. для проверки правильного импорта можно использовать миксин `@include check;` в файле стилей после импорта:
 
-		```scss
-		@use 'node_modules/@rx1310/kalium19' as *;
+    ```scss
+    @use 'node_modules/@rx1310/kalium19' as *;
 
-		@include check;
-		```
-		и в консоли получить след. сообщение:
+    @include check;
+    ```
+    и в консоли получить след. сообщение:
 
-		```log
-		index.scss:3 Debug: Installed Kalium19!
-		```
+    ```log
+    index.scss:3 Debug: Installed Kalium19!
+    ```
 
-		а в итоговом CSS-файле должно быть что-то похожее:
+    а в итоговом CSS-файле должно быть что-то похожее:
 
-		```css
-		/*
-		 * @name    : @rx1310/kalium19 (title: Kalium19)
-		 * @license : MIT
-		 * @author  : Haba Kudzaev (rx1310) <rx1310@inbox.ru>
-		 * @homepage: https://github.com/rx1310/kalium19
-		 */
-		```
+    ```css
+    /*
+      * @name    : @rx1310/kalium19 (title: Kalium19)
+      * @license : MIT
+      * @author  : Haba Kudzaev (rx1310) <rx1310@inbox.ru>
+      * @homepage: https://github.com/rx1310/kalium19
+      */
+    ```
 
 5. готово!
 
@@ -227,7 +227,26 @@ $prfxs_border-radius: webkit moz; // выбираем нужные префик�
 
 ```
 MIT License
+
 Copyright (c) 2022, Haba Kudzaev (rx1310) <rx1310@inbox.ru>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 > Если Вы нашли нарушение чьей-либо лицензии в моем проекте, то просьба написать мне → [Telegram](https://t.me/rx1310), [эл. почта](mailto:rx1310@inbox.ru) или [VK](https://vk.com).
