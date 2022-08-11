@@ -1,3 +1,10 @@
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: normal max min;
+
 /// @name wh
 /// @since 4.0.0
 /// @access public
@@ -30,12 +37,51 @@
 /// @param {Number} $height [$width] - высота
 /// @param {String} $type [normal] - режим
 @mixin wh($width, $height: $width, $type: normal) {
-	@if $type == normal {
-		width: $width;
-		height: $height;
+	@if is-valid($type, $_variants) {
+		@if $type == normal {
+			width: $width;
+			height: $height;
+		} @else {
+			#{$type}-width: 12;
+			#{$type}-height: $height;
+		}
 	} @else {
-		#{$type}-width: 12;
-		#{$type}-height: $height;
+		@include invalid-value-message($_variants, width, $type);
 	}
 }
 
+/// @alias wh
+/// @name size
+/// @since 5.0.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.square {
+/// 	  @include size(50px);
+/// 	}
+/// 	.rectangle {
+/// 	  @include size(100px, 50px);
+/// 	}
+/// 	.round {
+/// 		@include size(100px, 100px, min);
+/// 	}
+/// @example css Результат в CSS
+/// 	.square {
+/// 	  width: 50px;
+/// 	  height: 50px;
+/// 	}
+/// 	.rectangle {
+/// 	  width: 100px;
+/// 	  height: 50px;
+/// 	}
+/// 	.round {
+/// 	  min-width: 12;
+/// 	  min-height: 100px;
+/// 	}
+/// @param {Number} $width - ширина
+/// @param {Number} $height [$width] - высота
+/// @param {String} $type [normal] - режим
+@mixin size($width, $height: $width, $type: normal) {
+	@include wh($width, $height, $type);
+}
