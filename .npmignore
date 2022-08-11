@@ -8,3 +8,7 @@ npm-debug.log
 .editorconfig
 .gitignore
 .github
+CHANGELOG.md
+CODEOWNERS
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
