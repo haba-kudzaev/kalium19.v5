@@ -1,3 +1,115 @@
+## v5.0.0
+- [`d8b657e`](https://github.com/rx1310/kalium19/commit/d8b657e45682dd5139a6a43878f5f4f72caeca1e) [@rx1310](https://github.com/rx1310): добавляет миксин `size()` (обёртка над `wh()`)
+- [`9cf3574`](https://github.com/rx1310/kalium19/commit/9cf3574c374f0f6a0e670ee29f7e38c845456480) [@rx1310](https://github.com/rx1310): добавляет проверку на вводимое значение в миксин `flex-direction()`
+- [`265bfd5`](https://github.com/rx1310/kalium19/commit/265bfd59d0ab940b3a366d19e6b4a85a32c67af9) [@rx1310](https://github.com/rx1310): добавляет проверку на вводимое значение в миксин `align-self()`
+- [`844e28d`](https://github.com/rx1310/kalium19/commit/844e28d6f252dcd7f11e7498fdd24dd3e15a78d5) [@rx1310](https://github.com/rx1310): добавляет проверку на вводимое значение в миксин `align-items()`
+- [`0daa4da`](https://github.com/rx1310/kalium19/commit/0daa4dab259eb7d796ff5bc6cb47e14c1882eb31) [@rx1310](https://github.com/rx1310): добавляет проверку на вводимое значение в миксин `align-content()`
+- [`9e99c1d`](https://github.com/rx1310/kalium19/commit/9e99c1dc43f941181fe29df6bad05479c56d8670) [@rx1310](https://github.com/rx1310): дорабатывает документацию функции `color-shade()`
+- [`bb63844`](https://github.com/rx1310/kalium19/commit/bb638442a14b3fc084e5a0fbf1bf0adf9d697453) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксинов группы `mixin.flex`
+- [`67c2560`](https://github.com/rx1310/kalium19/commit/67c25603e24301766cd7066b7b2d07a2c48cd92f) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `wh()`
+- [`66e1acb`](https://github.com/rx1310/kalium19/commit/66e1acb5203000ef00845e9f23917d349008d8cb) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `visually-hidden()`
+- [`1799cfb`](https://github.com/rx1310/kalium19/commit/1799cfbcef8e006c5077e22ab1da50d91adf09c2) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `unselect()`
+- [`daa867b`](https://github.com/rx1310/kalium19/commit/daa867bd043df480c90d227594e1d37346821f28) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `user-select()` и добавляет проверку на вводимое значение
+- [`711a488`](https://github.com/rx1310/kalium19/commit/711a488bbee75ced42577450411057ef75d0373f) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transition()`
+- [`da92c6d`](https://github.com/rx1310/kalium19/commit/da92c6d73246bbba5e2cf2e535153e45c5671096) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transition-duration()`
+- [`393fe79`](https://github.com/rx1310/kalium19/commit/393fe7953aab91b8ddd15c490c7d43f05a18c5ba) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transition-delay()`
+- [`7a37bcc`](https://github.com/rx1310/kalium19/commit/7a37bcc34af3d2fd36e802b4f5b92c3e6591e40c) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transition-property()`
+- [`70ea862`](https://github.com/rx1310/kalium19/commit/70ea862ad712538759d63ab526ad775c3de3425b) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transition-timing-function()`
+- [`b854919`](https://github.com/rx1310/kalium19/commit/b854919ca1d977e78dd0315a1e431eb77c91365a) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transform-origin()`
+- [`66c0594`](https://github.com/rx1310/kalium19/commit/66c0594b8759fe632d482758206c775e6ed48c32) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transform-style()` и добавляет проверку на вводимое значение
+- [`149aa4b`](https://github.com/rx1310/kalium19/commit/149aa4b4c7791e7a8e9158a97e1fb0b69e6019e4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `transform()`
+- [`217c614`](https://github.com/rx1310/kalium19/commit/217c614cc0727bde7106607cb66f6af1ddf5ca79) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `text-shorten()` и добавляет проверку на вводимое значение
+- [`fb8f134`](https://github.com/rx1310/kalium19/commit/fb8f134ceedc4bd276a6ecd3bea18b5a8e7f052f) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `tab-size()` и добавляет проверку на вводимое значение
+- [`4fc111e`](https://github.com/rx1310/kalium19/commit/4fc111ec8c337a57ffe777db971cb688ce71cdad) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `selection()`
+- [`de76969`](https://github.com/rx1310/kalium19/commit/de76969a6a2c9cc34fe203f1e6dbae509df7c5f4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `scrollbar()`
+- [`d326dce`](https://github.com/rx1310/kalium19/commit/d326dce40bc8a79dcea56086bcc4090f4b5fd8a2) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `scroll-behavior()` и добавляет проверку на вводимое значение
+- [`b849e7c`](https://github.com/rx1310/kalium19/commit/b849e7cf88970de1b0d64cc707d69b25dd98c00d) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `respond-to()`
+- [`7c9523b`](https://github.com/rx1310/kalium19/commit/7c9523ba052721f606cb465ecac3e772da4ed7b0) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `push-auto()`
+- [`28aa2f7`](https://github.com/rx1310/kalium19/commit/28aa2f754cd9f319e02198ea2d5c386a7eeb58f8) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `props()`
+- [`d4033fc`](https://github.com/rx1310/kalium19/commit/d4033fc1aef69e19dc9768a60ab886a8e7aede99) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `props-apply()`
+- [`e69dedb`](https://github.com/rx1310/kalium19/commit/e69dedb484432ce9b9e48f3ce58eee2cd5714ff5) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `prefixer-pack()`
+- [`113ff66`](https://github.com/rx1310/kalium19/commit/113ff66081c3c2414a51b688ad7427870d789f2e) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `prefixer()`
+- [`aa80983`](https://github.com/rx1310/kalium19/commit/aa809834e6cdd3a017b1a004af3d2362e2af8bb0) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `position()`
+- [`65f5bc8`](https://github.com/rx1310/kalium19/commit/65f5bc8e0c0e5438c5f17ede94cc44d42ce41844) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `placeholder()`
+- [`85c0fee`](https://github.com/rx1310/kalium19/commit/85c0fee8ae8dbf3702e5a7783f9f0758b5455958) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `get-opacity()`
+- [`bcadebc`](https://github.com/rx1310/kalium19/commit/bcadebc7743db7cc327e683dd088d18747940912) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `opacity()`
+- [`2b17838`](https://github.com/rx1310/kalium19/commit/2b17838124155d19c5659721cb06bb4f9c189c86) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `object-fit()` и добавляет проверку на вводимое значение
+- [`9907cd2`](https://github.com/rx1310/kalium19/commit/9907cd2f7154d948517d908c25ce63411c2b255e) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `mquery-r()`
+- [`a7403b6`](https://github.com/rx1310/kalium19/commit/a7403b60fba41838ba3628802009f1b0758c8df4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `mquery()`
+- [`db04c25`](https://github.com/rx1310/kalium19/commit/db04c25e69d2cd0337b40f2c57afce876c6492ef) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `keyframes()`
+- [`3c6d349`](https://github.com/rx1310/kalium19/commit/3c6d3496d8f488593233c101c272cec41becb79b) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `initial()`
+- [`e52234d`](https://github.com/rx1310/kalium19/commit/e52234d9658662a99229830fd08a102643307dbc) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `image-2x()`
+- [`9d0b79e`](https://github.com/rx1310/kalium19/commit/9d0b79ed94f2be2af329c37fe26e07a0365b3eab) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `hide-text()`
+- [`34b5d18`](https://github.com/rx1310/kalium19/commit/34b5d18a09706503464bf7c7e8051a44efa43d86) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `hardware()`
+- [`3b279dc`](https://github.com/rx1310/kalium19/commit/3b279dc4c5fb1f3aa1c3e4fafd23a11dcb256bd8) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `google-font()`
+- [`85530aa`](https://github.com/rx1310/kalium19/commit/85530aa7c3d7468538fa24adcdff0a145aaa421b) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `font-face()`
+- [`e422aab`](https://github.com/rx1310/kalium19/commit/e422aab6b1dfc11a979dd50c763a58056f283c3c) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `flip()`
+- [`c330cba`](https://github.com/rx1310/kalium19/commit/c330cbab7f15c68e735fc8056fa5147af1776c83) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-width()` и добавляет проверку на вводимое значение
+- [`9350083`](https://github.com/rx1310/kalium19/commit/9350083787a1c4b23abc543cfb44d94fa3bc55cd) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-span()` и добавляет проверку на вводимое значение
+- [`cfbf441`](https://github.com/rx1310/kalium19/commit/cfbf4412e031acf44e771295bfdb44b162ef0beb) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-rule()` и добавляет проверку на вводимое значение
+- [`a90becc`](https://github.com/rx1310/kalium19/commit/a90becc07a2e7520529fc574b4f35f5a14b7a2b9) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-rule-width()` и добавляет проверку на вводимое значение
+- [`7f82243`](https://github.com/rx1310/kalium19/commit/7f82243abf68a89f8174d43ea8e2095ec841fbb4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-rule-style()` и добавляет проверку на вводимое значение
+- [`85f76bc`](https://github.com/rx1310/kalium19/commit/85f76bc2ffee077190d6cc7cbfe4521a4bd1ed63) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-rule-color()`
+- [`168bfc5`](https://github.com/rx1310/kalium19/commit/168bfc5324eff6b9868b9019ed093882b7ea0a3c) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-gap()`
+- [`b47e63d`](https://github.com/rx1310/kalium19/commit/b47e63d89150bfa59de68f98a2d0e8d49efa37fc) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-fill()` и добавляет проверку на вводимое значение
+- [`be2422e`](https://github.com/rx1310/kalium19/commit/be2422e9fa2581b603f618ac0bfc6cc1754d7382) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `column-count()` и добавляет проверку на вводимое значение
+- [`7b8c37c`](https://github.com/rx1310/kalium19/commit/7b8c37c8c9ec272cc3b501313b779dfb7f3189e7) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `columns()`
+- [`43be20f`](https://github.com/rx1310/kalium19/commit/43be20f1ce94b71e56ab9f25b8f46f9081ad1589) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `clearfix()`
+- [`91dae2c`](https://github.com/rx1310/kalium19/commit/91dae2c4fbefe3ba3ba9535110fef16ba8b89eeb) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `centering()` и добавляет проверку на вводимое значение
+- [`feb30b4`](https://github.com/rx1310/kalium19/commit/feb30b47837d0dcf53d66ac3a2241673cf0056eb) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `center-block()`
+- [`d3dd0d1`](https://github.com/rx1310/kalium19/commit/d3dd0d12883a066fe0525c81646a23d8c48cf0d1) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `box-sizing()` и добавляет проверку на вводимое значение
+- [`4984aa0`](https://github.com/rx1310/kalium19/commit/4984aa0aeffc99a94a15ab4cbfb4195842b92fa5) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `box-shadow()`
+- [`b39d1e7`](https://github.com/rx1310/kalium19/commit/b39d1e7f81da3c78721b181cc9e1264ca7cbd65f) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `border-radius()`
+- [`cea7d8d`](https://github.com/rx1310/kalium19/commit/cea7d8dda8912360f3f5ecd80c16ae0b07346aa2) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `border-corner-radius()`
+- [`07dab88`](https://github.com/rx1310/kalium19/commit/07dab88a64ff46e88f795044708a1d2ce3e6450f) [@rx1310](https://github.com/rx1310): добавляет уточнение синтаксиса примера в документации кода
+- [`85fc0a8`](https://github.com/rx1310/kalium19/commit/85fc0a8f1a0f6f842d2254344d400a3f3ba7a6e4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксинов `b()`, `e()` и `m()`
+- [`1e498c7`](https://github.com/rx1310/kalium19/commit/1e498c734f6557d50bfd4e15e9f2de204534365d) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-size()`
+- [`a4f14c5`](https://github.com/rx1310/kalium19/commit/a4f14c59b67a9b5eecd6f166a3c09985b99b0b55) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-origin()` и добавляет проверку на вводимое значение
+- [`e918650`](https://github.com/rx1310/kalium19/commit/e918650f3b7dcd70934474cf77bab5f7c0df375d) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-opacity()`
+- [`134476d`](https://github.com/rx1310/kalium19/commit/134476d6595bb2f97ec69342e3c999de1da17e84) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-gradient()`
+- [`c9d2d97`](https://github.com/rx1310/kalium19/commit/c9d2d978ad5b82192f799146802878ce892111c7) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-gradient-radial()`
+- [`376b706`](https://github.com/rx1310/kalium19/commit/376b7069cdfc61a2ccd4253c2f74f97479af9e71) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-gradient-linear()` и добавляет проверку на вводимое значение
+- [`9b06fce`](https://github.com/rx1310/kalium19/commit/9b06fce13b73d4282786160753382d06955f0290) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `background-clip()` и добавляет проверку на вводимое значение
+- [`b550102`](https://github.com/rx1310/kalium19/commit/b5501027f87bc3cfef00312529b0c401734180c4) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `backdrop-filter()`
+- [`106856e`](https://github.com/rx1310/kalium19/commit/106856ebd79268eb87c9d0dff651fd1caf54e901) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `antialias()`
+- [`c561277`](https://github.com/rx1310/kalium19/commit/c5612774ad9c1c45a71c991bc42e7c61de150559) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation-timing-function()` и добавляет проверку на вводимое значение
+- [`dbf905a`](https://github.com/rx1310/kalium19/commit/dbf905a84fd1c562c9f02d245b9109feb7590857) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation-play-state()` и добавляет проверку на вводимое значение
+- [`08ead6a`](https://github.com/rx1310/kalium19/commit/08ead6a0cf95d67c15f5c1b8c809dbe1b64950b3) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation-name()` и добавляет проверку на вводимое значение
+- [`c367694`](https://github.com/rx1310/kalium19/commit/c367694255052f33f29236beb462aa82c94fcf00) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation-iteration-count()` и добавляет проверку на вводимое значение
+- [`901bf7e`](https://github.com/rx1310/kalium19/commit/901bf7ee543859eaa05e45ba5a589a4c3a4b4992) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation()`
+- [`64dae6f`](https://github.com/rx1310/kalium19/commit/64dae6f4a3ed1f0aadbca265960b0cd1889e7713) [@rx1310](https://github.com/rx1310): дорабатывает документацию миксина `animation-duration()` и добавляет проверку на вводимое значение
+- [`504e9b7`](https://github.com/rx1310/kalium19/commit/504e9b78fd0f6346bc81832540225198040284f2) [@rx1310](https://github.com/rx1310): добавляет функцию `is-time()` от @selfishprimate
+- [`ed8551d`](https://github.com/rx1310/kalium19/commit/ed8551daf243f45a54b8af0a7555cdfd79a84c56) [@rx1310](https://github.com/rx1310): добавляет проверку на возможное значение в миксин `animation-direction()`
+- [`60f914c`](https://github.com/rx1310/kalium19/commit/60f914c4deb983fc262a445b760e6de5eda172c3) [@rx1310](https://github.com/rx1310): добавляет функцию `is-valid()`
+- [`735a1a0`](https://github.com/rx1310/kalium19/commit/735a1a04c1cc22ccaa43bc45e5a03c54420cf73e) [@rx1310](https://github.com/rx1310): добавляет миксин `scrollbar()` от Hugo Giraudel
+- [`8b724f6`](https://github.com/rx1310/kalium19/commit/8b724f6b02cccf604146cae53e9daad0983a3808) [@rx1310](https://github.com/rx1310): добавляет миксин `am()` от @W3cplus
+- [`9483fab`](https://github.com/rx1310/kalium19/commit/9483fab885471438ed358710e9eac508ef9f66b6) [@rx1310](https://github.com/rx1310): добавляет миксин `calc()` от @romamatusevich
+- [`34df552`](https://github.com/rx1310/kalium19/commit/34df55202156b0c6d4892709bfd84c865a0132be) [@rx1310](https://github.com/rx1310): добавляет миксин `is-string()` от @takamoso
+- [`257c733`](https://github.com/rx1310/kalium19/commit/257c7334762163069dba16d27ee0d78b84c63f9f) [@rx1310](https://github.com/rx1310): добавляет миксин `is-bool()` от @takamoso
+- [`2f76696`](https://github.com/rx1310/kalium19/commit/2f76696be155961cf66d6d94f7db36ae14c92195) [@rx1310](https://github.com/rx1310): добавляет миксин `is-list()` от @takamoso
+- [`d853008`](https://github.com/rx1310/kalium19/commit/d8530081b1a3de4d6602bcc86a1da330eaa133b8) [@rx1310](https://github.com/rx1310): добавляет миксин `is-map()` от @takamoso
+- [`c030165`](https://github.com/rx1310/kalium19/commit/c03016557de762732adae0bdf81f7fe61d51a8a3) [@rx1310](https://github.com/rx1310): добавляет миксин `initial()` от @takamoso
+- [`95b1d6d`](https://github.com/rx1310/kalium19/commit/95b1d6d94799e762b6392215d3099dc6710c6eb9) [@rx1310](https://github.com/rx1310): добавляет функцию `set-initial()` от @takamoso
+- [`bc31706`](https://github.com/rx1310/kalium19/commit/bc31706de67621e900eb658f746110f3b9e5cc28) [@rx1310](https://github.com/rx1310): отключение `transition` для `prefers-reduced-motion: reduce`
+- [`569ef94`](https://github.com/rx1310/kalium19/commit/569ef949b20a26ebdb76dd03962fe2cb9d5f758e) [@rx1310](https://github.com/rx1310): добавляет переменные `$char-*` от @selfishprimate
+- [`7f649ea`](https://github.com/rx1310/kalium19/commit/7f649ea85669d96a12185b120f3e721c8924a657) [@rx1310](https://github.com/rx1310): добавляет функцию `is-int()` от @pentzzsolt
+- [`4cf74d1`](https://github.com/rx1310/kalium19/commit/4cf74d1a366b5c720789225366c9d27b74077749) [@rx1310](https://github.com/rx1310): добавляет функцию `recursive-map-merge()` от @pentzzsolt
+- [`1e788bf`](https://github.com/rx1310/kalium19/commit/1e788bf342f6fce88482373288de338fbb7da6c7) [@rx1310](https://github.com/rx1310): добавляет карты `$system-fonts` и `$system-fonts-mono`
+- [`a1df66a`](https://github.com/rx1310/kalium19/commit/a1df66a2a76e1f18e3f2b4e42a470a20c6cc019b) [@rx1310](https://github.com/rx1310): добавляет функцию ` string-replace()` от @sindresorhus
+- [`6df6f27`](https://github.com/rx1310/kalium19/commit/6df6f2781b9dd845038912b7e43d98e2d3949b56) [@rx1310](https://github.com/rx1310): добавляет функцию `list-last()` от @sindresorhus
+- [`dbf3a5f`](https://github.com/rx1310/kalium19/commit/dbf3a5face1df42685ff38b84c8b2ddc6a9eaf5d) [@rx1310](https://github.com/rx1310): добавляет функцию `list-first` от @sindresorhus
+- [`441d117`](https://github.com/rx1310/kalium19/commit/441d11712c15095fddc9a4d1a558a8d6e087f845) [@rx1310](https://github.com/rx1310): добавляет функцию `string-replace()` от @sindresorhus
+- [`bb50e62`](https://github.com/rx1310/kalium19/commit/bb50e62c272a99341f6dd2c582f49e4770616904) [@rx1310](https://github.com/rx1310): добавляет функцию `string-ends-with()` от @sindresorhus
+- [`90d0360`](https://github.com/rx1310/kalium19/commit/90d0360ef684f1ae35ae3fd07a7e5662d363c689) [@rx1310](https://github.com/rx1310): добавляет функцию `string-starts-with()` от @sindresorhus
+- [`27e3b3b`](https://github.com/rx1310/kalium19/commit/27e3b3bc94521ddb2b7d3bee981ce727781b8317) [@rx1310](https://github.com/rx1310): добавляет функцию `string-contains()` от @sindresorhus
+- [`6746178`](https://github.com/rx1310/kalium19/commit/6746178a5b0704b6b58a5bdf57bb2336cbed6faa) [@rx1310](https://github.com/rx1310): добавляет функцию `number-invert()` от @sindresorhus
+- [`bd5e833`](https://github.com/rx1310/kalium19/commit/bd5e833f1972cfa92ad8449a12f2124bccaf3fbd) [@rx1310](https://github.com/rx1310): добавляет функцию `number-clamp()` от @sindresorhus
+- [`02d717e`](https://github.com/rx1310/kalium19/commit/02d717e9ae89427b60ff2587f10e52ce8738a5f3) [@rx1310](https://github.com/rx1310): добавляет функцию `strip-unit()` от @sindresorhus
+- [`83d89fe`](https://github.com/rx1310/kalium19/commit/83d89fe430ad4087371b2aed6d1f38b5ab66a0c8) [@rx1310](https://github.com/rx1310): добавляет в миксин `wh()` возможность указать префикс `min` или `max`
+- [`1988cf9`](https://github.com/rx1310/kalium19/commit/1988cf9a9c7df232c922eb9d869c7d4e726a8b4b) [@rx1310](https://github.com/rx1310): добавляет миксин `gen-opacity()`
+
+> Данный список изменений очищен от изменений, которые по сути своей второстепенны (настройка окружения, обновление зависимостей и т.д.). Полный список коммитов можно посмотреть [здесь](https://github.com/rx1310/kalium19/compare/4.1.3...5.0.0).
+
 ## v4.1.3
 - [`418d7d0`](https://github.com/rx1310/kalium19/commit/418d7d0fe03d9e976fcf8380f38ca4dffd81f12f) [@rx1310](https://github.com/rx1310): добавляет миксин `position-sticky()`
 - [`e0e8f7e`](https://github.com/rx1310/kalium19/commit/e0e8f7eb7bc50977b7967cdf546738de3b74dc7a) [@rx1310](https://github.com/rx1310): добавляет миксин `flex()`
