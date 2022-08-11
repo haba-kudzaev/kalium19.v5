@@ -5,7 +5,7 @@
 
 # Kalium19 ![npm](https://img.shields.io/npm/v/@rx1310/kalium19?color=fbd2e0&label=%20)
 
-<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/develop/.github/logo_rounded.png?raw=true" alt="Логотип проекта Kalium19 от Асхаба Кудзаева" width="90px" align="right" />
+<img title="Логотип проекта" src="https://github.com/rx1310/kalium19/blob/main/.github/logo_rounded.png?raw=true" alt="Логотип проекта Kalium19 от Асхаба Кудзаева" width="90px" align="right" />
 
 :package: Большой набор миксинов, карт и функций на языке препроцессора [Sass](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
