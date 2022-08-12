@@ -1,0 +1,35 @@
+@use '../config' as *;
+@use '../prefixer' as *;
+
+/// Свойство `text-size-adjust` позволяет отменять или
+///  задавать увеличение шрифта на мобильных экранах.
+/// Такое увеличение используют мобильные браузеры для
+/// улучшения читаемости текста страниц, не адаптированных
+/// для мобильных экранов. Если страница адаптирована,
+///  это увеличение отключают.
+/// ---
+/// @name text-size-adjust
+/// @since 5.1.0
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include text-size-adjust(100%);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  -webkit-text-size-adjust: 100%;
+/// 	  -moz-text-size-adjust: 100%;
+/// 	  text-size-adjust: 100%;
+/// 	}
+/// @see {Variable} $prfxs_text-size-adjust
+/// @require {Mixin} prefixer
+/// @param {Percentage | String} $value [none]
+@mixin text-size-adjust($value: none) {
+	@include prefixer(
+		text-size-adjust,
+		$value,
+		$prfxs_text-size-adjust
+	);
+}

@@ -1,0 +1,40 @@
+@use '../_dev' as *;
+@use '../utils/is-valid' as *;
+
+/// @access private
+/// @type List
+$_variants: normal multiply screen overlay darken lighten color-dodge color-burn hard-light soft-light difference exclusion hue saturation color luminosity;
+
+/// @access private
+/// @type List
+$_variants-unsupported-safari9: hue saturation color luminosity;
+
+/// Определяет режим наложения фонового изображения
+/// на фоновый цвет или другие фоновые изображения.
+/// ---
+/// @name background-blend-mode
+/// @since 5.1.0
+/// @group
+/// @access public
+/// @author Haba Kudzaev
+/// @link https://github.com/rx1310/kalium19
+/// @example scss Пример использования в Sass (SCSS)
+/// 	.block {
+/// 		@include background-blend-mode(multiply);
+/// 	}
+/// @example css Результат в CSS
+/// 	.block {
+/// 	  background-blend-mode: multiply;
+/// 	}
+/// @require {Mixin} prefixer
+/// @param {String} $value [normal] - значение свойства `background-blend-mode`
+@mixin background-blend-mode($type: normal) {
+	@if is-valid($type, $_variants) {
+		@if is-valid($type, $_variants-unsupported-safari9) {
+			/* ? 🟦 Kalium19: "Safari до версии 10 и iOS Safari до версии 10.3 не поддерживают значение «#{$type}»!" */
+		}
+		background-blend-mode: #{$type};
+	} @else {
+		@include invalid-value-message($_variants, background-blend-mode, $type);
+	}
+}
