@@ -11,6 +11,7 @@ $strict-mode: error !default;
 // * `warn`            | Компилирует CSS до конца, но без "проблемного" участка
 // * `false`           | Отключает сообщения о проблемах вообще
 
+$prfxs-all                      : webkit khtml moz ms o !default;
 $prfxs_align-content            : webkit !default;
 $prfxs_align-items              : webkit !default;
 $prfxs_align-self               : webkit !default;
@@ -56,11 +57,11 @@ $prfxs_object-fit               : o !default;
 $prfxs_opacity                  : moz khtml !default;
 $prfxs_order                    : webkit !default;
 $prfxs_tab-size                 : moz o !default;
+$prfxs_text-size-adjust         : webkit moz !default;
 $prfxs_transform                : webkit moz ms o !default;
 $prfxs_transform-style          : webkit moz !default;
 $prfxs_transition               : webkit moz o !default;
 $prfxs_user-select              : webkit moz ms !default;
-$prfxs-all                      : webkit khtml moz ms o !default;
 
 /// @access public
 /// @see border-radius
