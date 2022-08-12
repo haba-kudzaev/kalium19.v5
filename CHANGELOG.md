@@ -1,3 +1,10 @@
+## v5.1.0
+- [`0aa1834`](https://github.com/rx1310/kalium19/commit/0aa1834090ae055bafb3086a647ada552d72ebf3) [@rx1310](https://github.com/rx1310): добавляет миксин `text-size-adjust()`
+- [`74476fe`](https://github.com/rx1310/kalium19/commit/74476fe111a32a2304d7be1bd4ad3de8977827a3) [@rx1310](https://github.com/rx1310): добавляет миксин `background-blend-mode()` (+ проверку на вводимое значение)
+- [`03fd1ec`](https://github.com/rx1310/kalium19/commit/03fd1ecad92d8825ab354431e535ff79d7fe092e) [@rx1310](https://github.com/rx1310): добавляет README.md для миксина `normalize()`
+- [`bf7d919`](https://github.com/rx1310/kalium19/commit/bf7d919dc62c1d93fba2424dcbb449a9a99d1abf) [@rx1310](https://github.com/rx1310): добавляет миксин `reset()`, реализующий reset.css от @hankchizljaw
+- [`ceea119`](https://github.com/rx1310/kalium19/commit/ceea1192d72d7610f3b5ca9369aa3f415af53927) [@rx1310](https://github.com/rx1310): добавляет миксин `normalize()`, реализующий normalize.css от @necolas и @jonathantneal
+
 ## v5.0.0
 - [`d8b657e`](https://github.com/rx1310/kalium19/commit/d8b657e45682dd5139a6a43878f5f4f72caeca1e) [@rx1310](https://github.com/rx1310): добавляет миксин `size()` (обёртка над `wh()`)
 - [`9cf3574`](https://github.com/rx1310/kalium19/commit/9cf3574c374f0f6a0e670ee29f7e38c845456480) [@rx1310](https://github.com/rx1310): добавляет проверку на вводимое значение в миксин `flex-direction()`
