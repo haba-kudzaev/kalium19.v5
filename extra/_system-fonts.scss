@@ -16,13 +16,13 @@
 /// 	}
 /// @type List
 $system-fonts:
-	'system-ui',
-	'-apple-system',
+	system-ui,
+	-apple-system,
 	'Segoe UI',
 	'Roboto',
 	'Helvetica',
 	'Arial',
-	'sans-serif',
+	sans-serif,
 	'Apple Color Emoji',
 	'Segoe UI Emoji' !default;
 
@@ -49,4 +49,4 @@ $system-fonts-mono:
 	'Consolas',
 	'Liberation Mono',
 	'Menlo',
-	'monospace' !default;
+	monospace !default;
