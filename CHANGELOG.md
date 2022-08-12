@@ -1,3 +1,6 @@
+## v5.1.1 (fix)
+- [`1b32df6`](https://github.com/rx1310/kalium19/commit/1b32df6d1e49849ade2584304bd59363dffd904c) [@rx1310](https://github.com/rx1310): убирает ковычки у шрифтов в списке `$system-fonts` и `$system-fonts-mono` (там где они не нужны)
+
 ## v5.1.0
 - [`0aa1834`](https://github.com/rx1310/kalium19/commit/0aa1834090ae055bafb3086a647ada552d72ebf3) [@rx1310](https://github.com/rx1310): добавляет миксин `text-size-adjust()`
 - [`74476fe`](https://github.com/rx1310/kalium19/commit/74476fe111a32a2304d7be1bd4ad3de8977827a3) [@rx1310](https://github.com/rx1310): добавляет миксин `background-blend-mode()` (+ проверку на вводимое значение)
