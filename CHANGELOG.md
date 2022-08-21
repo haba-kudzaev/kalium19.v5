@@ -1,3 +1,8 @@
+## v5.1.2 (fix)
+- [`69c0b8f`](https://github.com/rx1310/kalium19/commit/69c0b8f60665202ade5c9b7be2d2abe57673d429) [@rx1310](https://github.com/rx1310): меняет значение свойства `font-smooth` на `auto`
+- [`abe7aad`](https://github.com/rx1310/kalium19/commit/abe7aad10b8c798b826f4b59f687416bdeba322b) [@rx1310](https://github.com/rx1310): исправляет неверное название свойства `font-smooth` в миксине `antialias()` (#29)
+- [`11692a9`](https://github.com/rx1310/kalium19/commit/11692a9f07b198f7188fc0e14f234b68a066ad6b) [@rx1310](https://github.com/rx1310): добавляет правило `!default` для переменной `$am-prefix` (#32)
+
 ## v5.1.1 (fix)
 - [`1b32df6`](https://github.com/rx1310/kalium19/commit/1b32df6d1e49849ade2584304bd59363dffd904c) [@rx1310](https://github.com/rx1310): убирает ковычки у шрифтов в списке `$system-fonts` и `$system-fonts-mono` (там где они не нужны)
 
