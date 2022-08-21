@@ -21,9 +21,9 @@
 
 	// ? [1] включает сглаживания оттенками серого, когда в сглаживании участвуют целые пиксели
 	// ? [2] сглаживает по аналогии со значением antialiased для WebKit
-	font-smooth: antialiased; // 1
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; // 2
+	font-smooth: auto; // 1
+	-webkit-font-smoothing: antialiased; // 2
+	-moz-osx-font-smoothing: grayscale;
 
 }
 
