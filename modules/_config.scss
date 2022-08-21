@@ -109,4 +109,4 @@ $breakpoints: (
 
 /// @access public
 /// @see {Mixin} am
-$am-prefix: 'am-';
+$am-prefix: 'am-' !default;
