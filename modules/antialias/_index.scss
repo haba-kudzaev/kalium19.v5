@@ -13,7 +13,7 @@
 /// 	}
 /// @example css Результат в CSS
 /// 	.block {
-/// 	  font-smoothing: antialiased;
+/// 	  font-smooth: antialiased;
 /// 	  -webkit-font-smoothing: antialiased;
 /// 	  -moz-osx-font-smoothing: grayscale;
 /// 	}
@@ -21,7 +21,7 @@
 
 	// ? [1] включает сглаживания оттенками серого, когда в сглаживании участвуют целые пиксели
 	// ? [2] сглаживает по аналогии со значением antialiased для WebKit
-	font-smoothing: antialiased; // 1
+	font-smooth: antialiased; // 1
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; // 2
 
