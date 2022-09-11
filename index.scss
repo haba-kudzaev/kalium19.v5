@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 @forward 'package' show check;
-
-@forward 'modules/config';
+@forward 'config';
 
 @forward 'modules/amcss'; // by W3cplus (@W3cplus)
 @forward 'modules/animation';

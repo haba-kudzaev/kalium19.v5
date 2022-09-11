@@ -90,11 +90,11 @@
 
     ```css
     /*
-      * @name    : @rx1310/kalium19 (title: Kalium19)
-      * @license : MIT
-      * @author  : Haba Kudzaev (rx1310) <rx1310@inbox.ru>
-      * @homepage: https://github.com/rx1310/kalium19
-      */
+     * @name    : @rx1310/kalium19 (title: Kalium19)
+     * @license : MIT
+     * @author  : Haba Kudzaev (rx1310) <rx1310@inbox.ru>
+     * @homepage: https://github.com/rx1310/kalium19
+     */
     ```
 
 5. готово!
