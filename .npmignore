@@ -12,3 +12,5 @@ CHANGELOG.md
 CODEOWNERS
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+modules/**/*.md
+extra/**/*.md
