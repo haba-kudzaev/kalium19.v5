@@ -1,0 +1,21 @@
+/// This quantity-query mixin will select every items if there is at least `$num` items. It will not
+/// if there is not as much as item as you set in `$num`.
+/// @name at-least
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @param {Number} $limit
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin at-least($num) {
+
+  $selector: &;
+  $child: nth(nth($selector, -1), -1);
+
+  &:nth-last-child(n + #{$num}),
+  &:nth-last-child(n + #{$num}) ~ #{$child} {
+    @content;
+  }
+
+}
