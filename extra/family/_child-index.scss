@@ -1,0 +1,45 @@
+/// This mixin is used to automatically sort z-index in numerical order. But it
+/// can also sort them in anti-numerical order, depending the parameters you use.
+/// @name child-index
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+/// @param {Number} $num - Number of children
+/// @param {String} $direction [forward] - Direction of the sort
+/// @param {Number} $index [0] - Index of the sorting
+@mixin child-index($num, $direction: 'forward', $index: 0) {
+
+  @for $i from 1 through $num {
+
+    @if ($direction == 'forward') {
+      &:nth-child(#{$i}) {
+        z-index: _order-index($i, $index);
+        @content;
+      }
+    } @else if ($direction == 'backward') {
+      &:nth-last-child(#{$i}) {
+        z-index: _order-index($i, $index);
+        @content;
+      }
+    }
+
+  }
+
+}
+
+/// Used by the child-index mixin. It will returned the proper sorted numbers
+/// depending on the `$index` value.
+/// @name _order-index
+/// @since 5.2.0
+/// @group mixin
+/// @access private
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @param {Number} $num - Number of children
+/// @param {Number} $index - Index of the sorting
+@function _order-index($i, $index) {
+  @return ($index + $i);
+}
