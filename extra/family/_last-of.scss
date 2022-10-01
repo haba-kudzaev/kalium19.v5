@@ -1,0 +1,15 @@
+/// This quantity-query mixin will only select the last of `$limit` items. It will not
+/// if there is not as much as item as you set in `$limit`.
+/// @name last-of
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @param {Number} $limit
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin last-of($limit) {
+  &:nth-of-type(#{$limit}):nth-last-of-type(1) {
+    @content;
+  }
+}
