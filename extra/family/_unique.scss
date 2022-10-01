@@ -1,4 +1,5 @@
 /// Will only select the child if it’s unique.
+/// ---
 /// @name unique
 /// @since 5.2.0
 /// @group mixin
@@ -8,13 +9,14 @@
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 /// @alias only
 @mixin unique() {
-  &:only-child {
-    @content;
-  }
+	&:only-child {
+		@content;
+	}
 }
 
 /// Will only select children if they are not unique. Meaning if there is at
 /// least 2 children, the style is applied.
+/// ---
 /// @name not-unique
 /// @since 5.2.0
 /// @group mixin
@@ -23,7 +25,7 @@
 /// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 @mixin not-unique() {
-  &:not(:only-child) {
-    @content;
-  }
+	&:not(:only-child) {
+		@content;
+	}
 }
