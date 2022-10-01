@@ -1,0 +1,13 @@
+/// Will only select the child if it’s unique.
+/// @name only
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin only() {
+  &:only-child {
+    @content;
+  }
+}
