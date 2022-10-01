@@ -10,8 +10,10 @@ $package: (
 		url  : "https://rx1310.github.io"
 	),
 
-	license: "MIT",
+	license: "MIT License",
 	homepage: "https://github.com/rx1310/kalium19",
+	npm: "https://npmjs.com/package/@rx1310/kalium19",
+	ghp: "https://github.com/rx1310/kalium19/packages/1547304"
 
 );
 
@@ -23,12 +25,22 @@ $package: (
 	$package-author_email: map-get($package, author, email);
 	$package-license: map-get($package, license);
 	$package-homepage: map-get($package, homepage);
+	$package-npm: map-get($package, npm);
+	$package-ghp: map-get($package, ghp);
 
 	/*
-	 * @name    : #{$package-name} (title: #{$package-title})
-	 * @license : #{$package-license}
-	 * @author  : #{$package-author} <#{$package-author_email}>
-	 * @homepage: #{$package-homepage}
+	 * @name:
+	   └─ package: #{$package-name}
+		 └─ project: #{$package-title}
+	 * @license
+	   └─ #{$package-license}
+	 * @author:
+	   └─ name: #{$package-author}
+		 └─ email: #{$package-author_email}
+	 * @links:
+	   └─ homepage: #{$package-homepage}
+		 └─ npm: #{$package-npm}
+		 └─ ghp: #{$package-ghp}
 	 */
 
 	@debug '#{$package-title} installed!'
