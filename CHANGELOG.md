@@ -1,3 +1,40 @@
+## v5.2.0
+- [`4ec3af2`](https://github.com/rx1310/kalium19/commit/4ec3af274d30a05fbed290f11745cf14da69f484) [@rx1310](https://github.com/rx1310): обновляет Sass (1.54.4 → 1.55.0)
+- [`00bb797`](https://github.com/rx1310/kalium19/commit/00bb79775af6d346cd57ed4b2e2c898137f94873) [@rx1310](https://github.com/rx1310): добавляет ссылку на сайт Family.scss
+- [`10610ed`](https://github.com/rx1310/kalium19/commit/10610edf4f125c2a6345ee2ad4a56e1cb023ec0d) [@rx1310](https://github.com/rx1310): дорабатывает форматирование кода в некоторых Sass-файлах
+- [`19c673e`](https://github.com/rx1310/kalium19/commit/19c673e9b447fae956fe4f9416877a60e2bf0b77) [@rx1310](https://github.com/rx1310): сортировка миксинов в файле index.scss
+- [`dfbc624`](https://github.com/rx1310/kalium19/commit/dfbc6242254a994451aa260a5d4d8ae54da9d85b) [@rx1310](https://github.com/rx1310): добавляет миксин `(not-)unique()` от @LukyVj [family.scss]
+- [`5410e6d`](https://github.com/rx1310/kalium19/commit/5410e6de593fceb2b34a40495b49cac84903b3a8) [@rx1310](https://github.com/rx1310): добавляет миксин `only()` от @LukyVj [family.scss]
+- [`572aa48`](https://github.com/rx1310/kalium19/commit/572aa488bfdf77495cfa740dbc703e10052e5f4f) [@rx1310](https://github.com/rx1310): добавляет миксин `odd()` от @LukyVj [family.scss]
+- [`13b476d`](https://github.com/rx1310/kalium19/commit/13b476df0667fd04a6d96764fd7f4a7c6c5cf3b1) [@rx1310](https://github.com/rx1310): добавляет миксин `first-last()` от @LukyVj [family.scss]
+- [`5a8520d`](https://github.com/rx1310/kalium19/commit/5a8520d02176e32f506f307f285933dce561a9d9) [@rx1310](https://github.com/rx1310): добавляет миксин `even()` от @LukyVj [family.scss]
+- [`81340e8`](https://github.com/rx1310/kalium19/commit/81340e8f1ffa9895c491287160ae192fc0d3d79a) [@rx1310](https://github.com/rx1310): добавляет миксин `child-index()` от @LukyVj [family.scss]
+- [`5c79f64`](https://github.com/rx1310/kalium19/commit/5c79f648dc5e6bedeee6a4e11def7291ac600b7e) [@rx1310](https://github.com/rx1310): добавляет миксин `last-child()` от @LukyVj [family.scss]
+- [`6dcbf6a`](https://github.com/rx1310/kalium19/commit/6dcbf6a92acc57d26b061aaadef035ab9ac1adce) [@rx1310](https://github.com/rx1310): добавляет миксин `first-child()` от @LukyVj [family.scss]
+- [`4315feb`](https://github.com/rx1310/kalium19/commit/4315feb3810e067dfa98e0cd6c5418ab63793868) [@rx1310](https://github.com/rx1310): добавляет миксин `in-between()` от @LukyVj [family.scss]
+- [`0b3823a`](https://github.com/rx1310/kalium19/commit/0b3823a0921e5540bdc277e5df3102a604171ce1) [@rx1310](https://github.com/rx1310): добавляет миксин `at-most()` от @LukyVj [family.scss]
+- [`b389174`](https://github.com/rx1310/kalium19/commit/b389174277dd2ddfaf073fbfb55237657288e2de) [@rx1310](https://github.com/rx1310): добавляет миксин `at-least()` от @LukyVj [family.scss]
+- [`d0a3ef8`](https://github.com/rx1310/kalium19/commit/d0a3ef82a8b1275cb0baf377d37088fc483b4d0a) [@rx1310](https://github.com/rx1310): добавляет миксин `last-of()` от @LukyVj [family.scss]
+- [`5155590`](https://github.com/rx1310/kalium19/commit/5155590139ce202899ad560c309a9cebb14c88f4) [@rx1310](https://github.com/rx1310): добавляет миксин `first-of()` от @LukyVj [family.scss]
+- [`e49f8fe`](https://github.com/rx1310/kalium19/commit/e49f8feafc86302aaeb2d1190c4a0a489eeea782) [@rx1310](https://github.com/rx1310): добавляет миксин `all-but-first-last()` от @LukyVj [family.scss]
+- [`2c9b2e8`](https://github.com/rx1310/kalium19/commit/2c9b2e8fc344c4ff8ba525d2112cf748029141df) [@rx1310](https://github.com/rx1310): добавляет миксин `middle()` от @LukyVj [family.scss]
+- [`758d81b`](https://github.com/rx1310/kalium19/commit/758d81b6b42ddb2bcd1e63e3ba6359b1c30614cc) [@rx1310](https://github.com/rx1310): добавляет миксин `from-first-last()` от @LukyVj [family.scss]
+- [`a2a2e7f`](https://github.com/rx1310/kalium19/commit/a2a2e7f1f32dac463b848b953857494d23fea07a) [@rx1310](https://github.com/rx1310): добавляет миксин `every()` от @LukyVj [family.scss]
+- [`f4a7e59`](https://github.com/rx1310/kalium19/commit/f4a7e59a5f42b0260af9906cc1bd6ef6a4f0fa13) [@rx1310](https://github.com/rx1310): добавляет миксин `each()` от @LukyVj [family.scss]
+- [`b88433f`](https://github.com/rx1310/kalium19/commit/b88433f2a3fc22cdd8ccb70954f2a75952e0fa44) [@rx1310](https://github.com/rx1310): добавляет миксин `all-but()` от @LukyVj [family.scss]
+- [`67b4266`](https://github.com/rx1310/kalium19/commit/67b4266dd55dd31bf9f703c55579c53b106d1869) [@rx1310](https://github.com/rx1310): исправляет неверное имя миксина `odd-between()`
+- [`eee41f0`](https://github.com/rx1310/kalium19/commit/eee41f0bd7ac3259a6447ab81144db192c84c34b) [@rx1310](https://github.com/rx1310): добавляет миксин `n-between()` от @LukyVj [family.scss]
+- [`fe089e0`](https://github.com/rx1310/kalium19/commit/fe089e08625a0931c392bc63029c77ebbe7aaeb6) [@rx1310](https://github.com/rx1310): добавляет миксин `odd-between()` от @LukyVj [family.scss]
+- [`16cac40`](https://github.com/rx1310/kalium19/commit/16cac407901866d3831d388cf0bd2bb2cc89e37a) [@rx1310](https://github.com/rx1310): добавляет миксин `even-between()` от @LukyVj [family.scss]
+- [`0b3e90b`](https://github.com/rx1310/kalium19/commit/0b3e90bdad7c53a2a56677fa2e2691698f8c0cbb) [@rx1310](https://github.com/rx1310): добавляет миксин `between()` от @LukyVj [family.scss]
+- [`796ed81`](https://github.com/rx1310/kalium19/commit/796ed811c6aa3e6efb24074476f0824895835f88) [@rx1310](https://github.com/rx1310): добавляет миксин `from-end()` от @LukyVj [family.scss]
+- [`bd94db2`](https://github.com/rx1310/kalium19/commit/bd94db274c86f96a4b22723afbe8ff94274234b1) [@rx1310](https://github.com/rx1310): добавляет миксин `after-first()` от @LukyVj [family.scss]
+- [`202ee26`](https://github.com/rx1310/kalium19/commit/202ee2669a69cc7a3f08a80ad7c4b723b939f183) [@rx1310](https://github.com/rx1310): добавляет миксин `last()` от @LukyVj [family.scss]
+- [`b5decb6`](https://github.com/rx1310/kalium19/commit/b5decb6896e6bc96ed2bf48bbbf50f9cd670cc03) [@rx1310](https://github.com/rx1310): добавляет миксин `first()` от @LukyVj [family.scss]
+- [`7f8770a`](https://github.com/rx1310/kalium19/commit/7f8770a4946cd41aa7ddd501900fd922dfc699d1) [@rx1310](https://github.com/rx1310): добавляет в игнор @npm файлы документации миксинов
+- [`6623932`](https://github.com/rx1310/kalium19/commit/6623932f85cd3961fe68ea70aa971783b10cbd4f) [@rx1310](https://github.com/rx1310): выносит файл конфигурации Kalium19 в корень проекта
+- [`51082ff`](https://github.com/rx1310/kalium19/commit/51082ff09c96108b34344ac2b84fe700c74eacb3) [@rx1310](https://github.com/rx1310): исправляет комментарии @SassDoc для утилит (#35)
+
 ## v5.1.2 (fix)
 - [`69c0b8f`](https://github.com/rx1310/kalium19/commit/69c0b8f60665202ade5c9b7be2d2abe57673d429) [@rx1310](https://github.com/rx1310): меняет значение свойства `font-smooth` на `auto`
 - [`abe7aad`](https://github.com/rx1310/kalium19/commit/abe7aad10b8c798b826f4b59f687416bdeba322b) [@rx1310](https://github.com/rx1310): исправляет неверное название свойства `font-smooth` в миксине `antialias()` (#29)
