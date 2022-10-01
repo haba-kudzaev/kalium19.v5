@@ -1,0 +1,13 @@
+/// Select all `$num` children between `$first` and `$last`.
+/// @name n-between
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin n-between($num, $first, $last) {
+  &:nth-child(#{$num}n):nth-child(n + #{$first}):nth-child(-n + #{$last}) {
+    @content;
+  }
+}
