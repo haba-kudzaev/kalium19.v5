@@ -1,0 +1,14 @@
+/// Select all children between the `$num` first and the `$num` last.
+/// @name all-but-first-last
+/// @since 5.2.0
+/// @group mixin
+/// @access public
+/// @author Lucas Bonomi
+/// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+/// @param {Number} $num - id of the child
+@mixin all-but-first-last($num) {
+  &:nth-child(n + #{$num}):nth-last-child(n + #{$num}) {
+    @content;
+  }
+}
