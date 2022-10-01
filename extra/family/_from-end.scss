@@ -1,3 +1,4 @@
+/// Select all children before `$num` from the last.
 /// @name from-end
 /// @since 5.2.0
 /// @group mixin
@@ -5,7 +6,7 @@
 /// @author Lucas Bonomi
 /// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
-/// @param {number} $num - id of the child
+/// @param {Number} $num - id of the child
 @mixin from-end($num) {
 	&:nth-last-child(#{$num}) {
 		@content;
