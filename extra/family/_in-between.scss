@@ -1,4 +1,5 @@
 /// This quantity-query mixin will select every items only if there is between `$min` and `$max` items.
+/// ---
 /// @name in-between
 /// @since 5.2.0
 /// @group mixin
@@ -9,12 +10,12 @@
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 @mixin in-between($min, $max) {
 
-  $selector: &;
-  $child: nth(nth($selector, -1), -1);
+	$selector: &;
+	$child: nth(nth($selector, -1), -1);
 
-  &:nth-last-child(n + #{$min}):nth-last-child(-n + #{$max}):first-child,
-  &:nth-last-child(n + #{$min}):nth-last-child(-n + #{$max}):first-child ~ #{$child} {
-    @content;
-  }
+	&:nth-last-child(n + #{$min}):nth-last-child(-n + #{$max}):first-child,
+	&:nth-last-child(n + #{$min}):nth-last-child(-n + #{$max}):first-child ~ #{$child} {
+		@content;
+	}
 
 }

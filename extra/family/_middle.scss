@@ -1,5 +1,6 @@
 /// Select the item in the middle of `$num` child. Only works with odd number
 /// chain.
+/// ---
 /// @name middle
 /// @since 5.2.0
 /// @group mixin
@@ -9,7 +10,7 @@
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 /// @param {Number} $num - id of the child
 @mixin middle($num) {
-  &:nth-child(#{round($num / 2)}) {
-    @content;
-  }
+	&:nth-child(#{round($num / 2)}) {
+		@content;
+	}
 }

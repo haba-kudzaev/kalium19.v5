@@ -1,5 +1,6 @@
 /// This quantity-query mixin will only select the first of `$limit` items. It will not
 /// work if there is not as much as item as you set in `$limit`.
+/// ---
 /// @name first-of
 /// @since 5.2.0
 /// @group mixin
@@ -9,7 +10,7 @@
 /// @param {Number} $limit
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 @mixin first-of($limit) {
-  &:nth-last-child(#{$limit}):first-child {
-    @content;
-  }
+	&:nth-last-child(#{$limit}):first-child {
+		@content;
+	}
 }

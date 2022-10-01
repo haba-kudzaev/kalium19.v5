@@ -1,4 +1,5 @@
 /// Select all even children.
+/// ---
 /// @name even
 /// @since 5.2.0
 /// @group mixin
@@ -7,7 +8,7 @@
 /// @link https://github.com/LukyVj/family.scss Lucas Bonomi на GitHub
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
 @mixin even() {
-  &:nth-child(even) {
-    @content;
-  }
+	&:nth-child(even) {
+		@content;
+	}
 }
