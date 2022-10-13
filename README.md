@@ -15,8 +15,8 @@
 
 :package: Большой набор миксинов, карт и функций на языке препроцессора [Sass](https://github.com/sass) для помощи в ускорении и упрощении написания CSS-стилей.
 
-[![Статус публикации пакета на GitHub Packages через Action](https://img.shields.io/github/workflow/status/rx1310/kalium19/GitHub%20Packages%20publisher?label=github%20packages&logo=github)](https://github.com/rx1310/kalium19/packages/1547304)
-[![Статус публикации пакета на npm через GitHub Action](https://img.shields.io/github/workflow/status/rx1310/kalium19/npm%20publisher?label=npm&logo=npm)](https://npmjs.com/package/@rx1310/kalium19)
+[![Статус публикации пакета на GitHub Packages через Action](https://img.shields.io/github/workflow/status/rx1310/kalium19.v5/GitHub%20Packages%20publisher?label=github%20packages&logo=github)](https://github.com/rx1310/kalium19/packages/1547304)
+[![Статус публикации пакета на npm через GitHub Action](https://img.shields.io/github/workflow/status/rx1310/kalium19.v5/npm%20publisher?label=npm&logo=npm)](https://npmjs.com/package/@rx1310/kalium19)
 
 ![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/@rx1310/kalium19/sass?logo=sass&logoColor=fff&color=fff)
 ![GitHub top language](https://img.shields.io/github/languages/top/rx1310/kalium19.v5?color=%23c76394)
