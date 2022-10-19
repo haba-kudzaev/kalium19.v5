@@ -18,7 +18,7 @@
 [![Статус публикации пакета на GitHub Packages через Action](https://img.shields.io/github/workflow/status/rx1310/kalium19.v5/GitHub%20Packages%20publisher?label=github%20packages&logo=github)](https://github.com/rx1310/kalium19/packages/1547304)
 [![Статус публикации пакета на npm через GitHub Action](https://img.shields.io/github/workflow/status/rx1310/kalium19.v5/npm%20publisher?label=npm&logo=npm)](https://npmjs.com/package/@rx1310/kalium19)
 
-![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/@rx1310/kalium19/sass?logo=sass&logoColor=fff&color=fff)
+![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/@rx1310/kalium19.v5/sass?logo=sass&logoColor=fff&color=fff)
 ![GitHub top language](https://img.shields.io/github/languages/top/rx1310/kalium19.v5?color=%23c76394)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rx1310/kalium19.v5?color=fbd2e0)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/rx1310/kalium19.v5?label=files%20%22.%2F%22)
@@ -60,7 +60,7 @@
 2. введите команду для установки npm-пакета [`@rx1310/kalium19`](https://npmjs.com/package/@rx1310/kalium19) (также есть на [GitHub Packages](https://github.com/rx1310/kalium19/packages/1547304)) в проект:
 
     ```bash
-    npm install @rx1310/kalium19
+    npm install @rx1310/kalium19.v5
     ```
 
     > Если Sass не установлен в проект:
@@ -71,7 +71,7 @@
 3. дождитесь установки всех пакетов и зависимостей в проект и в основной Sass-файл стилей пропишите импорт модуля `kalium19`:
 
     ```scss
-    @use 'node_modules/@rx1310/kalium19' as *;
+    @use 'node_modules/@rx1310/kalium19.v5' as *;
     ```
 
     `*` означает, что миксины и функции из пакета `@rx1310/kalium19` доступны глобально. Вы можете использовать [пространство имён в Sass](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace), чтобы избежать возможных конфликтов с другими пакетами/библиотеками.
@@ -82,7 +82,7 @@
 4. для проверки правильного импорта можно использовать миксин `@include check;` в файле стилей после импорта:
 
     ```scss
-    @use 'node_modules/@rx1310/kalium19' as *;
+    @use 'node_modules/@rx1310/kalium19.v5' as *;
 
     @include check;
     ```
@@ -141,7 +141,7 @@ git submodule add https://github.com/rx1310/kalium19.v5
 
 ```scss
 // SCSS Input:
-@use '../kalium19' as k19 with (
+@use '../kalium19.v5' as k19 with (
 	$strict-mode: warn,
 	$opacity: (
 		ie5: false,
@@ -211,7 +211,7 @@ git submodule add https://github.com/rx1310/kalium19.v5
 На примере ниже мы импортируем библиотеку "по-старому" через директиву `@import` и функциональность по сути не нарушена.
 ```scss
 // SCSS Input
-@import '../kalium19';
+@import '../kalium19.v5';
 
 $prfxs_border-radius: webkit moz; // выбираем нужные префиксы
 
